@@ -59,6 +59,8 @@ def fingerprint(project: Path) -> dict:
         if (project / base).exists():
             files.extend(p for p in (project / base).rglob('*') if p.is_file() and p.suffix in SOURCE_SUFFIXES
                          and not any(x in p.parts for x in ('renders', 'revisions', 'reference', 'source')))
+    if (project / 'work').exists():
+        files.extend(p for p in (project / 'work').rglob('*.gd') if 'review-runs' not in p.parts)
     files.extend(p for p in project.glob('*') if p.is_file() and not p.name.startswith('.') and p.suffix in SOURCE_SUFFIXES)
     sources = {p.relative_to(project).as_posix(): sha(p) for p in sorted(files)}
     joined = ''.join(f'{name}={value}\n' for name, value in sorted(sources.items()))
@@ -197,7 +199,12 @@ def run(args) -> Path:
         # Deterministic environment generation, while preserving the actual
         # fixture/controller. Test positioning never claims native reachability.
         wrapper = project / 'review_entry.gd'
-        wrapper.write_text('extends "res://' + config['script'] + '"\n\nfunc _initialize() -> void:\n\tseed(' + str(args.seed) + ')\n\tsuper._initialize()\n')
+        wrapper.write_text('extends "res://' + config['script'] + '"\n\nfunc _initialize() -> void:\n\tseed(' + str(args.seed) + ')\n\tsuper._initialize()\n' +
+            '\nfunc _start() -> void:\n\tsuper._start()\n\tvar imported: Node = game.player_visual_parts["authored_rig"]["imported_root"]\n' +
+            '\tassert(imported.scene_file_path == "res://actors/gloam_vigil/v4/gloam_vigil_player_v4.glb", "Wrong runtime candidate path")\n' +
+            '\tassert(FileAccess.get_sha256(imported.scene_file_path) == "' + result['asset_sha256'] + '", "Wrong runtime candidate SHA")\n' +
+            '\tprint("REVIEW_RUNTIME_ASSET_OK sha=' + result['asset_sha256'] + '")\n')
+        result['wrapper_sha256'] = sha(wrapper)
         result['timings']['snapshot_s'] = round(time.monotonic() - start, 3)
         result['engine'] = subprocess.check_output([godot, '--version'], text=True).strip()
         result['timings']['import_s'] = command([godot, '--headless', '--path', str(project), '--editor', '--quit'], directory / 'import.log', 120)
@@ -206,6 +213,7 @@ def run(args) -> Path:
                 '--resolution', '960x600', '--script', str(wrapper), '--write-movie', str(directory / 'frames/frame.png'),
                 '--fixed-fps', '30', '--disable-vsync', '--quit-after', str(config['frames'] + 3), '--', *config['args']],
                 directory / 'render.log', 120, config['footer'])
+        validate_log((directory / 'render.log').read_text(), 'REVIEW_RUNTIME_ASSET_OK')
         frames = sorted((directory / 'frames').glob('frame*.png'))
         if not config['frames'] <= len(frames) <= config['frames'] + 3:
             raise ValueError(f'Unexpected frame count: {len(frames)}')

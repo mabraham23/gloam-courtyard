@@ -26,6 +26,10 @@ class ReviewTests(unittest.TestCase):
             self.assertEqual(first, review.fingerprint(root)['sha256'])
             source.write_text('extends Node3D\n# changed\n')
             self.assertNotEqual(first, review.fingerprint(root)['sha256'])
+            second = review.fingerprint(root)['sha256']
+            (root / 'work').mkdir()
+            (root / 'work/candidate_fixture.gd').write_text('extends RefCounted\n')
+            self.assertNotEqual(second, review.fingerprint(root)['sha256'])
 
     def test_mismatched_comparison_rejected_before_output(self):
         with tempfile.TemporaryDirectory() as folder:
