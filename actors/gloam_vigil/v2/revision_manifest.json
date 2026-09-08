@@ -1,0 +1,86 @@
+{
+  "purpose": "Byte-level mapping for rejected v2 authoring studies and the frozen technical candidate",
+  "notes": [
+    "r1 and r2 exports, sources, and renders are the originally preserved files.",
+    "The originally observed r3 GLB had SHA-256 ec086c7870be1c93a2c830b144a7fa541ab23dae8b90c5e3448ad0c14e9b37f2 but was overwritten before a byte copy was made.",
+    "The r3 .blend was recovered byte-for-byte from Blender's immediate .blend1 backup. The listed r3 GLB and renders were regenerated from that frozen source, and are explicitly not claimed as byte-identical to the overwritten originals.",
+    "r4 is the current a786 runtime/deformation candidate. Its appearance is rejected and it is not accepted character art.",
+    "Every revision-suffixed GLB in the v2 root is historical evidence only and must not be selected as a runtime default."
+  ],
+  "revisions": {
+    "r1": {
+      "status": "rejected_originally_preserved",
+      "glb": {
+        "path": "gloam_vigil_player_v2_r1.glb",
+        "sha256": "3c15037c2b6a51fabfe71627cfb3eda64de24d2ad160f6be37c3681b73eefd17"
+      },
+      "source": {
+        "path": "source/gloam_vigil_player_v2_r1.blend",
+        "sha256": "46c1b7ef00b5216928a5912bac22228d451798e422a36c7415e527bbaea29e22"
+      },
+      "renders": {
+        "action": "4e98da52dd543793e0e5b7334122455a433f95abc26f61755f5147ee0ef0bbf0",
+        "head_threequarter": "2240259363ef00095beb25089ba54566e7dd43cb208ed0bae35642066b151471",
+        "neutral_front": "1bad45fd1a2a1b5b8ed39c7084565c26898d70e746c70a20295a14f300454bbe",
+        "neutral_profile": "21d3d4e56f7935f105f3f50f4e6a2305e526277d7088bfeaf2a8d8b1ff2c2b6e",
+        "neutral_threequarter": "c9f9b6e666af48b29111ef3e9529befce82a815dfd600f2de6f4e5df667708bc"
+      }
+    },
+    "r2": {
+      "status": "rejected_originally_preserved",
+      "glb": {
+        "path": "gloam_vigil_player_v2_r2.glb",
+        "sha256": "f014de867c0fc829bab566a3179737da1c0bad22c8c3d482e01b509e48cc626f"
+      },
+      "source": {
+        "path": "source/gloam_vigil_player_v2_r2.blend",
+        "sha256": "e8896772db54218de66d515c78959d86d01d0595cf0cba69b54de00b210f2cb9"
+      },
+      "renders": {
+        "action": "01754a53b4c169d6dd8591905f49071db9790a3cb19c535a52a3d4cbb340ca7e",
+        "head_threequarter": "045a224fa158dec0438cb0a42c8a088bf25821197983d6c4aeabba0ea5714c14",
+        "neutral_front": "41a495bc3f55ba5a9be968155cb59043360026b0955707af9be4385f2ba51f34",
+        "neutral_profile": "13651bc8aac7e7b5aa8c69127c692026e9ee5a18cef8e0093bd839312fe0ed39",
+        "neutral_threequarter": "f5b203695273ba53309360fa1de64d76c09c7296a0c56de18bfcb876128a408f"
+      }
+    },
+    "r3": {
+      "status": "rejected_source_recovered_outputs_regenerated",
+      "original_glb_sha256_observed_before_overwrite": "ec086c7870be1c93a2c830b144a7fa541ab23dae8b90c5e3448ad0c14e9b37f2",
+      "recovered_glb": {
+        "path": "source/gloam_vigil_player_v2_r3_recovered.glb",
+        "sha256": "b679de172b41a4ccd6456f94217c02aaaf66cff58b8d20a25bcb28072ed6e131"
+      },
+      "source": {
+        "path": "source/gloam_vigil_player_v2_r3.blend",
+        "sha256": "2331af61d76c95b424529cbb66c95090e48d3c71ba0fc3613f0b882073334578"
+      },
+      "renders": {
+        "status": "regenerated_from_recovered_source",
+        "action": "be74940e65bf73225ded71dd2456a94982fa7a74a28ec2d2f6ef9f06a1779213",
+        "head_threequarter": "b9749e937bceeec61db390f92b240968b25e8efacef45149a3ba5f5742b36553",
+        "neutral_front": "583d82dbba7d3466ee33a0d324061569c347a3fda15c1a9e31c4f83428756ed2",
+        "neutral_profile": "65a1bf488db8f43e6a7f153570dd63a14dfae335a52859d25cfc30156b5c080e",
+        "neutral_threequarter": "4808a7dd0fc6acacc6b4c02e01c3f798b42cc296d64c0cbecb5c61f79293a0d2"
+      }
+    },
+    "r4": {
+      "status": "frozen_technical_candidate_appearance_rejected",
+      "glb": {
+        "path": "gloam_vigil_player_v2_r4.glb",
+        "sha256": "a786d082fb1b9aea0d383dd0a06e0c43826b20bf35b4edb4b60ea50b2882ee3b"
+      },
+      "source": {
+        "path": "source/gloam_vigil_player_v2_r4.blend",
+        "sha256": "e9289d86a0693cd66b3e1477eed0d826528edd8abb12355ddc42200614645861"
+      },
+      "renders": {
+        "action": "290720b183a038633efdf8b8db6e3b4edb088785eed97f2064f4809e3a141d7c",
+        "head_threequarter": "e82fdb165f1970fd7e944d49e648bd154a9730791d78071b859e0d95feb544be",
+        "neutral_front": "56d52bf381d0ad5de41aca9cc4cd962533222f1706580eaad9979176314ecbcc",
+        "neutral_profile": "b9555456864ebaf8343727b92b290635a3e8688c34c56ccca905eaf00d314834",
+        "neutral_threequarter": "bb317a20301843ccc614da05402f0784e7ee9bd57576e352c2a58b9f0600116c"
+      }
+    }
+  }
+}

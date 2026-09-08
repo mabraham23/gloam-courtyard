@@ -1,0 +1,2 @@
+# Diagnostic PNGs and frame sequences are evidence, not runtime textures.
+# F12 and the movie writer still save directly here through filesystem paths.

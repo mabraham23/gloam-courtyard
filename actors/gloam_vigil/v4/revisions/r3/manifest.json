@@ -1,0 +1,264 @@
+{
+  "asset_id": "gloam_vigil_v4",
+  "status": "candidate-not-yet-accepted",
+  "source_collection": "Body Male - Realistic",
+  "source_author": "Dan Ulrich",
+  "source_license": "CC0",
+  "source_bundle": "1.4.1",
+  "source_multires_level": 1,
+  "bones": 74,
+  "vertices": 43016,
+  "triangles": 85040,
+  "surface_slots": 7,
+  "unique_materials": 5,
+  "glb_sha256": "242104fcc347652f4d3e83c2da779282b9a2ff76bb4c5ffc943caf6ca09f986e",
+  "face": {
+    "source": {
+      "bundle": "Blender Human Base Meshes 1.4.1",
+      "collection": "Body Male - Realistic",
+      "author": "Dan Ulrich",
+      "license": "CC0"
+    },
+    "construction": "unchanged licensed scan head/neck plus BVH-conformed original mask and vertex-colored close-cropped scalp hair",
+    "vertices": 17079,
+    "triangles": 33586,
+    "preferred_face_triangle_target": 22000,
+    "preferred_face_triangle_target_met": false,
+    "materials": [
+      "MAT_GV2_Skin",
+      "MAT_GV2_Gear"
+    ],
+    "surfaces": 2,
+    "morphs": [
+      "blink.L",
+      "blink.R",
+      "brow_inner_raise",
+      "jaw_clench"
+    ],
+    "morph_vertex_counts": {
+      "blink.L": 820,
+      "blink.R": 823,
+      "brow_inner_raise": 1845,
+      "jaw_clench": 4974
+    },
+    "maximum_skin_influences": 2,
+    "mask_projection": {
+      "ray_vertices": 630,
+      "nearest_fallbacks": 0
+    },
+    "scalp_hair_vertices": 1672,
+    "lip_tint_vertices": 654,
+    "bounds_min": [
+      -0.130417,
+      -0.210344,
+      1.825
+    ],
+    "bounds_max": [
+      0.130599,
+      0.071534,
+      2.159962
+    ],
+    "eye_anchors": {
+      "L": {
+        "head": [
+          -0.042042,
+          -0.155697,
+          2.01846
+        ],
+        "tail": [
+          -0.042042,
+          -0.195697,
+          2.01846
+        ],
+        "globe_radii": [
+          0.01534,
+          0.015284,
+          0.01535
+        ]
+      },
+      "R": {
+        "head": [
+          0.041995,
+          -0.155687,
+          2.01846
+        ],
+        "tail": [
+          0.041995,
+          -0.195687,
+          2.01846
+        ],
+        "globe_radii": [
+          0.015335,
+          0.01527,
+          0.01535
+        ]
+      }
+    },
+    "donor_eye_label_remap": {
+      "R": "L",
+      "L": "R"
+    }
+  },
+  "body_weights": {
+    "method": "deterministic semantic segment envelopes",
+    "body_vertices": 18003,
+    "maximum_influences": 4,
+    "maximum_normalization_error": 4.842877388000488e-08,
+    "side_contamination_vertices": 0,
+    "arm_leg_contamination_vertices": 0,
+    "connected_hand_region_vertices": {
+      "L": 3000,
+      "R": 3000
+    },
+    "connected_hand_region_misweights": 0,
+    "geodesic_limb_region_vertices": {
+      "arm.L": 6925,
+      "arm.R": 6946,
+      "leg.L": 1949,
+      "leg.R": 1958
+    },
+    "geodesic_limb_blend_vertices": {
+      "arm.L": 6214,
+      "arm.R": 6237,
+      "leg.L": 706,
+      "leg.R": 719
+    },
+    "used_body_bones": [
+      "chest",
+      "clavicle.L",
+      "clavicle.R",
+      "foot.L",
+      "foot.R",
+      "forearm.L",
+      "forearm.R",
+      "forearm_twist.L",
+      "forearm_twist.R",
+      "hand.L",
+      "hand.R",
+      "index.01.L",
+      "index.01.R",
+      "index.02.L",
+      "index.02.R",
+      "index.03.L",
+      "index.03.R",
+      "middle.01.L",
+      "middle.01.R",
+      "middle.02.L",
+      "middle.02.R",
+      "middle.03.L",
+      "middle.03.R",
+      "neck",
+      "pelvis",
+      "pinky.01.L",
+      "pinky.01.R",
+      "pinky.02.L",
+      "pinky.02.R",
+      "pinky.03.L",
+      "pinky.03.R",
+      "ring.01.L",
+      "ring.01.R",
+      "ring.02.L",
+      "ring.02.R",
+      "ring.03.L",
+      "ring.03.R",
+      "shin.L",
+      "shin.R",
+      "shin_twist.L",
+      "shin_twist.R",
+      "spine",
+      "spine_upper",
+      "thigh.L",
+      "thigh.R",
+      "thigh_twist.L",
+      "thigh_twist.R",
+      "thumb.01.L",
+      "thumb.01.R",
+      "thumb.02.L",
+      "thumb.02.R",
+      "thumb.03.L",
+      "thumb.03.R",
+      "upper_arm.L",
+      "upper_arm.R",
+      "upper_arm_twist.L",
+      "upper_arm_twist.R"
+    ],
+    "influence_vertex_counts": {
+      "chest": 3896,
+      "clavicle.L": 2280,
+      "clavicle.R": 2300,
+      "foot.L": 345,
+      "foot.R": 340,
+      "forearm.L": 967,
+      "forearm.R": 967,
+      "forearm_twist.L": 633,
+      "forearm_twist.R": 633,
+      "hand.L": 2452,
+      "hand.R": 2434,
+      "index.01.L": 461,
+      "index.01.R": 461,
+      "index.02.L": 461,
+      "index.02.R": 461,
+      "index.03.L": 460,
+      "index.03.R": 459,
+      "middle.01.L": 388,
+      "middle.01.R": 382,
+      "middle.02.L": 386,
+      "middle.02.R": 382,
+      "middle.03.L": 386,
+      "middle.03.R": 380,
+      "neck": 2460,
+      "pelvis": 2740,
+      "pinky.01.L": 721,
+      "pinky.01.R": 757,
+      "pinky.02.L": 717,
+      "pinky.02.R": 755,
+      "pinky.03.L": 646,
+      "pinky.03.R": 682,
+      "ring.01.L": 368,
+      "ring.01.R": 344,
+      "ring.02.L": 368,
+      "ring.02.R": 343,
+      "ring.03.L": 364,
+      "ring.03.R": 342,
+      "shin.L": 901,
+      "shin.R": 902,
+      "shin_twist.L": 807,
+      "shin_twist.R": 804,
+      "spine": 3622,
+      "spine_upper": 4196,
+      "thigh.L": 702,
+      "thigh.R": 715,
+      "thigh_twist.L": 802,
+      "thigh_twist.R": 802,
+      "thumb.01.L": 751,
+      "thumb.01.R": 749,
+      "thumb.02.L": 748,
+      "thumb.02.R": 748,
+      "thumb.03.L": 669,
+      "thumb.03.R": 668,
+      "upper_arm.L": 2949,
+      "upper_arm.R": 2968,
+      "upper_arm_twist.L": 1223,
+      "upper_arm_twist.R": 1221
+    },
+    "unweighted_by_body_expected_external": [
+      "ball.L",
+      "ball.R",
+      "cape.L",
+      "cape.R",
+      "cape_lower.L",
+      "cape_lower.R",
+      "cape_mid.L",
+      "cape_mid.R",
+      "cape_tip.L",
+      "cape_tip.R",
+      "eye.L",
+      "eye.R",
+      "head",
+      "jaw",
+      "root",
+      "toe.L",
+      "toe.R"
+    ]
+  }
+}

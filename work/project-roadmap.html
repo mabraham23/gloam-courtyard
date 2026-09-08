@@ -1,0 +1,560 @@
+<div id="gloam-project-board">
+  <style>
+    #gloam-project-board {
+      --gpb-bg: light-dark(#f3f4f7, #0c1018);
+      --gpb-panel: light-dark(#ffffff, #141a25);
+      --gpb-panel-2: light-dark(#f8f9fb, #1a2230);
+      --gpb-text: light-dark(#172033, #edf1f8);
+      --gpb-muted: light-dark(#667085, #9ba8ba);
+      --gpb-line: light-dark(#d9dee8, #2b3647);
+      --gpb-primary: light-dark(#5d3fd3, #a790ff);
+      --gpb-primary-soft: light-dark(#eeeaff, #2a2449);
+      --gpb-now: light-dark(#b54708, #ffbd7a);
+      --gpb-next: light-dark(#175cd3, #82b4ff);
+      --gpb-parallel: light-dark(#067647, #67d9a4);
+      --gpb-later: light-dark(#6941c6, #b59cff);
+      --gpb-complete: light-dark(#475467, #b7c0cf);
+      color-scheme: light dark;
+      color: var(--gpb-text);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: transparent;
+    }
+    #gloam-project-board * { box-sizing: border-box; }
+    #gloam-project-board button,
+    #gloam-project-board select { font: inherit; }
+    #gloam-project-board .gpb-shell {
+      background: var(--gpb-bg);
+      border: 1px solid var(--gpb-line);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    #gloam-project-board .gpb-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 20px;
+      background: var(--gpb-panel);
+      border-bottom: 1px solid var(--gpb-line);
+    }
+    #gloam-project-board .gpb-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+    #gloam-project-board .gpb-mark {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      color: var(--gpb-primary);
+      background: var(--gpb-primary-soft);
+      flex: 0 0 auto;
+    }
+    #gloam-project-board .gpb-brand h1 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.25;
+      font-weight: 500;
+    }
+    #gloam-project-board .gpb-brand p,
+    #gloam-project-board .gpb-meta {
+      margin: 2px 0 0;
+      color: var(--gpb-muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    #gloam-project-board .gpb-health {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gpb-parallel);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    #gloam-project-board .gpb-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+    #gloam-project-board .gpb-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding: 8px 12px;
+      background: var(--gpb-panel);
+      border-bottom: 1px solid var(--gpb-line);
+    }
+    #gloam-project-board .gpb-tab {
+      border: 0;
+      border-radius: 7px;
+      padding: 8px 11px;
+      color: var(--gpb-muted);
+      background: transparent;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    #gloam-project-board .gpb-tab[aria-selected="true"] {
+      color: var(--gpb-text);
+      background: var(--gpb-primary-soft);
+    }
+    #gloam-project-board .gpb-panel { padding: 16px; }
+    #gloam-project-board .gpb-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    #gloam-project-board .gpb-toolbar-copy h2 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    #gloam-project-board .gpb-toolbar-copy p {
+      margin: 3px 0 0;
+      color: var(--gpb-muted);
+      font-size: 12px;
+    }
+    #gloam-project-board .gpb-filter {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gpb-muted);
+      font-size: 12px;
+    }
+    #gloam-project-board .gpb-filter select {
+      min-height: 36px;
+      color: var(--gpb-text);
+      background: var(--gpb-panel);
+      border: 1px solid var(--gpb-line);
+      border-radius: 7px;
+      padding: 6px 30px 6px 9px;
+    }
+    #gloam-project-board .gpb-board-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 14px;
+      align-items: start;
+    }
+    #gloam-project-board .gpb-lanes {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(130px, 1fr));
+      gap: 10px;
+      align-items: start;
+    }
+    #gloam-project-board .gpb-lane { min-width: 0; }
+    #gloam-project-board .gpb-lane-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin: 0 2px 8px;
+      color: var(--gpb-muted);
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    #gloam-project-board .gpb-count {
+      display: inline-grid;
+      place-items: center;
+      min-width: 22px;
+      height: 22px;
+      border-radius: 11px;
+      background: var(--gpb-panel-2);
+      color: var(--gpb-muted);
+    }
+    #gloam-project-board .gpb-stack { display: grid; gap: 8px; }
+    #gloam-project-board .gpb-task {
+      width: 100%;
+      text-align: left;
+      color: var(--gpb-text);
+      background: var(--gpb-panel);
+      border: 1px solid var(--gpb-line);
+      border-left: 3px solid var(--task-color, var(--gpb-line));
+      border-radius: 9px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    #gloam-project-board .gpb-task[aria-pressed="true"] {
+      border-color: var(--gpb-primary);
+      border-left-color: var(--task-color, var(--gpb-primary));
+      box-shadow: 0 0 0 2px var(--gpb-primary-soft);
+    }
+    #gloam-project-board .gpb-task-category {
+      color: var(--gpb-muted);
+      font-size: 11px;
+      line-height: 1.25;
+    }
+    #gloam-project-board .gpb-task-title {
+      margin-top: 5px;
+      font-size: 13px;
+      line-height: 1.35;
+      font-weight: 500;
+    }
+    #gloam-project-board .gpb-task-foot {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px 9px;
+      margin-top: 9px;
+      color: var(--gpb-muted);
+      font-size: 11px;
+    }
+    #gloam-project-board .gpb-detail {
+      position: sticky;
+      top: 8px;
+      background: var(--gpb-panel);
+      border: 1px solid var(--gpb-line);
+      border-radius: 10px;
+      padding: 14px;
+    }
+    #gloam-project-board .gpb-detail h3 {
+      margin: 6px 0 4px;
+      font-size: 16px;
+      line-height: 1.3;
+      font-weight: 500;
+    }
+    #gloam-project-board .gpb-detail p {
+      margin: 0 0 13px;
+      color: var(--gpb-muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    #gloam-project-board .gpb-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 13px;
+    }
+    #gloam-project-board .gpb-label {
+      color: var(--gpb-muted);
+      font-size: 11px;
+    }
+    #gloam-project-board .gpb-value {
+      margin-top: 2px;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    #gloam-project-board .gpb-evidence {
+      padding-top: 12px;
+      border-top: 1px solid var(--gpb-line);
+    }
+    #gloam-project-board .gpb-discuss {
+      width: 100%;
+      min-height: 38px;
+      margin-top: 13px;
+      border: 0;
+      border-radius: 8px;
+      color: light-dark(#ffffff, #101521);
+      background: var(--gpb-primary);
+      cursor: pointer;
+      font-weight: 500;
+    }
+    #gloam-project-board .gpb-flow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 20px;
+      align-items: stretch;
+      margin-top: 16px;
+    }
+    #gloam-project-board .gpb-phase {
+      position: relative;
+      min-height: 138px;
+      padding: 14px;
+      border-radius: 10px;
+      background: var(--gpb-panel);
+      border: 1px solid var(--gpb-line);
+    }
+    #gloam-project-board .gpb-phase:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      right: -18px;
+      top: 50%;
+      color: var(--gpb-muted);
+      transform: translateY(-50%);
+    }
+    #gloam-project-board .gpb-phase strong {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    #gloam-project-board .gpb-phase p {
+      margin: 0;
+      color: var(--gpb-muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    #gloam-project-board .gpb-timeline,
+    #gloam-project-board .gpb-source-list { display: grid; gap: 9px; margin-top: 14px; }
+    #gloam-project-board .gpb-decision,
+    #gloam-project-board .gpb-source {
+      display: grid;
+      grid-template-columns: 120px minmax(0, 1fr);
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--gpb-line);
+    }
+    #gloam-project-board .gpb-decision:last-child,
+    #gloam-project-board .gpb-source:last-child { border-bottom: 0; }
+    #gloam-project-board .gpb-decision time,
+    #gloam-project-board .gpb-source-code { color: var(--gpb-muted); font-size: 12px; }
+    #gloam-project-board .gpb-decision strong,
+    #gloam-project-board .gpb-source strong { display: block; font-size: 13px; font-weight: 500; }
+    #gloam-project-board .gpb-decision p,
+    #gloam-project-board .gpb-source p { margin: 3px 0 0; color: var(--gpb-muted); font-size: 12px; line-height: 1.45; }
+    #gloam-project-board .gpb-empty { color: var(--gpb-muted); font-size: 12px; padding: 12px 2px; }
+    #gloam-project-board [hidden] { display: none !important; }
+    @media (max-width: 900px) {
+      #gloam-project-board .gpb-board-layout { grid-template-columns: 1fr; }
+      #gloam-project-board .gpb-detail { position: static; }
+      #gloam-project-board .gpb-lanes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #gloam-project-board .gpb-flow { grid-template-columns: 1fr; gap: 20px; }
+      #gloam-project-board .gpb-phase { min-height: auto; }
+      #gloam-project-board .gpb-phase:not(:last-child)::after { content: "↓"; right: 14px; top: auto; bottom: -17px; transform: none; }
+    }
+    @media (max-width: 520px) {
+      #gloam-project-board .gpb-header,
+      #gloam-project-board .gpb-toolbar { align-items: flex-start; flex-direction: column; }
+      #gloam-project-board .gpb-panel { padding: 12px; }
+      #gloam-project-board .gpb-lanes { grid-template-columns: 1fr; }
+      #gloam-project-board .gpb-filter { width: 100%; justify-content: space-between; }
+      #gloam-project-board .gpb-filter select { flex: 1; }
+      #gloam-project-board .gpb-decision,
+      #gloam-project-board .gpb-source { grid-template-columns: 1fr; gap: 4px; }
+    }
+    @media (pointer: coarse) {
+      #gloam-project-board .gpb-tab,
+      #gloam-project-board .gpb-filter select,
+      #gloam-project-board .gpb-discuss { min-height: 44px; }
+    }
+  </style>
+
+  <section class="gpb-shell" aria-label="Gloam project planning dashboard">
+    <header class="gpb-header">
+      <div class="gpb-brand">
+        <div class="gpb-mark"><i data-lucide="moon-star" aria-hidden="true"></i></div>
+        <div>
+          <h1>Gloam project board</h1>
+          <p>Lower Court · original 3D stealth-action prototype</p>
+        </div>
+      </div>
+      <div class="gpb-health"><span class="gpb-dot"></span>R14 appearance/actions technically pass · user review next</div>
+    </header>
+
+    <nav class="gpb-nav" role="tablist" aria-label="Project views">
+      <button class="gpb-tab" id="gpb-tab-board" type="button" role="tab" data-panel="board" aria-controls="gpb-panel-board" aria-selected="true">Board</button>
+      <button class="gpb-tab" id="gpb-tab-dependencies" type="button" role="tab" data-panel="dependencies" aria-controls="gpb-panel-dependencies" aria-selected="false">Dependencies</button>
+      <button class="gpb-tab" id="gpb-tab-decisions" type="button" role="tab" data-panel="decisions" aria-controls="gpb-panel-decisions" aria-selected="false">Decisions</button>
+      <button class="gpb-tab" id="gpb-tab-context" type="button" role="tab" data-panel="context" aria-controls="gpb-panel-context" aria-selected="false">Context structure</button>
+    </nav>
+
+    <section class="gpb-panel" id="gpb-panel-board" role="tabpanel" aria-labelledby="gpb-tab-board" data-view="board">
+      <div class="gpb-toolbar">
+        <div class="gpb-toolbar-copy">
+          <h2>Upcoming work</h2>
+          <p>Frozen R14 face/hair, one-speed run, target-free strikes, forward evade and takedown await user review</p>
+        </div>
+        <label class="gpb-filter">Area
+          <select id="gpb-area-filter">
+            <option value="all">All areas</option>
+            <option value="Characters">Characters</option>
+            <option value="Animation">Animation</option>
+            <option value="Movement">Movement</option>
+            <option value="Gameplay">Gameplay</option>
+            <option value="Level design">Level design</option>
+            <option value="Project">Project</option>
+          </select>
+        </label>
+      </div>
+      <div class="gpb-board-layout">
+        <div class="gpb-lanes" id="gpb-lanes" aria-label="Task lanes"></div>
+        <aside class="gpb-detail" id="gpb-detail" aria-live="polite"></aside>
+      </div>
+    </section>
+
+    <section class="gpb-panel" id="gpb-panel-dependencies" role="tabpanel" aria-labelledby="gpb-tab-dependencies" data-view="dependencies" hidden>
+      <div class="gpb-toolbar-copy">
+        <h2>Safe execution order</h2>
+        <p>Parallel work begins only after shared movement dimensions stabilize</p>
+      </div>
+      <div class="gpb-flow" aria-label="Task dependency sequence">
+        <div class="gpb-phase"><strong>1 · Foundation</strong><p>Character visuals, idle/walk, travel-facing turn, collision, perch walk and fall.</p></div>
+        <div class="gpb-phase"><strong>2 · Action poses</strong><p>Grapple, combat, and directional evade states are accepted on the shared pivot and pose interface.</p></div>
+        <div class="gpb-phase"><strong>3 · Movement metrics</strong><p>Crouch clearance and measured jump/vault distance, height, timing, collision, and camera behavior are accepted.</p></div>
+        <div class="gpb-phase"><strong>4 · Parallel lanes</strong><p>The main-scene stealth repair, actor-only animation polish, and isolated non-default map gray-box are accepted.</p></div>
+        <div class="gpb-phase"><strong>5 · Authored player</strong><p>R14 import, 21,642 deformation checks, 202 candidate mechanics checks and paired performance pass. Browser policy blocks the final board interaction/responsive check.</p></div>
+        <div class="gpb-phase"><strong>6 · One-speed captured run</strong><p>Ordinary standing WASD now uses the corrected CMU run at 4.80 units per second; Shift is inert, crouch stays 1.178, and the walk channel/reel remain superseded evidence.</p></div>
+        <div class="gpb-phase"><strong>7 · R14 actions internally complete</strong><p>Target-free four-attack presentation, forward-over-top evade and paired takedown have body-space anticipation, contact, follow-through and recovery without phantom damage.</p></div>
+        <div class="gpb-phase"><strong>8 · User release gate</strong><p>Fresh exact-title movement/action play, F12 and user visual judgement gate the narrow default switch. R14 regressions and paired performance pass; V1 stays default.</p></div>
+      </div>
+    </section>
+
+    <section class="gpb-panel" id="gpb-panel-decisions" role="tabpanel" aria-labelledby="gpb-tab-decisions" data-view="decisions" hidden>
+      <div class="gpb-toolbar-copy">
+        <h2>Durable decisions</h2>
+        <p>Rationale stays historical even when implementation phases change</p>
+      </div>
+      <div class="gpb-timeline">
+        <div class="gpb-decision"><time>Sep 8, 2026</time><div><strong>R14 remains a candidate</strong><p>Freeze the warm-skin, connected facial-hair and swept-shell revision after complete technical/performance evidence, but keep V1 default until the user accepts its still-stylized hair/beard and motion in play.</p></div></div>
+        <div class="gpb-decision"><time>Sep 8, 2026</time><div><strong>Target-independent attack presentation</strong><p>SPACE always plays one of four nonrepeating attacks in valid states; only commit-owned, contact-time-valid targets can take damage, so empty-space animation never creates phantom hits.</p></div></div>
+        <div class="gpb-decision"><time>Sep 8, 2026</time><div><strong>One standing speed</strong><p>The user superseded the separate control: WASD always uses the corrected 4.80-unit/s run, Shift has no effect, and crouch preserves 1.178-unit/s travel. Walk data and its reel stay as superseded material.</p></div></div>
+        <div class="gpb-decision"><time>Sep 8, 2026</time><div><strong>Separate captured walk and run · superseded</strong><p>The distinct walk/run experiment remains reproducible evidence, but it no longer owns current controller behavior.</p></div></div>
+        <div class="gpb-decision"><time>Sep 5, 2026</time><div><strong>Calibrate capture to target proportions</strong><p>Preserve pelvis transfer and sagittal hip motion; attenuate only target-sensitive thigh lateral/twist, foot yaw and lower-spine pitch. No leg clamping, global counter-rotation, source rewrite or gameplay-root change.</p></div></div>
+        <div class="gpb-decision"><time>Sep 5, 2026</time><div><strong>R7 body-space action layer</strong><p>R7-only strike, evade and takedown deformation lives in a compact presentation resource. The controller remains authoritative for timing, root travel, collision, damage and cancellation.</p></div></div>
+        <div class="gpb-decision"><time>Sep 4, 2026</time><div><strong>Separate animation-quality pass</strong><p>Reuse the existing motion task for locomotion, action transitions, contact and follow-through. Face/anatomy/materials stay in character art; the shared rig contract and final integration keep them compatible.</p></div></div>
+        <div class="gpb-decision"><time>Sep 4, 2026</time><div><strong>Readable contact and forward-facing roll</strong><p>One full hit per swing, staged paired takedown, and a forward somersault along visible facing replace instant stacked hits, idle takedown and remembered-travel backward roll.</p></div></div>
+        <div class="gpb-decision"><time>Sep 4, 2026</time><div><strong>One authored Gloam Vigil player before Riven</strong><p>Original muscular anatomy, fitted dark clothing, mask, utility pouches and cape supersede the hooded player. Model and deformation quality must improve visibly; gameplay and Riven stay stable.</p></div></div>
+        <div class="gpb-decision"><time>Sep 3, 2026</time><div><strong>Original dark-gothic IP</strong><p>No franchise names, likenesses, symbols, costumes, architecture, or assets.</p></div></div>
+        <div class="gpb-decision"><time>Sep 3, 2026</time><div><strong>True 3D committed</strong><p>Real height and the composed three-quarter camera are the implementation direction; 2D remains a reference.</p></div></div>
+        <div class="gpb-decision"><time>Sep 3, 2026</time><div><strong>Capture-driven iteration</strong><p>Every meaningful milestone needs live screenshots, a smoke play, evidence-backed quirks, and clean headless checks.</p></div></div>
+        <div class="gpb-decision"><time>Sep 3, 2026</time><div><strong>Bounded architecture threshold</strong><p>Extract a concern only when verified growth creates a stable reusable boundary; avoid speculative frameworks.</p></div></div>
+        <div class="gpb-decision"><time>Sep 3, 2026</time><div><strong>Procedural realism priority insertion</strong><p>The user-prioritized geometry and locomotion pass completed inside the actor builder boundary, then returned the queue to grapple poses; that checkpoint is now accepted.</p></div></div>
+        <div class="gpb-decision"><time>Current</time><div><strong>Sequential core, parallel outskirts</strong><p>Shared movement and pose work stays under one owner; isolated map gray-boxing becomes parallel-safe later.</p></div></div>
+        <div class="gpb-decision"><time>Current</time><div><strong>Local board is derived</strong><p>Project state and upcoming tasks remain authoritative; regenerate and verify this local view after docs and evidence change.</p></div></div>
+      </div>
+    </section>
+
+    <section class="gpb-panel" id="gpb-panel-context" role="tabpanel" aria-labelledby="gpb-tab-context" data-view="context" hidden>
+      <div class="gpb-toolbar-copy">
+        <h2>Context ownership</h2>
+        <p>Each file has one job so new agents can enter without replaying the conversation</p>
+      </div>
+      <div class="gpb-source-list">
+        <div class="gpb-source"><div class="gpb-source-code">AGENTS.md</div><div><strong>Working agreement</strong><p>Mandatory reading order, original-IP constraint, evidence rhythm, and update rules.</p></div></div>
+        <div class="gpb-source"><div class="gpb-source-code">PROJECT_STATE</div><div><strong>Current truth</strong><p>Active implementation, verified behavior, controls, known limits, and fresh-agent checklist.</p></div></div>
+        <div class="gpb-source"><div class="gpb-source-code">UPCOMING_TASKS</div><div><strong>Current roadmap</strong><p>Now, next, dependencies, effort, ownership boundaries, and parallelization status.</p></div></div>
+        <div class="gpb-source"><div class="gpb-source-code">DECISIONS</div><div><strong>Durable rationale</strong><p>Append-only active and superseded decisions; historical context is preserved.</p></div></div>
+        <div class="gpb-source"><div class="gpb-source-code">CHECKPOINTS</div><div><strong>Verification record</strong><p>Accepted evidence, captures, pass/fail results, and the next completion bar.</p></div></div>
+        <div class="gpb-source"><div class="gpb-source-code">visual-feedback-loop</div><div><strong>Runbook</strong><p>Launch, acquire, screenshot/action/screenshot, short capture, smoke play, and recovery.</p></div></div>
+        <div class="gpb-source"><div class="gpb-source-code">project-roadmap</div><div><strong>Derived local board</strong><p>Edit the source fragment, regenerate the standalone local page, verify interactions and responsive widths, and do not publish to Sites.</p></div></div>
+      </div>
+    </section>
+  </section>
+  <div class="sr-only" id="gpb-live" aria-live="polite"></div>
+
+  <script>
+    (function () {
+      const root = document.getElementById('gloam-project-board');
+      if (!root) return;
+
+      const lanes = [
+        { id: 'now', label: 'Now', color: 'var(--gpb-now)' },
+        { id: 'next', label: 'Next', color: 'var(--gpb-next)' },
+        { id: 'waiting', label: 'Waiting / blocked', color: 'var(--gpb-parallel)' },
+        { id: 'later', label: 'Later', color: 'var(--gpb-later)' },
+        { id: 'complete', label: 'Recent complete', color: 'var(--gpb-complete)' }
+      ];
+
+      const tasks = [
+        { id: 'action-readability', lane: 'waiting', area: 'Animation', title: 'Readable actions verified · user/board handoff pending', effort: 'M', parallel: 'Runtime done · user and board UI gates', dependency: 'User movement/action judgement plus permitted board access or manual verification', owner: 'Parent · controller/builder/adapter; independent test audit', evidence: 'Default mechanics200, candidate mechanics202, target-independent SPACE254, four-attack352, action-motion198, transitions67 and full deformation21642 pass. Corrected 277-frame action and 180-frame target-free reels pass; exact-title native space/C/Q/reset/F12 handoff is captures/courtyard_3d_2026-09-08_10-56-51_86082.png.', description: 'SPACE now presents four nonrepeating attacks even without a target while owned contact prevents phantom damage. Active punch fingers stay compact through recovery and have phalanx-level checks; frozen topology still leaves separated fingertips in close-up. T contacts at0.34s; C rolls1.96 units over0.28s along visible facing with0.42s invulnerability. User review and the existing board-browser policy gate remain.' },
+        { id: 'gloam-vigil-player', lane: 'waiting', area: 'Characters', title: 'First Gloam Vigil player · board handoff', effort: 'L', parallel: 'Runtime verified · board gate blocked', dependency: 'Permitted board access or manual user verification', owner: 'Parent integration owner', evidence: 'V1 passed 511 deformation and 107 mechanics checks, 360-frame close actions, 330-frame gameplay, and live customization/stealth/combat/traversal/camera/reset/F12. Current browser interactions and responsive widths remain policy-blocked; static syntax/IDs/parity are separate.', description: 'Preserved v1 is a runtime-correct baseline, not the finished realism objective. Do not bypass the recorded Browser Use URL-policy denial. The authorized isolated V4 candidate is tracked separately and is not yet default.' },
+        { id: 'vigil-sculpt-quality', lane: 'waiting', area: 'Characters', title: 'R14 face/hair candidate · user visual judgement', effort: 'L', parallel: 'Exact source frozen · technical gates complete', dependency: 'User accepts gameplay-scale appearance and motion', owner: 'Parent integration; bounded face/rig/verification agents complete', evidence: 'Frozen30a2c06… R14:86,452 triangles,34,998 face triangles,49,315 exported GLB refs,74 joints,seven surfaces/five materials/four morphs. GLB/import/37LODs/rig451/runtime/deformation21642 and Godot/Blender review captures pass.', description: 'Warm light skin, clear mouth, connected dark beard/mustache and a single swept dark hair mass replace the rejected band/chip studies on the licensed CC0 anatomy and original costume. Close-up hair/beard remain stylized procedural surfaces, so user visual judgement—not counts—gates release. V1 stays default.' },
+        { id: 'vigil-authored-motion', lane: 'waiting', area: 'Animation', title: 'R14 one-speed run + target-free four actions · user review', effort: 'L', parallel: 'Implementation complete · user gate', dependency: 'User-held movement, native takedown and visual judgement', owner: 'Parent owns controller, builder, adapter, default and live handoff', evidence: 'Plain/Shift WASD4.800u/s; crouch1.178. Default/candidate mechanics200/202, target-free strikes254, attacks352, actions198, transitions67, alignment10 and lower-leg13 pass. Action, target-free and matched-front reels pass; exact-title R14 PID28090 is left open with fresh F12.', description: 'WASD uses the corrected captured run; Shift is inert. Narrower lower legs and added clavicle/thigh/shin secondary articulation remain. Four attacks play without a target and never cause phantom damage; the active punch hand stays compact through recovery. The over-top evade moves1.96 units along facing; takedown holds until0.34s contact then a connected side fall. V1 stays default pending user acceptance.' },
+        { id: 'vigil-performance', lane: 'complete', area: 'Project', title: 'R14 paired performance passes', effort: 'M', parallel: 'Technical gate complete', dependency: 'Repeat after any asset/default/rendering change', owner: 'Verification owner · work/character-art-review/performance.gd', evidence: 'Quiet 1080p three-by-ten-second V1/R14 protocol passes. Actual courtyard R14 vs V1 mean/p95/p99 is5.0999/6.7529/7.1777 vs5.0924/6.6360/7.1421ms (~196 observed FPS each); artificial nine-rig R14 is18.5597/21.9153/24.8500ms.', description: 'R14 is +0.15% mean wall time in the real courtyard and +5.74% in the nine-visual-rig stress fixture. Stress copies are not enemy AIs; reciprocal cadence is not a GPU ceiling and GPU timing is unavailable. Exact report: work/character-art-review/reports/2026-09-08-r14-appearance-action-performance.md.' },
+        { id: 'vigil-v2-integration', lane: 'waiting', area: 'Characters', title: 'Release frozen R14 only after user acceptance', effort: 'L', parallel: 'Sequential · parent only', dependency: 'User-held movement/takedown and visual acceptance', owner: 'Parent · narrow default-player integration, docs and derived board', evidence: 'R14 source archive, current action implementation, paired performance, strict tests and native space/C smoke pass. V1 mechanics200 remains green and V1 stays default.', description: 'Preserve explicit V1, rejected v2/v3/R12 and superseded gait evidence. After exact-SHA user appearance/movement/takedown acceptance, add only a narrow default wrapper, regress the actual default and leave one fresh Gloam Courtyard Spike (DEBUG) with F12 evidence. Riven stays deferred.' },
+        { id: 'guard-hit-label', lane: 'waiting', area: 'Gameplay', title: 'Guard health label fixed · shared board handoff', effort: 'S', parallel: 'Runtime verified with action readability', dependency: 'Enclosing action checkpoint board UI gate', owner: 'Parent · main_3d.gd', evidence: '198-check mechanics verifies immediate strike/perfect-counter health text. Final close/default contact frames and ordinary single hit show GUARD78 with matching health/Momentum.', description: 'Pulled into the related contact-timing pass and resolved: label updates even during stun. Damage values, defeat/reset remain verified. Browser handoff shares the existing policy gate; this is no longer an unfixed gameplay bug.' },
+        { id: 'movement-sign-review', lane: 'later', area: 'Gameplay', title: 'Review the intended W/S direction convention', effort: 'S', parallel: 'Review only · no movement change authorized here', dependency: 'Confirm desired camera-relative forward/back convention', owner: 'Gameplay owner · preserve accepted timing and movement metrics', evidence: 'Live default-view S taps moved up-screen and W down-screen. Existing held and tap paths both use negative camera basis.z multiplied by input.y. Camera-relative transformation works; intended sign convention was not decided.', description: 'Recheck the intended control convention before a bounded fix. This observation predates any new movement change; the character milestone deliberately left controls and gameplay code unchanged.' },
+        { id: 'animation-polish', lane: 'complete', area: 'Animation', title: 'Animation polish and action variants', effort: 'M', parallel: 'Complete', dependency: 'Verified crouch and jump/vault dimensions', owner: 'Actor-visual/pose owner · actors/character_visual_builder.gd only', evidence: '204-frame default-camera sequence, complete mechanics regression, fixed-step grapple timing, dedicated finite-transform/silhouette probe, and fresh live crouch/evade/jump/strike/camera/reset/F12 smoke passed', description: 'Sharper grapple handoff, evade landing, crouch weight, jump/vault distinction, strike/counter impact, and warden telegraph/reaction were added without controller or mechanic changes.' },
+        { id: 'riven-lantern', lane: 'complete', area: 'Level design', title: 'Riven Lantern Ward isolated gray-box', effort: 'L', parallel: 'Complete', dependency: 'Verified crouch and jump/vault movement envelope', owner: 'New non-default scene/script files only · no default or controller edits', evidence: '38 × 28 measurement validation, headless editor/runtime, two 960x600 normal-renderer overview frames, route layers, collision, and traversal-fit labels passed', description: 'A static, controller-free route study now captures ground, covered, elevated, concealment, loopback, and movement-envelope opportunities without claiming playable integration.' },
+        { id: 'map-integration', lane: 'waiting', area: 'Project', title: 'Choose Riven integration shape', effort: 'S', parallel: 'No', dependency: 'Animation-polish and isolated Riven evidence accepted', owner: 'Product/integration owner · no default-file changes before the choice', evidence: 'Explicitly choose separate playable scene, Lower Court expansion/replacement, or retained static route reference; then define the matching controller, launch, smoke, and evidence scope', description: 'Deferred while the player visual milestone runs; no Riven role has been selected. Each integration shape changes the game structure and verification boundary.' }
+      ];
+
+      let selectedId = 'vigil-authored-motion';
+      const lanesRoot = root.querySelector('#gpb-lanes');
+      const detail = root.querySelector('#gpb-detail');
+      const filter = root.querySelector('#gpb-area-filter');
+      const live = root.querySelector('#gpb-live');
+
+      function renderBoard() {
+        const area = filter.value;
+        const visible = tasks.filter(task => area === 'all' || task.area === area);
+        if (!visible.some(task => task.id === selectedId)) {
+          const preferred = visible.find(task => task.lane === 'now') || visible[0];
+          selectedId = preferred ? preferred.id : '';
+        }
+        lanesRoot.innerHTML = '';
+
+        lanes.forEach(lane => {
+          const laneTasks = visible.filter(task => task.lane === lane.id);
+          const section = document.createElement('section');
+          section.className = 'gpb-lane';
+          section.innerHTML = '<div class="gpb-lane-head"><span>' + lane.label + '</span><span class="gpb-count">' + laneTasks.length + '</span></div><div class="gpb-stack"></div>';
+          const stack = section.querySelector('.gpb-stack');
+
+          if (!laneTasks.length) {
+            const empty = document.createElement('div');
+            empty.className = 'gpb-empty';
+            empty.textContent = 'No tasks in this area';
+            stack.appendChild(empty);
+          }
+
+          laneTasks.forEach(task => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'gpb-task';
+            button.style.setProperty('--task-color', lane.color);
+            button.setAttribute('aria-pressed', task.id === selectedId ? 'true' : 'false');
+            button.innerHTML = '<div class="gpb-task-category">' + task.area + '</div><div class="gpb-task-title">' + task.title + '</div><div class="gpb-task-foot"><span>Effort ' + task.effort + '</span><span>Parallel ' + task.parallel + '</span></div>';
+            button.addEventListener('click', function () {
+              selectedId = task.id;
+              renderBoard();
+              renderDetail();
+            });
+            stack.appendChild(button);
+          });
+
+          lanesRoot.appendChild(section);
+        });
+      }
+
+      function renderDetail() {
+        const task = tasks.find(item => item.id === selectedId);
+        if (!task) {
+          detail.innerHTML = '<div class="gpb-meta">No matching tasks</div><h3>Nothing in this area</h3><p>Choose another area to inspect its current work, dependencies, ownership boundary, and completion evidence.</p>';
+          return;
+        }
+        const lane = lanes.find(item => item.id === task.lane);
+        detail.innerHTML = '<div class="gpb-meta" style="color:' + lane.color + '">' + lane.label + ' · ' + task.area + '</div>' +
+          '<h3>' + task.title + '</h3>' +
+          '<p>' + task.description + '</p>' +
+          '<div class="gpb-detail-grid"><div><div class="gpb-label">Effort</div><div class="gpb-value">' + task.effort + '</div></div><div><div class="gpb-label">Parallel-safe</div><div class="gpb-value">' + task.parallel + '</div></div></div>' +
+          '<div class="gpb-detail-grid"><div><div class="gpb-label">Dependency</div><div class="gpb-value">' + task.dependency + '</div></div><div><div class="gpb-label">Area</div><div class="gpb-value">' + task.area + '</div></div></div>' +
+          '<div class="gpb-evidence"><div class="gpb-label">Owner / file boundary</div><div class="gpb-value">' + task.owner + '</div></div>' +
+          '<div class="gpb-evidence"><div class="gpb-label">Completion evidence</div><div class="gpb-value">' + task.evidence + '</div></div>' +
+          '<button type="button" class="gpb-discuss">Discuss this task</button>';
+
+        detail.querySelector('.gpb-discuss').addEventListener('click', async function () {
+          const prompt = 'Review the upcoming Gloam project task “' + task.title + '”. Explain its dependency, proposed scope, effort, parallelization boundary, and completion evidence. Help me decide whether to reprioritize or start it.';
+          if (window.openai && typeof window.openai.sendFollowUpMessage === 'function') {
+            await window.openai.sendFollowUpMessage({ prompt: prompt, title: 'Discuss ' + task.title });
+          } else {
+            live.textContent = 'Use the conversation to discuss ' + task.title + '.';
+          }
+        });
+      }
+
+      root.querySelectorAll('.gpb-tab').forEach(tab => {
+        tab.addEventListener('click', function () {
+          const target = tab.getAttribute('data-panel');
+          root.querySelectorAll('.gpb-tab').forEach(item => item.setAttribute('aria-selected', item === tab ? 'true' : 'false'));
+          root.querySelectorAll('[data-view]').forEach(panel => { panel.hidden = panel.getAttribute('data-view') !== target; });
+        });
+      });
+
+      filter.addEventListener('change', function () {
+        renderBoard();
+        renderDetail();
+        live.textContent = filter.value === 'all' ? 'Showing all project areas.' : 'Showing ' + filter.value + ' tasks.';
+      });
+
+      renderBoard();
+      renderDetail();
+      if (window.lucide && typeof window.lucide.createIcons === 'function') window.lucide.createIcons({ attrs: { width: 18, height: 18 } });
+    })();
+  </script>
+</div>

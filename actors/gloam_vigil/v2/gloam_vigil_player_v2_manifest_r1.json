@@ -1,0 +1,37 @@
+{
+  "asset_id": "gloam_vigil_v2",
+  "asset_version": 2,
+  "blend_path": "actors/gloam_vigil/v2/source/gloam_vigil_player_v2.blend",
+  "bone_vertex_count_min": 49,
+  "bone_weight_total_min": 47.528564,
+  "bones": 74,
+  "bottom_contact_vertices": 308,
+  "bounds_m": [
+    0.965635,
+    0.665976,
+    2.148551
+  ],
+  "glb_path": "actors/gloam_vigil/v2/gloam_vigil_player_v2.glb",
+  "glb_sha256": "3c15037c2b6a51fabfe71627cfb3eda64de24d2ad160f6be37c3681b73eefd17",
+  "legacy_bones": 20,
+  "material_surface_slots": 8,
+  "max_influences": 4,
+  "maximum_z_m": 2.16,
+  "mesh_nodes": [
+    "GV2_Body",
+    "GV2_Face",
+    "GV2_Cape"
+  ],
+  "minimum_z_m": 0.011449,
+  "morph_targets": [
+    "blink.L",
+    "blink.R",
+    "brow_inner_raise",
+    "jaw_clench"
+  ],
+  "rig_contract": "gloam-vigil-v2-rig-1",
+  "triangles": 87684,
+  "unique_materials": 5,
+  "vertices": 43936,
+  "weighted_bones": 74
+}

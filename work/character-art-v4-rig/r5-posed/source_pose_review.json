@@ -1,0 +1,406 @@
+{
+  "glb_sha256": "d4ae722cd39d1d2897f1d177b10f2410ce264c540839bb686a38b6ddc70c9b00",
+  "meshes": [
+    "GV2_Body",
+    "GV2_Cape",
+    "GV2_Face"
+  ],
+  "revision": "r5",
+  "samples": {
+    "crouch": {
+      "edge_evidence": {
+        "GV2_Body": {
+          "edges": 71064,
+          "edges_over_ratio_6": 0,
+          "tether_edges": 0,
+          "worst_ratio": {
+            "after_m": 0.0340855216661442,
+            "before_m": 0.014718029369725395,
+            "indices": [
+              5351,
+              6086
+            ],
+            "ratio": 2.315902544416526
+          },
+          "worst_stretched_length": {
+            "after_m": 0.06471800061382939,
+            "before_m": 0.04537041139972209,
+            "indices": [
+              1046,
+              14209
+            ],
+            "ratio": 1.4264362745942791
+          }
+        },
+        "GV2_Cape": {
+          "edges": 6288,
+          "edges_over_ratio_6": 0,
+          "tether_edges": 0,
+          "worst_ratio": {
+            "after_m": 0.004000173647825909,
+            "before_m": 0.004000008180394437,
+            "indices": [
+              1512,
+              2037
+            ],
+            "ratio": 1.000041366773269
+          },
+          "worst_stretched_length": null
+        },
+        "GV2_Face": {
+          "edges": 50653,
+          "edges_over_ratio_6": 0,
+          "tether_edges": 0,
+          "worst_ratio": {
+            "after_m": 0.007962280805950791,
+            "before_m": 0.003969653838650218,
+            "indices": [
+              4653,
+              3221
+            ],
+            "ratio": 2.005787186889365
+          },
+          "worst_stretched_length": {
+            "after_m": 0.014680093470305714,
+            "before_m": 0.008107262938482473,
+            "indices": [
+              8747,
+              1528
+            ],
+            "ratio": 1.8107336078399785
+          }
+        }
+      },
+      "floor_z": 0.0,
+      "full_image": "work/character-art-v4-rig/r5-posed/r5-crouch-threequarter.png",
+      "mesh_bounds": {
+        "GV2_Body": [
+          [
+            -0.45014676451683044,
+            -0.5468860864639282,
+            0.4969802796840668
+          ],
+          [
+            0.4464128911495209,
+            0.3946163058280945,
+            1.692765712738037
+          ]
+        ],
+        "GV2_Cape": [
+          [
+            -0.377000093460083,
+            -0.37036359310150146,
+            1.3994953632354736
+          ],
+          [
+            0.37699994444847107,
+            0.8305883407592773,
+            1.7035099267959595
+          ]
+        ],
+        "GV2_Face": [
+          [
+            -0.13041695952415466,
+            -0.7366006374359131,
+            1.5525131225585938
+          ],
+          [
+            0.13059885799884796,
+            -0.42123186588287354,
+            1.9242942333221436
+          ]
+        ]
+      },
+      "neck_image": "work/character-art-v4-rig/r5-posed/r5-crouch-neck-close.png",
+      "neck_review_bounds": [
+        [
+          -0.27810123562812805,
+          -0.6954545974731445,
+          1.5139728784561157
+        ],
+        [
+          0.27803802490234375,
+          -0.2981957197189331,
+          1.720768928527832
+        ]
+      ],
+      "pose": {
+        "finger_curl": 0.42,
+        "progress": 1.0,
+        "state": "crouch"
+      },
+      "world_bounds": [
+        [
+          -0.45014676451683044,
+          -0.7366006374359131,
+          0.4969802796840668
+        ],
+        [
+          0.4464128911495209,
+          0.8305883407592773,
+          1.9242942333221436
+        ]
+      ]
+    },
+    "grapple": {
+      "edge_evidence": {
+        "GV2_Body": {
+          "edges": 71064,
+          "edges_over_ratio_6": 0,
+          "tether_edges": 0,
+          "worst_ratio": {
+            "after_m": 0.02215556350778948,
+            "before_m": 0.00825263173835524,
+            "indices": [
+              6864,
+              5809
+            ],
+            "ratio": 2.6846664446225628
+          },
+          "worst_stretched_length": {
+            "after_m": 0.16794577950224437,
+            "before_m": 0.09439157005627019,
+            "indices": [
+              23635,
+              23634
+            ],
+            "ratio": 1.7792455343430127
+          }
+        },
+        "GV2_Cape": {
+          "edges": 6288,
+          "edges_over_ratio_6": 0,
+          "tether_edges": 0,
+          "worst_ratio": {
+            "after_m": 0.004000071823070824,
+            "before_m": 0.004000008180394437,
+            "indices": [
+              42,
+              567
+            ],
+            "ratio": 1.000015910636558
+          },
+          "worst_stretched_length": null
+        },
+        "GV2_Face": {
+          "edges": 50653,
+          "edges_over_ratio_6": 0,
+          "tether_edges": 0,
+          "worst_ratio": {
+            "after_m": 0.003516822821423129,
+            "before_m": 0.0033295501718795992,
+            "indices": [
+              9436,
+              13785
+            ],
+            "ratio": 1.0562456307537214
+          },
+          "worst_stretched_length": null
+        }
+      },
+      "floor_z": -0.01479258481413126,
+      "full_image": "work/character-art-v4-rig/r5-posed/r5-grapple-threequarter.png",
+      "mesh_bounds": {
+        "GV2_Body": [
+          [
+            -0.3413620591163635,
+            -0.5764628648757935,
+            -0.0067925844341516495
+          ],
+          [
+            0.6488613486289978,
+            0.2439751774072647,
+            2.415648937225342
+          ]
+        ],
+        "GV2_Cape": [
+          [
+            -0.4846514165401459,
+            0.1606048047542572,
+            0.4533051550388336
+          ],
+          [
+            0.27055099606513977,
+            0.27236196398735046,
+            1.7454204559326172
+          ]
+        ],
+        "GV2_Face": [
+          [
+            -0.06086193025112152,
+            -0.04560568928718567,
+            1.7803163528442383
+          ],
+          [
+            0.20843538641929626,
+            0.24365919828414917,
+            2.144331455230713
+          ]
+        ]
+      },
+      "neck_image": "work/character-art-v4-rig/r5-posed/r5-grapple-neck-close.png",
+      "neck_review_bounds": [
+        [
+          -0.21171718835830688,
+          -0.04017135500907898,
+          1.6296675205230713
+        ],
+        [
+          0.3371807634830475,
+          0.2672773599624634,
+          1.9297988414764404
+        ]
+      ],
+      "pose": {
+        "finger_curl": 0.7407104729925676,
+        "progress": 0.5172413793103449,
+        "state": "grapple"
+      },
+      "world_bounds": [
+        [
+          -0.4846514165401459,
+          -0.5764628648757935,
+          -0.0067925844341516495
+        ],
+        [
+          0.6488613486289978,
+          0.27236196398735046,
+          2.415648937225342
+        ]
+      ]
+    },
+    "strike": {
+      "edge_evidence": {
+        "GV2_Body": {
+          "edges": 71064,
+          "edges_over_ratio_6": 0,
+          "tether_edges": 0,
+          "worst_ratio": {
+            "after_m": 0.022165343597473824,
+            "before_m": 0.007105353166413168,
+            "indices": [
+              1465,
+              14898
+            ],
+            "ratio": 3.119527358928317
+          },
+          "worst_stretched_length": {
+            "after_m": 0.053826479153695726,
+            "before_m": 0.03904819282394778,
+            "indices": [
+              9916,
+              8158
+            ],
+            "ratio": 1.3784627472102782
+          }
+        },
+        "GV2_Cape": {
+          "edges": 6288,
+          "edges_over_ratio_6": 0,
+          "tether_edges": 0,
+          "worst_ratio": {
+            "after_m": 0.0040000333494638355,
+            "before_m": 0.003999948608169695,
+            "indices": [
+              1322,
+              1847
+            ],
+            "ratio": 1.0000211855957268
+          },
+          "worst_stretched_length": null
+        },
+        "GV2_Face": {
+          "edges": 50653,
+          "edges_over_ratio_6": 0,
+          "tether_edges": 0,
+          "worst_ratio": {
+            "after_m": 0.009788604753298055,
+            "before_m": 0.007939991122292453,
+            "indices": [
+              9247,
+              14299
+            ],
+            "ratio": 1.2328231357608705
+          },
+          "worst_stretched_length": null
+        }
+      },
+      "floor_z": -0.024142201989889145,
+      "full_image": "work/character-art-v4-rig/r5-posed/r5-strike-threequarter.png",
+      "mesh_bounds": {
+        "GV2_Body": [
+          [
+            -0.584021806716919,
+            -0.8244951367378235,
+            -0.01614220254123211
+          ],
+          [
+            0.6386199593544006,
+            0.18018196523189545,
+            1.84068763256073
+          ]
+        ],
+        "GV2_Cape": [
+          [
+            -0.6102135181427002,
+            0.04050356149673462,
+            0.544762134552002
+          ],
+          [
+            0.38551872968673706,
+            0.5190662145614624,
+            1.8210307359695435
+          ]
+        ],
+        "GV2_Face": [
+          [
+            0.08209201693534851,
+            -0.2708808183670044,
+            1.7506005764007568
+          ],
+          [
+            0.3671391010284424,
+            0.014214619994163513,
+            2.1169180870056152
+          ]
+        ]
+      },
+      "neck_image": "work/character-art-v4-rig/r5-posed/r5-strike-neck-close.png",
+      "neck_review_bounds": [
+        [
+          -0.07488928735256195,
+          -0.2548035979270935,
+          1.6090545654296875
+        ],
+        [
+          0.4427732825279236,
+          0.11870986223220825,
+          1.9037411212921143
+        ]
+      ],
+      "pose": {
+        "finger_curl": 1.02,
+        "progress": 0.4482758620689655,
+        "state": "strike"
+      },
+      "world_bounds": [
+        [
+          -0.6102135181427002,
+          -0.8244951367378235,
+          -0.01614220254123211
+        ],
+        [
+          0.6386199593544006,
+          0.5190662145614624,
+          2.1169180870056152
+        ]
+      ]
+    }
+  },
+  "scope": "Background Blender source poses only; not Godot runtime acceptance.",
+  "skinning": "linear blend; Blender preserve-volume disabled on all three skinned meshes",
+  "source": "actors/gloam_vigil/v4/source/gloam_vigil_player_v4.blend",
+  "source_sha256_after": "b7eb3ebcc28271770a80a792767ae6aed7f678211175ce99fd66b95fea12123f",
+  "source_sha256_before": "b7eb3ebcc28271770a80a792767ae6aed7f678211175ce99fd66b95fea12123f",
+  "status": "SOURCE_RENDER_DIAGNOSTIC_COMPLETE_REQUIRES_PIXEL_REVIEW"
+}

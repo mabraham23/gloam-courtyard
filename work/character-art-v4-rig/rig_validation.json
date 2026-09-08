@@ -1,0 +1,1361 @@
+{
+  "body_face_cut_ring_separation": {
+    "crouch": {
+      "comparison": "body ring versus coincident virtual face vertex weighted neck=1",
+      "maximum_separation_m": 1.3328003749250113e-07,
+      "mean_separation_m": 7.6711959116597e-08,
+      "pose": {
+        "finger_curl": 0.42,
+        "progress": 1.0,
+        "state": "crouch"
+      },
+      "vertices": 142,
+      "weights": {
+        "neck": 1.0
+      },
+      "worst_index": 17921
+    },
+    "grapple": {
+      "comparison": "body ring versus coincident virtual face vertex weighted neck=1",
+      "maximum_separation_m": 1.309692549053352e-07,
+      "mean_separation_m": 6.353466759142494e-08,
+      "pose": {
+        "finger_curl": 0.7407104729925676,
+        "progress": 0.5172413793103449,
+        "state": "grapple"
+      },
+      "vertices": 142,
+      "weights": {
+        "neck": 1.0
+      },
+      "worst_index": 17801
+    },
+    "strike": {
+      "comparison": "body ring versus coincident virtual face vertex weighted neck=1",
+      "maximum_separation_m": 1.2457462107543622e-07,
+      "mean_separation_m": 4.59949636440667e-08,
+      "pose": {
+        "finger_curl": 1.02,
+        "progress": 0.4482758620689655,
+        "state": "strike"
+      },
+      "vertices": 142,
+      "weights": {
+        "neck": 1.0
+      },
+      "worst_index": 17898
+    }
+  },
+  "bone_count": 74,
+  "full_body_action_edges": {
+    "crouch": {
+      "edges_checked": 35901,
+      "pose": {
+        "finger_curl": 0.42,
+        "progress": 1.0,
+        "state": "crouch"
+      },
+      "worst_cross_family": {
+        "after_m": 0.03847895309580003,
+        "before_m": 0.037140963683124535,
+        "families": [
+          [
+            "core",
+            "leg.L"
+          ],
+          [
+            "core",
+            "leg.R"
+          ]
+        ],
+        "indices": [
+          3410,
+          9003
+        ],
+        "positions": [
+          [
+            0.012435,
+            0.011839,
+            0.992554
+          ],
+          [
+            -0.012572,
+            -0.015028,
+            0.986875
+          ]
+        ],
+        "ratio": 1.0360246283346555,
+        "weights": [
+          {
+            "pelvis": 0.935441,
+            "thigh.L": 0.064559
+          },
+          {
+            "pelvis": 0.893252,
+            "thigh.R": 0.106748
+          }
+        ]
+      },
+      "worst_ratio": {
+        "after_m": 0.020532754351003314,
+        "before_m": 0.010021384428880663,
+        "families": [
+          [
+            "leg.L"
+          ],
+          [
+            "leg.L"
+          ]
+        ],
+        "indices": [
+          917,
+          7392
+        ],
+        "positions": [
+          [
+            -0.263355,
+            0.067348,
+            0.264411
+          ],
+          [
+            -0.263435,
+            0.077357,
+            0.263921
+          ]
+        ],
+        "ratio": 2.0488939923140657,
+        "weights": [
+          {
+            "foot.L": 0.312647,
+            "shin_twist.L": 0.687353
+          },
+          {
+            "foot.L": 0.431835,
+            "shin_twist.L": 0.568165
+          }
+        ]
+      },
+      "worst_stretched_length": {
+        "after_m": 0.0417931807844838,
+        "before_m": 0.023192345328812997,
+        "families": [
+          [
+            "leg.L"
+          ],
+          [
+            "leg.L"
+          ]
+        ],
+        "indices": [
+          10914,
+          825
+        ],
+        "positions": [
+          [
+            -0.137333,
+            -0.08212,
+            0.65802
+          ],
+          [
+            -0.133628,
+            -0.088128,
+            0.680112
+          ]
+        ],
+        "ratio": 1.8020247711887103,
+        "weights": [
+          {
+            "shin.L": 0.195046,
+            "thigh_twist.L": 0.804954
+          },
+          {
+            "shin.L": 0.085438,
+            "thigh_twist.L": 0.914562
+          }
+        ]
+      }
+    },
+    "evade": {
+      "edges_checked": 35901,
+      "pose": {
+        "finger_curl": 0.88,
+        "progress": 0.4482758620689655,
+        "state": "evade"
+      },
+      "worst_cross_family": {
+        "after_m": 0.03776275239426325,
+        "before_m": 0.03667905373306346,
+        "families": [
+          [
+            "core",
+            "leg.R"
+          ],
+          [
+            "core",
+            "leg.L"
+          ]
+        ],
+        "indices": [
+          3399,
+          11891
+        ],
+        "positions": [
+          [
+            -0.011303,
+            0.065731,
+            1.009905
+          ],
+          [
+            0.012002,
+            0.039598,
+            0.998984
+          ]
+        ],
+        "ratio": 1.0295454367249097,
+        "weights": [
+          {
+            "pelvis": 0.998655,
+            "thigh.R": 0.001345
+          },
+          {
+            "pelvis": 0.974343,
+            "thigh.L": 0.025657
+          }
+        ]
+      },
+      "worst_ratio": {
+        "after_m": 0.018577566651101236,
+        "before_m": 0.0075377590204135075,
+        "families": [
+          [
+            "arm.L"
+          ],
+          [
+            "arm.L"
+          ]
+        ],
+        "indices": [
+          7808,
+          1559
+        ],
+        "positions": [
+          [
+            -0.42463,
+            -0.199104,
+            0.91678
+          ],
+          [
+            -0.424764,
+            -0.196072,
+            0.923679
+          ]
+        ],
+        "ratio": 2.464600765398587,
+        "weights": [
+          {
+            "hand.L": 0.112647,
+            "middle.01.L": 0.030163,
+            "middle.02.L": 0.32675,
+            "middle.03.L": 0.53044
+          },
+          {
+            "hand.L": 0.217129,
+            "middle.01.L": 0.035445,
+            "middle.02.L": 0.346381,
+            "middle.03.L": 0.401045
+          }
+        ]
+      },
+      "worst_stretched_length": {
+        "after_m": 0.035803614542959494,
+        "before_m": 0.023192345328812997,
+        "families": [
+          [
+            "leg.L"
+          ],
+          [
+            "leg.L"
+          ]
+        ],
+        "indices": [
+          10914,
+          825
+        ],
+        "positions": [
+          [
+            -0.137333,
+            -0.08212,
+            0.65802
+          ],
+          [
+            -0.133628,
+            -0.088128,
+            0.680112
+          ]
+        ],
+        "ratio": 1.5437686027587254,
+        "weights": [
+          {
+            "shin.L": 0.195046,
+            "thigh_twist.L": 0.804954
+          },
+          {
+            "shin.L": 0.085438,
+            "thigh_twist.L": 0.914562
+          }
+        ]
+      }
+    },
+    "grapple": {
+      "edges_checked": 35901,
+      "pose": {
+        "finger_curl": 0.7407104729925676,
+        "progress": 0.5172413793103449,
+        "state": "grapple"
+      },
+      "worst_cross_family": {
+        "after_m": 0.03714095985080803,
+        "before_m": 0.037140963683124535,
+        "families": [
+          [
+            "core",
+            "leg.L"
+          ],
+          [
+            "core",
+            "leg.R"
+          ]
+        ],
+        "indices": [
+          3410,
+          9003
+        ],
+        "positions": [
+          [
+            0.012435,
+            0.011839,
+            0.992554
+          ],
+          [
+            -0.012572,
+            -0.015028,
+            0.986875
+          ]
+        ],
+        "ratio": 0.9999998968169879,
+        "weights": [
+          {
+            "pelvis": 0.935441,
+            "thigh.L": 0.064559
+          },
+          {
+            "pelvis": 0.893252,
+            "thigh.R": 0.106748
+          }
+        ]
+      },
+      "worst_ratio": {
+        "after_m": 0.031036475521146103,
+        "before_m": 0.01237489975775641,
+        "families": [
+          [
+            "arm.R"
+          ],
+          [
+            "arm.R",
+            "core"
+          ]
+        ],
+        "indices": [
+          12784,
+          4164
+        ],
+        "positions": [
+          [
+            0.317327,
+            -0.036443,
+            1.157237
+          ],
+          [
+            0.310182,
+            -0.031951,
+            1.166288
+          ]
+        ],
+        "ratio": 2.5080183378207073,
+        "weights": [
+          {
+            "forearm_twist.R": 0.900561,
+            "hand.R": 0.099,
+            "thumb.01.R": 0.000287,
+            "thumb.02.R": 0.000152
+          },
+          {
+            "forearm.R": 0.860241,
+            "forearm_twist.R": 0.120213,
+            "pelvis": 0.011989,
+            "spine": 0.007557
+          }
+        ]
+      },
+      "worst_stretched_length": {
+        "after_m": 0.031036475521146103,
+        "before_m": 0.01237489975775641,
+        "families": [
+          [
+            "arm.R"
+          ],
+          [
+            "arm.R",
+            "core"
+          ]
+        ],
+        "indices": [
+          12784,
+          4164
+        ],
+        "positions": [
+          [
+            0.317327,
+            -0.036443,
+            1.157237
+          ],
+          [
+            0.310182,
+            -0.031951,
+            1.166288
+          ]
+        ],
+        "ratio": 2.5080183378207073,
+        "weights": [
+          {
+            "forearm_twist.R": 0.900561,
+            "hand.R": 0.099,
+            "thumb.01.R": 0.000287,
+            "thumb.02.R": 0.000152
+          },
+          {
+            "forearm.R": 0.860241,
+            "forearm_twist.R": 0.120213,
+            "pelvis": 0.011989,
+            "spine": 0.007557
+          }
+        ]
+      }
+    },
+    "strike": {
+      "edges_checked": 35901,
+      "pose": {
+        "finger_curl": 1.02,
+        "progress": 0.4482758620689655,
+        "state": "strike"
+      },
+      "worst_cross_family": {
+        "after_m": 0.03714095096179122,
+        "before_m": 0.037140963683124535,
+        "families": [
+          [
+            "core",
+            "leg.L"
+          ],
+          [
+            "core",
+            "leg.R"
+          ]
+        ],
+        "indices": [
+          3410,
+          9003
+        ],
+        "positions": [
+          [
+            0.012435,
+            0.011839,
+            0.992554
+          ],
+          [
+            -0.012572,
+            -0.015028,
+            0.986875
+          ]
+        ],
+        "ratio": 0.999999657485104,
+        "weights": [
+          {
+            "pelvis": 0.935441,
+            "thigh.L": 0.064559
+          },
+          {
+            "pelvis": 0.893252,
+            "thigh.R": 0.106748
+          }
+        ]
+      },
+      "worst_ratio": {
+        "after_m": 0.019445277639624108,
+        "before_m": 0.0075377590204135075,
+        "families": [
+          [
+            "arm.L"
+          ],
+          [
+            "arm.L"
+          ]
+        ],
+        "indices": [
+          7808,
+          1559
+        ],
+        "positions": [
+          [
+            -0.42463,
+            -0.199104,
+            0.91678
+          ],
+          [
+            -0.424764,
+            -0.196072,
+            0.923679
+          ]
+        ],
+        "ratio": 2.579716012008749,
+        "weights": [
+          {
+            "hand.L": 0.112647,
+            "middle.01.L": 0.030163,
+            "middle.02.L": 0.32675,
+            "middle.03.L": 0.53044
+          },
+          {
+            "hand.L": 0.217129,
+            "middle.01.L": 0.035445,
+            "middle.02.L": 0.346381,
+            "middle.03.L": 0.401045
+          }
+        ]
+      },
+      "worst_stretched_length": {
+        "after_m": 0.03143745180804599,
+        "before_m": 0.023231588717410132,
+        "families": [
+          [
+            "arm.R",
+            "core"
+          ],
+          [
+            "arm.R",
+            "core"
+          ]
+        ],
+        "indices": [
+          2958,
+          8935
+        ],
+        "positions": [
+          [
+            0.202803,
+            0.089453,
+            1.486995
+          ],
+          [
+            0.185957,
+            0.10521,
+            1.489758
+          ]
+        ],
+        "ratio": 1.3532200569858681,
+        "weights": [
+          {
+            "chest": 0.042898,
+            "clavicle.R": 0.025298,
+            "spine_upper": 0.591312,
+            "upper_arm.R": 0.340492
+          },
+          {
+            "chest": 0.054206,
+            "clavicle.R": 0.031288,
+            "spine_upper": 0.613393,
+            "upper_arm.R": 0.301113
+          }
+        ]
+      }
+    },
+    "walk_left_contact": {
+      "edges_checked": 35901,
+      "pose": {
+        "finger_curl": 0.24,
+        "progress": 0.0,
+        "state": "walk_left_contact"
+      },
+      "worst_cross_family": {
+        "after_m": 0.04052630379718466,
+        "before_m": 0.037140963683124535,
+        "families": [
+          [
+            "core",
+            "leg.L"
+          ],
+          [
+            "core",
+            "leg.R"
+          ]
+        ],
+        "indices": [
+          3410,
+          9003
+        ],
+        "positions": [
+          [
+            0.012435,
+            0.011839,
+            0.992554
+          ],
+          [
+            -0.012572,
+            -0.015028,
+            0.986875
+          ]
+        ],
+        "ratio": 1.0911484188440241,
+        "weights": [
+          {
+            "pelvis": 0.935441,
+            "thigh.L": 0.064559
+          },
+          {
+            "pelvis": 0.893252,
+            "thigh.R": 0.106748
+          }
+        ]
+      },
+      "worst_ratio": {
+        "after_m": 0.005419389113214973,
+        "before_m": 0.002112277212472426,
+        "families": [
+          [
+            "core",
+            "leg.R"
+          ],
+          [
+            "core",
+            "leg.L"
+          ]
+        ],
+        "indices": [
+          8711,
+          14104
+        ],
+        "positions": [
+          [
+            -0.001822,
+            -0.06082,
+            1.010959
+          ],
+          [
+            -0.001429,
+            -0.060629,
+            1.008892
+          ]
+        ],
+        "ratio": 2.5656618748784226,
+        "weights": [
+          {
+            "pelvis": 0.937488,
+            "thigh.R": 0.062512
+          },
+          {
+            "pelvis": 0.935226,
+            "thigh.L": 0.064774
+          }
+        ]
+      },
+      "worst_stretched_length": {
+        "after_m": 0.014513607975882145,
+        "before_m": 0.01007164515733347,
+        "families": [
+          [
+            "arm.R",
+            "core"
+          ],
+          [
+            "arm.L",
+            "core"
+          ]
+        ],
+        "indices": [
+          3425,
+          5931
+        ],
+        "positions": [
+          [
+            -8e-06,
+            -0.196948,
+            1.580205
+          ],
+          [
+            -9e-05,
+            -0.196924,
+            1.590276
+          ]
+        ],
+        "ratio": 1.441036469132786,
+        "weights": [
+          {
+            "chest": 0.744397,
+            "clavicle.R": 0.028922,
+            "spine_upper": 0.19447,
+            "upper_arm.R": 0.032211
+          },
+          {
+            "chest": 0.813243,
+            "clavicle.L": 0.027299,
+            "spine_upper": 0.130511,
+            "upper_arm.L": 0.028947
+          }
+        ]
+      }
+    },
+    "walk_right_contact": {
+      "edges_checked": 35901,
+      "pose": {
+        "finger_curl": 0.24,
+        "progress": 0.5,
+        "state": "walk_right_contact"
+      },
+      "worst_cross_family": {
+        "after_m": 0.037147210347640514,
+        "before_m": 0.03667905373306346,
+        "families": [
+          [
+            "core",
+            "leg.R"
+          ],
+          [
+            "core",
+            "leg.L"
+          ]
+        ],
+        "indices": [
+          3399,
+          11891
+        ],
+        "positions": [
+          [
+            -0.011303,
+            0.065731,
+            1.009905
+          ],
+          [
+            0.012002,
+            0.039598,
+            0.998984
+          ]
+        ],
+        "ratio": 1.012763595756426,
+        "weights": [
+          {
+            "pelvis": 0.998655,
+            "thigh.R": 0.001345
+          },
+          {
+            "pelvis": 0.974343,
+            "thigh.L": 0.025657
+          }
+        ]
+      },
+      "worst_ratio": {
+        "after_m": 0.015424215327050671,
+        "before_m": 0.009923218102990726,
+        "families": [
+          [
+            "arm.R",
+            "core"
+          ],
+          [
+            "arm.L",
+            "core"
+          ]
+        ],
+        "indices": [
+          3425,
+          11578
+        ],
+        "positions": [
+          [
+            -8e-06,
+            -0.196948,
+            1.580205
+          ],
+          [
+            1.9e-05,
+            -0.194304,
+            1.57064
+          ]
+        ],
+        "ratio": 1.5543561742739502,
+        "weights": [
+          {
+            "chest": 0.744397,
+            "clavicle.R": 0.028922,
+            "spine_upper": 0.19447,
+            "upper_arm.R": 0.032211
+          },
+          {
+            "chest": 0.671291,
+            "clavicle.L": 0.03073,
+            "spine_upper": 0.261866,
+            "upper_arm.L": 0.036114
+          }
+        ]
+      },
+      "worst_stretched_length": {
+        "after_m": 0.015424215327050671,
+        "before_m": 0.009923218102990726,
+        "families": [
+          [
+            "arm.R",
+            "core"
+          ],
+          [
+            "arm.L",
+            "core"
+          ]
+        ],
+        "indices": [
+          3425,
+          11578
+        ],
+        "positions": [
+          [
+            -8e-06,
+            -0.196948,
+            1.580205
+          ],
+          [
+            1.9e-05,
+            -0.194304,
+            1.57064
+          ]
+        ],
+        "ratio": 1.5543561742739502,
+        "weights": [
+          {
+            "chest": 0.744397,
+            "clavicle.R": 0.028922,
+            "spine_upper": 0.19447,
+            "upper_arm.R": 0.032211
+          },
+          {
+            "chest": 0.671291,
+            "clavicle.L": 0.03073,
+            "spine_upper": 0.261866,
+            "upper_arm.L": 0.036114
+          }
+        ]
+      }
+    }
+  },
+  "grapple_hand_edge_after_fix": {
+    "after_m": 0.019788831088177528,
+    "before_m": 0.0075377590204135075,
+    "hand_semantics": [
+      {
+        "finger": "middle",
+        "finger_amount": 0.8873532362867464,
+        "side": "L",
+        "wrist_amount": 0.0
+      },
+      {
+        "finger": "middle",
+        "finger_amount": 0.7828708110555731,
+        "side": "L",
+        "wrist_amount": 0.0
+      }
+    ],
+    "indices": [
+      7808,
+      1559
+    ],
+    "positions": [
+      [
+        -0.42463,
+        -0.199104,
+        0.91678
+      ],
+      [
+        -0.424764,
+        -0.196072,
+        0.923679
+      ]
+    ],
+    "ratio": 2.625293676089415,
+    "weights": [
+      {
+        "hand.L": 0.112647,
+        "middle.01.L": 0.030163,
+        "middle.02.L": 0.32675,
+        "middle.03.L": 0.53044
+      },
+      {
+        "hand.L": 0.217129,
+        "middle.01.L": 0.035445,
+        "middle.02.L": 0.346381,
+        "middle.03.L": 0.401045
+      }
+    ]
+  },
+  "hierarchy_mismatches": [],
+  "landmarks": {
+    "cape_anchors": {
+      "L": {
+        "body_back_y": 0.122871,
+        "mid_correction_fraction": 0.22,
+        "new_mid": [
+          -0.15,
+          0.236552,
+          1.45
+        ],
+        "new_root": [
+          -0.13,
+          0.128871,
+          1.755
+        ],
+        "old_mid": [
+          -0.15,
+          0.25,
+          1.45
+        ],
+        "old_root": [
+          -0.13,
+          0.19,
+          1.755
+        ],
+        "root_clearance_m": 0.006
+      },
+      "R": {
+        "body_back_y": 0.124179,
+        "mid_correction_fraction": 0.22,
+        "new_mid": [
+          0.15,
+          0.236839,
+          1.45
+        ],
+        "new_root": [
+          0.13,
+          0.130179,
+          1.755
+        ],
+        "old_mid": [
+          0.15,
+          0.25,
+          1.45
+        ],
+        "old_root": [
+          0.13,
+          0.19,
+          1.755
+        ],
+        "root_clearance_m": 0.006
+      }
+    },
+    "contract_side_convention": "L=-X,R=+X",
+    "eyes": {
+      "L": {
+        "head": [
+          -0.042042,
+          -0.155697,
+          2.01846
+        ],
+        "tail": [
+          -0.042042,
+          -0.195697,
+          2.01846
+        ]
+      },
+      "R": {
+        "head": [
+          0.041995,
+          -0.155687,
+          2.01846
+        ],
+        "tail": [
+          0.041995,
+          -0.195687,
+          2.01846
+        ]
+      }
+    },
+    "limbs": {
+      "L": {
+        "ankle_bone": [
+          -0.21564,
+          0.077535,
+          0.17
+        ],
+        "ankle_surface": [
+          -0.21564,
+          0.077535,
+          0.209
+        ],
+        "elbow": [
+          -0.313445,
+          -0.000277,
+          1.365
+        ],
+        "hand_tail": [
+          -0.373703,
+          -0.125621,
+          1.031496
+        ],
+        "hip": [
+          -0.139226,
+          -0.000587,
+          1.08
+        ],
+        "knee": [
+          -0.168523,
+          0.015417,
+          0.6
+        ],
+        "shoulder": [
+          -0.29,
+          0.004232,
+          1.73
+        ],
+        "wrist": [
+          -0.359058,
+          -0.09628,
+          1.095
+        ]
+      },
+      "R": {
+        "ankle_bone": [
+          0.215434,
+          0.077536,
+          0.17
+        ],
+        "ankle_surface": [
+          0.215434,
+          0.077536,
+          0.209
+        ],
+        "elbow": [
+          0.313506,
+          -0.000142,
+          1.365
+        ],
+        "hand_tail": [
+          0.37376,
+          -0.125931,
+          1.031581
+        ],
+        "hip": [
+          0.139822,
+          -0.000518,
+          1.08
+        ],
+        "knee": [
+          0.169318,
+          0.01492,
+          0.6
+        ],
+        "shoulder": [
+          0.29,
+          0.004106,
+          1.73
+        ],
+        "wrist": [
+          0.359446,
+          -0.096279,
+          1.095
+        ]
+      }
+    },
+    "source_body_bounds_z": [
+      0.205,
+      1.825
+    ],
+    "surface_fingertips": {
+      "L": {
+        "index": [
+          -0.405946,
+          -0.242281,
+          0.918804
+        ],
+        "index_geodesic_m": [
+          0.250631
+        ],
+        "middle": [
+          -0.422475,
+          -0.196048,
+          0.878331
+        ],
+        "middle_geodesic_m": [
+          0.265784
+        ],
+        "pinky": [
+          -0.412874,
+          -0.082937,
+          0.887746
+        ],
+        "pinky_geodesic_m": [
+          0.262331
+        ],
+        "ring": [
+          -0.416968,
+          -0.150036,
+          0.874633
+        ],
+        "ring_geodesic_m": [
+          0.269537
+        ],
+        "thumb": [
+          -0.34321,
+          -0.239291,
+          1.006805
+        ],
+        "thumb_geodesic_m": [
+          0.19458
+        ]
+      },
+      "R": {
+        "index": [
+          0.405764,
+          -0.24237,
+          0.918803
+        ],
+        "index_geodesic_m": [
+          0.250346
+        ],
+        "middle": [
+          0.422654,
+          -0.196192,
+          0.878519
+        ],
+        "middle_geodesic_m": [
+          0.265646
+        ],
+        "pinky": [
+          0.411017,
+          -0.082519,
+          0.890405
+        ],
+        "pinky_geodesic_m": [
+          0.262127
+        ],
+        "ring": [
+          0.41607,
+          -0.154636,
+          0.872801
+        ],
+        "ring_geodesic_m": [
+          0.269239
+        ],
+        "thumb": [
+          0.343184,
+          -0.239258,
+          1.006988
+        ],
+        "thumb_geodesic_m": [
+          0.194993
+        ]
+      }
+    }
+  },
+  "legacy_names_present": true,
+  "maximum_pose_displacement_m": 0.21460403882235674,
+  "non_identity_local_rest_bones": 74,
+  "posed_bounds": [
+    [
+      -0.39450961351394653,
+      0.4360817074775696
+    ],
+    [
+      -0.37339961528778076,
+      0.2764899730682373
+    ],
+    [
+      0.20499998331069946,
+      1.8250001668930054
+    ]
+  ],
+  "r1_grapple_hand_edge_before_fix": {
+    "after_m": 0.18428480865773836,
+    "before_m": 0.005491712911642735,
+    "indices": [
+      6690,
+      8726
+    ],
+    "ratio": 33.556890468007595
+  },
+  "recovery_max_vertex_error_m": 2.3889104820542146e-07,
+  "renders": [],
+  "scope_note": "Blender deform sanity only; Godot runtime pose volume, floor, lintel, actions and recovery remain required.",
+  "source": "Dan Ulrich CC0 Body Male - Realistic level 1 plus frozen v4 reshape",
+  "status": "PASS",
+  "strict_skinning_mode": "linear_blend_runtime_equivalent",
+  "vertices_moved_over_1cm": 12391,
+  "weight_report": {
+    "arm_leg_contamination_vertices": 0,
+    "body_vertices": 18003,
+    "connected_hand_region_misweights": 0,
+    "connected_hand_region_vertices": {
+      "L": 3000,
+      "R": 3000
+    },
+    "geodesic_limb_blend_vertices": {
+      "arm.L": 6214,
+      "arm.R": 6237,
+      "leg.L": 706,
+      "leg.R": 719
+    },
+    "geodesic_limb_region_vertices": {
+      "arm.L": 6925,
+      "arm.R": 6946,
+      "leg.L": 1949,
+      "leg.R": 1958
+    },
+    "influence_vertex_counts": {
+      "chest": 3896,
+      "clavicle.L": 2092,
+      "clavicle.R": 2112,
+      "foot.L": 345,
+      "foot.R": 340,
+      "forearm.L": 967,
+      "forearm.R": 967,
+      "forearm_twist.L": 633,
+      "forearm_twist.R": 633,
+      "hand.L": 2452,
+      "hand.R": 2434,
+      "index.01.L": 461,
+      "index.01.R": 461,
+      "index.02.L": 461,
+      "index.02.R": 461,
+      "index.03.L": 460,
+      "index.03.R": 459,
+      "middle.01.L": 388,
+      "middle.01.R": 382,
+      "middle.02.L": 386,
+      "middle.02.R": 382,
+      "middle.03.L": 386,
+      "middle.03.R": 380,
+      "neck": 2460,
+      "pelvis": 2740,
+      "pinky.01.L": 721,
+      "pinky.01.R": 757,
+      "pinky.02.L": 717,
+      "pinky.02.R": 755,
+      "pinky.03.L": 646,
+      "pinky.03.R": 682,
+      "ring.01.L": 368,
+      "ring.01.R": 344,
+      "ring.02.L": 368,
+      "ring.02.R": 343,
+      "ring.03.L": 364,
+      "ring.03.R": 342,
+      "shin.L": 901,
+      "shin.R": 902,
+      "shin_twist.L": 807,
+      "shin_twist.R": 804,
+      "spine": 3622,
+      "spine_upper": 4196,
+      "thigh.L": 702,
+      "thigh.R": 715,
+      "thigh_twist.L": 802,
+      "thigh_twist.R": 802,
+      "thumb.01.L": 751,
+      "thumb.01.R": 749,
+      "thumb.02.L": 748,
+      "thumb.02.R": 748,
+      "thumb.03.L": 669,
+      "thumb.03.R": 668,
+      "upper_arm.L": 2761,
+      "upper_arm.R": 2780,
+      "upper_arm_twist.L": 1223,
+      "upper_arm_twist.R": 1221
+    },
+    "maximum_influences": 4,
+    "maximum_normalization_error": 4.778848960995674e-08,
+    "method": "deterministic semantic segment envelopes",
+    "side_contamination_vertices": 0,
+    "unweighted_by_body_expected_external": [
+      "ball.L",
+      "ball.R",
+      "cape.L",
+      "cape.R",
+      "cape_lower.L",
+      "cape_lower.R",
+      "cape_mid.L",
+      "cape_mid.R",
+      "cape_tip.L",
+      "cape_tip.R",
+      "eye.L",
+      "eye.R",
+      "head",
+      "jaw",
+      "root",
+      "toe.L",
+      "toe.R"
+    ],
+    "used_body_bones": [
+      "chest",
+      "clavicle.L",
+      "clavicle.R",
+      "foot.L",
+      "foot.R",
+      "forearm.L",
+      "forearm.R",
+      "forearm_twist.L",
+      "forearm_twist.R",
+      "hand.L",
+      "hand.R",
+      "index.01.L",
+      "index.01.R",
+      "index.02.L",
+      "index.02.R",
+      "index.03.L",
+      "index.03.R",
+      "middle.01.L",
+      "middle.01.R",
+      "middle.02.L",
+      "middle.02.R",
+      "middle.03.L",
+      "middle.03.R",
+      "neck",
+      "pelvis",
+      "pinky.01.L",
+      "pinky.01.R",
+      "pinky.02.L",
+      "pinky.02.R",
+      "pinky.03.L",
+      "pinky.03.R",
+      "ring.01.L",
+      "ring.01.R",
+      "ring.02.L",
+      "ring.02.R",
+      "ring.03.L",
+      "ring.03.R",
+      "shin.L",
+      "shin.R",
+      "shin_twist.L",
+      "shin_twist.R",
+      "spine",
+      "spine_upper",
+      "thigh.L",
+      "thigh.R",
+      "thigh_twist.L",
+      "thigh_twist.R",
+      "thumb.01.L",
+      "thumb.01.R",
+      "thumb.02.L",
+      "thumb.02.R",
+      "thumb.03.L",
+      "thumb.03.R",
+      "upper_arm.L",
+      "upper_arm.R",
+      "upper_arm_twist.L",
+      "upper_arm_twist.R"
+    ]
+  },
+  "zero_pose_max_vertex_error_m": 2.3889104820542146e-07
+}

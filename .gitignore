@@ -1,0 +1,34 @@
+# Godot regenerates this cache. Keep .uid and resource .import settings.
+/.godot/
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+!.env.example
+
+# Raw capture history stays local; curated evidence has its own small directory.
+/captures/*
+!/captures/.gdignore
+/work/review-runs/
+/.artifacts/
+/.review-build.json
+
+# Historical binary iterations and original download remain recoverable from
+# the preservation release. Their provenance/manifests stay in source control.
+/actors/gloam_vigil/v4/reference/
+/actors/gloam_vigil/v4/revisions/**/*.glb
+/actors/gloam_vigil/v4/revisions/**/*.blend
+/actors/gloam_vigil/v4/revisions/**/renders/
+/actors/**/renders/
+/actors/gloam_vigil/v2/*_r[0-9]*.glb
+/actors/gloam_vigil/v2/source/*_recovered.glb
+/actors/gloam_vigil/v2/source/*_r[0-9]*.blend
+/work/character-art-review/color-probe*
+/work/**/*.png
+/work/**/*.png.import
+
+# Local process outputs; accepted reports in reports/ retain their raw logs.
+*.log
+!work/**/reports/*.log

@@ -1,0 +1,52 @@
+{
+  "status": "ARM_TETHERS_FIXED_FACE_NECK_REPAIR_REQUIRED",
+  "scope": "Read-only Blender source review; not Godot runtime acceptance.",
+  "glb_sha256": "242104fcc347652f4d3e83c2da779282b9a2ff76bb4c5ffc943caf6ca09f986e",
+  "source_sha256": "b4f30bf91a41ff74170a523d8505b82a9e1709df7a67e25db093b28b61240956",
+  "pixel_review": {
+    "body_gloves_collar_cape": "No prior long upper-arm, lower-arm, glove, collar, or cape tether lines visible in grapple, strike, or crouch renders.",
+    "face_neck": "Short neck creases and collar specks correspond to two measured skin-weight discontinuities, not ordinary compression."
+  },
+  "internal_face_weight_discontinuity": {
+    "cause": "The jaw threshold branch assigns head plus jaw and excludes neck; its adjacent vertex takes the mutually exclusive head plus neck branch.",
+    "crouch_worst_ratio": {
+      "indices": [8852, 3149],
+      "rest_positions": [[0.000202, -0.125986, 1.865199], [0.000213, -0.122649, 1.864450]],
+      "weights": [{"head": 0.941148, "jaw": 0.058852}, {"head": 0.387370, "neck": 0.612630}],
+      "before_m": 0.003420,
+      "after_m": 0.038983,
+      "ratio": 11.3979
+    },
+    "crouch_worst_length": {
+      "indices": [982, 7531],
+      "rest_positions": [[-0.022833, -0.114139, 1.865039], [-0.023032, -0.111337, 1.861185]],
+      "weights": [{"head": 0.946571, "jaw": 0.053429}, {"head": 0.346557, "neck": 0.653443}],
+      "before_m": 0.004769,
+      "after_m": 0.040651,
+      "ratio": 8.5240
+    }
+  },
+  "body_face_cut_ring": {
+    "rest_geometry": {
+      "z_m": 1.825,
+      "body_vertices": 142,
+      "face_vertices": 144,
+      "nearest_pair_mean_m": 0.000006104,
+      "nearest_pair_max_m": 0.000237122
+    },
+    "cause": "The face cut ring is neck 1.0 while the lateral body cut ring includes the smooth shoulder field.",
+    "exact_pair": {
+      "face_index": 14770,
+      "body_index": 17922,
+      "rest_position": [0.117765, -0.005111, 1.825000],
+      "face_weights": {"neck": 1.0},
+      "body_weights": {"neck": 0.850930, "upper_arm.R": 0.103656, "clavicle.R": 0.045414}
+    },
+    "separation_m": {
+      "grapple": {"mean": 0.011468, "maximum": 0.020724},
+      "strike": {"mean": 0.007116, "maximum": 0.016212},
+      "crouch": {"mean": 0.001869, "maximum": 0.003233}
+    }
+  },
+  "conclusion": "The previous arm streak defect is fixed in the reviewed source poses. The remaining neck issue needs continuous head-neck-jaw weights and matched cut-ring weights; no geometry or neutral-art redesign is implicated."
+}

@@ -1,0 +1,493 @@
+^D=== R7 SOURCE AND GLB FINGERPRINTS ===
+faafa6290160bef7a5dc3aa8c4ba02d9a395e40679e124c49869f239f12dd66a  actors/gloam_vigil/v4/gloam_vigil_player_v4.glb
+40b4fca657e3ab91783ddeca2e2f02c87619f1daf89d245921397fc6f0669fdc  actors/gloam_vigil/v4/source/gloam_vigil_player_v4.blend
+faafa6290160bef7a5dc3aa8c4ba02d9a395e40679e124c49869f239f12dd66a  actors/gloam_vigil/v4/revisions/r7/gloam_vigil_player_v4.glb
+40b4fca657e3ab91783ddeca2e2f02c87619f1daf89d245921397fc6f0669fdc  actors/gloam_vigil/v4/revisions/r7/gloam_vigil_player_v4.blend
+=== R7 STATIC GLB CONTRACT ===
+GLOAM_CHARACTER_ART_GLB_CONTRACT_REPORT {"errors":[],"face_skin_vertex_colors":{"color_accessor":44,"component_type":5123,"count":15364,"dark_scalp_spatial_samples":1430,"face_node":"GV2_Face","face_node_identity_transform":true,"light_face_spatial_samples":10992,"light_face_y_band":[1.9,2.05],"luminance_max":1.0,"luminance_min":0.005879865720607309,"luminance_range":0.9941201342793927,"material":"MAT_GV2_Skin","mesh_index":2,"normalized":true,"position_accessor":40,"position_max":[0.13059885799884796,2.1599621772766113,0.21034391224384308],"position_min":[-0.13041695952415466,1.8250000476837158,-0.07153410464525223],"primitive":0,"scalp_min_y":2.065,"type":"VEC4","unique_rgb_values":272},"file_bytes":8802712,"materials_declared":5,"materials_used":5,"maximum_morph_targets_per_primitive":4,"maximum_nonzero_influences":4,"mesh_primitives":7,"meshes":3,"morph_max_abs_position_delta_by_name":{"blink.L":0.023094773292541504,"blink.R":0.02304983139038086,"brow_inner_raise":0.0074994564056396484,"jaw_clench":0.0029984861612319946},"morph_names":["blink.L","blink.R","brow_inner_raise","jaw_clench"],"morph_target_sets_across_primitives":8,"morph_targets":[{"mesh":2,"mesh_name":"female_v006lowresUV.002","primitive":0,"semantics":{"NORMAL":{"accessor":49,"component_max":[1.6196413040161133,1.504483938217163,1.1936241388320923],"component_min":[-1.5163949728012085,-1.1494816541671753,-1.7313544750213623],"count":15364,"max_abs_delta":1.7313544750213623,"nonzero_rows":3906},"POSITION":{"accessor":48,"component_max":[0.0,0.023094773292541504,0.011560335755348206],"component_min":[0.0,-0.01998138427734375,0.0],"count":15364,"max_abs_delta":0.023094773292541504,"nonzero_rows":860}},"target_index":0,"target_name":"blink.L"},{"mesh":2,"mesh_name":"female_v006lowresUV.002","primitive":0,"semantics":{"NORMAL":{"accessor":51,"component_max":[1.4243730306625366,1.4930106401443481,1.1731775999069214],"component_min":[-1.5733413696289062,-1.670267105102539,-1.7869296073913574],"count":15364,"max_abs_delta":1.7869296073913574,"nonzero_rows":3915},"POSITION":{"accessor":50,"component_max":[0.0,0.02304983139038086,0.011524796485900879],"component_min":[0.0,-0.020038604736328125,0.0],"count":15364,"max_abs_delta":0.02304983139038086,"nonzero_rows":863}},"target_index":1,"target_name":"blink.R"},{"mesh":2,"mesh_name":"female_v006lowresUV.002","primitive":0,"semantics":{"NORMAL":{"accessor":53,"component_max":[0.11040298640727997,0.21072211861610413,0.06732583045959473],"component_min":[-0.11099497973918915,-0.19371530413627625,-0.36999791860580444],"count":15364,"max_abs_delta":0.36999791860580444,"nonzero_rows":4836},"POSITION":{"accessor":52,"component_max":[0.0,0.0074994564056396484,0.0011999011039733887],"component_min":[0.0,0.0,0.0],"count":15364,"max_abs_delta":0.0074994564056396484,"nonzero_rows":1887}},"target_index":2,"target_name":"brow_inner_raise"},{"mesh":2,"mesh_name":"female_v006lowresUV.002","primitive":0,"semantics":{"NORMAL":{"accessor":55,"component_max":[0.05019506812095642,0.05950227379798889,0.03840702772140503],"component_min":[-0.050112903118133545,-0.05519366264343262,-0.041222453117370605],"count":15364,"max_abs_delta":0.05950227379798889,"nonzero_rows":7726},"POSITION":{"accessor":54,"component_max":[0.00299844890832901,0.0,0.0007995963096618652],"component_min":[-0.0029984861612319946,0.0,0.0],"count":15364,"max_abs_delta":0.0029984861612319946,"nonzero_rows":5135}},"target_index":3,"target_name":"jaw_clench"},{"mesh":2,"mesh_name":"female_v006lowresUV.002","primitive":1,"semantics":{"NORMAL":{"accessor":65,"component_max":[1.1920928955078125e-07,1.1920928955078125e-07,1.1920928955078125e-07],"component_min":[-1.1920928955078125e-07,-1.1920928955078125e-07,-1.1920928955078125e-07],"count":2403,"max_abs_delta":1.1920928955078125e-07,"nonzero_rows":490},"POSITION":{"accessor":64,"component_max":[0.0,0.0,-0.0],"component_min":[0.0,0.0,-0.0],"count":2403,"max_abs_delta":0.0,"nonzero_rows":0}},"target_index":0,"target_name":"blink.L"},{"mesh":2,"mesh_name":"female_v006lowresUV.002","primitive":1,"semantics":{"NORMAL":{"accessor":67,"component_max":[1.1920928955078125e-07,1.1920928955078125e-07,1.1920928955078125e-07],"component_min":[-1.1920928955078125e-07,-1.1920928955078125e-07,-1.1920928955078125e-07],"count":2403,"max_abs_delta":1.1920928955078125e-07,"nonzero_rows":490},"POSITION":{"accessor":66,"component_max":[0.0,0.0,-0.0],"component_min":[0.0,0.0,-0.0],"count":2403,"max_abs_delta":0.0,"nonzero_rows":0}},"target_index":1,"target_name":"blink.R"},{"mesh":2,"mesh_name":"female_v006lowresUV.002","primitive":1,"semantics":{"NORMAL":{"accessor":69,"component_max":[1.1920928955078125e-07,1.1920928955078125e-07,1.1920928955078125e-07],"component_min":[-1.1920928955078125e-07,-1.1920928955078125e-07,-1.1920928955078125e-07],"count":2403,"max_abs_delta":1.1920928955078125e-07,"nonzero_rows":490},"POSITION":{"accessor":68,"component_max":[0.0,0.0,-0.0],"component_min":[0.0,0.0,-0.0],"count":2403,"max_abs_delta":0.0,"nonzero_rows":0}},"target_index":2,"target_name":"brow_inner_raise"},{"mesh":2,"mesh_name":"female_v006lowresUV.002","primitive":1,"semantics":{"NORMAL":{"accessor":71,"component_max":[1.1920928955078125e-07,1.1920928955078125e-07,1.1920928955078125e-07],"component_min":[-1.1920928955078125e-07,-1.1920928955078125e-07,-1.1920928955078125e-07],"count":2403,"max_abs_delta":1.1920928955078125e-07,"nonzero_rows":490},"POSITION":{"accessor":70,"component_max":[0.0,0.0,-0.0],"component_min":[0.0,0.0,-0.0],"count":2403,"max_abs_delta":0.0,"nonzero_rows":0}},"target_index":3,"target_name":"jaw_clench"}],"normal_maps":[{"dimensions":[2048,2048],"image_index":0,"material_index":0,"material_name":"MAT_GV2_Suit_Cloth","texture_index":0},{"dimensions":[1024,1024],"image_index":3,"material_index":1,"material_name":"MAT_GV2_Gear","texture_index":3},{"dimensions":[1024,1024],"image_index":5,"material_index":2,"material_name":"MAT_GV2_Accent","texture_index":5},{"dimensions":[1024,1024],"image_index":8,"material_index":3,"material_name":"MAT_GV2_Tactical_Boot","texture_index":8},{"dimensions":[2048,2048],"image_index":11,"material_index":4,"material_name":"MAT_GV2_Skin","texture_index":11}],"path":"/Users/markabraham/dev/batman/actors/gloam_vigil/v4/gloam_vigil_player_v4.glb","sha256":"faafa6290160bef7a5dc3aa8c4ba02d9a395e40679e124c49869f239f12dd66a","shared_across_surface_materials":[{"index":0,"name":"MAT_GV2_Suit_Cloth","surface_uses":2},{"index":1,"name":"MAT_GV2_Gear","surface_uses":2}],"skins":[{"allowed_unweighted_structural_joints":["root"],"joint_count":74,"name":"GloamVigilV4Rig","skin":0,"unused_joints":["root"],"used_joint_count":73,"used_joints":["pelvis","spine","spine_upper","chest","cape.L","cape_mid.L","cape_lower.L","cape_tip.L","cape.R","cape_mid.R","cape_lower.R","cape_tip.R","clavicle.L","upper_arm.L","upper_arm_twist.L","forearm.L","forearm_twist.L","hand.L","index.01.L","index.02.L","index.03.L","middle.01.L","middle.02.L","middle.03.L","pinky.01.L","pinky.02.L","pinky.03.L","ring.01.L","ring.02.L","ring.03.L","thumb.01.L","thumb.02.L","thumb.03.L","clavicle.R","upper_arm.R","upper_arm_twist.R","forearm.R","forearm_twist.R","hand.R","index.01.R","index.02.R","index.03.R","middle.01.R","middle.02.R","middle.03.R","pinky.01.R","pinky.02.R","pinky.03.R","ring.01.R","ring.02.R","ring.03.R","thumb.01.R","thumb.02.R","thumb.03.R","neck","head","eye.L","eye.R","jaw","thigh.L","thigh_twist.L","shin.L","shin_twist.L","foot.L","ball.L","toe.L","thigh.R","thigh_twist.R","shin.R","shin_twist.R","foot.R","ball.R","toe.R"]}],"surfaces":[{"material_index":0,"material_name":"MAT_GV2_Suit_Cloth","mesh":0,"mesh_name":"female_v006lowresUV.001","primitive":0,"triangles":23706,"vertices":13034},{"material_index":1,"material_name":"MAT_GV2_Gear","mesh":0,"mesh_name":"female_v006lowresUV.001","primitive":1,"triangles":18528,"vertices":11871},{"material_index":2,"material_name":"MAT_GV2_Accent","mesh":0,"mesh_name":"female_v006lowresUV.001","primitive":2,"triangles":548,"vertices":468},{"material_index":3,"material_name":"MAT_GV2_Tactical_Boot","mesh":0,"mesh_name":"female_v006lowresUV.001","primitive":3,"triangles":4480,"vertices":2706},{"material_index":0,"material_name":"MAT_GV2_Suit_Cloth","mesh":1,"mesh_name":"GV2_CapeMesh","primitive":0,"triangles":4192,"vertices":2468},{"material_index":4,"material_name":"MAT_GV2_Skin","mesh":2,"mesh_name":"female_v006lowresUV.002","primitive":0,"triangles":29410,"vertices":15364},{"material_index":1,"material_name":"MAT_GV2_Gear","mesh":2,"mesh_name":"female_v006lowresUV.002","primitive":1,"triangles":4176,"vertices":2403}],"triangles":85040,"unique_per_surface_materials":[{"index":2,"name":"MAT_GV2_Accent"},{"index":3,"name":"MAT_GV2_Tactical_Boot"},{"index":4,"name":"MAT_GV2_Skin"}],"unique_position_accessor_vertices":48314,"vertex_references_across_primitives":48314,"warnings":[],"weighted_vertices_checked":48314,"worst_normalized_weight_sum_error":1.434236764907837e-07}
+GLOAM_CHARACTER_ART_GLB_CONTRACT_OK
+=== R7 GODOT IMPORT ===
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[1;31mERROR:[0;91m Condition "ret != noErr" is true. Returning: ""
+[0;90m   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started Scanning actions... (37 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | gv2_accent_basecolor_1024.png[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | gv2_accent_normal_1024.png[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | gv2_accent_roughness_1024.png[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | gv2_boot_basecolor_1024.png[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | gv2_boot_normal_1024.png[39m[0m
+[  13% ] [90m[1m_update_scan_actions[22m | gv2_boot_roughness_1024.png[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | gv2_gear_basecolor_1024.png[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | gv2_gear_normal_1024.png[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | gv2_gear_roughness_1024.png[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | gv2_skin_face_basecolor_2048.png[39m[0m
+[  26% ] [90m[1m_update_scan_actions[22m | gv2_skin_face_normal_2048.png[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | gv2_skin_face_roughness_2048.png[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | gv2_suit_cloth_basecolor_2048.png[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | gv2_suit_cloth_normal_2048.png[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | gv2_suit_cloth_roughness_2048.png[39m[0m
+[  39% ] [90m[1m_update_scan_actions[22m | gv4_suit_basecolor_2048.png[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | gv4_suit_normal_2048.png[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | gv4_suit_roughness_2048.png[39m[0m
+[  47% ] [90m[1m_update_scan_actions[22m | gloam_vigil_player_v4.glb[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | r5-crouch-neck-close.png[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | r5-crouch-threequarter.png[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | r5-grapple-neck-close.png[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | r5-grapple-threequarter.png[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | r5-strike-neck-close.png[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | r5-strike-threequarter.png[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | r6-crouch-neck-close.png[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | r6-crouch-threequarter.png[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | r6-grapple-neck-close.png[39m[0m
+[  73% ] [90m[1m_update_scan_actions[22m | r6-grapple-threequarter.png[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | r6-strike-neck-close.png[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | r6-strike-threequarter.png[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | r7-crouch-neck-close.png[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | r7-crouch-threequarter.png[39m[0m
+[  86% ] [90m[1m_update_scan_actions[22m | r7-grapple-neck-close.png[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | r7-grapple-threequarter.png[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | r7-strike-neck-close.png[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | r7-strike-threequarter.png[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started (Re)Importing Assets (33 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   2% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   5% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   8% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  11% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  14% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  17% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  20% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  23% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  26% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  29% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  32% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  35% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  38% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  41% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  44% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  47% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  50% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  52% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  55% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  58% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  61% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  64% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  67% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  70% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  73% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  76% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  79% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  82% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  85% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  88% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  91% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  94% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   0% ] [90m[1mreimport[22m | Executing pre-reimport operations...[39m[0m
+[   0% ] [90m[1mpreload_reimporting_scene[22m | Started Preparing scenes for reload (1 steps)[39m[0m
+[   0% ] [90m[1mpreload_reimporting_scene[22m | Analyzing scene [empty][39m[0m
+[  50% ] [90m[1mpreload_reimporting_scene[22m | Preparation done.[39m[0m
+[92m[ DONE ][39m [1mpreload_reimporting_scene[22m
+[0m
+[   0% ] [90m[1mreimport[22m | r7-strike-threequarter.png[39m[0m
+[   2% ] [90m[1mreimport[22m | r7-strike-neck-close.png[39m[0m
+[   5% ] [90m[1mreimport[22m | r7-grapple-threequarter.png[39m[0m
+[   8% ] [90m[1mreimport[22m | r7-grapple-neck-close.png[39m[0m
+[  11% ] [90m[1mreimport[22m | r7-crouch-threequarter.png[39m[0m
+[  14% ] [90m[1mreimport[22m | r7-crouch-neck-close.png[39m[0m
+[  17% ] [90m[1mreimport[22m | r6-strike-threequarter.png[39m[0m
+[  20% ] [90m[1mreimport[22m | r6-strike-neck-close.png[39m[0m
+[  23% ] [90m[1mreimport[22m | r6-grapple-threequarter.png[39m[0m
+[  26% ] [90m[1mreimport[22m | r6-grapple-neck-close.png[39m[0m
+[  29% ] [90m[1mreimport[22m | r6-crouch-threequarter.png[39m[0m
+[  32% ] [90m[1mreimport[22m | r6-crouch-neck-close.png[39m[0m
+[  35% ] [90m[1mreimport[22m | r5-strike-threequarter.png[39m[0m
+[  38% ] [90m[1mreimport[22m | r5-strike-neck-close.png[39m[0m
+[  41% ] [90m[1mreimport[22m | r5-grapple-threequarter.png[39m[0m
+[  44% ] [90m[1mreimport[22m | r5-grapple-neck-close.png[39m[0m
+[  47% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv4_suit_basecolor_2048.png[39m[0m
+[  50% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv4_suit_roughness_2048.png[39m[0m
+[  52% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv4_suit_normal_2048.png[39m[0m
+[  55% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv2_gear_roughness_1024.png[39m[0m
+[  58% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv2_gear_normal_1024.png[39m[0m
+[  61% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv2_accent_basecolor_1024.png[39m[0m
+[  64% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv2_accent_roughness_1024.png[39m[0m
+[  67% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv2_accent_normal_1024.png[39m[0m
+[  70% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv2_boot_basecolor_1024.png[39m[0m
+[  73% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv2_boot_roughness_1024.png[39m[0m
+[  76% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv2_boot_normal_1024.png[39m[0m
+[  79% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv2_skin_face_basecolor_2048.png[39m[0m
+[  82% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv2_skin_face_roughness_2048.png[39m[0m
+[  85% ] [90m[1mreimport[22m | gloam_vigil_player_v4_gv2_skin_face_normal_2048.png[39m[0m
+[  88% ] [90m[1mreimport[22m | r5-crouch-neck-close.png[39m[0m
+[  91% ] [90m[1mreimport[22m | r5-crouch-threequarter.png[39m[0m
+[  94% ] [90m[1mreimport[22m | gloam_vigil_player_v4.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  97% ] [90m[1mreimport[22m | Finalizing Asset Import...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started (Re)Importing Assets (33 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Executing post-reimport operations...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | Reopening scenes...[39m[0m
+[  50% ] [90m[1mloading_editor_layout[22m | Loading central editor layout...[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | Loading plugin window layout...[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | Editor layout ready.[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+[1;31mERROR:[0;91m Cannot save file '/Users/markabraham/Library/Application Support/Godot/editor_settings-4.7.tres'.
+[0;90m   at: save (scene/resources/resource_format_text.cpp:1768)[0m
+[1;31mERROR:[0;91m Error saving editor settings to /Users/markabraham/Library/Application Support/Godot/editor_settings-4.7.tres
+[0;90m   at: save (editor/settings/editor_settings.cpp:1525)[0m
+=== R7 POST-IMPORT GLB FINGERPRINT ===
+faafa6290160bef7a5dc3aa8c4ba02d9a395e40679e124c49869f239f12dd66a  actors/gloam_vigil/v4/gloam_vigil_player_v4.glb
+=== R7 IMPORTED LODS ===
+[1;31mERROR:[0;91m Failed to open 'user://logs/godot2026-09-05T01.56.47.log'.
+[0;90m   at: copy (core/io/dir_access.cpp:429)[0m
+[1;31mERROR:[0;91m Failed to open log file for writing: user://logs/godot.log
+[0;90m   at: rotate_file (core/io/logger.cpp:169)[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[1;31mERROR:[0;91m Condition "ret != noErr" is true. Returning: ""
+[0;90m   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)[0m
+GLOAM_LOD_REPORT {"asset_path":"res://actors/gloam_vigil/v4/gloam_vigil_player_v4.glb","asset_sha256":"faafa6290160bef7a5dc3aa8c4ba02d9a395e40679e124c49869f239f12dd66a","errors":[],"label":"character-art-v4-r7-faafa629","mesh_instances":3,"meshes":[{"blend_shape_count":0,"blend_shape_mode":"normalized_absolute_targets","blend_shape_names":[],"mesh_class":"ArrayMesh","mesh_resource_path":"res://actors/gloam_vigil/v4/gloam_vigil_player_v4.glb::ArrayMesh_d8uvx","node_path":"/root/gloam_vigil_player_v4/GloamVigilV4Asset/GloamVigilV4Rig/Skeleton3D/GV2_Body","surfaces":[{"base_index_count":71118,"base_triangle_count":23706,"blend_shapes":[],"lod_index_buffers":[{"edge_length_threshold":0.0050015477463603,"index_count":35556,"index_reduction_fraction_vs_base":0.500042183413482,"lod":0,"max_index":6705,"min_index":0,"triangle_count":11852,"unique_vertex_indices":6706},{"edge_length_threshold":0.00750232161954045,"index_count":17778,"index_reduction_fraction_vs_base":0.750021091706741,"lod":1,"max_index":3570,"min_index":0,"triangle_count":5926,"unique_vertex_indices":3571},{"edge_length_threshold":0.0126554798334837,"index_count":8886,"index_reduction_fraction_vs_base":0.875052729266852,"lod":2,"max_index":1981,"min_index":0,"triangle_count":2962,"unique_vertex_indices":1982},{"edge_length_threshold":0.0275149047374725,"index_count":4440,"index_reduction_fraction_vs_base":0.937568548046908,"lod":3,"max_index":1132,"min_index":0,"triangle_count":1480,"unique_vertex_indices":1133},{"edge_length_threshold":0.0733109414577484,"index_count":2220,"index_reduction_fraction_vs_base":0.968784274023454,"lod":4,"max_index":679,"min_index":0,"triangle_count":740,"unique_vertex_indices":680},{"edge_length_threshold":0.706871867179871,"index_count":1110,"index_reduction_fraction_vs_base":0.984392137011727,"lod":5,"max_index":421,"min_index":0,"triangle_count":370,"unique_vertex_indices":422}],"material":"MAT_GV2_Suit_Cloth","morph_lod_limitation":"No morph-bearing generated LOD on this surface.","primitive":"triangles","runtime_index_stride_bytes":2,"surface":0,"vertices":13034},{"base_index_count":55584,"base_triangle_count":18528,"blend_shapes":[],"lod_index_buffers":[{"edge_length_threshold":0.00281945918686688,"index_count":27792,"index_reduction_fraction_vs_base":0.5,"lod":0,"max_index":6666,"min_index":0,"triangle_count":9264,"unique_vertex_indices":6667},{"edge_length_threshold":0.00654950784519315,"index_count":13896,"index_reduction_fraction_vs_base":0.75,"lod":1,"max_index":3785,"min_index":0,"triangle_count":4632,"unique_vertex_indices":3786},{"edge_length_threshold":0.0151256984099746,"index_count":6948,"index_reduction_fraction_vs_base":0.875,"lod":2,"max_index":2213,"min_index":0,"triangle_count":2316,"unique_vertex_indices":2214},{"edge_length_threshold":0.0631727948784828,"index_count":3474,"index_reduction_fraction_vs_base":0.9375,"lod":3,"max_index":1348,"min_index":0,"triangle_count":1158,"unique_vertex_indices":1349},{"edge_length_threshold":1.1513899564743,"index_count":1722,"index_reduction_fraction_vs_base":0.969019861830743,"lod":4,"max_index":725,"min_index":0,"triangle_count":574,"unique_vertex_indices":726}],"material":"MAT_GV2_Gear","morph_lod_limitation":"No morph-bearing generated LOD on this surface.","primitive":"triangles","runtime_index_stride_bytes":2,"surface":1,"vertices":11871},{"base_index_count":1644,"base_triangle_count":548,"blend_shapes":[],"lod_index_buffers":[{"edge_length_threshold":0.00915964040905237,"index_count":822,"index_reduction_fraction_vs_base":0.5,"lod":0,"max_index":256,"min_index":0,"triangle_count":274,"unique_vertex_indices":257},{"edge_length_threshold":0.0236522909253836,"index_count":408,"index_reduction_fraction_vs_base":0.751824817518248,"lod":1,"max_index":149,"min_index":0,"triangle_count":136,"unique_vertex_indices":150},{"edge_length_threshold":0.16106753051281,"index_count":198,"index_reduction_fraction_vs_base":0.87956204379562,"lod":2,"max_index":77,"min_index":0,"triangle_count":66,"unique_vertex_indices":78}],"material":"MAT_GV2_Accent","morph_lod_limitation":"No morph-bearing generated LOD on this surface.","primitive":"triangles","runtime_index_stride_bytes":2,"surface":2,"vertices":468},{"base_index_count":13440,"base_triangle_count":4480,"blend_shapes":[],"lod_index_buffers":[{"edge_length_threshold":0.00400628661736846,"index_count":6720,"index_reduction_fraction_vs_base":0.5,"lod":0,"max_index":1457,"min_index":0,"triangle_count":2240,"unique_vertex_indices":1458},{"edge_length_threshold":0.00780206779018044,"index_count":3360,"index_reduction_fraction_vs_base":0.75,"lod":1,"max_index":778,"min_index":0,"triangle_count":1120,"unique_vertex_indices":779},{"edge_length_threshold":0.0124558759853244,"index_count":1680,"index_reduction_fraction_vs_base":0.875,"lod":2,"max_index":434,"min_index":0,"triangle_count":560,"unique_vertex_indices":435},{"edge_length_threshold":0.0255630537867546,"index_count":840,"index_reduction_fraction_vs_base":0.9375,"lod":3,"max_index":244,"min_index":0,"triangle_count":280,"unique_vertex_indices":245},{"edge_length_threshold":0.0619583167135715,"index_count":420,"index_reduction_fraction_vs_base":0.96875,"lod":4,"max_index":149,"min_index":0,"triangle_count":140,"unique_vertex_indices":150},{"edge_length_threshold":0.139404818415642,"index_count":210,"index_reduction_fraction_vs_base":0.984375,"lod":5,"max_index":96,"min_index":0,"triangle_count":70,"unique_vertex_indices":97},{"edge_length_threshold":0.249766618013382,"index_count":120,"index_reduction_fraction_vs_base":0.991071428571429,"lod":6,"max_index":71,"min_index":0,"triangle_count":40,"unique_vertex_indices":72}],"material":"MAT_GV2_Tactical_Boot","morph_lod_limitation":"No morph-bearing generated LOD on this surface.","primitive":"triangles","runtime_index_stride_bytes":2,"surface":3,"vertices":2706}]},{"blend_shape_count":0,"blend_shape_mode":"normalized_absolute_targets","blend_shape_names":[],"mesh_class":"ArrayMesh","mesh_resource_path":"res://actors/gloam_vigil/v4/gloam_vigil_player_v4.glb::ArrayMesh_5sqqr","node_path":"/root/gloam_vigil_player_v4/GloamVigilV4Asset/GloamVigilV4Rig/Skeleton3D/GV2_Cape","surfaces":[{"base_index_count":12576,"base_triangle_count":4192,"blend_shapes":[],"lod_index_buffers":[{"edge_length_threshold":0.0117868343368173,"index_count":6288,"index_reduction_fraction_vs_base":0.5,"lod":0,"max_index":1340,"min_index":0,"triangle_count":2096,"unique_vertex_indices":1341},{"edge_length_threshold":0.0240041166543961,"index_count":3144,"index_reduction_fraction_vs_base":0.75,"lod":1,"max_index":776,"min_index":0,"triangle_count":1048,"unique_vertex_indices":777},{"edge_length_threshold":0.10766663402319,"index_count":1572,"index_reduction_fraction_vs_base":0.875,"lod":2,"max_index":481,"min_index":0,"triangle_count":524,"unique_vertex_indices":482},{"edge_length_threshold":1.15855383872986,"index_count":1128,"index_reduction_fraction_vs_base":0.91030534351145,"lod":3,"max_index":393,"min_index":0,"triangle_count":376,"unique_vertex_indices":394}],"material":"MAT_GV2_Suit_Cloth","morph_lod_limitation":"No morph-bearing generated LOD on this surface.","primitive":"triangles","runtime_index_stride_bytes":2,"surface":0,"vertices":2468}]},{"blend_shape_count":4,"blend_shape_mode":"normalized_absolute_targets","blend_shape_names":["blink.L","blink.R","brow_inner_raise","jaw_clench"],"mesh_class":"ArrayMesh","mesh_resource_path":"res://actors/gloam_vigil/v4/gloam_vigil_player_v4.glb::ArrayMesh_ae1x4","node_path":"/root/gloam_vigil_player_v4/GloamVigilV4Asset/GloamVigilV4Rig/Skeleton3D/GV2_Face","surfaces":[{"base_index_count":88230,"base_triangle_count":29410,"blend_shapes":[{"max_position_delta_length":0.0236281529068947,"name":"blink.L","nonzero_position_deltas":860,"position_delta_count":15364},{"max_position_delta_length":0.0234899837523699,"name":"blink.R","nonzero_position_deltas":863,"position_delta_count":15364},{"max_position_delta_length":0.0075948410667479,"name":"brow_inner_raise","nonzero_position_deltas":1887,"position_delta_count":15364},{"max_position_delta_length":0.00310326809994876,"name":"jaw_clench","nonzero_position_deltas":5135,"position_delta_count":15364}],"lod_index_buffers":[{"edge_length_threshold":0.00134845171123743,"index_count":44112,"index_reduction_fraction_vs_base":0.500034002040122,"lod":0,"max_index":7835,"min_index":0,"triangle_count":14704,"unique_vertex_indices":7836},{"edge_length_threshold":0.00240333122201264,"index_count":22056,"index_reduction_fraction_vs_base":0.750017001020061,"lod":1,"max_index":4041,"min_index":0,"triangle_count":7352,"unique_vertex_indices":4042},{"edge_length_threshold":0.00381399993784726,"index_count":11028,"index_reduction_fraction_vs_base":0.875008500510031,"lod":2,"max_index":2116,"min_index":0,"triangle_count":3676,"unique_vertex_indices":2117},{"edge_length_threshold":0.00679882057011127,"index_count":5514,"index_reduction_fraction_vs_base":0.937504250255015,"lod":3,"max_index":1142,"min_index":0,"triangle_count":1838,"unique_vertex_indices":1143},{"edge_length_threshold":0.0140919182449579,"index_count":2754,"index_reduction_fraction_vs_base":0.96878612716763,"lod":4,"max_index":639,"min_index":0,"triangle_count":918,"unique_vertex_indices":640},{"edge_length_threshold":0.0359805636107922,"index_count":1374,"index_reduction_fraction_vs_base":0.984427065623937,"lod":5,"max_index":381,"min_index":0,"triangle_count":458,"unique_vertex_indices":382},{"edge_length_threshold":0.153964802622795,"index_count":684,"index_reduction_fraction_vs_base":0.992247534852091,"lod":6,"max_index":235,"min_index":0,"triangle_count":228,"unique_vertex_indices":236}],"material":"MAT_GV2_Skin","morph_lod_limitation":"Generated LODs reuse the surface vertex/blend-shape buffers and only replace triangle indices; there are no separately simplified morph-delta buffers per LOD.","primitive":"triangles","runtime_index_stride_bytes":2,"surface":0,"vertices":15364},{"base_index_count":12528,"base_triangle_count":4176,"blend_shapes":[{"max_position_delta_length":0.0,"name":"blink.L","nonzero_position_deltas":0,"position_delta_count":2403},{"max_position_delta_length":0.0,"name":"blink.R","nonzero_position_deltas":0,"position_delta_count":2403},{"max_position_delta_length":0.0,"name":"brow_inner_raise","nonzero_position_deltas":0,"position_delta_count":2403},{"max_position_delta_length":0.0,"name":"jaw_clench","nonzero_position_deltas":0,"position_delta_count":2403}],"lod_index_buffers":[{"edge_length_threshold":0.000872436037752777,"index_count":6264,"index_reduction_fraction_vs_base":0.5,"lod":0,"max_index":1345,"min_index":0,"triangle_count":2088,"unique_vertex_indices":1346},{"edge_length_threshold":0.00157833285629749,"index_count":3132,"index_reduction_fraction_vs_base":0.75,"lod":1,"max_index":788,"min_index":0,"triangle_count":1044,"unique_vertex_indices":789},{"edge_length_threshold":0.00350154796615243,"index_count":1566,"index_reduction_fraction_vs_base":0.875,"lod":2,"max_index":471,"min_index":0,"triangle_count":522,"unique_vertex_indices":472},{"edge_length_threshold":0.0195290744304657,"index_count":732,"index_reduction_fraction_vs_base":0.941570881226054,"lod":3,"max_index":253,"min_index":0,"triangle_count":244,"unique_vertex_indices":254}],"material":"MAT_GV2_Gear","morph_lod_limitation":"Generated LODs reuse the surface vertex/blend-shape buffers and only replace triangle indices; there are no separately simplified morph-delta buffers per LOD.","primitive":"triangles","runtime_index_stride_bytes":2,"surface":1,"vertices":2403}]}],"threshold_semantics":"Raw RenderingServer surface LOD edge_length thresholds reported by Godot. They are not camera distances; effective switches also depend on projection, viewport, mesh scale, and LOD bias.","total_generated_lod_index_buffers":36,"total_surfaces":7}
+GLOAM_LOD_PROBE_OK
+=== R7 RIG CONTRACT ===
+[1;31mERROR:[0;91m Failed to open 'user://logs/godot2026-09-05T01.56.48.log'.
+[0;90m   at: copy (core/io/dir_access.cpp:429)[0m
+[1;31mERROR:[0;91m Failed to open log file for writing: user://logs/godot.log
+[0;90m   at: rotate_file (core/io/logger.cpp:169)[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[1;31mERROR:[0;91m Condition "ret != noErr" is true. Returning: ""
+[0;90m   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)[0m
+GLOAM_CHARACTER_ART_RIG_REPORT path=res://actors/gloam_vigil/v4/gloam_vigil_player_v4.glb sha256=faafa6290160bef7a5dc3aa8c4ba02d9a395e40679e124c49869f239f12dd66a weighted_vertices=48314 weakest_count=cape.L:272.0 weakest_total=ring.01.R:9.77236595470458 eye_left=(-0.042042, 2.01846, 0.155697) eye_right=(0.041995, 2.01846, 0.155687) foot_left=(-0.21564, 0.17, -0.077535) foot_right=(0.215434, 0.17, -0.077536)
+GLOAM_CHARACTER_ART_RIG_OK checks=451 failures=0
+=== R7 RUNTIME CONTRACT ===
+[1;31mERROR:[0;91m Failed to open 'user://logs/godot2026-09-05T01.56.48.log'.
+[0;90m   at: copy (core/io/dir_access.cpp:429)[0m
+[1;31mERROR:[0;91m Failed to open log file for writing: user://logs/godot.log
+[0;90m   at: rotate_file (core/io/logger.cpp:169)[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[1;31mERROR:[0;91m Condition "ret != noErr" is true. Returning: ""
+[0;90m   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)[0m
+GLOAM_CHARACTER_ART_RUNTIME_CONTRACT_OK failures=0
+=== R7 EXPLICIT-CANDIDATE MECHANICS ===
+[1;31mERROR:[0;91m Failed to open 'user://logs/godot2026-09-05T01.56.48.log'.
+[0;90m   at: copy (core/io/dir_access.cpp:429)[0m
+[1;31mERROR:[0;91m Failed to open log file for writing: user://logs/godot.log
+[0;90m   at: rotate_file (core/io/logger.cpp:169)[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[1;31mERROR:[0;91m Condition "ret != noErr" is true. Returning: ""
+[0;90m   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)[0m
+PASS active main_3d scene loads
+PASS mechanics fixture selected exact 74-bone character-art path
+PASS mechanics fixture fingerprints character-art GLB
+PASS reset player spawn (actual=(-6.0, 0.0, 2.5) expected=(-6.0, 0.0, 2.5) tolerance=0.00100)
+PASS reset guard spawn (actual=(0.0, 0.0, 0.0) expected=(0.0, 0.0, 0.0) tolerance=0.00100)
+PASS reset player health (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS reset Momentum (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS reset guard health (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS reset clears terminal states
+PASS body preset 1 value (actual=0.88000 expected=0.88000 tolerance=0.00100)
+PASS body preset 1 scale (actual=(1.188, 1.188, 1.188) expected=(1.188, 1.188, 1.188) tolerance=0.00100)
+PASS body preset 2 value (actual=1.00000 expected=1.00000 tolerance=0.00100)
+PASS body preset 2 scale (actual=(1.35, 1.35, 1.35) expected=(1.35, 1.35, 1.35) tolerance=0.00100)
+PASS body preset 3 value (actual=1.16000 expected=1.16000 tolerance=0.00100)
+PASS body preset 3 scale (actual=(1.566, 1.566, 1.566) expected=(1.566, 1.566, 1.566) tolerance=0.00100)
+PASS accent index toggles
+PASS authored accent material remains customizable
+PASS player resolves to 1.48 personal space (actual=1.48000 expected=1.48000 tolerance=0.01100)
+PASS guard resolves to 1.48 personal space (actual=1.48000 expected=1.48000 tolerance=0.01100)
+PASS strike starts exact 0.36-second action (actual=0.36000 expected=0.36000 tolerance=0.00100)
+PASS strike does not damage on input (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS strike does not award Momentum on input (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS strike remains pending before 0.14-second contact (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS strike contact deals 22 damage once (actual=78.00000 expected=78.00000 tolerance=0.00100)
+PASS strike contact refreshes guard health label immediately
+PASS strike contact grants 13 Momentum once (actual=13.00000 expected=13.00000 tolerance=0.00100)
+PASS strike contact starts reaction duration (actual=0.32000 expected=0.32000 tolerance=0.00100)
+PASS strike recovery never repeats damage (actual=78.00000 expected=78.00000 tolerance=0.00100)
+PASS strike recovery never repeats Momentum (actual=13.00000 expected=13.00000 tolerance=0.00100)
+PASS strike mash does not reset active timer (actual=0.31000 expected=0.31000 tolerance=0.00100)
+PASS strike mash still produces one contact (actual=78.00000 expected=78.00000 tolerance=0.00100)
+PASS strike mash after contact does not repeat damage (actual=78.00000 expected=78.00000 tolerance=0.00100)
+PASS strike mash grants Momentum once (actual=13.00000 expected=13.00000 tolerance=0.00100)
+PASS counter cancels pending strike (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS counter damage replaces cancelled strike contact (actual=70.00000 expected=70.00000 tolerance=0.00100)
+PASS counter refreshes guard health label immediately
+PASS counter Momentum replaces cancelled strike contact (actual=28.00000 expected=28.00000 tolerance=0.00100)
+PASS cancelled strike cannot contact after counter (actual=70.00000 expected=70.00000 tolerance=0.00100)
+PASS evade cancels pending strike (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS cancelled strike cannot contact during evade (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS cancelled strike leaves only evade Momentum (actual=4.00000 expected=4.00000 tolerance=0.00100)
+PASS reset cancels pending strike (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS reset strike never reaches stale contact (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS reset strike never awards stale Momentum (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS strike contact rechecks range instead of using stale input range (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS out-of-range contact applies one whiff cost (actual=12.00000 expected=12.00000 tolerance=0.00100)
+PASS strike entering range before contact can connect (actual=78.00000 expected=78.00000 tolerance=0.00100)
+PASS late in-range strike grants normal Momentum (actual=13.00000 expected=13.00000 tolerance=0.00100)
+PASS strike contact rejects guard on another height (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS height-rejected strike applies one whiff cost (actual=12.00000 expected=12.00000 tolerance=0.00100)
+PASS guard opens exact 0.72-second attack window (actual=0.72000 expected=0.72000 tolerance=0.00100)
+PASS guard attack window exposes marker
+PASS perfect counter deals 30 damage (actual=70.00000 expected=70.00000 tolerance=0.00100)
+PASS perfect counter grants 28 Momentum (actual=28.00000 expected=28.00000 tolerance=0.00100)
+PASS perfect counter reaction duration (actual=0.55000 expected=0.55000 tolerance=0.00100)
+PASS player counter duration (actual=0.44000 expected=0.44000 tolerance=0.00100)
+PASS ordinary counter deals no damage (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS ordinary counter grants 8 Momentum (actual=8.00000 expected=8.00000 tolerance=0.00100)
+PASS ordinary counter reaction duration (actual=0.25000 expected=0.25000 tolerance=0.00100)
+PASS uncountered attack deals 18 damage (actual=82.00000 expected=82.00000 tolerance=0.00100)
+PASS uncountered attack breaks 25 Momentum (actual=25.00000 expected=25.00000 tolerance=0.00100)
+PASS defeat enters terminal guard state
+PASS defeat zeros guard health (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS defeat grants 35 Momentum (actual=45.00000 expected=45.00000 tolerance=0.00100)
+PASS defeat clears vision and attack marker
+PASS guard remains visible before fade delay
+PASS guard is opaque before fade delay (actual=0.00000 expected=0.00000 tolerance=0.00200)
+PASS guard fade begins after 0.78 seconds
+PASS guard visual and label remove at 1.45 seconds
+PASS defeated guard leaves no invisible blocker
+PASS restart restores guard visual
+PASS restart restores guard label and vision
+PASS restart restores guard health after defeat (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS grapple rejects reset spawn outside range
+PASS grapple activates inside 3.5-unit ring
+PASS grapple traversal duration at fixed 60 FPS (actual=0.33333 expected=0.32000 tolerance=0.04000)
+PASS grapple exact perch landing (actual=(6.0, 3.04, -2.4) expected=(6.0, 3.04, -2.4) tolerance=0.00200)
+PASS grapple lands in real perch state
+PASS grapple recovery timer begins (actual=0.32000 expected=0.32000 tolerance=0.00100)
+PASS perch movement works during visual recovery
+PASS crossing perch footprint begins fall
+PASS fall restores grounded state
+PASS fall lands on courtyard floor (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS ground guard cannot hit player through perch (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS perch-height attack is explicitly rejected
+PASS evade movement duration (actual=0.28000 expected=0.28000 tolerance=0.00100)
+PASS evade invulnerability duration (actual=0.42000 expected=0.42000 tolerance=0.00100)
+PASS evade grants 4 Momentum (actual=4.00000 expected=4.00000 tolerance=0.00100)
+PASS evade snapshots visible yaw instead of stale travel direction (actual=(-0.0, 0.0, -1.0) expected=(0.0, 0.0, -1.0) tolerance=0.00200)
+PASS evade rejects damage while invulnerable (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS movement tap cannot stack displacement during evade (actual=(-2.0, 0.0, 1.0) expected=(-2.0, 0.0, 1.0) tolerance=0.00100)
+PASS evade input cannot reset active movement timer (actual=0.28000 expected=0.28000 tolerance=0.00100)
+PASS evade repeat cannot stack Momentum (actual=4.00000 expected=4.00000 tolerance=0.00100)
+PASS evade shows a positive forward spin during travel
+PASS evade integrates exact 0.28s x 7.0m/s travel (actual=1.96000 expected=1.96000 tolerance=0.00200)
+PASS held movement cannot bend evade direction (actual=(0.0, 0.0, -1.0) expected=(0.0, 0.0, -1.0) tolerance=0.00200)
+PASS evade movement ends at 0.28 seconds (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS evade retains 0.14-second post-travel invulnerability (actual=0.14000 expected=0.14000 tolerance=0.00200)
+PASS evade cannot retrigger during post-travel invulnerability (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS post-travel retrigger cannot stack Momentum (actual=4.00000 expected=4.00000 tolerance=0.00100)
+PASS evade completes one full positive forward spin (actual=6.28319 expected=6.28319 tolerance=0.08000)
+PASS evade invulnerability expires (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS released input adds no post-travel displacement (actual=(-2.0, 0.0, -0.96) expected=(-2.0, 0.0, -0.96) tolerance=0.00100)
+PASS damage resumes after evade (actual=82.00000 expected=82.00000 tolerance=0.00100)
+PASS evade can retrigger only after invulnerability ends (actual=0.28000 expected=0.28000 tolerance=0.00100)
+PASS new evade after recovery grants Momentum once after prior damage broke Momentum (actual=4.00000 expected=4.00000 tolerance=0.00100)
+PASS evade rejects airborne state (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS airborne evade adds no invulnerability (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS evade rejects grapple state (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS rejected traversal evades add no Momentum (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS evade respects courtyard boundary collision
+PASS boundary evade never rebounds through its start
+PASS evade preserves guard collision separation
+PASS evade can carry off perch into a fall without cancelling invulnerability
+PASS forward-roll pose remains visible after evade leaves perch
+PASS crouch toggles on
+PASS crouch tap movement is 62 percent (actual=0.62000 expected=0.62000 tolerance=0.00200)
+PASS standing entry is blocked by 2.0-unit passage (actual=(-6.9, 0.0, 3.8) expected=(-6.9, 0.0, 3.8) tolerance=0.00100)
+PASS crouched player enters low passage
+PASS standing is rejected under lintel
+PASS evade is rejected under lintel (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS strike is rejected under lintel (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS crouched player clears passage
+PASS full height returns after clearing passage
+PASS free jump selects outside obstacle path
+PASS free jump duration (actual=0.62000 expected=0.62000 tolerance=0.00100)
+PASS free jump apex constant (actual=1.35000 expected=1.35000 tolerance=0.00100)
+PASS free jump distance (actual=2.20000 expected=2.20000 tolerance=0.00100)
+PASS free jump midpoint reaches 1.35-unit apex (actual=1.35000 expected=1.35000 tolerance=0.00200)
+PASS free jump does not add invulnerability (actual=82.00000 expected=82.00000 tolerance=0.00100)
+PASS free jump lands grounded
+PASS free jump landing distance (actual=2.20000 expected=2.20000 tolerance=0.00100)
+PASS walking is blocked by low vault barrier (actual=(4.55, 0.0, 3.9) expected=(4.55, 0.0, 3.9) tolerance=0.00100)
+PASS contextual path selects vault
+PASS vault duration (actual=0.48000 expected=0.48000 tolerance=0.00100)
+PASS vault apex constant (actual=1.05000 expected=1.05000 tolerance=0.00100)
+PASS vault midpoint reaches 1.05-unit apex (actual=1.05000 expected=1.05000 tolerance=0.00200)
+PASS vault lands grounded
+PASS vault clears barrier to accepted landing distance (actual=2.20000 expected=2.20000 tolerance=0.00100)
+PASS jump rejects insufficient boundary landing room
+PASS jump rejects low-passage bypass
+PASS takedown action begins from ambush concealment
+PASS takedown starts exact 1.10-second action (actual=1.10000 expected=1.10000 tolerance=0.00100)
+PASS takedown does not defeat on input
+PASS takedown does not award Momentum on input (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS takedown mash cannot restart its action timer (actual=1.10000 expected=1.10000 tolerance=0.00100)
+PASS takedown mash cannot force early contact
+PASS takedown mash cannot stack Momentum (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS strike is blocked during takedown (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS evade is blocked during takedown (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS traversal actions are blocked during takedown
+PASS movement tap is blocked during takedown (actual=(-2.6, 0.0, 0.2) expected=(-2.6, 0.0, 0.2) tolerance=0.00100)
+PASS reserved takedown guard does not run AI (actual=(-4.6, 0.0, 0.2) expected=(-4.6, 0.0, 0.2) tolerance=0.00100)
+PASS reserved takedown guard cannot open attack (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS takedown remains pending at 0.20 seconds
+PASS takedown remains pending before 0.34-second contact
+PASS takedown defeats once at 0.34-second contact
+PASS takedown contact zeros guard health (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS takedown contact grants 35 Momentum once (actual=35.00000 expected=35.00000 tolerance=0.00100)
+PASS takedown auto-approach is capped at 0.62 metres
+PASS takedown auto-approach never moves away from guard
+PASS held movement cannot add lateral takedown displacement
+PASS takedown recovery never repeats guard contact (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS takedown recovery never repeats Momentum (actual=35.00000 expected=35.00000 tolerance=0.00100)
+PASS takedown presentation continues after contact
+PASS takedown action ends after 1.10 seconds (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS reset cancels pending takedown (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS reset prevents stale takedown contact
+PASS reset restores guard before stale contact (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS reset prevents stale takedown Momentum (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS non-concealed takedown never reserves action (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS out-of-range takedown never starts (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS height-rejection takedown remains concealed and in flat range
+PASS different-height takedown never starts (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS height rejection leaves guard active
+PASS low-passage takedown fixture meets concealment and range prerequisites
+PASS takedown is rejected under lintel (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS low-passage takedown rejection leaves guard active
+PASS behind but non-concealed takedown fails
+PASS ambush shadow provides concealment
+PASS concealed but frontal takedown fails
+PASS original darkness remains valid concealment
+PASS seven default-camera D taps reach ambush shadow
+PASS default stealth route reaches takedown range
+PASS concealed behind takedown begins authored action
+PASS concealed behind takedown contacts when warden exposes back
+PASS silent takedown grants 35 Momentum (actual=35.00000 expected=35.00000 tolerance=0.00100)
+PASS defeated guard unlocks exit success
+PASS final restart clears success and defeat
+PASS final restart restores health (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS final restart clears Momentum (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS final restart restores guard health (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS final restart restores player spawn (actual=(-6.0, 0.0, 2.5) expected=(-6.0, 0.0, 2.5) tolerance=0.00100)
+PASS final restart restores guard spawn (actual=(0.0, 0.0, 0.0) expected=(0.0, 0.0, 0.0) tolerance=0.00100)
+PASS final restart restores camera yaw (actual=0.69000 expected=0.69000 tolerance=0.00100)
+PASS final restart restores camera pitch (actual=0.47000 expected=0.47000 tolerance=0.00100)
+PASS final restart restores orthographic size (actual=18.50000 expected=18.50000 tolerance=0.00100)
+PASS final restart restores objective
+GLOAM_CHARACTER_ART_MECHANICS_OK checks=198 failures=0
+=== R7 FOOT PLANT ===
+[1;31mERROR:[0;91m Failed to open 'user://logs/godot2026-09-05T01.56.49.log'.
+[0;90m   at: copy (core/io/dir_access.cpp:429)[0m
+[1;31mERROR:[0;91m Failed to open log file for writing: user://logs/godot.log
+[0;90m   at: rotate_file (core/io/logger.cpp:169)[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[1;31mERROR:[0;91m Condition "ret != noErr" is true. Returning: ""
+[0;90m   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)[0m
+GLOAM_CHARACTER_ART_FOOT_PLANT_RATE { "fps": 60, "baseline_max": 0.60775548219681, "planted_max": 0.0341516956687, "planted_full_max": 0.0341516956687, "support_frames": 73, "active_frames": 53, "blocked_frames": 20, "root_preserved": true, "turn_release": true, "teleport_release": true, "action_release": true }
+GLOAM_CHARACTER_ART_FOOT_PLANT_RATE { "fps": 30, "baseline_max": 0.60779798030853, "planted_max": 0.00711168348789, "planted_full_max": 0.00711168348789, "support_frames": 38, "active_frames": 28, "blocked_frames": 10, "root_preserved": true, "turn_release": true, "teleport_release": true, "action_release": true }
+GLOAM_CHARACTER_ART_FOOT_PLANT_OK failures=0
+=== R7 STRICT FULL DEFORMATION ===
+[1;31mERROR:[0;91m Failed to open 'user://logs/godot2026-09-05T01.56.50.log'.
+[0;90m   at: copy (core/io/dir_access.cpp:429)[0m
+[1;31mERROR:[0;91m Failed to open log file for writing: user://logs/godot.log
+[0;90m   at: rotate_file (core/io/logger.cpp:169)[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[1;31mERROR:[0;91m Condition "ret != noErr" is true. Returning: ""
+[0;90m   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)[0m
+GLOAM_CHARACTER_ART_SOURCE path=res://actors/gloam_vigil/v4/gloam_vigil_player_v4.glb sha256=faafa6290160bef7a5dc3aa8c4ba02d9a395e40679e124c49869f239f12dd66a
+GLOAM_CHARACTER_ART_CROUCH preset=small fps=30 min_y=-0.00000017881393 max_y=1.70167970657349
+GLOAM_CHARACTER_ART_ACTION preset=small fps=30 state=strike frames=10 min_y=-0.00000008894131 max_y=2.5823221206665
+GLOAM_CHARACTER_ART_ACTION preset=small fps=30 state=takedown frames=33 min_y=-0.00029006786644 max_y=2.5876100063324
+GLOAM_CHARACTER_ART_ACTION preset=small fps=30 state=evade frames=12 min_y=-0.00000476464629 max_y=2.6902232170105
+GLOAM_CHARACTER_ART_ACTION preset=small fps=30 state=grapple frames=9 min_y=0.06824181973934 max_y=5.55359411239624
+GLOAM_CHARACTER_ART_ACTION preset=small fps=30 state=grapple_recover frames=9 min_y=3.03999972343445 max_y=5.62621068954468
+GLOAM_CHARACTER_ART_ACTION preset=small fps=30 state=jump frames=18 min_y=0.10127247869968 max_y=3.91159892082214
+GLOAM_CHARACTER_ART_ACTION preset=small fps=30 state=vault frames=14 min_y=0.05395934730768 max_y=3.56215763092041
+GLOAM_CHARACTER_ART_ACTION preset=small fps=30 state=counter frames=13 min_y=-0.00020384881645 max_y=2.60280537605286
+GLOAM_CHARACTER_ART_ACTION preset=small fps=30 state=fall frames=15 min_y=0.67754298448563 max_y=5.61215019226074
+GLOAM_CHARACTER_ART_CASE preset=small fps=30 vertices=48314 surfaces=7 hand_motion=1.10160009445027 cape_motion=0.10663647633353
+GLOAM_CHARACTER_ART_CROUCH preset=small fps=60 min_y=-0.00000017881393 max_y=1.70167970657349
+GLOAM_CHARACTER_ART_ACTION preset=small fps=60 state=strike frames=21 min_y=-0.00000009033829 max_y=2.59745955467224
+GLOAM_CHARACTER_ART_ACTION preset=small fps=60 state=takedown frames=65 min_y=-0.00028653815389 max_y=2.6016891002655
+GLOAM_CHARACTER_ART_ACTION preset=small fps=60 state=evade frames=25 min_y=-0.00039504375309 max_y=2.7590651512146
+GLOAM_CHARACTER_ART_ACTION preset=small fps=60 state=grapple frames=19 min_y=0.02968402951956 max_y=5.58150959014893
+GLOAM_CHARACTER_ART_ACTION preset=small fps=60 state=grapple_recover frames=19 min_y=3.03999972343445 max_y=5.6302433013916
+GLOAM_CHARACTER_ART_ACTION preset=small fps=60 state=jump frames=37 min_y=-0.01228672452271 max_y=3.91242504119873
+GLOAM_CHARACTER_ART_ACTION preset=small fps=60 state=vault frames=28 min_y=0.0645621791482 max_y=3.57067775726318
+GLOAM_CHARACTER_ART_ACTION preset=small fps=60 state=counter frames=26 min_y=-0.00020160898566 max_y=2.60491991043091
+GLOAM_CHARACTER_ART_ACTION preset=small fps=60 state=fall frames=30 min_y=0.75049430131912 max_y=5.63814067840576
+GLOAM_CHARACTER_ART_CASE preset=small fps=60 vertices=48314 surfaces=7 hand_motion=1.10160009445027 cape_motion=0.10382780633446
+GLOAM_CHARACTER_ART_CROUCH preset=medium fps=30 min_y=-0.00000005960464 max_y=1.93372714519501
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=30 state=strike frames=10 min_y=-0.0000000949949 max_y=2.93445682525635
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=30 state=takedown frames=33 min_y=-0.00032964721322 max_y=2.9404661655426
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=30 state=evade frames=12 min_y=-0.00000548735261 max_y=3.05707097053528
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=30 state=grapple frames=9 min_y=0.06499022245407 max_y=5.9010124206543
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=30 state=grapple_recover frames=9 min_y=3.03999996185303 max_y=5.97887563705444
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=30 state=jump frames=18 min_y=0.09645822644234 max_y=4.26114416122437
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=30 state=vault frames=14 min_y=0.04883826524019 max_y=3.90486073493958
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=30 state=counter frames=13 min_y=-0.00023165438324 max_y=2.9577329158783
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=30 state=fall frames=15 min_y=0.67357170581818 max_y=5.96554946899414
+GLOAM_CHARACTER_ART_CASE preset=medium fps=30 vertices=48314 surfaces=7 hand_motion=1.10160009445027 cape_motion=0.10663647633353
+GLOAM_CHARACTER_ART_CROUCH preset=medium fps=60 min_y=-0.00000005960464 max_y=1.93372714519501
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=60 state=strike frames=21 min_y=-0.00000009546056 max_y=2.95165848731995
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=60 state=takedown frames=65 min_y=-0.00032565742731 max_y=2.95646524429321
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=60 state=evade frames=25 min_y=-0.00044886767864 max_y=3.13530135154724
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=60 state=grapple frames=19 min_y=0.03047538176179 max_y=5.92821311950684
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=60 state=grapple_recover frames=19 min_y=3.03999972343445 max_y=5.98345851898193
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=60 state=jump frames=37 min_y=-0.01707138679922 max_y=4.2619514465332
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=60 state=vault frames=28 min_y=0.06088707223535 max_y=3.91454195976257
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=60 state=counter frames=26 min_y=-0.00022909045219 max_y=2.96013641357422
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=60 state=fall frames=30 min_y=0.74652761220932 max_y=5.99309635162354
+GLOAM_CHARACTER_ART_CASE preset=medium fps=60 vertices=48314 surfaces=7 hand_motion=1.10160009445027 cape_motion=0.10382780633446
+GLOAM_CHARACTER_ART_CROUCH preset=large fps=30 min_y=-0.00000011920929 max_y=1.90663743019104
+GLOAM_CHARACTER_ART_ACTION preset=large fps=30 state=strike frames=10 min_y=-0.00000002607703 max_y=3.40397095680237
+GLOAM_CHARACTER_ART_ACTION preset=large fps=30 state=takedown frames=33 min_y=-0.00038231536746 max_y=3.4109411239624
+GLOAM_CHARACTER_ART_ACTION preset=large fps=30 state=evade frames=12 min_y=-0.00000638421625 max_y=3.54620242118835
+GLOAM_CHARACTER_ART_ACTION preset=large fps=30 state=grapple frames=9 min_y=0.06065498292446 max_y=6.36423778533936
+GLOAM_CHARACTER_ART_ACTION preset=large fps=30 state=grapple_recover frames=9 min_y=3.03999972343445 max_y=6.44909620285034
+GLOAM_CHARACTER_ART_ACTION preset=large fps=30 state=jump frames=18 min_y=0.09003924578428 max_y=4.72720527648926
+GLOAM_CHARACTER_ART_ACTION preset=large fps=30 state=vault frames=14 min_y=0.0420103520155 max_y=4.3617992401123
+GLOAM_CHARACTER_ART_ACTION preset=large fps=30 state=counter frames=13 min_y=-0.00026863254607 max_y=3.43097114562988
+GLOAM_CHARACTER_ART_ACTION preset=large fps=30 state=fall frames=15 min_y=0.66827666759491 max_y=6.43674945831299
+GLOAM_CHARACTER_ART_CASE preset=large fps=30 vertices=48314 surfaces=7 hand_motion=1.10160009445027 cape_motion=0.10663647633353
+GLOAM_CHARACTER_ART_CROUCH preset=large fps=60 min_y=-0.00000011920929 max_y=1.90663743019104
+GLOAM_CHARACTER_ART_ACTION preset=large fps=60 state=strike frames=21 min_y=-0.00000002840534 max_y=3.42392468452454
+GLOAM_CHARACTER_ART_ACTION preset=large fps=60 state=takedown frames=65 min_y=-0.00037767738104 max_y=3.42950010299683
+GLOAM_CHARACTER_ART_ACTION preset=large fps=60 state=evade frames=25 min_y=-0.00052088871598 max_y=3.63694977760315
+GLOAM_CHARACTER_ART_ACTION preset=large fps=60 state=grapple frames=19 min_y=0.03153071925044 max_y=6.39048480987549
+GLOAM_CHARACTER_ART_ACTION preset=large fps=60 state=grapple_recover frames=19 min_y=3.03999996185303 max_y=6.45441246032715
+GLOAM_CHARACTER_ART_ACTION preset=large fps=60 state=jump frames=37 min_y=-0.02345097064972 max_y=4.72798824310303
+GLOAM_CHARACTER_ART_ACTION preset=large fps=60 state=vault frames=28 min_y=0.0559868067503 max_y=4.3730297088623
+GLOAM_CHARACTER_ART_ACTION preset=large fps=60 state=counter frames=26 min_y=-0.00026555731893 max_y=3.43375897407532
+GLOAM_CHARACTER_ART_ACTION preset=large fps=60 state=fall frames=30 min_y=0.74123865365982 max_y=6.46636962890625
+GLOAM_CHARACTER_ART_CASE preset=large fps=60 vertices=48314 surfaces=7 hand_motion=1.10160009445027 cape_motion=0.10382780633446
+GLOAM_CHARACTER_ART_DEFORMATION_OK checks=14730 failures=0 max_vertices=48314
+=== R7 FINAL VERIFICATION COMPLETE ===

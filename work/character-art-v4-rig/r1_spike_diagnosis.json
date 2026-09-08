@@ -1,0 +1,7262 @@
+{
+  "blend": "actors/gloam_vigil/v4/source/gloam_vigil_player_v4.blend",
+  "body_edges": 70088,
+  "body_modifiers": [
+    "ARMATURE"
+  ],
+  "body_vertices": 23565,
+  "gross_displacement_count": 940,
+  "gross_edge_count": 1224,
+  "hand_component_misweights": {
+    "L": {
+      "classification_boundary_edges": 151,
+      "connected_vertices": 3000,
+      "misweighted_bounds": [
+        [
+          -0.4388480484485626,
+          -0.4022001326084137
+        ],
+        [
+          -0.2439650297164917,
+          -0.08250811696052551
+        ],
+        [
+          0.8719474673271179,
+          0.9321814179420471
+        ]
+      ],
+      "misweighted_fraction": 0.12966666666666668,
+      "misweighted_vertices": 389,
+      "sample": [
+        {
+          "index": 12048,
+          "position": [
+            -0.415858,
+            -0.158632,
+            0.871947
+          ],
+          "weights": {
+            "pelvis": 0.085457,
+            "shin.L": 0.14074,
+            "thigh.L": 0.390531,
+            "thigh_twist.L": 0.383272
+          }
+        },
+        {
+          "index": 1441,
+          "position": [
+            -0.418831,
+            -0.159082,
+            0.872155
+          ],
+          "weights": {
+            "pelvis": 0.086112,
+            "shin.L": 0.142215,
+            "thigh.L": 0.389404,
+            "thigh_twist.L": 0.382269
+          }
+        },
+        {
+          "index": 14889,
+          "position": [
+            -0.415996,
+            -0.154489,
+            0.872231
+          ],
+          "weights": {
+            "pelvis": 0.084533,
+            "shin.L": 0.13959,
+            "thigh.L": 0.391657,
+            "thigh_twist.L": 0.38422
+          }
+        },
+        {
+          "index": 15192,
+          "position": [
+            -0.415859,
+            -0.161579,
+            0.872548
+          ],
+          "weights": {
+            "pelvis": 0.086399,
+            "shin.L": 0.14107,
+            "thigh.L": 0.390016,
+            "thigh_twist.L": 0.382516
+          }
+        },
+        {
+          "index": 1606,
+          "position": [
+            -0.413016,
+            -0.158333,
+            0.872584
+          ],
+          "weights": {
+            "pelvis": 0.085131,
+            "shin.L": 0.138784,
+            "thigh.L": 0.391933,
+            "thigh_twist.L": 0.384152
+          }
+        },
+        {
+          "index": 5071,
+          "position": [
+            -0.418534,
+            -0.162008,
+            0.872731
+          ],
+          "weights": {
+            "pelvis": 0.086984,
+            "shin.L": 0.142393,
+            "thigh.L": 0.389003,
+            "thigh_twist.L": 0.38162
+          }
+        },
+        {
+          "index": 7420,
+          "position": [
+            -0.41328,
+            -0.160998,
+            0.872935
+          ],
+          "weights": {
+            "pelvis": 0.085971,
+            "shin.L": 0.139359,
+            "thigh.L": 0.39128,
+            "thigh_twist.L": 0.38339
+          }
+        },
+        {
+          "index": 8844,
+          "position": [
+            -0.419405,
+            -0.155339,
+            0.872937
+          ],
+          "weights": {
+            "pelvis": 0.085529,
+            "shin.L": 0.141067,
+            "thigh.L": 0.390454,
+            "thigh_twist.L": 0.38295
+          }
+        },
+        {
+          "index": 5070,
+          "position": [
+            -0.420603,
+            -0.159347,
+            0.873054
+          ],
+          "weights": {
+            "pelvis": 0.086748,
+            "shin.L": 0.142562,
+            "thigh.L": 0.389054,
+            "thigh_twist.L": 0.381637
+          }
+        },
+        {
+          "index": 12737,
+          "position": [
+            -0.412665,
+            -0.154455,
+            0.873159
+          ],
+          "weights": {
+            "pelvis": 0.084273,
+            "shin.L": 0.137232,
+            "thigh.L": 0.393323,
+            "thigh_twist.L": 0.385171
+          }
+        },
+        {
+          "index": 1405,
+          "position": [
+            -0.421889,
+            -0.159768,
+            0.873526
+          ],
+          "weights": {
+            "pelvis": 0.087207,
+            "shin.L": 0.142988,
+            "thigh.L": 0.38867,
+            "thigh_twist.L": 0.381134
+          }
+        },
+        {
+          "index": 4766,
+          "position": [
+            -0.415637,
+            -0.163839,
+            0.873528
+          ],
+          "weights": {
+            "pelvis": 0.087261,
+            "shin.L": 0.140866,
+            "thigh.L": 0.389911,
+            "thigh_twist.L": 0.381962
+          }
+        },
+        {
+          "index": 12050,
+          "position": [
+            -0.41109,
+            -0.158245,
+            0.87367
+          ],
+          "weights": {
+            "pelvis": 0.085152,
+            "shin.L": 0.137043,
+            "thigh.L": 0.393141,
+            "thigh_twist.L": 0.384664
+          }
+        },
+        {
+          "index": 14747,
+          "position": [
+            -0.421363,
+            -0.156345,
+            0.873678
+          ],
+          "weights": {
+            "pelvis": 0.086332,
+            "shin.L": 0.141802,
+            "thigh.L": 0.38978,
+            "thigh_twist.L": 0.382086
+          }
+        },
+        {
+          "index": 14746,
+          "position": [
+            -0.420293,
+            -0.161902,
+            0.873709
+          ],
+          "weights": {
+            "pelvis": 0.087547,
+            "shin.L": 0.142584,
+            "thigh.L": 0.38879,
+            "thigh_twist.L": 0.381079
+          }
+        },
+        {
+          "index": 1892,
+          "position": [
+            -0.413229,
+            -0.162955,
+            0.873747
+          ],
+          "weights": {
+            "pelvis": 0.086734,
+            "shin.L": 0.139287,
+            "thigh.L": 0.39112,
+            "thigh_twist.L": 0.382859
+          }
+        },
+        {
+          "index": 15194,
+          "position": [
+            -0.411378,
+            -0.16039,
+            0.873777
+          ],
+          "weights": {
+            "pelvis": 0.085789,
+            "shin.L": 0.137671,
+            "thigh.L": 0.392505,
+            "thigh_twist.L": 0.384035
+          }
+        },
+        {
+          "index": 1440,
+          "position": [
+            -0.418118,
+            -0.164285,
+            0.873909
+          ],
+          "weights": {
+            "pelvis": 0.087879,
+            "shin.L": 0.141955,
+            "thigh.L": 0.389051,
+            "thigh_twist.L": 0.381116
+          }
+        },
+        {
+          "index": 8171,
+          "position": [
+            -0.421876,
+            -0.161666,
+            0.873975
+          ],
+          "weights": {
+            "pelvis": 0.08782,
+            "shin.L": 0.143136,
+            "thigh.L": 0.388382,
+            "thigh_twist.L": 0.380662
+          }
+        },
+        {
+          "index": 8116,
+          "position": [
+            -0.411364,
+            -0.161995,
+            0.874463
+          ],
+          "weights": {
+            "pelvis": 0.086429,
+            "shin.L": 0.13762,
+            "thigh.L": 0.392372,
+            "thigh_twist.L": 0.383578
+          }
+        }
+      ]
+    },
+    "R": {
+      "classification_boundary_edges": 151,
+      "connected_vertices": 3000,
+      "misweighted_bounds": [
+        [
+          0.4021033048629761,
+          0.4389234185218811
+        ],
+        [
+          -0.24420863389968872,
+          -0.08253438025712967
+        ],
+        [
+          0.8722124099731445,
+          0.9303203821182251
+        ]
+      ],
+      "misweighted_fraction": 0.13,
+      "misweighted_vertices": 390,
+      "sample": [
+        {
+          "index": 12402,
+          "position": [
+            0.415766,
+            -0.158477,
+            0.872212
+          ],
+          "weights": {
+            "pelvis": 0.084855,
+            "shin.R": 0.14035,
+            "thigh.R": 0.39105,
+            "thigh_twist.R": 0.383745
+          }
+        },
+        {
+          "index": 3694,
+          "position": [
+            0.41845,
+            -0.158937,
+            0.872386
+          ],
+          "weights": {
+            "pelvis": 0.085456,
+            "shin.R": 0.141711,
+            "thigh.R": 0.390009,
+            "thigh_twist.R": 0.382824
+          }
+        },
+        {
+          "index": 17408,
+          "position": [
+            0.415704,
+            -0.161444,
+            0.872655
+          ],
+          "weights": {
+            "pelvis": 0.08574,
+            "shin.R": 0.140766,
+            "thigh.R": 0.390485,
+            "thigh_twist.R": 0.383009
+          }
+        },
+        {
+          "index": 3859,
+          "position": [
+            0.413081,
+            -0.15821,
+            0.872785
+          ],
+          "weights": {
+            "pelvis": 0.084541,
+            "shin.R": 0.13852,
+            "thigh.R": 0.392363,
+            "thigh_twist.R": 0.384576
+          }
+        },
+        {
+          "index": 17105,
+          "position": [
+            0.41607,
+            -0.154636,
+            0.872801
+          ],
+          "weights": {
+            "pelvis": 0.084131,
+            "shin.R": 0.139146,
+            "thigh.R": 0.392169,
+            "thigh_twist.R": 0.384553
+          }
+        },
+        {
+          "index": 4679,
+          "position": [
+            0.418219,
+            -0.161768,
+            0.872818
+          ],
+          "weights": {
+            "pelvis": 0.086268,
+            "shin.R": 0.142004,
+            "thigh.R": 0.389545,
+            "thigh_twist.R": 0.382183
+          }
+        },
+        {
+          "index": 8388,
+          "position": [
+            0.413216,
+            -0.160951,
+            0.873039
+          ],
+          "weights": {
+            "pelvis": 0.085347,
+            "shin.R": 0.13912,
+            "thigh.R": 0.391694,
+            "thigh_twist.R": 0.383838
+          }
+        },
+        {
+          "index": 5649,
+          "position": [
+            0.419016,
+            -0.155526,
+            0.873217
+          ],
+          "weights": {
+            "pelvis": 0.084968,
+            "shin.R": 0.140598,
+            "thigh.R": 0.391006,
+            "thigh_twist.R": 0.383428
+          }
+        },
+        {
+          "index": 9547,
+          "position": [
+            0.420354,
+            -0.159355,
+            0.873301
+          ],
+          "weights": {
+            "pelvis": 0.086156,
+            "shin.R": 0.142155,
+            "thigh.R": 0.389576,
+            "thigh_twist.R": 0.382113
+          }
+        },
+        {
+          "index": 10909,
+          "position": [
+            0.412945,
+            -0.154508,
+            0.873482
+          ],
+          "weights": {
+            "pelvis": 0.083803,
+            "shin.R": 0.137035,
+            "thigh.R": 0.393683,
+            "thigh_twist.R": 0.385479
+          }
+        },
+        {
+          "index": 12127,
+          "position": [
+            0.415606,
+            -0.163759,
+            0.873616
+          ],
+          "weights": {
+            "pelvis": 0.086628,
+            "shin.R": 0.140655,
+            "thigh.R": 0.390311,
+            "thigh_twist.R": 0.382406
+          }
+        },
+        {
+          "index": 16962,
+          "position": [
+            0.42015,
+            -0.161579,
+            0.873637
+          ],
+          "weights": {
+            "pelvis": 0.086785,
+            "shin.R": 0.142371,
+            "thigh.R": 0.389224,
+            "thigh_twist.R": 0.38162
+          }
+        },
+        {
+          "index": 3658,
+          "position": [
+            0.421445,
+            -0.159704,
+            0.873721
+          ],
+          "weights": {
+            "pelvis": 0.086549,
+            "shin.R": 0.142506,
+            "thigh.R": 0.389259,
+            "thigh_twist.R": 0.381686
+          }
+        },
+        {
+          "index": 4145,
+          "position": [
+            0.413162,
+            -0.163041,
+            0.873821
+          ],
+          "weights": {
+            "pelvis": 0.086133,
+            "shin.R": 0.139105,
+            "thigh.R": 0.391486,
+            "thigh_twist.R": 0.383276
+          }
+        },
+        {
+          "index": 6129,
+          "position": [
+            0.411177,
+            -0.158161,
+            0.873837
+          ],
+          "weights": {
+            "pelvis": 0.084563,
+            "shin.R": 0.136821,
+            "thigh.R": 0.393542,
+            "thigh_twist.R": 0.385075
+          }
+        },
+        {
+          "index": 3693,
+          "position": [
+            0.418059,
+            -0.164079,
+            0.873883
+          ],
+          "weights": {
+            "pelvis": 0.087172,
+            "shin.R": 0.141782,
+            "thigh.R": 0.389443,
+            "thigh_twist.R": 0.381603
+          }
+        },
+        {
+          "index": 17410,
+          "position": [
+            0.411336,
+            -0.160387,
+            0.8739
+          ],
+          "weights": {
+            "pelvis": 0.085185,
+            "shin.R": 0.137438,
+            "thigh.R": 0.392912,
+            "thigh_twist.R": 0.384466
+          }
+        },
+        {
+          "index": 10958,
+          "position": [
+            0.421644,
+            -0.161452,
+            0.874095
+          ],
+          "weights": {
+            "pelvis": 0.087133,
+            "shin.R": 0.142777,
+            "thigh.R": 0.388899,
+            "thigh_twist.R": 0.38119
+          }
+        },
+        {
+          "index": 16963,
+          "position": [
+            0.42033,
+            -0.156827,
+            0.874463
+          ],
+          "weights": {
+            "pelvis": 0.0859,
+            "shin.R": 0.140746,
+            "thigh.R": 0.390705,
+            "thigh_twist.R": 0.382649
+          }
+        },
+        {
+          "index": 5049,
+          "position": [
+            0.411248,
+            -0.162136,
+            0.874538
+          ],
+          "weights": {
+            "pelvis": 0.085834,
+            "shin.R": 0.137422,
+            "thigh.R": 0.392746,
+            "thigh_twist.R": 0.383998
+          }
+        }
+      ]
+    }
+  },
+  "rest_max_error_m": 2.407356265396403e-07,
+  "sample": "adapter-equivalent grapple curl 1.14 on all 30 finger bones",
+  "top_displacements": [
+    {
+      "displacement_m": 0.17962665408789363,
+      "index": 6690,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.414134,
+        -0.026545,
+        1.001529
+      ],
+      "position": [
+        -0.414134,
+        -0.166038,
+        0.888359
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001766,
+        "ring.01.L": 0.017402,
+        "ring.02.L": 0.13563,
+        "ring.03.L": 0.845203
+      }
+    },
+    {
+      "displacement_m": 0.17648137326028696,
+      "index": 14756,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.411101,
+        -0.028908,
+        1.001939
+      ],
+      "position": [
+        -0.411101,
+        -0.164036,
+        0.888422
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001533,
+        "ring.01.L": 0.015652,
+        "ring.02.L": 0.130112,
+        "ring.03.L": 0.852703
+      }
+    },
+    {
+      "displacement_m": 0.17342596466782662,
+      "index": 7981,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.413803,
+        -0.032384,
+        0.998546
+      ],
+      "position": [
+        0.413803,
+        -0.166494,
+        0.888586
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001246,
+        "ring.01.R": 0.013438,
+        "ring.02.R": 0.120338,
+        "ring.03.R": 0.864978
+      }
+    },
+    {
+      "displacement_m": 0.17308433398531103,
+      "index": 12281,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.408671,
+        -0.032123,
+        1.003039
+      ],
+      "position": [
+        -0.408671,
+        -0.161435,
+        0.887989
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001271,
+        "ring.01.L": 0.013384,
+        "ring.02.L": 0.118287,
+        "ring.03.L": 0.867057
+      }
+    },
+    {
+      "displacement_m": 0.17296363677846863,
+      "index": 6689,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.419875,
+        -0.027469,
+        0.997284
+      ],
+      "position": [
+        -0.419875,
+        -0.164579,
+        0.891846
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001881,
+        "ring.01.L": 0.019262,
+        "ring.02.L": 0.155649,
+        "ring.03.L": 0.823207
+      }
+    },
+    {
+      "displacement_m": 0.17259389994316468,
+      "index": 1437,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.423555,
+        -0.030224,
+        1.000489
+      ],
+      "position": [
+        -0.423555,
+        -0.162663,
+        0.889815
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001677,
+        "ring.01.L": 0.016682,
+        "ring.02.L": 0.130725,
+        "ring.03.L": 0.850916
+      }
+    },
+    {
+      "displacement_m": 0.171384469041978,
+      "index": 1451,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.416039,
+        -0.02742,
+        0.995869
+      ],
+      "position": [
+        -0.416039,
+        -0.164448,
+        0.892933
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001817,
+        "ring.01.L": 0.019337,
+        "ring.02.L": 0.165891,
+        "ring.03.L": 0.812955
+      }
+    },
+    {
+      "displacement_m": 0.17049423373448538,
+      "index": 5055,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.412768,
+        -0.003633,
+        1.030233
+      ],
+      "position": [
+        0.412768,
+        -0.094127,
+        0.885736
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001174,
+        "pinky.01.R": 0.00966,
+        "pinky.02.R": 0.057713,
+        "pinky.03.R": 0.931453
+      }
+    },
+    {
+      "displacement_m": 0.17041969819120342,
+      "index": 17196,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.418203,
+        -0.000568,
+        1.027621
+      ],
+      "position": [
+        0.418203,
+        -0.096545,
+        0.886797
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001669,
+        "pinky.01.R": 0.013339,
+        "pinky.02.R": 0.076296,
+        "pinky.03.R": 0.908696
+      }
+    },
+    {
+      "displacement_m": 0.1703049107925543,
+      "index": 13158,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.414953,
+        -0.000697,
+        1.027594
+      ],
+      "position": [
+        0.414954,
+        -0.096756,
+        0.886965
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001512,
+        "pinky.01.R": 0.012293,
+        "pinky.02.R": 0.072321,
+        "pinky.03.R": 0.913875
+      }
+    },
+    {
+      "displacement_m": 0.16988344963839686,
+      "index": 16972,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.410895,
+        -0.03525,
+        0.999146
+      ],
+      "position": [
+        0.410895,
+        -0.164197,
+        0.888543
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001006,
+        "ring.01.R": 0.01127,
+        "ring.02.R": 0.109113,
+        "ring.03.R": 0.878611
+      }
+    },
+    {
+      "displacement_m": 0.16981266337782078,
+      "index": 14763,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.406806,
+        -0.03575,
+        1.004471
+      ],
+      "position": [
+        -0.406807,
+        -0.158536,
+        0.887168
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001038,
+        "ring.01.L": 0.011176,
+        "ring.02.L": 0.10368,
+        "ring.03.L": 0.884106
+      }
+    },
+    {
+      "displacement_m": 0.16857977279319786,
+      "index": 3923,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.4114,
+        -0.004913,
+        1.029989
+      ],
+      "position": [
+        0.4114,
+        -0.093334,
+        0.886459
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001029,
+        "pinky.01.R": 0.008662,
+        "pinky.02.R": 0.053279,
+        "pinky.03.R": 0.93703
+      }
+    },
+    {
+      "displacement_m": 0.16854653952079107,
+      "index": 17195,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.412246,
+        -0.002347,
+        1.027818
+      ],
+      "position": [
+        0.412246,
+        -0.095689,
+        0.887479
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001267,
+        "pinky.01.R": 0.010607,
+        "pinky.02.R": 0.0649,
+        "pinky.03.R": 0.923226
+      }
+    },
+    {
+      "displacement_m": 0.16817522388507208,
+      "index": 12282,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.41264,
+        -0.029625,
+        0.996172
+      ],
+      "position": [
+        -0.41264,
+        -0.1626,
+        0.893214
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.00154,
+        "ring.01.L": 0.017133,
+        "ring.02.L": 0.160365,
+        "ring.03.L": 0.820962
+      }
+    },
+    {
+      "displacement_m": 0.16807063195492788,
+      "index": 10433,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.411076,
+        -0.006717,
+        1.031077
+      ],
+      "position": [
+        0.411076,
+        -0.091717,
+        0.886085
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.000893,
+        "pinky.01.R": 0.007572,
+        "pinky.02.R": 0.04684,
+        "pinky.03.R": 0.944695
+      }
+    },
+    {
+      "displacement_m": 0.16751861415905273,
+      "index": 5309,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.420144,
+        -0.003067,
+        1.027899
+      ],
+      "position": [
+        0.420144,
+        -0.094452,
+        0.887502
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001521,
+        "pinky.01.R": 0.012362,
+        "pinky.02.R": 0.071557,
+        "pinky.03.R": 0.914559
+      }
+    },
+    {
+      "displacement_m": 0.16736526252587955,
+      "index": 14980,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.418211,
+        -0.001539,
+        1.024566
+      ],
+      "position": [
+        -0.418211,
+        -0.096468,
+        0.886727
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001314,
+        "pinky.01.L": 0.011307,
+        "pinky.02.L": 0.070051,
+        "pinky.03.L": 0.917328
+      }
+    },
+    {
+      "displacement_m": 0.16698764214827222,
+      "index": 12460,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.414865,
+        -0.001632,
+        1.024346
+      ],
+      "position": [
+        -0.414865,
+        -0.096648,
+        0.887026
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001206,
+        "pinky.01.L": 0.010593,
+        "pinky.02.L": 0.067753,
+        "pinky.03.L": 0.920448
+      }
+    },
+    {
+      "displacement_m": 0.1669639848016274,
+      "index": 11933,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.412762,
+        -0.004562,
+        1.026843
+      ],
+      "position": [
+        -0.412762,
+        -0.094058,
+        0.885892
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000906,
+        "pinky.01.L": 0.008045,
+        "pinky.02.L": 0.052272,
+        "pinky.03.L": 0.938777
+      }
+    },
+    {
+      "displacement_m": 0.16678961239988807,
+      "index": 9658,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.419955,
+        -0.033249,
+        0.994382
+      ],
+      "position": [
+        0.419955,
+        -0.164826,
+        0.891881
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.00142,
+        "ring.01.R": 0.015848,
+        "ring.02.R": 0.145557,
+        "ring.03.R": 0.837176
+      }
+    },
+    {
+      "displacement_m": 0.1667773582645253,
+      "index": 6692,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.406154,
+        -0.040253,
+        1.00658
+      ],
+      "position": [
+        -0.406154,
+        -0.155301,
+        0.885839
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.00079,
+        "ring.01.L": 0.008603,
+        "ring.02.L": 0.082408,
+        "ring.03.L": 0.908199
+      }
+    },
+    {
+      "displacement_m": 0.1666041670838298,
+      "index": 3922,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.410987,
+        -0.009466,
+        1.032183
+      ],
+      "position": [
+        0.410987,
+        -0.089316,
+        0.885962
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.00072,
+        "pinky.01.R": 0.006191,
+        "pinky.02.R": 0.038753,
+        "pinky.03.R": 0.954336
+      }
+    },
+    {
+      "displacement_m": 0.1664719453044526,
+      "index": 9589,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.410515,
+        -0.004752,
+        1.02845
+      ],
+      "position": [
+        0.410515,
+        -0.093874,
+        0.887844
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001017,
+        "pinky.01.R": 0.008752,
+        "pinky.02.R": 0.055439,
+        "pinky.03.R": 0.934792
+      }
+    },
+    {
+      "displacement_m": 0.16641627659841798,
+      "index": 11647,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.408621,
+        -0.038755,
+        1.000361
+      ],
+      "position": [
+        0.408621,
+        -0.161555,
+        0.888047
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.000796,
+        "ring.01.R": 0.009176,
+        "ring.02.R": 0.094653,
+        "ring.03.R": 0.895375
+      }
+    },
+    {
+      "displacement_m": 0.16641111389180815,
+      "index": 12842,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.41795,
+        0.000373,
+        1.023898
+      ],
+      "position": [
+        0.41795,
+        -0.098056,
+        0.889718
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001795,
+        "pinky.01.R": 0.014816,
+        "pinky.02.R": 0.087977,
+        "pinky.03.R": 0.895412
+      }
+    },
+    {
+      "displacement_m": 0.16640619168258414,
+      "index": 8061,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.426307,
+        -0.034799,
+        1.001067
+      ],
+      "position": [
+        -0.426307,
+        -0.158571,
+        0.88984
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001464,
+        "ring.01.L": 0.014901,
+        "ring.02.L": 0.12096,
+        "ring.03.L": 0.862676
+      }
+    },
+    {
+      "displacement_m": 0.166308066904308,
+      "index": 3915,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.414475,
+        0.000289,
+        1.023848
+      ],
+      "position": [
+        0.414475,
+        -0.098273,
+        0.889893
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001638,
+        "pinky.01.R": 0.013793,
+        "pinky.02.R": 0.084602,
+        "pinky.03.R": 0.899967
+      }
+    },
+    {
+      "displacement_m": 0.16585015016137497,
+      "index": 3690,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.423388,
+        -0.036234,
+        0.997309
+      ],
+      "position": [
+        0.423388,
+        -0.162534,
+        0.889816
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001291,
+        "ring.01.R": 0.013985,
+        "ring.02.R": 0.123461,
+        "ring.03.R": 0.861263
+      }
+    },
+    {
+      "displacement_m": 0.16550918496377684,
+      "index": 17131,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.42111,
+        -0.004959,
+        1.028193
+      ],
+      "position": [
+        0.42111,
+        -0.092827,
+        0.887934
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001415,
+        "pinky.01.R": 0.011647,
+        "pinky.02.R": 0.068044,
+        "pinky.03.R": 0.918893
+      }
+    },
+    {
+      "displacement_m": 0.16521992592053095,
+      "index": 1670,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.411473,
+        -0.005648,
+        1.026576
+      ],
+      "position": [
+        -0.411473,
+        -0.093328,
+        0.88654
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000813,
+        "pinky.01.L": 0.007379,
+        "pinky.02.L": 0.049284,
+        "pinky.03.L": 0.942524
+      }
+    },
+    {
+      "displacement_m": 0.16515406997364535,
+      "index": 14979,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.412295,
+        -0.003153,
+        1.024434
+      ],
+      "position": [
+        -0.412295,
+        -0.095586,
+        0.887569
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001032,
+        "pinky.01.L": 0.009331,
+        "pinky.02.L": 0.062118,
+        "pinky.03.L": 0.927519
+      }
+    },
+    {
+      "displacement_m": 0.16502046198120174,
+      "index": 3704,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.415989,
+        -0.033443,
+        0.993152
+      ],
+      "position": [
+        0.415989,
+        -0.16463,
+        0.893044
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001294,
+        "ring.01.R": 0.015123,
+        "ring.02.R": 0.151102,
+        "ring.03.R": 0.832481
+      }
+    },
+    {
+      "displacement_m": 0.1647203587577626,
+      "index": 11932,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.411166,
+        -0.007453,
+        1.027674
+      ],
+      "position": [
+        -0.411166,
+        -0.091728,
+        0.886144
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000686,
+        "pinky.01.L": 0.006261,
+        "pinky.02.L": 0.04203,
+        "pinky.03.L": 0.951023
+      }
+    },
+    {
+      "displacement_m": 0.16467677649705076,
+      "index": 17194,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.409638,
+        -0.007636,
+        1.029568
+      ],
+      "position": [
+        0.409638,
+        -0.091499,
+        0.887844
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.000783,
+        "pinky.01.R": 0.006889,
+        "pinky.02.R": 0.044682,
+        "pinky.03.R": 0.947645
+      }
+    },
+    {
+      "displacement_m": 0.1645807669058221,
+      "index": 13141,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.411408,
+        -0.001724,
+        1.024519
+      ],
+      "position": [
+        0.411408,
+        -0.096847,
+        0.890211
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001337,
+        "pinky.01.R": 0.011631,
+        "pinky.02.R": 0.074727,
+        "pinky.03.R": 0.912304
+      }
+    },
+    {
+      "displacement_m": 0.16450333689523736,
+      "index": 14760,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.407015,
+        -0.044548,
+        1.008549
+      ],
+      "position": [
+        -0.407015,
+        -0.152261,
+        0.884214
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000551,
+        "ring.01.L": 0.005985,
+        "ring.02.L": 0.057808,
+        "ring.03.L": 0.935657
+      }
+    },
+    {
+      "displacement_m": 0.1643692084523223,
+      "index": 3871,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.420231,
+        -0.001899,
+        1.024683
+      ],
+      "position": [
+        0.420231,
+        -0.096013,
+        0.889924
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001667,
+        "pinky.01.R": 0.013866,
+        "pinky.02.R": 0.082434,
+        "pinky.03.R": 0.902033
+      }
+    },
+    {
+      "displacement_m": 0.16428336960714426,
+      "index": 6932,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.42799,
+        -0.048655,
+        0.96377
+      ],
+      "position": [
+        0.42799,
+        -0.203937,
+        0.910136
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.002298,
+        "middle.01.R": 0.030752,
+        "middle.02.R": 0.279751,
+        "middle.03.R": 0.687199
+      }
+    },
+    {
+      "displacement_m": 0.16427370509354022,
+      "index": 14754,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.422166,
+        -0.028302,
+        0.990831
+      ],
+      "position": [
+        -0.422166,
+        -0.162846,
+        0.896578
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.002132,
+        "ring.01.L": 0.023447,
+        "ring.02.L": 0.201724,
+        "ring.03.L": 0.772697
+      }
+    },
+    {
+      "displacement_m": 0.16426131429580665,
+      "index": 1454,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.410195,
+        -0.033324,
+        0.997702
+      ],
+      "position": [
+        -0.410195,
+        -0.159715,
+        0.892788
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.00118,
+        "ring.01.L": 0.013667,
+        "ring.02.L": 0.140451,
+        "ring.03.L": 0.844702
+      }
+    },
+    {
+      "displacement_m": 0.16417652379849246,
+      "index": 6138,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.420199,
+        -0.004223,
+        1.024802
+      ],
+      "position": [
+        -0.420199,
+        -0.09427,
+        0.887523
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001158,
+        "pinky.01.L": 0.010158,
+        "pinky.02.L": 0.063968,
+        "pinky.03.L": 0.924716
+      }
+    },
+    {
+      "displacement_m": 0.1639624124304792,
+      "index": 8009,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.427979,
+        -0.048694,
+        0.963613
+      ],
+      "position": [
+        -0.427979,
+        -0.203668,
+        0.910072
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.0023,
+        "middle.01.L": 0.030876,
+        "middle.02.L": 0.281128,
+        "middle.03.L": 0.685696
+      }
+    },
+    {
+      "displacement_m": 0.16356936774960829,
+      "index": 12216,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.425899,
+        -0.030121,
+        0.993016
+      ],
+      "position": [
+        -0.425899,
+        -0.161192,
+        0.895162
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.002127,
+        "ring.01.L": 0.022693,
+        "ring.02.L": 0.186699,
+        "ring.03.L": 0.788482
+      }
+    },
+    {
+      "displacement_m": 0.16345868656679974,
+      "index": 5557,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.417901,
+        -0.000348,
+        1.020701
+      ],
+      "position": [
+        -0.417901,
+        -0.098032,
+        0.889642
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001494,
+        "pinky.01.L": 0.01331,
+        "pinky.02.L": 0.085875,
+        "pinky.03.L": 0.899321
+      }
+    },
+    {
+      "displacement_m": 0.16330271436069552,
+      "index": 1669,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.411048,
+        -0.010161,
+        1.028784
+      ],
+      "position": [
+        -0.411048,
+        -0.089374,
+        0.88598
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000527,
+        "pinky.01.L": 0.00488,
+        "pinky.02.L": 0.033123,
+        "pinky.03.L": 0.96147
+      }
+    },
+    {
+      "displacement_m": 0.1632445472096043,
+      "index": 8674,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.408988,
+        -0.048067,
+        1.01023
+      ],
+      "position": [
+        -0.408988,
+        -0.1499,
+        0.882642
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.00036,
+        "ring.01.L": 0.00386,
+        "ring.02.L": 0.03675,
+        "ring.03.L": 0.959031
+      }
+    },
+    {
+      "displacement_m": 0.16324381981074876,
+      "index": 11931,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.410649,
+        -0.005314,
+        1.024999
+      ],
+      "position": [
+        -0.410649,
+        -0.093888,
+        0.887874
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000845,
+        "pinky.01.L": 0.007843,
+        "pinky.02.L": 0.053956,
+        "pinky.03.L": 0.937356
+      }
+    },
+    {
+      "displacement_m": 0.1631976047986551,
+      "index": 1662,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.414458,
+        -0.000422,
+        1.020555
+      ],
+      "position": [
+        -0.414458,
+        -0.098151,
+        0.889856
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001392,
+        "pinky.01.L": 0.012662,
+        "pinky.02.L": 0.084529,
+        "pinky.03.L": 0.901417
+      }
+    },
+    {
+      "displacement_m": 0.16315207025667697,
+      "index": 16979,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.406802,
+        -0.042241,
+        1.001485
+      ],
+      "position": [
+        0.406802,
+        -0.158684,
+        0.887206
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.000638,
+        "ring.01.R": 0.00751,
+        "ring.02.R": 0.080909,
+        "ring.03.R": 0.910943
+      }
+    },
+    {
+      "displacement_m": 0.1628465837635827,
+      "index": 7250,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.418211,
+        -0.028381,
+        0.989557
+      ],
+      "position": [
+        -0.418211,
+        -0.162835,
+        0.897681
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001962,
+        "ring.01.L": 0.022596,
+        "ring.02.L": 0.210405,
+        "ring.03.L": 0.765036
+      }
+    },
+    {
+      "displacement_m": 0.16273707492665665,
+      "index": 9229,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.409588,
+        -0.010896,
+        1.03074
+      ],
+      "position": [
+        0.409588,
+        -0.088709,
+        0.887812
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.000581,
+        "pinky.01.R": 0.005203,
+        "pinky.02.R": 0.034296,
+        "pinky.03.R": 0.95992
+      }
+    },
+    {
+      "displacement_m": 0.16243635229839443,
+      "index": 9851,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.41766,
+        -0.055056,
+        0.978617
+      ],
+      "position": [
+        -0.41766,
+        -0.198499,
+        0.902394
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000801,
+        "middle.01.L": 0.01128,
+        "middle.02.L": 0.144915,
+        "middle.03.L": 0.843004
+      }
+    },
+    {
+      "displacement_m": 0.1622903944945256,
+      "index": 11341,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.417651,
+        -0.055374,
+        0.978927
+      ],
+      "position": [
+        0.417651,
+        -0.198486,
+        0.902395
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.000783,
+        "middle.01.R": 0.011021,
+        "middle.02.R": 0.142097,
+        "middle.03.R": 0.846098
+      }
+    },
+    {
+      "displacement_m": 0.16222521365951126,
+      "index": 3916,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.40926,
+        -0.004869,
+        1.025705
+      ],
+      "position": [
+        0.40926,
+        -0.094397,
+        0.890421
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001004,
+        "pinky.01.R": 0.009036,
+        "pinky.02.R": 0.060712,
+        "pinky.03.R": 0.929248
+      }
+    },
+    {
+      "displacement_m": 0.1621107394379335,
+      "index": 14915,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.421335,
+        -0.006117,
+        1.025059
+      ],
+      "position": [
+        -0.421335,
+        -0.092625,
+        0.88796
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001073,
+        "pinky.01.L": 0.009524,
+        "pinky.02.L": 0.060478,
+        "pinky.03.L": 0.928925
+      }
+    },
+    {
+      "displacement_m": 0.16209550878672274,
+      "index": 1436,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.426816,
+        -0.039224,
+        1.002533
+      ],
+      "position": [
+        -0.426816,
+        -0.154943,
+        0.889026
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001189,
+        "ring.01.L": 0.01233,
+        "ring.02.L": 0.103988,
+        "ring.03.L": 0.882494
+      }
+    },
+    {
+      "displacement_m": 0.16206717229059536,
+      "index": 5308,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.420165,
+        -0.004732,
+        1.025644
+      ],
+      "position": [
+        0.420165,
+        -0.093769,
+        0.890225
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001371,
+        "pinky.01.R": 0.011675,
+        "pinky.02.R": 0.071383,
+        "pinky.03.R": 0.915571
+      }
+    },
+    {
+      "displacement_m": 0.16176475308845054,
+      "index": 3761,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.423703,
+        -0.050206,
+        0.964741
+      ],
+      "position": [
+        0.423703,
+        -0.202512,
+        0.910235
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001841,
+        "middle.01.R": 0.026245,
+        "middle.02.R": 0.275473,
+        "middle.03.R": 0.696441
+      }
+    },
+    {
+      "displacement_m": 0.16170351802125668,
+      "index": 9334,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.412574,
+        -0.035815,
+        0.9935
+      ],
+      "position": [
+        0.412573,
+        -0.162749,
+        0.893322
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001034,
+        "ring.01.R": 0.012676,
+        "ring.02.R": 0.140528,
+        "ring.03.R": 0.845763
+      }
+    },
+    {
+      "displacement_m": 0.16169877360847615,
+      "index": 1508,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.423732,
+        -0.050071,
+        0.964406
+      ],
+      "position": [
+        -0.423731,
+        -0.202424,
+        0.910232
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001868,
+        "middle.01.L": 0.026644,
+        "middle.02.L": 0.278041,
+        "middle.03.L": 0.693448
+      }
+    },
+    {
+      "displacement_m": 0.16151089671482988,
+      "index": 14978,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.409728,
+        -0.008094,
+        1.026101
+      ],
+      "position": [
+        -0.409728,
+        -0.091573,
+        0.887837
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000646,
+        "pinky.01.L": 0.006112,
+        "pinky.02.L": 0.043034,
+        "pinky.03.L": 0.950208
+      }
+    },
+    {
+      "displacement_m": 0.1613954715231912,
+      "index": 12245,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.411514,
+        -0.002281,
+        1.02107
+      ],
+      "position": [
+        -0.411514,
+        -0.096739,
+        0.890203
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.00117,
+        "pinky.01.L": 0.010994,
+        "pinky.02.L": 0.076936,
+        "pinky.03.L": 0.9109
+      }
+    },
+    {
+      "displacement_m": 0.16125463735488402,
+      "index": 10068,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.411323,
+        -0.01295,
+        1.029454
+      ],
+      "position": [
+        -0.411323,
+        -0.08697,
+        0.886191
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000399,
+        "pinky.01.L": 0.00375,
+        "pinky.02.L": 0.025797,
+        "pinky.03.L": 0.970054
+      }
+    },
+    {
+      "displacement_m": 0.16122527215209304,
+      "index": 3651,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.421787,
+        -0.006338,
+        1.02652
+      ],
+      "position": [
+        0.421787,
+        -0.09206,
+        0.889973
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001354,
+        "pinky.01.R": 0.011507,
+        "pinky.02.R": 0.069482,
+        "pinky.03.R": 0.917658
+      }
+    },
+    {
+      "displacement_m": 0.16120487971255335,
+      "index": 1618,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.420265,
+        -0.002718,
+        1.02143
+      ],
+      "position": [
+        -0.420265,
+        -0.095983,
+        0.889944
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001354,
+        "pinky.01.L": 0.012164,
+        "pinky.02.L": 0.078789,
+        "pinky.03.L": 0.907693
+      }
+    },
+    {
+      "displacement_m": 0.1608168799261272,
+      "index": 17193,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.41026,
+        -0.013877,
+        1.031601
+      ],
+      "position": [
+        0.41026,
+        -0.086061,
+        0.887895
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.00045,
+        "pinky.01.R": 0.004086,
+        "pinky.02.R": 0.02715,
+        "pinky.03.R": 0.968314
+      }
+    },
+    {
+      "displacement_m": 0.16057465433611343,
+      "index": 17185,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.41796,
+        0.000578,
+        1.01944
+      ],
+      "position": [
+        0.41796,
+        -0.098922,
+        0.893408
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001956,
+        "pinky.01.R": 0.016965,
+        "pinky.02.R": 0.106315,
+        "pinky.03.R": 0.874764
+      }
+    },
+    {
+      "displacement_m": 0.16042496363798953,
+      "index": 12276,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.408675,
+        -0.037584,
+        0.999592
+      ],
+      "position": [
+        -0.408675,
+        -0.156516,
+        0.89193
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000859,
+        "ring.01.L": 0.010239,
+        "ring.02.L": 0.113614,
+        "ring.03.L": 0.875287
+      }
+    },
+    {
+      "displacement_m": 0.16033875719764293,
+      "index": 13140,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.414102,
+        0.000674,
+        1.019108
+      ],
+      "position": [
+        0.414103,
+        -0.099276,
+        0.893734
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001814,
+        "pinky.01.R": 0.016134,
+        "pinky.02.R": 0.105454,
+        "pinky.03.R": 0.876598
+      }
+    },
+    {
+      "displacement_m": 0.16010415288233543,
+      "index": 7997,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.406182,
+        -0.046277,
+        1.002994
+      ],
+      "position": [
+        0.406182,
+        -0.155442,
+        0.885878
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.000491,
+        "ring.01.R": 0.005817,
+        "ring.02.R": 0.063894,
+        "ring.03.R": 0.929798
+      }
+    },
+    {
+      "displacement_m": 0.160013382271027,
+      "index": 14751,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.428613,
+        -0.033958,
+        0.995315
+      ],
+      "position": [
+        -0.428613,
+        -0.157737,
+        0.893909
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001951,
+        "ring.01.L": 0.020738,
+        "ring.02.L": 0.170506,
+        "ring.03.L": 0.806805
+      }
+    },
+    {
+      "displacement_m": 0.15994675239202183,
+      "index": 9625,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.422468,
+        -0.00853,
+        1.027506
+      ],
+      "position": [
+        0.422468,
+        -0.089965,
+        0.889842
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001251,
+        "pinky.01.R": 0.010711,
+        "pinky.02.R": 0.064753,
+        "pinky.03.R": 0.923285
+      }
+    },
+    {
+      "displacement_m": 0.1597082534914481,
+      "index": 6553,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.411186,
+        -0.087606,
+        0.986359
+      ],
+      "position": [
+        -0.411186,
+        -0.238744,
+        0.934746
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000735,
+        "index.01.L": 0.008771,
+        "index.02.L": 0.087251,
+        "index.03.L": 0.903243
+      }
+    },
+    {
+      "displacement_m": 0.15966483792610908,
+      "index": 4775,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.408215,
+        -0.008731,
+        1.027164
+      ],
+      "position": [
+        0.408215,
+        -0.091267,
+        0.890487
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.000689,
+        "pinky.01.R": 0.006393,
+        "pinky.02.R": 0.044504,
+        "pinky.03.R": 0.948414
+      }
+    },
+    {
+      "displacement_m": 0.15961745685159215,
+      "index": 9663,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.425963,
+        -0.040274,
+        0.997257
+      ],
+      "position": [
+        0.425963,
+        -0.158493,
+        0.89001
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.001246,
+        "ring.01.R": 0.013783,
+        "ring.02.R": 0.124315,
+        "ring.03.R": 0.860656
+      }
+    },
+    {
+      "displacement_m": 0.1596122762686673,
+      "index": 14927,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.41483,
+        -0.087786,
+        0.986981
+      ],
+      "position": [
+        -0.414829,
+        -0.238215,
+        0.933622
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000938,
+        "index.01.L": 0.010768,
+        "index.02.L": 0.099157,
+        "index.03.L": 0.889137
+      }
+    },
+    {
+      "displacement_m": 0.15956275576531023,
+      "index": 14757,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.41468,
+        -0.030658,
+        0.990094
+      ],
+      "position": [
+        -0.41468,
+        -0.160987,
+        0.898036
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.001583,
+        "ring.01.L": 0.01926,
+        "ring.02.L": 0.202165,
+        "ring.03.L": 0.776993
+      }
+    },
+    {
+      "displacement_m": 0.15951986764509504,
+      "index": 9542,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        -0.409602,
+        -0.011393,
+        1.027289
+      ],
+      "position": [
+        -0.409602,
+        -0.08877,
+        0.887792
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.L": 0.000454,
+        "pinky.01.L": 0.004374,
+        "pinky.02.L": 0.031328,
+        "pinky.03.L": 0.963844
+      }
+    },
+    {
+      "displacement_m": 0.15948715821464604,
+      "index": 8475,
+      "materials": [
+        "MAT_GV2_Gear"
+      ],
+      "posed": [
+        0.411435,
+        -0.015948,
+        1.032156
+      ],
+      "position": [
+        0.411436,
+        -0.084083,
+        0.887956
+      ],
+      "source": "licensed_anatomy",
+      "weights": {
+        "hand.R": 0.000404,
+        "pinky.01.R": 0.003694,
+        "pinky.02.R": 0.024484,
+        "pinky.03.R": 0.971418
+      }
+    }
+  ],
+  "top_edges": [
+    {
+      "after_m": 0.18428480865773836,
+      "before_m": 0.005491712911642735,
+      "indices": [
+        6690,
+        8726
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.414134,
+          -0.026545,
+          1.001529
+        ],
+        [
+          -0.415861,
+          -0.168134,
+          0.883586
+        ]
+      ],
+      "positions": [
+        [
+          -0.414134,
+          -0.166038,
+          0.888359
+        ],
+        [
+          -0.415861,
+          -0.168134,
+          0.883586
+        ]
+      ],
+      "ratio": 33.556890468007595,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001766,
+          "ring.01.L": 0.017402,
+          "ring.02.L": 0.13563,
+          "ring.03.L": 0.845203
+        },
+        {
+          "pelvis": 0.091726,
+          "shin.L": 0.135512,
+          "thigh.L": 0.393061,
+          "thigh_twist.L": 0.3797
+        }
+      ]
+    },
+    {
+      "after_m": 0.1832302445795885,
+      "before_m": 0.004704885681905578,
+      "indices": [
+        6690,
+        1452
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.414134,
+          -0.026545,
+          1.001529
+        ],
+        [
+          -0.412782,
+          -0.16709,
+          0.883977
+        ]
+      ],
+      "positions": [
+        [
+          -0.414134,
+          -0.166038,
+          0.888359
+        ],
+        [
+          -0.412782,
+          -0.16709,
+          0.883977
+        ]
+      ],
+      "ratio": 38.944675166980126,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001766,
+          "ring.01.L": 0.017402,
+          "ring.02.L": 0.13563,
+          "ring.03.L": 0.845203
+        },
+        {
+          "pelvis": 0.091138,
+          "shin.L": 0.133489,
+          "thigh.L": 0.394691,
+          "thigh_twist.L": 0.380682
+        }
+      ]
+    },
+    {
+      "after_m": 0.18169278285792156,
+      "before_m": 0.005649721696807307,
+      "indices": [
+        14756,
+        1452
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.411101,
+          -0.028908,
+          1.001939
+        ],
+        [
+          -0.412782,
+          -0.16709,
+          0.883977
+        ]
+      ],
+      "positions": [
+        [
+          -0.411101,
+          -0.164036,
+          0.888422
+        ],
+        [
+          -0.412782,
+          -0.16709,
+          0.883977
+        ]
+      ],
+      "ratio": 32.159598756979,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001533,
+          "ring.01.L": 0.015652,
+          "ring.02.L": 0.130112,
+          "ring.03.L": 0.852703
+        },
+        {
+          "pelvis": 0.091138,
+          "shin.L": 0.133489,
+          "thigh.L": 0.394691,
+          "thigh_twist.L": 0.380682
+        }
+      ]
+    },
+    {
+      "after_m": 0.1805516679000227,
+      "before_m": 0.003639323449969243,
+      "indices": [
+        6690,
+        14755
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.414134,
+          -0.026545,
+          1.001529
+        ],
+        [
+          -0.417645,
+          -0.166509,
+          0.887526
+        ]
+      ],
+      "positions": [
+        [
+          -0.414134,
+          -0.166038,
+          0.888359
+        ],
+        [
+          -0.417645,
+          -0.166509,
+          0.887525
+        ]
+      ],
+      "ratio": 49.6113275948442,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001766,
+          "ring.01.L": 0.017402,
+          "ring.02.L": 0.13563,
+          "ring.03.L": 0.845203
+        },
+        {
+          "pelvis": 0.092874,
+          "shin.L": 0.13352,
+          "thigh.L": 0.394666,
+          "thigh_twist.L": 0.37894
+        }
+      ]
+    },
+    {
+      "after_m": 0.1800909690475426,
+      "before_m": 0.004658980669754597,
+      "indices": [
+        9842,
+        14756
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.410327,
+          -0.164933,
+          0.883916
+        ],
+        [
+          -0.411101,
+          -0.028908,
+          1.001939
+        ]
+      ],
+      "positions": [
+        [
+          -0.410327,
+          -0.164933,
+          0.883916
+        ],
+        [
+          -0.411101,
+          -0.164036,
+          0.888422
+        ]
+      ],
+      "ratio": 38.654586016350336,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.090184,
+          "shin.L": 0.13175,
+          "thigh.L": 0.396209,
+          "thigh_twist.L": 0.381856
+        },
+        {
+          "hand.L": 0.001533,
+          "ring.01.L": 0.015652,
+          "ring.02.L": 0.130112,
+          "ring.03.L": 0.852703
+        }
+      ]
+    },
+    {
+      "after_m": 0.1784141198585452,
+      "before_m": 0.005618378368705297,
+      "indices": [
+        12281,
+        9842
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.408671,
+          -0.032123,
+          1.003039
+        ],
+        [
+          -0.410327,
+          -0.164933,
+          0.883916
+        ]
+      ],
+      "positions": [
+        [
+          -0.408671,
+          -0.161435,
+          0.887989
+        ],
+        [
+          -0.410327,
+          -0.164933,
+          0.883916
+        ]
+      ],
+      "ratio": 31.755447595399147,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001271,
+          "ring.01.L": 0.013384,
+          "ring.02.L": 0.118287,
+          "ring.03.L": 0.867057
+        },
+        {
+          "pelvis": 0.090184,
+          "shin.L": 0.13175,
+          "thigh.L": 0.396209,
+          "thigh_twist.L": 0.381856
+        }
+      ]
+    },
+    {
+      "after_m": 0.17835449006820991,
+      "before_m": 0.005696617408344443,
+      "indices": [
+        12078,
+        7981
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.415733,
+          -0.168917,
+          0.883805
+        ],
+        [
+          0.413803,
+          -0.032384,
+          0.998546
+        ]
+      ],
+      "positions": [
+        [
+          0.415733,
+          -0.168917,
+          0.883805
+        ],
+        [
+          0.413803,
+          -0.166494,
+          0.888586
+        ]
+      ],
+      "ratio": 31.308841244447116,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.091337,
+          "shin.R": 0.1354,
+          "thigh.R": 0.393322,
+          "thigh_twist.R": 0.379942
+        },
+        {
+          "hand.R": 0.001246,
+          "ring.01.R": 0.013438,
+          "ring.02.R": 0.120338,
+          "ring.03.R": 0.864978
+        }
+      ]
+    },
+    {
+      "after_m": 0.17727395055322936,
+      "before_m": 0.00598726181553974,
+      "indices": [
+        6689,
+        9775
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.419875,
+          -0.027469,
+          0.997284
+        ],
+        [
+          -0.420574,
+          -0.165428,
+          0.885961
+        ]
+      ],
+      "positions": [
+        [
+          -0.419875,
+          -0.164579,
+          0.891846
+        ],
+        [
+          -0.420574,
+          -0.165428,
+          0.885961
+        ]
+      ],
+      "ratio": 29.608518219985086,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001881,
+          "ring.01.L": 0.019262,
+          "ring.02.L": 0.155649,
+          "ring.03.L": 0.823207
+        },
+        {
+          "pelvis": 0.092496,
+          "shin.L": 0.135652,
+          "thigh.L": 0.393113,
+          "thigh_twist.L": 0.37874
+        }
+      ]
+    },
+    {
+      "after_m": 0.17721670700910158,
+      "before_m": 0.005602537431236894,
+      "indices": [
+        1437,
+        9775
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.423555,
+          -0.030224,
+          1.000489
+        ],
+        [
+          -0.420574,
+          -0.165428,
+          0.885961
+        ]
+      ],
+      "positions": [
+        [
+          -0.423555,
+          -0.162663,
+          0.889815
+        ],
+        [
+          -0.420574,
+          -0.165428,
+          0.885961
+        ]
+      ],
+      "ratio": 31.63150789873023,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001677,
+          "ring.01.L": 0.016682,
+          "ring.02.L": 0.130725,
+          "ring.03.L": 0.850916
+        },
+        {
+          "pelvis": 0.092496,
+          "shin.L": 0.135652,
+          "thigh.L": 0.393113,
+          "thigh_twist.L": 0.37874
+        }
+      ]
+    },
+    {
+      "after_m": 0.17715501336126951,
+      "before_m": 0.005230914035915423,
+      "indices": [
+        6689,
+        14755
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.419875,
+          -0.027469,
+          0.997284
+        ],
+        [
+          -0.417645,
+          -0.166509,
+          0.887526
+        ]
+      ],
+      "positions": [
+        [
+          -0.419875,
+          -0.164579,
+          0.891846
+        ],
+        [
+          -0.417645,
+          -0.166509,
+          0.887525
+        ]
+      ],
+      "ratio": 33.866932651717136,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001881,
+          "ring.01.L": 0.019262,
+          "ring.02.L": 0.155649,
+          "ring.03.L": 0.823207
+        },
+        {
+          "pelvis": 0.092874,
+          "shin.L": 0.13352,
+          "thigh.L": 0.394666,
+          "thigh_twist.L": 0.37894
+        }
+      ]
+    },
+    {
+      "after_m": 0.17713648437442991,
+      "before_m": 0.004822908579356456,
+      "indices": [
+        7981,
+        3705
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.413803,
+          -0.032384,
+          0.998546
+        ],
+        [
+          0.412202,
+          -0.167649,
+          0.884185
+        ]
+      ],
+      "positions": [
+        [
+          0.413803,
+          -0.166494,
+          0.888586
+        ],
+        [
+          0.412202,
+          -0.167649,
+          0.884185
+        ]
+      ],
+      "ratio": 36.7281447408373,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.001246,
+          "ring.01.R": 0.013438,
+          "ring.02.R": 0.120338,
+          "ring.03.R": 0.864978
+        },
+        {
+          "pelvis": 0.090622,
+          "shin.R": 0.133099,
+          "thigh.R": 0.395184,
+          "thigh_twist.R": 0.381096
+        }
+      ]
+    },
+    {
+      "after_m": 0.17698498946768276,
+      "before_m": 0.004693693917019589,
+      "indices": [
+        1453,
+        12281
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.408364,
+          -0.162592,
+          0.883451
+        ],
+        [
+          -0.408671,
+          -0.032123,
+          1.003039
+        ]
+      ],
+      "positions": [
+        [
+          -0.408364,
+          -0.162592,
+          0.883451
+        ],
+        [
+          -0.408671,
+          -0.161435,
+          0.887989
+        ]
+      ],
+      "ratio": 37.706972929343685,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.089108,
+          "shin.L": 0.130445,
+          "thigh.L": 0.397415,
+          "thigh_twist.L": 0.383032
+        },
+        {
+          "hand.L": 0.001271,
+          "ring.01.L": 0.013384,
+          "ring.02.L": 0.118287,
+          "ring.03.L": 0.867057
+        }
+      ]
+    },
+    {
+      "after_m": 0.17631406762021024,
+      "before_m": 0.006005144068336758,
+      "indices": [
+        1451,
+        14755
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.416039,
+          -0.02742,
+          0.995869
+        ],
+        [
+          -0.417645,
+          -0.166509,
+          0.887526
+        ]
+      ],
+      "positions": [
+        [
+          -0.416039,
+          -0.164448,
+          0.892933
+        ],
+        [
+          -0.417645,
+          -0.166509,
+          0.887525
+        ]
+      ],
+      "ratio": 29.36050586194244,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001817,
+          "ring.01.L": 0.019337,
+          "ring.02.L": 0.165891,
+          "ring.03.L": 0.812955
+        },
+        {
+          "pelvis": 0.092874,
+          "shin.L": 0.13352,
+          "thigh.L": 0.394666,
+          "thigh_twist.L": 0.37894
+        }
+      ]
+    },
+    {
+      "after_m": 0.1753485915931285,
+      "before_m": 0.005710823020396333,
+      "indices": [
+        3705,
+        16972
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.412202,
+          -0.167649,
+          0.884185
+        ],
+        [
+          0.410895,
+          -0.03525,
+          0.999146
+        ]
+      ],
+      "positions": [
+        [
+          0.412202,
+          -0.167649,
+          0.884185
+        ],
+        [
+          0.410895,
+          -0.164197,
+          0.888543
+        ]
+      ],
+      "ratio": 30.70460964503138,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.090622,
+          "shin.R": 0.133099,
+          "thigh.R": 0.395184,
+          "thigh_twist.R": 0.381096
+        },
+        {
+          "hand.R": 0.001006,
+          "ring.01.R": 0.01127,
+          "ring.02.R": 0.109113,
+          "ring.03.R": 0.878611
+        }
+      ]
+    },
+    {
+      "after_m": 0.17531986823568232,
+      "before_m": 0.005717674990018672,
+      "indices": [
+        1453,
+        14763
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.408364,
+          -0.162592,
+          0.883451
+        ],
+        [
+          -0.406806,
+          -0.03575,
+          1.004471
+        ]
+      ],
+      "positions": [
+        [
+          -0.408364,
+          -0.162592,
+          0.883451
+        ],
+        [
+          -0.406807,
+          -0.158536,
+          0.887168
+        ]
+      ],
+      "ratio": 30.662790127409778,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.089108,
+          "shin.L": 0.130445,
+          "thigh.L": 0.397415,
+          "thigh_twist.L": 0.383032
+        },
+        {
+          "hand.L": 0.001038,
+          "ring.01.L": 0.011176,
+          "ring.02.L": 0.10368,
+          "ring.03.L": 0.884106
+        }
+      ]
+    },
+    {
+      "after_m": 0.1745458766905822,
+      "before_m": 0.004046100646156107,
+      "indices": [
+        7981,
+        16971
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.413803,
+          -0.032384,
+          0.998546
+        ],
+        [
+          0.417691,
+          -0.167126,
+          0.88766
+        ]
+      ],
+      "positions": [
+        [
+          0.413803,
+          -0.166494,
+          0.888586
+        ],
+        [
+          0.417691,
+          -0.167126,
+          0.88766
+        ]
+      ],
+      "ratio": 43.13928197915812,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.001246,
+          "ring.01.R": 0.013438,
+          "ring.02.R": 0.120338,
+          "ring.03.R": 0.864978
+        },
+        {
+          "pelvis": 0.092432,
+          "shin.R": 0.133501,
+          "thigh.R": 0.394873,
+          "thigh_twist.R": 0.379194
+        }
+      ]
+    },
+    {
+      "after_m": 0.17421387515805004,
+      "before_m": 0.004923757242829232,
+      "indices": [
+        6694,
+        14763
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.407019,
+          -0.160171,
+          0.882528
+        ],
+        [
+          -0.406806,
+          -0.03575,
+          1.004471
+        ]
+      ],
+      "positions": [
+        [
+          -0.407019,
+          -0.160171,
+          0.882528
+        ],
+        [
+          -0.406807,
+          -0.158536,
+          0.887168
+        ]
+      ],
+      "ratio": 35.38230391268138,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.087944,
+          "shin.L": 0.129705,
+          "thigh.L": 0.398192,
+          "thigh_twist.L": 0.384159
+        },
+        {
+          "hand.L": 0.001038,
+          "ring.01.L": 0.011176,
+          "ring.02.L": 0.10368,
+          "ring.03.L": 0.884106
+        }
+      ]
+    },
+    {
+      "after_m": 0.17375932110760306,
+      "before_m": 0.00361617225088972,
+      "indices": [
+        9774,
+        1437
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.422847,
+          -0.161376,
+          0.886511
+        ],
+        [
+          -0.423555,
+          -0.030224,
+          1.000489
+        ]
+      ],
+      "positions": [
+        [
+          -0.422847,
+          -0.161376,
+          0.886511
+        ],
+        [
+          -0.423555,
+          -0.162663,
+          0.889815
+        ]
+      ],
+      "ratio": 48.050620670752465,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.091989,
+          "shin.L": 0.135444,
+          "thigh.L": 0.393574,
+          "thigh_twist.L": 0.378993
+        },
+        {
+          "hand.L": 0.001677,
+          "ring.01.L": 0.016682,
+          "ring.02.L": 0.130725,
+          "ring.03.L": 0.850916
+        }
+      ]
+    },
+    {
+      "after_m": 0.1735404888194155,
+      "before_m": 0.004712269343601232,
+      "indices": [
+        8596,
+        16972
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.41005,
+          -0.165077,
+          0.883991
+        ],
+        [
+          0.410895,
+          -0.03525,
+          0.999146
+        ]
+      ],
+      "positions": [
+        [
+          0.41005,
+          -0.165077,
+          0.883991
+        ],
+        [
+          0.410895,
+          -0.164197,
+          0.888543
+        ]
+      ],
+      "ratio": 36.827370459005124,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.089555,
+          "shin.R": 0.131477,
+          "thigh.R": 0.396648,
+          "thigh_twist.R": 0.38232
+        },
+        {
+          "hand.R": 0.001006,
+          "ring.01.R": 0.01127,
+          "ring.02.R": 0.109113,
+          "ring.03.R": 0.878611
+        }
+      ]
+    },
+    {
+      "after_m": 0.1725396859635349,
+      "before_m": 0.00595123835339107,
+      "indices": [
+        6694,
+        6692
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.407019,
+          -0.160171,
+          0.882528
+        ],
+        [
+          -0.406154,
+          -0.040253,
+          1.00658
+        ]
+      ],
+      "positions": [
+        [
+          -0.407019,
+          -0.160171,
+          0.882528
+        ],
+        [
+          -0.406154,
+          -0.155301,
+          0.885839
+        ]
+      ],
+      "ratio": 28.992232493128125,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.087944,
+          "shin.L": 0.129705,
+          "thigh.L": 0.398192,
+          "thigh_twist.L": 0.384159
+        },
+        {
+          "hand.L": 0.00079,
+          "ring.01.L": 0.008603,
+          "ring.02.L": 0.082408,
+          "ring.03.L": 0.908199
+        }
+      ]
+    },
+    {
+      "after_m": 0.17175894985167703,
+      "before_m": 0.005557700543022766,
+      "indices": [
+        8596,
+        11647
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.41005,
+          -0.165077,
+          0.883991
+        ],
+        [
+          0.408621,
+          -0.038755,
+          1.000361
+        ]
+      ],
+      "positions": [
+        [
+          0.41005,
+          -0.165077,
+          0.883991
+        ],
+        [
+          0.408621,
+          -0.161555,
+          0.888047
+        ]
+      ],
+      "ratio": 30.90467874655575,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.089555,
+          "shin.R": 0.131477,
+          "thigh.R": 0.396648,
+          "thigh_twist.R": 0.38232
+        },
+        {
+          "hand.R": 0.000796,
+          "ring.01.R": 0.009176,
+          "ring.02.R": 0.094653,
+          "ring.03.R": 0.895375
+        }
+      ]
+    },
+    {
+      "after_m": 0.17168897560611937,
+      "before_m": 0.005146249824280109,
+      "indices": [
+        1459,
+        6692
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.406621,
+          -0.157608,
+          0.881262
+        ],
+        [
+          -0.406154,
+          -0.040253,
+          1.00658
+        ]
+      ],
+      "positions": [
+        [
+          -0.406621,
+          -0.157608,
+          0.881262
+        ],
+        [
+          -0.406154,
+          -0.155301,
+          0.885839
+        ]
+      ],
+      "ratio": 33.3619589931463,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.086774,
+          "shin.L": 0.129625,
+          "thigh.L": 0.398473,
+          "thigh_twist.L": 0.385128
+        },
+        {
+          "hand.L": 0.00079,
+          "ring.01.L": 0.008603,
+          "ring.02.L": 0.082408,
+          "ring.03.L": 0.908199
+        }
+      ]
+    },
+    {
+      "after_m": 0.17159765083389333,
+      "before_m": 0.00484542574371507,
+      "indices": [
+        1437,
+        14742
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.423555,
+          -0.030224,
+          1.000489
+        ],
+        [
+          -0.424767,
+          -0.158918,
+          0.886989
+        ]
+      ],
+      "positions": [
+        [
+          -0.423555,
+          -0.162663,
+          0.889815
+        ],
+        [
+          -0.424767,
+          -0.158918,
+          0.886989
+        ]
+      ],
+      "ratio": 35.41435983338928,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001677,
+          "ring.01.L": 0.016682,
+          "ring.02.L": 0.130725,
+          "ring.03.L": 0.850916
+        },
+        {
+          "pelvis": 0.091829,
+          "shin.L": 0.135513,
+          "thigh.L": 0.393693,
+          "thigh_twist.L": 0.378965
+        }
+      ]
+    },
+    {
+      "after_m": 0.17148062234190778,
+      "before_m": 0.0025736728101631396,
+      "indices": [
+        5055,
+        3924
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.412768,
+          -0.003633,
+          1.030233
+        ],
+        [
+          0.415151,
+          -0.094687,
+          0.884943
+        ]
+      ],
+      "positions": [
+        [
+          0.412768,
+          -0.094127,
+          0.885736
+        ],
+        [
+          0.415151,
+          -0.094687,
+          0.884943
+        ]
+      ],
+      "ratio": 66.6287578066452,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.001174,
+          "pinky.01.R": 0.00966,
+          "pinky.02.R": 0.057713,
+          "pinky.03.R": 0.931453
+        },
+        {
+          "pelvis": 0.074712,
+          "shin.R": 0.117476,
+          "thigh.R": 0.412166,
+          "thigh_twist.R": 0.395646
+        }
+      ]
+    },
+    {
+      "after_m": 0.1712242899464091,
+      "before_m": 0.005313817066379889,
+      "indices": [
+        9658,
+        16971
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.419955,
+          -0.033249,
+          0.994382
+        ],
+        [
+          0.417691,
+          -0.167126,
+          0.88766
+        ]
+      ],
+      "positions": [
+        [
+          0.419955,
+          -0.164826,
+          0.891881
+        ],
+        [
+          0.417691,
+          -0.167126,
+          0.88766
+        ]
+      ],
+      "ratio": 32.22246603665226,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.00142,
+          "ring.01.R": 0.015848,
+          "ring.02.R": 0.145557,
+          "ring.03.R": 0.837176
+        },
+        {
+          "pelvis": 0.092432,
+          "shin.R": 0.133501,
+          "thigh.R": 0.394873,
+          "thigh_twist.R": 0.379194
+        }
+      ]
+    },
+    {
+      "after_m": 0.1710244865002348,
+      "before_m": 0.006016957685064855,
+      "indices": [
+        6692,
+        6693
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.406154,
+          -0.040253,
+          1.00658
+        ],
+        [
+          -0.407179,
+          -0.155159,
+          0.879911
+        ]
+      ],
+      "positions": [
+        [
+          -0.406154,
+          -0.155301,
+          0.885839
+        ],
+        [
+          -0.407179,
+          -0.155159,
+          0.879911
+        ]
+      ],
+      "ratio": 28.423747590039994,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.00079,
+          "ring.01.L": 0.008603,
+          "ring.02.L": 0.082408,
+          "ring.03.L": 0.908199
+        },
+        {
+          "pelvis": 0.085767,
+          "shin.L": 0.13013,
+          "thigh.L": 0.398298,
+          "thigh_twist.L": 0.385805
+        }
+      ]
+    },
+    {
+      "after_m": 0.17101594693806776,
+      "before_m": 0.003449862399986574,
+      "indices": [
+        5055,
+        8849
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.412768,
+          -0.003633,
+          1.030233
+        ],
+        [
+          0.414844,
+          -0.092088,
+          0.883884
+        ]
+      ],
+      "positions": [
+        [
+          0.412768,
+          -0.094127,
+          0.885736
+        ],
+        [
+          0.414844,
+          -0.092088,
+          0.883884
+        ]
+      ],
+      "ratio": 49.57181681760215,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.001174,
+          "pinky.01.R": 0.00966,
+          "pinky.02.R": 0.057713,
+          "pinky.03.R": 0.931453
+        },
+        {
+          "pelvis": 0.073843,
+          "shin.R": 0.117458,
+          "thigh.R": 0.412253,
+          "thigh_twist.R": 0.396446
+        }
+      ]
+    },
+    {
+      "after_m": 0.17095249789806344,
+      "before_m": 0.004025332170506865,
+      "indices": [
+        3924,
+        17196
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.415151,
+          -0.094687,
+          0.884943
+        ],
+        [
+          0.418203,
+          -0.000568,
+          1.027621
+        ]
+      ],
+      "positions": [
+        [
+          0.415151,
+          -0.094687,
+          0.884943
+        ],
+        [
+          0.418203,
+          -0.096545,
+          0.886797
+        ]
+      ],
+      "ratio": 42.46916543946665,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.074712,
+          "shin.R": 0.117476,
+          "thigh.R": 0.412166,
+          "thigh_twist.R": 0.395646
+        },
+        {
+          "hand.R": 0.001669,
+          "pinky.01.R": 0.013339,
+          "pinky.02.R": 0.076296,
+          "pinky.03.R": 0.908696
+        }
+      ]
+    },
+    {
+      "after_m": 0.17091518877881617,
+      "before_m": 0.0031213723225488417,
+      "indices": [
+        4537,
+        17196
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.418196,
+          -0.094258,
+          0.884673
+        ],
+        [
+          0.418203,
+          -0.000568,
+          1.027621
+        ]
+      ],
+      "positions": [
+        [
+          0.418196,
+          -0.094258,
+          0.884673
+        ],
+        [
+          0.418203,
+          -0.096545,
+          0.886797
+        ]
+      ],
+      "ratio": 54.75642477641075,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.075241,
+          "shin.R": 0.119391,
+          "thigh.R": 0.410592,
+          "thigh_twist.R": 0.394777
+        },
+        {
+          "hand.R": 0.001669,
+          "pinky.01.R": 0.013339,
+          "pinky.02.R": 0.076296,
+          "pinky.03.R": 0.908696
+        }
+      ]
+    },
+    {
+      "after_m": 0.1708316044466152,
+      "before_m": 0.0028998246461433945,
+      "indices": [
+        13158,
+        3924
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.414953,
+          -0.000697,
+          1.027594
+        ],
+        [
+          0.415151,
+          -0.094687,
+          0.884943
+        ]
+      ],
+      "positions": [
+        [
+          0.414954,
+          -0.096756,
+          0.886965
+        ],
+        [
+          0.415151,
+          -0.094687,
+          0.884943
+        ]
+      ],
+      "ratio": 58.9110119723314,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.001512,
+          "pinky.01.R": 0.012293,
+          "pinky.02.R": 0.072321,
+          "pinky.03.R": 0.913875
+        },
+        {
+          "pelvis": 0.074712,
+          "shin.R": 0.117476,
+          "thigh.R": 0.412166,
+          "thigh_twist.R": 0.395646
+        }
+      ]
+    },
+    {
+      "after_m": 0.17069075220614574,
+      "before_m": 0.005996132341182432,
+      "indices": [
+        12079,
+        9658
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.420247,
+          -0.165029,
+          0.885895
+        ],
+        [
+          0.419955,
+          -0.033249,
+          0.994382
+        ]
+      ],
+      "positions": [
+        [
+          0.420247,
+          -0.165029,
+          0.885895
+        ],
+        [
+          0.419955,
+          -0.164826,
+          0.891881
+        ]
+      ],
+      "ratio": 28.466808684960693,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.091672,
+          "shin.R": 0.135322,
+          "thigh.R": 0.393644,
+          "thigh_twist.R": 0.379361
+        },
+        {
+          "hand.R": 0.00142,
+          "ring.01.R": 0.015848,
+          "ring.02.R": 0.145557,
+          "ring.03.R": 0.837176
+        }
+      ]
+    },
+    {
+      "after_m": 0.17037100768094893,
+      "before_m": 0.004724008328312008,
+      "indices": [
+        3706,
+        11647
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.408263,
+          -0.162711,
+          0.88348
+        ],
+        [
+          0.408621,
+          -0.038755,
+          1.000361
+        ]
+      ],
+      "positions": [
+        [
+          0.408263,
+          -0.162711,
+          0.88348
+        ],
+        [
+          0.408621,
+          -0.161555,
+          0.888047
+        ]
+      ],
+      "ratio": 36.06492534314101,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.088484,
+          "shin.R": 0.130274,
+          "thigh.R": 0.397775,
+          "thigh_twist.R": 0.383468
+        },
+        {
+          "hand.R": 0.000796,
+          "ring.01.R": 0.009176,
+          "ring.02.R": 0.094653,
+          "ring.03.R": 0.895375
+        }
+      ]
+    },
+    {
+      "after_m": 0.17032658001841924,
+      "before_m": 0.0056098591237816854,
+      "indices": [
+        3690,
+        12079
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.423388,
+          -0.036234,
+          0.997309
+        ],
+        [
+          0.420247,
+          -0.165029,
+          0.885895
+        ]
+      ],
+      "positions": [
+        [
+          0.423388,
+          -0.162534,
+          0.889816
+        ],
+        [
+          0.420247,
+          -0.165029,
+          0.885895
+        ]
+      ],
+      "ratio": 30.362006649393308,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.001291,
+          "ring.01.R": 0.013985,
+          "ring.02.R": 0.123461,
+          "ring.03.R": 0.861263
+        },
+        {
+          "pelvis": 0.091672,
+          "shin.R": 0.135322,
+          "thigh.R": 0.393644,
+          "thigh_twist.R": 0.379361
+        }
+      ]
+    },
+    {
+      "after_m": 0.17030232033507123,
+      "before_m": 0.006173783398816462,
+      "indices": [
+        16971,
+        3704
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.417691,
+          -0.167126,
+          0.88766
+        ],
+        [
+          0.415989,
+          -0.033443,
+          0.993152
+        ]
+      ],
+      "positions": [
+        [
+          0.417691,
+          -0.167126,
+          0.88766
+        ],
+        [
+          0.415989,
+          -0.16463,
+          0.893044
+        ]
+      ],
+      "ratio": 27.584757892173354,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.092432,
+          "shin.R": 0.133501,
+          "thigh.R": 0.394873,
+          "thigh_twist.R": 0.379194
+        },
+        {
+          "hand.R": 0.001294,
+          "ring.01.R": 0.015123,
+          "ring.02.R": 0.151102,
+          "ring.03.R": 0.832481
+        }
+      ]
+    },
+    {
+      "after_m": 0.17014819024710062,
+      "before_m": 0.002288945008174178,
+      "indices": [
+        5055,
+        17415
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.412768,
+          -0.003633,
+          1.030233
+        ],
+        [
+          0.4127,
+          -0.092021,
+          0.884843
+        ]
+      ],
+      "positions": [
+        [
+          0.412768,
+          -0.094127,
+          0.885736
+        ],
+        [
+          0.4127,
+          -0.092021,
+          0.884843
+        ]
+      ],
+      "ratio": 74.33476542226879,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.001174,
+          "pinky.01.R": 0.00966,
+          "pinky.02.R": 0.057713,
+          "pinky.03.R": 0.931453
+        },
+        {
+          "pelvis": 0.073636,
+          "shin.R": 0.11556,
+          "thigh.R": 0.413865,
+          "thigh_twist.R": 0.396939
+        }
+      ]
+    },
+    {
+      "after_m": 0.16980375585689164,
+      "before_m": 0.0034403215058719672,
+      "indices": [
+        4537,
+        5309
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.418196,
+          -0.094258,
+          0.884673
+        ],
+        [
+          0.420144,
+          -0.003067,
+          1.027899
+        ]
+      ],
+      "positions": [
+        [
+          0.418196,
+          -0.094258,
+          0.884673
+        ],
+        [
+          0.420144,
+          -0.094452,
+          0.887502
+        ]
+      ],
+      "ratio": 49.35694398534244,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.075241,
+          "shin.R": 0.119391,
+          "thigh.R": 0.410592,
+          "thigh_twist.R": 0.394777
+        },
+        {
+          "hand.R": 0.001521,
+          "pinky.01.R": 0.012362,
+          "pinky.02.R": 0.071557,
+          "pinky.03.R": 0.914559
+        }
+      ]
+    },
+    {
+      "after_m": 0.16965393225213993,
+      "before_m": 0.0051900508657884235,
+      "indices": [
+        6693,
+        14760
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.407179,
+          -0.155159,
+          0.879911
+        ],
+        [
+          -0.407015,
+          -0.044548,
+          1.008549
+        ]
+      ],
+      "positions": [
+        [
+          -0.407179,
+          -0.155159,
+          0.879911
+        ],
+        [
+          -0.407015,
+          -0.152261,
+          0.884214
+        ]
+      ],
+      "ratio": 32.68829856186154,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.085767,
+          "shin.L": 0.13013,
+          "thigh.L": 0.398298,
+          "thigh_twist.L": 0.385805
+        },
+        {
+          "hand.L": 0.000551,
+          "ring.01.L": 0.005985,
+          "ring.02.L": 0.057808,
+          "ring.03.L": 0.935657
+        }
+      ]
+    },
+    {
+      "after_m": 0.1693983101230443,
+      "before_m": 0.007014234757974788,
+      "indices": [
+        6932,
+        17166
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.42799,
+          -0.048655,
+          0.96377
+        ],
+        [
+          0.426495,
+          -0.207191,
+          0.904105
+        ]
+      ],
+      "positions": [
+        [
+          0.42799,
+          -0.203937,
+          0.910136
+        ],
+        [
+          0.426495,
+          -0.207191,
+          0.904105
+        ]
+      ],
+      "ratio": 24.150647357567838,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.002298,
+          "middle.01.R": 0.030752,
+          "middle.02.R": 0.279751,
+          "middle.03.R": 0.687199
+        },
+        {
+          "pelvis": 0.109806,
+          "shin.R": 0.137854,
+          "thigh.R": 0.387991,
+          "thigh_twist.R": 0.364349
+        }
+      ]
+    },
+    {
+      "after_m": 0.16933580738116177,
+      "before_m": 0.005876868523676386,
+      "indices": [
+        14760,
+        1458
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.407015,
+          -0.044548,
+          1.008549
+        ],
+        [
+          -0.40852,
+          -0.153104,
+          0.878596
+        ]
+      ],
+      "positions": [
+        [
+          -0.407015,
+          -0.152261,
+          0.884214
+        ],
+        [
+          -0.40852,
+          -0.153104,
+          0.878596
+        ]
+      ],
+      "ratio": 28.813951971011694,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.000551,
+          "ring.01.L": 0.005985,
+          "ring.02.L": 0.057808,
+          "ring.03.L": 0.935657
+        },
+        {
+          "pelvis": 0.085016,
+          "shin.L": 0.131141,
+          "thigh.L": 0.397715,
+          "thigh_twist.L": 0.386129
+        }
+      ]
+    },
+    {
+      "after_m": 0.1693035822343224,
+      "before_m": 0.002066564746084988,
+      "indices": [
+        10433,
+        17415
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.411076,
+          -0.006717,
+          1.031077
+        ],
+        [
+          0.4127,
+          -0.092021,
+          0.884843
+        ]
+      ],
+      "positions": [
+        [
+          0.411076,
+          -0.091717,
+          0.886085
+        ],
+        [
+          0.4127,
+          -0.092021,
+          0.884843
+        ]
+      ],
+      "ratio": 81.92512843116107,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.000893,
+          "pinky.01.R": 0.007572,
+          "pinky.02.R": 0.04684,
+          "pinky.03.R": 0.944695
+        },
+        {
+          "pelvis": 0.073636,
+          "shin.R": 0.11556,
+          "thigh.R": 0.413865,
+          "thigh_twist.R": 0.396939
+        }
+      ]
+    },
+    {
+      "after_m": 0.16928343727582937,
+      "before_m": 0.0024544143029028246,
+      "indices": [
+        3923,
+        17415
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.4114,
+          -0.004913,
+          1.029989
+        ],
+        [
+          0.4127,
+          -0.092021,
+          0.884843
+        ]
+      ],
+      "positions": [
+        [
+          0.4114,
+          -0.093334,
+          0.886459
+        ],
+        [
+          0.4127,
+          -0.092021,
+          0.884843
+        ]
+      ],
+      "ratio": 68.97101156704417,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.001029,
+          "pinky.01.R": 0.008662,
+          "pinky.02.R": 0.053279,
+          "pinky.03.R": 0.93703
+        },
+        {
+          "pelvis": 0.073636,
+          "shin.R": 0.11556,
+          "thigh.R": 0.413865,
+          "thigh_twist.R": 0.396939
+        }
+      ]
+    },
+    {
+      "after_m": 0.16906131998883778,
+      "before_m": 0.007018280959748709,
+      "indices": [
+        8009,
+        14950
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.427979,
+          -0.048694,
+          0.963613
+        ],
+        [
+          -0.426468,
+          -0.2069,
+          0.904028
+        ]
+      ],
+      "positions": [
+        [
+          -0.427979,
+          -0.203668,
+          0.910072
+        ],
+        [
+          -0.426468,
+          -0.2069,
+          0.904027
+        ]
+      ],
+      "ratio": 24.088707898478184,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.0023,
+          "middle.01.L": 0.030876,
+          "middle.02.L": 0.281128,
+          "middle.03.L": 0.685696
+        },
+        {
+          "pelvis": 0.110367,
+          "shin.L": 0.137851,
+          "thigh.L": 0.387764,
+          "thigh_twist.L": 0.364018
+        }
+      ]
+    },
+    {
+      "after_m": 0.16881536714418124,
+      "before_m": 0.008112967945956851,
+      "indices": [
+        8009,
+        12062
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.427979,
+          -0.048694,
+          0.963613
+        ],
+        [
+          -0.431221,
+          -0.206258,
+          0.9031
+        ]
+      ],
+      "positions": [
+        [
+          -0.427979,
+          -0.203668,
+          0.910072
+        ],
+        [
+          -0.431221,
+          -0.206258,
+          0.9031
+        ]
+      ],
+      "ratio": 20.808089994773297,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.0023,
+          "middle.01.L": 0.030876,
+          "middle.02.L": 0.281128,
+          "middle.03.L": 0.685696
+        },
+        {
+          "pelvis": 0.11028,
+          "shin.L": 0.140197,
+          "thigh.L": 0.385945,
+          "thigh_twist.L": 0.363577
+        }
+      ]
+    },
+    {
+      "after_m": 0.1687954434364845,
+      "before_m": 0.00808373395045239,
+      "indices": [
+        6055,
+        6932
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.431204,
+          -0.206117,
+          0.903047
+        ],
+        [
+          0.42799,
+          -0.048655,
+          0.96377
+        ]
+      ],
+      "positions": [
+        [
+          0.431204,
+          -0.206117,
+          0.903047
+        ],
+        [
+          0.42799,
+          -0.203937,
+          0.910136
+        ]
+      ],
+      "ratio": 20.88087565363754,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.109556,
+          "shin.R": 0.140154,
+          "thigh.R": 0.38625,
+          "thigh_twist.R": 0.36404
+        },
+        {
+          "hand.R": 0.002298,
+          "middle.01.R": 0.030752,
+          "middle.02.R": 0.279751,
+          "middle.03.R": 0.687199
+        }
+      ]
+    },
+    {
+      "after_m": 0.1686422362694502,
+      "before_m": 0.005677287325504186,
+      "indices": [
+        16979,
+        3706
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.406802,
+          -0.042241,
+          1.001485
+        ],
+        [
+          0.408263,
+          -0.162711,
+          0.88348
+        ]
+      ],
+      "positions": [
+        [
+          0.406802,
+          -0.158684,
+          0.887206
+        ],
+        [
+          0.408263,
+          -0.162711,
+          0.88348
+        ]
+      ],
+      "ratio": 29.70472104025024,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.000638,
+          "ring.01.R": 0.00751,
+          "ring.02.R": 0.080909,
+          "ring.03.R": 0.910943
+        },
+        {
+          "pelvis": 0.088484,
+          "shin.R": 0.130274,
+          "thigh.R": 0.397775,
+          "thigh_twist.R": 0.383468
+        }
+      ]
+    },
+    {
+      "after_m": 0.1685869852031398,
+      "before_m": 0.003258496651421645,
+      "indices": [
+        8061,
+        14742
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.426307,
+          -0.034799,
+          1.001067
+        ],
+        [
+          -0.424767,
+          -0.158918,
+          0.886989
+        ]
+      ],
+      "positions": [
+        [
+          -0.426307,
+          -0.158571,
+          0.88984
+        ],
+        [
+          -0.424767,
+          -0.158918,
+          0.886989
+        ]
+      ],
+      "ratio": 51.7376579563423,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001464,
+          "ring.01.L": 0.014901,
+          "ring.02.L": 0.12096,
+          "ring.03.L": 0.862676
+        },
+        {
+          "pelvis": 0.091829,
+          "shin.L": 0.135513,
+          "thigh.L": 0.393693,
+          "thigh_twist.L": 0.378965
+        }
+      ]
+    },
+    {
+      "after_m": 0.1684681552710422,
+      "before_m": 0.005838853760877258,
+      "indices": [
+        5089,
+        8674
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.410324,
+          -0.151357,
+          0.877147
+        ],
+        [
+          -0.408988,
+          -0.048067,
+          1.01023
+        ]
+      ],
+      "positions": [
+        [
+          -0.410324,
+          -0.151357,
+          0.877147
+        ],
+        [
+          -0.408988,
+          -0.1499,
+          0.882642
+        ]
+      ],
+      "ratio": 28.852949940251754,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.084393,
+          "shin.L": 0.132579,
+          "thigh.L": 0.396804,
+          "thigh_twist.L": 0.386224
+        },
+        {
+          "hand.L": 0.00036,
+          "ring.01.L": 0.00386,
+          "ring.02.L": 0.03675,
+          "ring.03.L": 0.959031
+        }
+      ]
+    },
+    {
+      "after_m": 0.16840601422332427,
+      "before_m": 0.005182153551293221,
+      "indices": [
+        8674,
+        1458
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.408988,
+          -0.048067,
+          1.01023
+        ],
+        [
+          -0.40852,
+          -0.153104,
+          0.878596
+        ]
+      ],
+      "positions": [
+        [
+          -0.408988,
+          -0.1499,
+          0.882642
+        ],
+        [
+          -0.40852,
+          -0.153104,
+          0.878596
+        ]
+      ],
+      "ratio": 32.49730301436129,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.00036,
+          "ring.01.L": 0.00386,
+          "ring.02.L": 0.03675,
+          "ring.03.L": 0.959031
+        },
+        {
+          "pelvis": 0.085016,
+          "shin.L": 0.131141,
+          "thigh.L": 0.397715,
+          "thigh_twist.L": 0.386129
+        }
+      ]
+    },
+    {
+      "after_m": 0.1683113313051834,
+      "before_m": 0.008201580768387243,
+      "indices": [
+        17166,
+        3761
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.426495,
+          -0.207191,
+          0.904105
+        ],
+        [
+          0.423703,
+          -0.050206,
+          0.964741
+        ]
+      ],
+      "positions": [
+        [
+          0.426495,
+          -0.207191,
+          0.904105
+        ],
+        [
+          0.423703,
+          -0.202512,
+          0.910235
+        ]
+      ],
+      "ratio": 20.521815983808217,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.109806,
+          "shin.R": 0.137854,
+          "thigh.R": 0.387991,
+          "thigh_twist.R": 0.364349
+        },
+        {
+          "hand.R": 0.001841,
+          "middle.01.R": 0.026245,
+          "middle.02.R": 0.275473,
+          "middle.03.R": 0.696441
+        }
+      ]
+    },
+    {
+      "after_m": 0.16819538221396022,
+      "before_m": 0.002987628760883303,
+      "indices": [
+        10433,
+        10586
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.411076,
+          -0.006717,
+          1.031077
+        ],
+        [
+          0.412559,
+          -0.089531,
+          0.88469
+        ]
+      ],
+      "positions": [
+        [
+          0.411076,
+          -0.091717,
+          0.886085
+        ],
+        [
+          0.412559,
+          -0.089531,
+          0.88469
+        ]
+      ],
+      "ratio": 56.29728312169303,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.000893,
+          "pinky.01.R": 0.007572,
+          "pinky.02.R": 0.04684,
+          "pinky.03.R": 0.944695
+        },
+        {
+          "pelvis": 0.073111,
+          "shin.R": 0.115111,
+          "thigh.R": 0.414331,
+          "thigh_twist.R": 0.397447
+        }
+      ]
+    },
+    {
+      "after_m": 0.16807253154690366,
+      "before_m": 0.008124683416782193,
+      "indices": [
+        1508,
+        14950
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.423732,
+          -0.050071,
+          0.964406
+        ],
+        [
+          -0.426468,
+          -0.2069,
+          0.904028
+        ]
+      ],
+      "positions": [
+        [
+          -0.423731,
+          -0.202424,
+          0.910232
+        ],
+        [
+          -0.426468,
+          -0.2069,
+          0.904027
+        ]
+      ],
+      "ratio": 20.6866560732368,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001868,
+          "middle.01.L": 0.026644,
+          "middle.02.L": 0.278041,
+          "middle.03.L": 0.693448
+        },
+        {
+          "pelvis": 0.110367,
+          "shin.L": 0.137851,
+          "thigh.L": 0.387764,
+          "thigh_twist.L": 0.364018
+        }
+      ]
+    },
+    {
+      "after_m": 0.16801632846577447,
+      "before_m": 0.0026325572067920043,
+      "indices": [
+        3870,
+        5309
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.420096,
+          -0.092543,
+          0.885689
+        ],
+        [
+          0.420144,
+          -0.003067,
+          1.027899
+        ]
+      ],
+      "positions": [
+        [
+          0.420096,
+          -0.092543,
+          0.885689
+        ],
+        [
+          0.420144,
+          -0.094452,
+          0.887502
+        ]
+      ],
+      "ratio": 63.82247953901701,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.075685,
+          "shin.R": 0.1196,
+          "thigh.R": 0.410513,
+          "thigh_twist.R": 0.394201
+        },
+        {
+          "hand.R": 0.001521,
+          "pinky.01.R": 0.012362,
+          "pinky.02.R": 0.071557,
+          "pinky.03.R": 0.914559
+        }
+      ]
+    },
+    {
+      "after_m": 0.16795982181753888,
+      "before_m": 0.0024819916933134646,
+      "indices": [
+        11933,
+        1671
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.412762,
+          -0.004562,
+          1.026843
+        ],
+        [
+          -0.415042,
+          -0.09458,
+          0.885061
+        ]
+      ],
+      "positions": [
+        [
+          -0.412762,
+          -0.094058,
+          0.885892
+        ],
+        [
+          -0.415042,
+          -0.09458,
+          0.885061
+        ]
+      ],
+      "ratio": 67.67138756750315,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.000906,
+          "pinky.01.L": 0.008045,
+          "pinky.02.L": 0.052272,
+          "pinky.03.L": 0.938777
+        },
+        {
+          "pelvis": 0.07533,
+          "shin.L": 0.117567,
+          "thigh.L": 0.411895,
+          "thigh_twist.L": 0.395208
+        }
+      ]
+    },
+    {
+      "after_m": 0.16783142006118706,
+      "before_m": 0.0020331661153281506,
+      "indices": [
+        3922,
+        10586
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.410987,
+          -0.009466,
+          1.032183
+        ],
+        [
+          0.412559,
+          -0.089531,
+          0.88469
+        ]
+      ],
+      "positions": [
+        [
+          0.410987,
+          -0.089316,
+          0.885962
+        ],
+        [
+          0.412559,
+          -0.089531,
+          0.88469
+        ]
+      ],
+      "ratio": 82.54683116932591,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.00072,
+          "pinky.01.R": 0.006191,
+          "pinky.02.R": 0.038753,
+          "pinky.03.R": 0.954336
+        },
+        {
+          "pelvis": 0.073111,
+          "shin.R": 0.115111,
+          "thigh.R": 0.414331,
+          "thigh_twist.R": 0.397447
+        }
+      ]
+    },
+    {
+      "after_m": 0.1677431170562324,
+      "before_m": 0.003170194321616516,
+      "indices": [
+        5132,
+        14980
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.418234,
+          -0.094071,
+          0.884653
+        ],
+        [
+          -0.418211,
+          -0.001539,
+          1.024566
+        ]
+      ],
+      "positions": [
+        [
+          -0.418234,
+          -0.094071,
+          0.884653
+        ],
+        [
+          -0.418211,
+          -0.096468,
+          0.886727
+        ]
+      ],
+      "ratio": 52.91256624631717,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.075834,
+          "shin.L": 0.119635,
+          "thigh.L": 0.410192,
+          "thigh_twist.L": 0.39434
+        },
+        {
+          "hand.L": 0.001314,
+          "pinky.01.L": 0.011307,
+          "pinky.02.L": 0.070051,
+          "pinky.03.L": 0.917328
+        }
+      ]
+    },
+    {
+      "after_m": 0.16771473556845456,
+      "before_m": 0.004047705966818889,
+      "indices": [
+        14980,
+        1671
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.418211,
+          -0.001539,
+          1.024566
+        ],
+        [
+          -0.415042,
+          -0.09458,
+          0.885061
+        ]
+      ],
+      "positions": [
+        [
+          -0.418211,
+          -0.096468,
+          0.886727
+        ],
+        [
+          -0.415042,
+          -0.09458,
+          0.885061
+        ]
+      ],
+      "ratio": 41.434515486870296,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001314,
+          "pinky.01.L": 0.011307,
+          "pinky.02.L": 0.070051,
+          "pinky.03.L": 0.917328
+        },
+        {
+          "pelvis": 0.07533,
+          "shin.L": 0.117567,
+          "thigh.L": 0.411895,
+          "thigh_twist.L": 0.395208
+        }
+      ]
+    },
+    {
+      "after_m": 0.16757318505387264,
+      "before_m": 0.00492891781347193,
+      "indices": [
+        9678,
+        16979
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.406992,
+          -0.160288,
+          0.882549
+        ],
+        [
+          0.406802,
+          -0.042241,
+          1.001485
+        ]
+      ],
+      "positions": [
+        [
+          0.406992,
+          -0.160288,
+          0.882549
+        ],
+        [
+          0.406802,
+          -0.158684,
+          0.887206
+        ]
+      ],
+      "ratio": 33.99796697681881,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.087329,
+          "shin.R": 0.129569,
+          "thigh.R": 0.398523,
+          "thigh_twist.R": 0.384578
+        },
+        {
+          "hand.R": 0.000638,
+          "ring.01.R": 0.00751,
+          "ring.02.R": 0.080909,
+          "ring.03.R": 0.910943
+        }
+      ]
+    },
+    {
+      "after_m": 0.16750801694058282,
+      "before_m": 0.0034913368755217305,
+      "indices": [
+        11692,
+        3690
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.423184,
+          -0.161777,
+          0.886414
+        ],
+        [
+          0.423388,
+          -0.036234,
+          0.997309
+        ]
+      ],
+      "positions": [
+        [
+          0.423184,
+          -0.161777,
+          0.886414
+        ],
+        [
+          0.423388,
+          -0.162534,
+          0.889816
+        ]
+      ],
+      "ratio": 47.978187987245185,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.091457,
+          "shin.R": 0.135651,
+          "thigh.R": 0.393627,
+          "thigh_twist.R": 0.379265
+        },
+        {
+          "hand.R": 0.001291,
+          "ring.01.R": 0.013985,
+          "ring.02.R": 0.123461,
+          "ring.03.R": 0.861263
+        }
+      ]
+    },
+    {
+      "after_m": 0.16745008614511744,
+      "before_m": 0.0028578635195381534,
+      "indices": [
+        12460,
+        1671
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.414865,
+          -0.001632,
+          1.024346
+        ],
+        [
+          -0.415042,
+          -0.09458,
+          0.885061
+        ]
+      ],
+      "positions": [
+        [
+          -0.414865,
+          -0.096648,
+          0.887026
+        ],
+        [
+          -0.415042,
+          -0.09458,
+          0.885061
+        ]
+      ],
+      "ratio": 58.592751193443384,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001206,
+          "pinky.01.L": 0.010593,
+          "pinky.02.L": 0.067753,
+          "pinky.03.L": 0.920448
+        },
+        {
+          "pelvis": 0.07533,
+          "shin.L": 0.117567,
+          "thigh.L": 0.411895,
+          "thigh_twist.L": 0.395208
+        }
+      ]
+    },
+    {
+      "after_m": 0.16726986041148015,
+      "before_m": 0.0024791149522349924,
+      "indices": [
+        3870,
+        17131
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.420096,
+          -0.092543,
+          0.885689
+        ],
+        [
+          0.42111,
+          -0.004959,
+          1.028193
+        ]
+      ],
+      "positions": [
+        [
+          0.420096,
+          -0.092543,
+          0.885689
+        ],
+        [
+          0.42111,
+          -0.092827,
+          0.887934
+        ]
+      ],
+      "ratio": 67.47160322706361,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.075685,
+          "shin.R": 0.1196,
+          "thigh.R": 0.410513,
+          "thigh_twist.R": 0.394201
+        },
+        {
+          "hand.R": 0.001415,
+          "pinky.01.R": 0.011647,
+          "pinky.02.R": 0.068044,
+          "pinky.03.R": 0.918893
+        }
+      ]
+    },
+    {
+      "after_m": 0.1672416443016785,
+      "before_m": 0.0063022993383445615,
+      "indices": [
+        9851,
+        1645
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.41766,
+          -0.055056,
+          0.978617
+        ],
+        [
+          -0.41607,
+          -0.200904,
+          0.896791
+        ]
+      ],
+      "positions": [
+        [
+          -0.41766,
+          -0.198499,
+          0.902394
+        ],
+        [
+          -0.41607,
+          -0.200904,
+          0.896791
+        ]
+      ],
+      "ratio": 26.536607565455345,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.000801,
+          "middle.01.L": 0.01128,
+          "middle.02.L": 0.144915,
+          "middle.03.L": 0.843004
+        },
+        {
+          "pelvis": 0.105275,
+          "shin.L": 0.136059,
+          "thigh.L": 0.389617,
+          "thigh_twist.L": 0.369049
+        }
+      ]
+    },
+    {
+      "after_m": 0.1670707132994904,
+      "before_m": 0.006271764206219297,
+      "indices": [
+        11341,
+        3898
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.417651,
+          -0.055374,
+          0.978927
+        ],
+        [
+          0.416109,
+          -0.200855,
+          0.896796
+        ]
+      ],
+      "positions": [
+        [
+          0.417651,
+          -0.198486,
+          0.902395
+        ],
+        [
+          0.416109,
+          -0.200855,
+          0.896796
+        ]
+      ],
+      "ratio": 26.638551419681455,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.000783,
+          "middle.01.R": 0.011021,
+          "middle.02.R": 0.142097,
+          "middle.03.R": 0.846098
+        },
+        {
+          "pelvis": 0.1046,
+          "shin.R": 0.136005,
+          "thigh.R": 0.389917,
+          "thigh_twist.R": 0.369478
+        }
+      ]
+    },
+    {
+      "after_m": 0.16699063070093972,
+      "before_m": 0.004411812291997071,
+      "indices": [
+        8061,
+        8062
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.426307,
+          -0.034799,
+          1.001067
+        ],
+        [
+          -0.425435,
+          -0.156094,
+          0.886295
+        ]
+      ],
+      "positions": [
+        [
+          -0.426307,
+          -0.158571,
+          0.88984
+        ],
+        [
+          -0.425435,
+          -0.156094,
+          0.886295
+        ]
+      ],
+      "ratio": 37.85080135976252,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001464,
+          "ring.01.L": 0.014901,
+          "ring.02.L": 0.12096,
+          "ring.03.L": 0.862676
+        },
+        {
+          "pelvis": 0.091015,
+          "shin.L": 0.135617,
+          "thigh.L": 0.393831,
+          "thigh_twist.L": 0.379538
+        }
+      ]
+    },
+    {
+      "after_m": 0.16665274758545134,
+      "before_m": 0.002224980858113361,
+      "indices": [
+        11933,
+        15199
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.412762,
+          -0.004562,
+          1.026843
+        ],
+        [
+          -0.41275,
+          -0.092026,
+          0.884987
+        ]
+      ],
+      "positions": [
+        [
+          -0.412762,
+          -0.094058,
+          0.885892
+        ],
+        [
+          -0.41275,
+          -0.092026,
+          0.884987
+        ]
+      ],
+      "ratio": 74.9007556526855,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.000906,
+          "pinky.01.L": 0.008045,
+          "pinky.02.L": 0.052272,
+          "pinky.03.L": 0.938777
+        },
+        {
+          "pelvis": 0.074317,
+          "shin.L": 0.115761,
+          "thigh.L": 0.413502,
+          "thigh_twist.L": 0.39642
+        }
+      ]
+    },
+    {
+      "after_m": 0.16664254818085383,
+      "before_m": 0.006870458366399215,
+      "indices": [
+        3761,
+        7261
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.423703,
+          -0.050206,
+          0.964741
+        ],
+        [
+          0.422141,
+          -0.205468,
+          0.904233
+        ]
+      ],
+      "positions": [
+        [
+          0.423703,
+          -0.202512,
+          0.910235
+        ],
+        [
+          0.422141,
+          -0.205468,
+          0.904233
+        ]
+      ],
+      "ratio": 24.25493894204189,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.001841,
+          "middle.01.R": 0.026245,
+          "middle.02.R": 0.275473,
+          "middle.03.R": 0.696441
+        },
+        {
+          "pelvis": 0.109008,
+          "shin.R": 0.135521,
+          "thigh.R": 0.390033,
+          "thigh_twist.R": 0.365438
+        }
+      ]
+    },
+    {
+      "after_m": 0.1665852788811952,
+      "before_m": 0.006892632464801553,
+      "indices": [
+        1508,
+        11953
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.423732,
+          -0.050071,
+          0.964406
+        ],
+        [
+          -0.422159,
+          -0.205393,
+          0.904213
+        ]
+      ],
+      "positions": [
+        [
+          -0.423731,
+          -0.202424,
+          0.910232
+        ],
+        [
+          -0.422159,
+          -0.205393,
+          0.904213
+        ]
+      ],
+      "ratio": 24.168600274552922,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001868,
+          "middle.01.L": 0.026644,
+          "middle.02.L": 0.278041,
+          "middle.03.L": 0.693448
+        },
+        {
+          "pelvis": 0.109654,
+          "shin.L": 0.135564,
+          "thigh.L": 0.38975,
+          "thigh_twist.L": 0.365032
+        }
+      ]
+    },
+    {
+      "after_m": 0.16648722775429708,
+      "before_m": 0.003483725650203905,
+      "indices": [
+        6138,
+        5132
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.420199,
+          -0.004223,
+          1.024802
+        ],
+        [
+          -0.418234,
+          -0.094071,
+          0.884653
+        ]
+      ],
+      "positions": [
+        [
+          -0.420199,
+          -0.09427,
+          0.887523
+        ],
+        [
+          -0.418234,
+          -0.094071,
+          0.884653
+        ]
+      ],
+      "ratio": 47.789993952179465,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.001158,
+          "pinky.01.L": 0.010158,
+          "pinky.02.L": 0.063968,
+          "pinky.03.L": 0.924716
+        },
+        {
+          "pelvis": 0.075834,
+          "shin.L": 0.119635,
+          "thigh.L": 0.410192,
+          "thigh_twist.L": 0.39434
+        }
+      ]
+    },
+    {
+      "after_m": 0.16627534832563598,
+      "before_m": 0.002956623464286844,
+      "indices": [
+        3922,
+        17414
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.410987,
+          -0.009466,
+          1.032183
+        ],
+        [
+          0.41266,
+          -0.087029,
+          0.885117
+        ]
+      ],
+      "positions": [
+        [
+          0.410987,
+          -0.089316,
+          0.885962
+        ],
+        [
+          0.41266,
+          -0.087029,
+          0.885117
+        ]
+      ],
+      "ratio": 56.238256353601194,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.00072,
+          "pinky.01.R": 0.006191,
+          "pinky.02.R": 0.038753,
+          "pinky.03.R": 0.954336
+        },
+        {
+          "pelvis": 0.072829,
+          "shin.R": 0.114468,
+          "thigh.R": 0.414984,
+          "thigh_twist.R": 0.397719
+        }
+      ]
+    },
+    {
+      "after_m": 0.16604210183810456,
+      "before_m": 0.0022474641680255984,
+      "indices": [
+        4803,
+        17131
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.421025,
+          -0.09125,
+          0.886334
+        ],
+        [
+          0.42111,
+          -0.004959,
+          1.028193
+        ]
+      ],
+      "positions": [
+        [
+          0.421025,
+          -0.09125,
+          0.886334
+        ],
+        [
+          0.42111,
+          -0.092827,
+          0.887934
+        ]
+      ],
+      "ratio": 73.8797548812415,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.075873,
+          "shin.R": 0.119538,
+          "thigh.R": 0.410634,
+          "thigh_twist.R": 0.393956
+        },
+        {
+          "hand.R": 0.001415,
+          "pinky.01.R": 0.011647,
+          "pinky.02.R": 0.068044,
+          "pinky.03.R": 0.918893
+        }
+      ]
+    },
+    {
+      "after_m": 0.16587514551686253,
+      "before_m": 0.0019837759139623534,
+      "indices": [
+        11932,
+        15199
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.411166,
+          -0.007453,
+          1.027674
+        ],
+        [
+          -0.41275,
+          -0.092026,
+          0.884987
+        ]
+      ],
+      "positions": [
+        [
+          -0.411166,
+          -0.091728,
+          0.886144
+        ],
+        [
+          -0.41275,
+          -0.092026,
+          0.884987
+        ]
+      ],
+      "ratio": 83.6158682789665,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.000686,
+          "pinky.01.L": 0.006261,
+          "pinky.02.L": 0.04203,
+          "pinky.03.L": 0.951023
+        },
+        {
+          "pelvis": 0.074317,
+          "shin.L": 0.115761,
+          "thigh.L": 0.413502,
+          "thigh_twist.L": 0.39642
+        }
+      ]
+    },
+    {
+      "after_m": 0.1658613788396874,
+      "before_m": 0.0023953184567747925,
+      "indices": [
+        15199,
+        1670
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.41275,
+          -0.092026,
+          0.884987
+        ],
+        [
+          -0.411473,
+          -0.005648,
+          1.026576
+        ]
+      ],
+      "positions": [
+        [
+          -0.41275,
+          -0.092026,
+          0.884987
+        ],
+        [
+          -0.411473,
+          -0.093328,
+          0.88654
+        ]
+      ],
+      "ratio": 69.24397813183204,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.074317,
+          "shin.L": 0.115761,
+          "thigh.L": 0.413502,
+          "thigh_twist.L": 0.39642
+        },
+        {
+          "hand.L": 0.000813,
+          "pinky.01.L": 0.007379,
+          "pinky.02.L": 0.049284,
+          "pinky.03.L": 0.942524
+        }
+      ]
+    },
+    {
+      "after_m": 0.16585000622773857,
+      "before_m": 0.005934329212286749,
+      "indices": [
+        7997,
+        9678
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.406182,
+          -0.046277,
+          1.002994
+        ],
+        [
+          0.406992,
+          -0.160288,
+          0.882549
+        ]
+      ],
+      "positions": [
+        [
+          0.406182,
+          -0.155442,
+          0.885878
+        ],
+        [
+          0.406992,
+          -0.160288,
+          0.882549
+        ]
+      ],
+      "ratio": 27.94755738935985,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.000491,
+          "ring.01.R": 0.005817,
+          "ring.02.R": 0.063894,
+          "ring.03.R": 0.929798
+        },
+        {
+          "pelvis": 0.087329,
+          "shin.R": 0.129569,
+          "thigh.R": 0.398523,
+          "thigh_twist.R": 0.384578
+        }
+      ]
+    },
+    {
+      "after_m": 0.16528643700782916,
+      "before_m": 0.004277901984641048,
+      "indices": [
+        9851,
+        14949
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.41766,
+          -0.055056,
+          0.978617
+        ],
+        [
+          -0.419267,
+          -0.202296,
+          0.903533
+        ]
+      ],
+      "positions": [
+        [
+          -0.41766,
+          -0.198499,
+          0.902394
+        ],
+        [
+          -0.419267,
+          -0.202296,
+          0.903533
+        ]
+      ],
+      "ratio": 38.63726602462073,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.L": 0.000801,
+          "middle.01.L": 0.01128,
+          "middle.02.L": 0.144915,
+          "middle.03.L": 0.843004
+        },
+        {
+          "pelvis": 0.108302,
+          "shin.L": 0.133931,
+          "thigh.L": 0.391353,
+          "thigh_twist.L": 0.366414
+        }
+      ]
+    },
+    {
+      "after_m": 0.16524600317470145,
+      "before_m": 0.002447896032420073,
+      "indices": [
+        10600,
+        3922
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.411335,
+          -0.086906,
+          0.886207
+        ],
+        [
+          0.410987,
+          -0.009466,
+          1.032183
+        ]
+      ],
+      "positions": [
+        [
+          0.411335,
+          -0.086906,
+          0.886207
+        ],
+        [
+          0.410987,
+          -0.089316,
+          0.885962
+        ]
+      ],
+      "ratio": 67.50531925628134,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.072836,
+          "shin.R": 0.112981,
+          "thigh.R": 0.416301,
+          "thigh_twist.R": 0.397882
+        },
+        {
+          "hand.R": 0.00072,
+          "pinky.01.R": 0.006191,
+          "pinky.02.R": 0.038753,
+          "pinky.03.R": 0.954336
+        }
+      ]
+    },
+    {
+      "after_m": 0.16519207536979164,
+      "before_m": 0.004677234992077725,
+      "indices": [
+        3690,
+        16958
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.423388,
+          -0.036234,
+          0.997309
+        ],
+        [
+          0.424797,
+          -0.159131,
+          0.886933
+        ]
+      ],
+      "positions": [
+        [
+          0.423388,
+          -0.162534,
+          0.889816
+        ],
+        [
+          0.424797,
+          -0.159131,
+          0.886933
+        ]
+      ],
+      "ratio": 35.318318547088836,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.001291,
+          "ring.01.R": 0.013985,
+          "ring.02.R": 0.123461,
+          "ring.03.R": 0.861263
+        },
+        {
+          "pelvis": 0.091217,
+          "shin.R": 0.135494,
+          "thigh.R": 0.393935,
+          "thigh_twist.R": 0.379354
+        }
+      ]
+    },
+    {
+      "after_m": 0.16517300461617895,
+      "before_m": 0.004322224986111154,
+      "indices": [
+        11341,
+        17165
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.417651,
+          -0.055374,
+          0.978927
+        ],
+        [
+          0.419075,
+          -0.202377,
+          0.903625
+        ]
+      ],
+      "positions": [
+        [
+          0.417651,
+          -0.198486,
+          0.902395
+        ],
+        [
+          0.419075,
+          -0.202377,
+          0.903625
+        ]
+      ],
+      "ratio": 38.214809536046495,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "hand.R": 0.000783,
+          "middle.01.R": 0.011021,
+          "middle.02.R": 0.142097,
+          "middle.03.R": 0.846098
+        },
+        {
+          "pelvis": 0.107668,
+          "shin.R": 0.133766,
+          "thigh.R": 0.391735,
+          "thigh_twist.R": 0.366832
+        }
+      ]
+    },
+    {
+      "after_m": 0.1649937147004973,
+      "before_m": 0.005116752735889679,
+      "indices": [
+        3712,
+        7997
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          0.406625,
+          -0.1577,
+          0.881308
+        ],
+        [
+          0.406182,
+          -0.046277,
+          1.002994
+        ]
+      ],
+      "positions": [
+        [
+          0.406625,
+          -0.1577,
+          0.881308
+        ],
+        [
+          0.406182,
+          -0.155442,
+          0.885878
+        ]
+      ],
+      "ratio": 32.2457861884172,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.086168,
+          "shin.R": 0.129477,
+          "thigh.R": 0.398813,
+          "thigh_twist.R": 0.385542
+        },
+        {
+          "hand.R": 0.000491,
+          "ring.01.R": 0.005817,
+          "ring.02.R": 0.063894,
+          "ring.03.R": 0.929798
+        }
+      ]
+    },
+    {
+      "after_m": 0.16486924158391697,
+      "before_m": 0.002915140018053314,
+      "indices": [
+        9845,
+        11932
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.412621,
+          -0.089623,
+          0.884748
+        ],
+        [
+          -0.411166,
+          -0.007453,
+          1.027674
+        ]
+      ],
+      "positions": [
+        [
+          -0.412621,
+          -0.089623,
+          0.884748
+        ],
+        [
+          -0.411166,
+          -0.091728,
+          0.886144
+        ]
+      ],
+      "ratio": 56.556199895336114,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.073781,
+          "shin.L": 0.115392,
+          "thigh.L": 0.413896,
+          "thigh_twist.L": 0.396931
+        },
+        {
+          "hand.L": 0.000686,
+          "pinky.01.L": 0.006261,
+          "pinky.02.L": 0.04203,
+          "pinky.03.L": 0.951023
+        }
+      ]
+    },
+    {
+      "after_m": 0.1648390700605549,
+      "before_m": 0.0032694909062224325,
+      "indices": [
+        8062,
+        1436
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.425435,
+          -0.156094,
+          0.886295
+        ],
+        [
+          -0.426816,
+          -0.039224,
+          1.002533
+        ]
+      ],
+      "positions": [
+        [
+          -0.425435,
+          -0.156094,
+          0.886295
+        ],
+        [
+          -0.426816,
+          -0.154943,
+          0.889026
+        ]
+      ],
+      "ratio": 50.41735083184857,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.091015,
+          "shin.L": 0.135617,
+          "thigh.L": 0.393831,
+          "thigh_twist.L": 0.379538
+        },
+        {
+          "hand.L": 0.001189,
+          "ring.01.L": 0.01233,
+          "ring.02.L": 0.103988,
+          "ring.03.L": 0.882494
+        }
+      ]
+    },
+    {
+      "after_m": 0.16459713264127432,
+      "before_m": 0.0026510225820816167,
+      "indices": [
+        1617,
+        6138
+      ],
+      "materials": [
+        [
+          "MAT_GV2_Gear"
+        ],
+        [
+          "MAT_GV2_Gear"
+        ]
+      ],
+      "posed": [
+        [
+          -0.420201,
+          -0.092298,
+          0.885751
+        ],
+        [
+          -0.420199,
+          -0.004223,
+          1.024802
+        ]
+      ],
+      "positions": [
+        [
+          -0.420201,
+          -0.092298,
+          0.885751
+        ],
+        [
+          -0.420199,
+          -0.09427,
+          0.887523
+        ]
+      ],
+      "ratio": 62.08816694123765,
+      "sources": [
+        "licensed_anatomy",
+        "licensed_anatomy"
+      ],
+      "weights": [
+        {
+          "pelvis": 0.07631,
+          "shin.L": 0.119825,
+          "thigh.L": 0.410132,
+          "thigh_twist.L": 0.393733
+        },
+        {
+          "hand.L": 0.001158,
+          "pinky.01.L": 0.010158,
+          "pinky.02.L": 0.063968,
+          "pinky.03.L": 0.924716
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "actual_eye_centers_m": {
+    "GEO-head_animation_realistic.iris.L": [
+      1.494218,
+      -0.134963,
+      0.766695
+    ],
+    "GEO-head_animation_realistic.iris.R": [
+      1.430932,
+      -0.134963,
+      0.766695
+    ],
+    "GEO-head_animation_realistic.sclera.L": [
+      1.494856,
+      -0.125841,
+      0.766688
+    ],
+    "GEO-head_animation_realistic.sclera.R": [
+      1.430278,
+      -0.125841,
+      0.766688
+    ]
+  },
+  "adaptation_plan": {
+    "attachment": "Preserve the lowest open neck loop and UVs; align by measured crown/chin/eye landmarks, then bridge or surface-deform into the selected body neck. Do not cap or hide an unmatched cylinder inside the collar.",
+    "decision_gate": "Compare Body Male - Realistic as one-piece anatomy before choosing head swap; do not adapt this head independently until that review.",
+    "mask_and_hair": "Design original patterns, ray-cast every vertex to the evaluated final head surface, and offset about 3 mm along interpolated outward normals. Preserve eye holes and ears; no cowl ears, emblem, or franchise silhouette.",
+    "materials": [
+      "MAT_GV2_Suit_Cloth",
+      "MAT_GV2_Skin",
+      "MAT_GV2_Gear",
+      "MAT_GV2_Tactical_Boot",
+      "MAT_GV2_Accent"
+    ],
+    "morph_method": "Author true basis-relative eyelid and facial cage deltas on the final low mesh; blink must close the lid surfaces over the measured sclera, while jaw_clench must preserve mouth closure.",
+    "morphs": [
+      "blink.L",
+      "blink.R",
+      "brow_inner_raise",
+      "jaw_clench"
+    ],
+    "preferred_if_head_swap": "GEO-head_animation_realistic",
+    "provenance_label": "Adapted from Blender Human Base Meshes v1.4.1, Head (Animation) - Realistic, Dan Ulrich, CC0.",
+    "reason": "Animation head has deliberate deformation topology and existing UVs at a light base cage; it is preferable to the sculpt head as the game deformation mesh.",
+    "rig": "Retain the 74 names and hierarchy, but place eye/head/jaw rest transforms from final measured landmarks. Transfer weights by surface and explicitly refine eyelid, lips, jaw hinge, neck, and ear regions.",
+    "target_landmarks_m": {
+      "chin_z_range": [
+        1.88,
+        1.9
+      ],
+      "eye_centers": "Measure from appended iris/sclera objects after final uniform scale; do not force legacy +/-0.039 anchors.",
+      "skull_top_z": 2.16
+    },
+    "topology_budget": {
+      "base_triangles": 6480,
+      "evaluated_triangles": 25896,
+      "recommendation": "Keep the animation base cage for deformation; use the existing Multires detail as a normal-bake source instead of exporting subdivided head density by default."
+    },
+    "uv_and_bake": "Retain the source UV set if distortion review passes. Bake Multires/source detail into the project's face normal map after reshaping; record this as a genuine derived bake, not wholly original sculpt detail."
+  },
+  "collection_bounds_m": {
+    "maximum": [
+      1.599523,
+      0.07756,
+      0.880377
+    ],
+    "minimum": [
+      1.325858,
+      -0.169281,
+      0.508657
+    ],
+    "size": [
+      0.273665,
+      0.246841,
+      0.37172
+    ]
+  },
+  "detected_forward_axis": "-Y",
+  "head_bounds_m": {
+    "maximum": [
+      1.599523,
+      0.07756,
+      0.880377
+    ],
+    "minimum": [
+      1.325858,
+      -0.169281,
+      0.508657
+    ],
+    "size": [
+      0.273665,
+      0.246841,
+      0.37172
+    ]
+  },
+  "mesh_records": [
+    {
+      "active_uv": "UVMap",
+      "base_edges": 6474,
+      "base_polygons": 3234,
+      "base_triangles": 6480,
+      "base_vertices": 3242,
+      "boundary_edges": 0,
+      "color_attributes": [],
+      "evaluated": {
+        "polygons": 12948,
+        "triangles_after_loop_calc": 25896,
+        "vertices": 12950
+      },
+      "lowest_ring_vertex_count_0_5mm": 2,
+      "lowest_vertex_z_m": 0.5094082951545715,
+      "mesh_attributes": [
+        ".sculpt_mask",
+        "position",
+        ".select_vert",
+        ".edge_verts",
+        ".select_edge",
+        "uv_seam",
+        ".sculpt_face_set",
+        ".select_poly",
+        "sharp_face",
+        ".uv_select_face",
+        ".corner_vert",
+        ".corner_edge",
+        "custom_normal",
+        "UVMap",
+        ".uv_select_vert",
+        ".uv_select_edge"
+      ],
+      "modifiers": [
+        {
+          "levels": 1,
+          "name": "Multires",
+          "render_levels": 1,
+          "sculpt_levels": 1,
+          "total_levels": 1,
+          "type": "MULTIRES"
+        }
+      ],
+      "name": "GEO-head_animation_realistic",
+      "polygons_by_sides": {
+        "3": 18,
+        "4": 3206,
+        "5": 2,
+        "7": 4,
+        "8": 4
+      },
+      "shape_keys": [],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "vertex_groups": []
+    },
+    {
+      "active_uv": "UVMap",
+      "base_edges": 800,
+      "base_polygons": 400,
+      "base_triangles": 800,
+      "base_vertices": 400,
+      "boundary_edges": 0,
+      "color_attributes": [],
+      "evaluated": {
+        "polygons": 400,
+        "triangles_after_loop_calc": 800,
+        "vertices": 400
+      },
+      "lowest_ring_vertex_count_0_5mm": 6,
+      "lowest_vertex_z_m": 0.7606599926948547,
+      "mesh_attributes": [
+        "position",
+        ".edge_verts",
+        "uv_seam",
+        ".corner_vert",
+        ".corner_edge",
+        "custom_normal",
+        "UVMap"
+      ],
+      "modifiers": [],
+      "name": "GEO-head_animation_realistic.iris.L",
+      "polygons_by_sides": {
+        "4": 400
+      },
+      "shape_keys": [],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "vertex_groups": []
+    },
+    {
+      "active_uv": "UVMap",
+      "base_edges": 800,
+      "base_polygons": 400,
+      "base_triangles": 800,
+      "base_vertices": 400,
+      "boundary_edges": 0,
+      "color_attributes": [],
+      "evaluated": {
+        "polygons": 400,
+        "triangles_after_loop_calc": 800,
+        "vertices": 400
+      },
+      "lowest_ring_vertex_count_0_5mm": 6,
+      "lowest_vertex_z_m": 0.7606598734855652,
+      "mesh_attributes": [
+        "position",
+        ".edge_verts",
+        "uv_seam",
+        ".corner_vert",
+        ".corner_edge",
+        "custom_normal",
+        "UVMap"
+      ],
+      "modifiers": [],
+      "name": "GEO-head_animation_realistic.iris.R",
+      "polygons_by_sides": {
+        "4": 400
+      },
+      "shape_keys": [],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "vertex_groups": []
+    },
+    {
+      "active_uv": "UVMap",
+      "base_edges": 1088,
+      "base_polygons": 544,
+      "base_triangles": 1088,
+      "base_vertices": 546,
+      "boundary_edges": 0,
+      "color_attributes": [],
+      "evaluated": {
+        "polygons": 544,
+        "triangles_after_loop_calc": 1088,
+        "vertices": 546
+      },
+      "lowest_ring_vertex_count_0_5mm": 7,
+      "lowest_vertex_z_m": 0.7546664476394653,
+      "mesh_attributes": [
+        "position",
+        ".edge_verts",
+        "uv_seam",
+        ".corner_vert",
+        ".corner_edge",
+        "custom_normal",
+        "UVMap"
+      ],
+      "modifiers": [],
+      "name": "GEO-head_animation_realistic.sclera.L",
+      "polygons_by_sides": {
+        "4": 544
+      },
+      "shape_keys": [],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "vertex_groups": []
+    },
+    {
+      "active_uv": "UVMap",
+      "base_edges": 1088,
+      "base_polygons": 544,
+      "base_triangles": 1088,
+      "base_vertices": 546,
+      "boundary_edges": 0,
+      "color_attributes": [],
+      "evaluated": {
+        "polygons": 544,
+        "triangles_after_loop_calc": 1088,
+        "vertices": 546
+      },
+      "lowest_ring_vertex_count_0_5mm": 7,
+      "lowest_vertex_z_m": 0.7546664476394653,
+      "mesh_attributes": [
+        "position",
+        ".edge_verts",
+        "uv_seam",
+        ".corner_vert",
+        ".corner_edge",
+        "custom_normal",
+        "UVMap"
+      ],
+      "modifiers": [],
+      "name": "GEO-head_animation_realistic.sclera.R",
+      "polygons_by_sides": {
+        "4": 544
+      },
+      "shape_keys": [],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "vertex_groups": []
+    }
+  ],
+  "object_names": [
+    "GEO-head_animation_realistic",
+    "GEO-head_animation_realistic.iris.L",
+    "GEO-head_animation_realistic.iris.R",
+    "GEO-head_animation_realistic.sclera.L",
+    "GEO-head_animation_realistic.sclera.R"
+  ],
+  "renders": [
+    "renders/base-head-review/base-head-neutral-front.png",
+    "renders/base-head-review/base-head-neutral-profile.png",
+    "renders/base-head-review/base-head-neutral-threequarter.png"
+  ],
+  "review_status": "untouched_source_review_not_game_asset",
+  "scene_units": {
+    "length_unit": "METERS",
+    "scale_length": 1.0,
+    "system": "METRIC"
+  },
+  "source": {
+    "archive_sha256": "811f43accbb31a88266d932f8f5563b2d13586fca0ba2693aad1f5fe582b3515",
+    "asset_metadata": {
+      "author": "Dan Ulrich",
+      "catalog_id": "fe53c157-b313-482f-b7a3-69e260232e6f",
+      "copyright": "",
+      "description": "Realistic scan data model with multiresolution details. Topology optimized for rigging and animation",
+      "license": "CC0",
+      "name": "Head (Animation) - Realistic"
+    },
+    "blend_sha256": "3c121505651140ceb4d69fd1d8923f7788ffadd81672f5be14845a5f2c75c137",
+    "collection": "Head (Animation) - Realistic",
+    "download": "https://download.blender.org/demo/asset-bundles/human-base-meshes/human-base-meshes-bundle-v1.4.1.zip",
+    "listing": "https://www.blender.org/download/demo-files/"
+  }
+}

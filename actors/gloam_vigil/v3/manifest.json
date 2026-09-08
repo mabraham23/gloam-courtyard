@@ -1,0 +1,10 @@
+{
+  "asset_id": "gloam_vigil_v3",
+  "status": "candidate-unaccepted",
+  "rig_contract": "gloam-vigil-v2-rig-1",
+  "bones": 74,
+  "source_vertices": 41521,
+  "source_triangles": 82632,
+  "glb_sha256": "67cbdccfcd6108e0bf151d6372146db4323425b458abf8b90d6ab267f4cc3992",
+  "body_study_uses_rejected_head": false
+}
