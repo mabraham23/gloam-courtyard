@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en" data-visualize-standalone>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>Gloam project board</title>
-<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
-</head>
-<body>
-<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Gloam project board" srcdoc="&lt;div id=&quot;gloam-project-board&quot;&gt;
+    <html lang="en" data-visualize-standalone>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <title>Gloam project board</title>
+    <style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+    </head>
+    <body>
+    <iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Gloam project board" srcdoc="&lt;div id=&quot;gloam-project-board&quot;&gt;
   &lt;style&gt;
     #gloam-project-board {
       --gpb-bg: light-dark(#f3f4f7, #0c1018);
@@ -354,7 +354,7 @@
           &lt;p&gt;Lower Court · original 3D stealth-action prototype&lt;/p&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;gpb-health&quot;&gt;&lt;span class=&quot;gpb-dot&quot;&gt;&lt;/span&gt;R14 leg flare corrected · fresh movement review ready&lt;/div&gt;
+      &lt;div class=&quot;gpb-health&quot;&gt;&lt;span class=&quot;gpb-dot&quot;&gt;&lt;/span&gt;R14 user review pending; V1 default. Board UI gate is separate.&lt;/div&gt;
     &lt;/header&gt;
 
     &lt;nav class=&quot;gpb-nav&quot; role=&quot;tablist&quot; aria-label=&quot;Project views&quot;&gt;
@@ -368,7 +368,7 @@
       &lt;div class=&quot;gpb-toolbar&quot;&gt;
         &lt;div class=&quot;gpb-toolbar-copy&quot;&gt;
           &lt;h2&gt;Upcoming work&lt;/h2&gt;
-          &lt;p&gt;Narrower calves and forward-tracking knees verified in matched motion; user feel and source animation polish remain&lt;/p&gt;
+          &lt;p&gt;Task status and dependencies are generated from the current roadmap&lt;/p&gt;
         &lt;/div&gt;
         &lt;label class=&quot;gpb-filter&quot;&gt;Area
           &lt;select id=&quot;gpb-area-filter&quot;&gt;
@@ -391,18 +391,9 @@
     &lt;section class=&quot;gpb-panel&quot; id=&quot;gpb-panel-dependencies&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;gpb-tab-dependencies&quot; data-view=&quot;dependencies&quot; hidden&gt;
       &lt;div class=&quot;gpb-toolbar-copy&quot;&gt;
         &lt;h2&gt;Safe execution order&lt;/h2&gt;
-        &lt;p&gt;Parallel work begins only after shared movement dimensions stabilize&lt;/p&gt;
+        &lt;p&gt;Current dependency and ownership records&lt;/p&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;gpb-flow&quot; aria-label=&quot;Task dependency sequence&quot;&gt;
-        &lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;1 · Foundation&lt;/strong&gt;&lt;p&gt;Character visuals, idle/walk, travel-facing turn, collision, perch walk and fall.&lt;/p&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;2 · Action poses&lt;/strong&gt;&lt;p&gt;Grapple, combat, and directional evade states are accepted on the shared pivot and pose interface.&lt;/p&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;3 · Movement metrics&lt;/strong&gt;&lt;p&gt;Crouch clearance and measured jump/vault distance, height, timing, collision, and camera behavior are accepted.&lt;/p&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;4 · Parallel lanes&lt;/strong&gt;&lt;p&gt;The main-scene stealth repair, actor-only animation polish, and isolated non-default map gray-box are accepted.&lt;/p&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;5 · Authored player&lt;/strong&gt;&lt;p&gt;R14 import, 21,642 deformation checks, 202 candidate mechanics checks and paired performance pass. Browser policy blocks the final board interaction/responsive check.&lt;/p&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;6 · One-speed captured run&lt;/strong&gt;&lt;p&gt;Ordinary standing WASD now uses the corrected CMU run at 4.80 units per second; Shift is inert, crouch stays 1.178, and the walk channel/reel remain superseded evidence.&lt;/p&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;7 · R14 actions internally complete&lt;/strong&gt;&lt;p&gt;Target-free four-attack presentation, forward-over-top evade and paired takedown have body-space anticipation, contact, follow-through and recovery without phantom damage.&lt;/p&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;8 · User release gate&lt;/strong&gt;&lt;p&gt;Fresh exact-title movement/action play, F12 and user visual judgement gate the narrow default switch. R14 regressions and paired performance pass; V1 stays default.&lt;/p&gt;&lt;/div&gt;
-      &lt;/div&gt;
+      &lt;div class=&quot;gpb-flow&quot; aria-label=&quot;Task dependencies&quot;&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;Action presentation · user action review&lt;/strong&gt;&lt;p&gt;waiting · User movement and paired takedown judgement&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;First Gloam Vigil runtime baseline&lt;/strong&gt;&lt;p&gt;complete · None; board UI tracked separately&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;R14 face/hair candidate · user visual judgement&lt;/strong&gt;&lt;p&gt;waiting · User accepts gameplay-scale appearance and motion&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;R14 corrected gait · user held-movement review&lt;/strong&gt;&lt;p&gt;waiting · User held movement and action feel&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;Historical R14 paired performance certificate&lt;/strong&gt;&lt;p&gt;complete · Repeat only for a material performance question after changes&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;Release R14 after user acceptance&lt;/strong&gt;&lt;p&gt;waiting · User appearance, held movement and paired takedown acceptance&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;Guard health label updates during stun&lt;/strong&gt;&lt;p&gt;complete · None; board UI tracked separately&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;Review the intended W/S direction convention&lt;/strong&gt;&lt;p&gt;later · Confirm desired camera-relative forward/back convention&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;Animation polish and action variants&lt;/strong&gt;&lt;p&gt;complete · Verified crouch and jump/vault dimensions&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;Riven Lantern Ward isolated gray-box&lt;/strong&gt;&lt;p&gt;complete · Verified crouch and jump/vault movement envelope&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;Choose Riven integration shape&lt;/strong&gt;&lt;p&gt;waiting · Animation-polish and isolated Riven evidence accepted&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;Reproducible reviews and source preservation&lt;/strong&gt;&lt;p&gt;complete · Rerun scenario after relevant changes&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;gpb-phase&quot;&gt;&lt;strong&gt;Local board · rendered UI verification&lt;/strong&gt;&lt;p&gt;waiting · Permitted local browser access or user manual review&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;/section&gt;
 
     &lt;section class=&quot;gpb-panel&quot; id=&quot;gpb-panel-decisions&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;gpb-tab-decisions&quot; data-view=&quot;decisions&quot; hidden&gt;
@@ -410,24 +401,7 @@
         &lt;h2&gt;Durable decisions&lt;/h2&gt;
         &lt;p&gt;Rationale stays historical even when implementation phases change&lt;/p&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;gpb-timeline&quot;&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 8, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;R14 remains a candidate&lt;/strong&gt;&lt;p&gt;Freeze the warm-skin, connected facial-hair and swept-shell revision after complete technical/performance evidence, but keep V1 default until the user accepts its still-stylized hair/beard and motion in play.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 8, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Target-independent attack presentation&lt;/strong&gt;&lt;p&gt;SPACE always plays one of four nonrepeating attacks in valid states; only commit-owned, contact-time-valid targets can take damage, so empty-space animation never creates phantom hits.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 8, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;One standing speed&lt;/strong&gt;&lt;p&gt;The user superseded the separate control: WASD always uses the corrected 4.80-unit/s run, Shift has no effect, and crouch preserves 1.178-unit/s travel. Walk data and its reel stay as superseded material.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 8, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Separate captured walk and run · superseded&lt;/strong&gt;&lt;p&gt;The distinct walk/run experiment remains reproducible evidence, but it no longer owns current controller behavior.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 5, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Calibrate capture to target proportions&lt;/strong&gt;&lt;p&gt;Preserve pelvis transfer and sagittal hip motion; attenuate only target-sensitive thigh lateral/twist, foot yaw and lower-spine pitch. No leg clamping, global counter-rotation, source rewrite or gameplay-root change.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 5, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;R7 body-space action layer&lt;/strong&gt;&lt;p&gt;R7-only strike, evade and takedown deformation lives in a compact presentation resource. The controller remains authoritative for timing, root travel, collision, damage and cancellation.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 4, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Separate animation-quality pass&lt;/strong&gt;&lt;p&gt;Reuse the existing motion task for locomotion, action transitions, contact and follow-through. Face/anatomy/materials stay in character art; the shared rig contract and final integration keep them compatible.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 4, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Readable contact and forward-facing roll&lt;/strong&gt;&lt;p&gt;One full hit per swing, staged paired takedown, and a forward somersault along visible facing replace instant stacked hits, idle takedown and remembered-travel backward roll.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 4, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;One authored Gloam Vigil player before Riven&lt;/strong&gt;&lt;p&gt;Original muscular anatomy, fitted dark clothing, mask, utility pouches and cape supersede the hooded player. Model and deformation quality must improve visibly; gameplay and Riven stay stable.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 3, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Original dark-gothic IP&lt;/strong&gt;&lt;p&gt;No franchise names, likenesses, symbols, costumes, architecture, or assets.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 3, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;True 3D committed&lt;/strong&gt;&lt;p&gt;Real height and the composed three-quarter camera are the implementation direction; 2D remains a reference.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 3, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Capture-driven iteration&lt;/strong&gt;&lt;p&gt;Every meaningful milestone needs live screenshots, a smoke play, evidence-backed quirks, and clean headless checks.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 3, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Bounded architecture threshold&lt;/strong&gt;&lt;p&gt;Extract a concern only when verified growth creates a stable reusable boundary; avoid speculative frameworks.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Sep 3, 2026&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Procedural realism priority insertion&lt;/strong&gt;&lt;p&gt;The user-prioritized geometry and locomotion pass completed inside the actor builder boundary, then returned the queue to grapple poses; that checkpoint is now accepted.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Current&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Sequential core, parallel outskirts&lt;/strong&gt;&lt;p&gt;Shared movement and pose work stays under one owner; isolated map gray-boxing becomes parallel-safe later.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;Current&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Local board is derived&lt;/strong&gt;&lt;p&gt;Project state and upcoming tasks remain authoritative; regenerate and verify this local view after docs and evidence change.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-      &lt;/div&gt;
+      &lt;div class=&quot;gpb-timeline&quot;&gt;&lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;D-20260903-IP&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Original dark-gothic IP&lt;/strong&gt;&lt;p&gt;Active: original characters, names and assets; broad genre inspiration only.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;D-20260903-3D&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Desktop-first Godot true 3D&lt;/strong&gt;&lt;p&gt;Active: 2D retained as reference; constrained orthographic camera.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;D-20260904-ASSET&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Licensed anatomical foundation&lt;/strong&gt;&lt;p&gt;Active: verified CC0 base supersedes the pending external-base choice; V1 remains default until candidate acceptance.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;D-20260908-SPEED&lt;/time&gt;&lt;div&gt;&lt;strong&gt;One standing speed&lt;/strong&gt;&lt;p&gt;Active: 4.80 WASD, inert Shift, crouch1.178. Supersedes separate walk/run control, preserving held-input ownership and old motion data.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;D-20260908-CONTACT&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Target-independent presentation&lt;/strong&gt;&lt;p&gt;Active: SPACE may whiff; damage requires commit-owned and contact-valid target context.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;D-20260908-LEGS&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Pose-dependent grounded leg tracking&lt;/strong&gt;&lt;p&gt;Active: signed full-cycle gates and visual review supersede sparse/unsigned fixed-angle gait acceptance.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;D-20260908-REVIEW&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Frozen review before wider regression&lt;/strong&gt;&lt;p&gt;Active: matched scenario, full identity and disclosed helpers; numerical pass cannot grant user visual acceptance.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;D-20260908-PRESERVE&lt;/time&gt;&lt;div&gt;&lt;strong&gt;Source control and selective preservation&lt;/strong&gt;&lt;p&gt;Active: current source in private Git, selected milestones in private archives, raw local evidence protected by verified retention.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gpb-decision&quot;&gt;&lt;time&gt;D-20260908-BOARD&lt;/time&gt;&lt;div&gt;&lt;strong&gt;One task source and distinct gates&lt;/strong&gt;&lt;p&gt;Active: board generated from roadmap data; board UI blocker tracked separately from runtime and user acceptance.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;/section&gt;
 
     &lt;section class=&quot;gpb-panel&quot; id=&quot;gpb-panel-context&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;gpb-tab-context&quot; data-view=&quot;context&quot; hidden&gt;
@@ -442,7 +416,7 @@
         &lt;div class=&quot;gpb-source&quot;&gt;&lt;div class=&quot;gpb-source-code&quot;&gt;DECISIONS&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Durable rationale&lt;/strong&gt;&lt;p&gt;Append-only active and superseded decisions; historical context is preserved.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;gpb-source&quot;&gt;&lt;div class=&quot;gpb-source-code&quot;&gt;CHECKPOINTS&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Verification record&lt;/strong&gt;&lt;p&gt;Accepted evidence, captures, pass/fail results, and the next completion bar.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;gpb-source&quot;&gt;&lt;div class=&quot;gpb-source-code&quot;&gt;visual-feedback-loop&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Runbook&lt;/strong&gt;&lt;p&gt;Launch, acquire, screenshot/action/screenshot, short capture, smoke play, and recovery.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;gpb-source&quot;&gt;&lt;div class=&quot;gpb-source-code&quot;&gt;project-roadmap&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Derived local board&lt;/strong&gt;&lt;p&gt;Edit the source fragment, regenerate the standalone local page, verify interactions and responsive widths, and do not publish to Sites.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;gpb-source&quot;&gt;&lt;div class=&quot;gpb-source-code&quot;&gt;project-roadmap&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Derived local board&lt;/strong&gt;&lt;p&gt;Edit UPCOMING_TASKS records, regenerate both local pages, and verify permitted interactions and responsive widths.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;
   &lt;/section&gt;
@@ -461,19 +435,205 @@
         { id: &#39;complete&#39;, label: &#39;Recent complete&#39;, color: &#39;var(--gpb-complete)&#39; }
       ];
 
-      const tasks = [
-        { id: &#39;action-readability&#39;, lane: &#39;waiting&#39;, area: &#39;Animation&#39;, title: &#39;Readable actions verified · user/board handoff pending&#39;, effort: &#39;M&#39;, parallel: &#39;Runtime done · user and board UI gates&#39;, dependency: &#39;User movement/action judgement plus permitted board access or manual verification&#39;, owner: &#39;Parent · controller/builder/adapter; independent test audit&#39;, evidence: &#39;Default mechanics200, candidate mechanics202, target-independent SPACE254, four-attack352, action-motion198, transitions67 and full deformation21642 pass. Corrected 277-frame action and 180-frame target-free reels pass; exact-title native space/C/Q/reset/F12 handoff is captures/courtyard_3d_2026-09-08_10-56-51_86082.png.&#39;, description: &#39;SPACE now presents four nonrepeating attacks even without a target while owned contact prevents phantom damage. Active punch fingers stay compact through recovery and have phalanx-level checks; frozen topology still leaves separated fingertips in close-up. T contacts at0.34s; C rolls1.96 units over0.28s along visible facing with0.42s invulnerability. User review and the existing board-browser policy gate remain.&#39; },
-        { id: &#39;gloam-vigil-player&#39;, lane: &#39;waiting&#39;, area: &#39;Characters&#39;, title: &#39;First Gloam Vigil player · board handoff&#39;, effort: &#39;L&#39;, parallel: &#39;Runtime verified · board gate blocked&#39;, dependency: &#39;Permitted board access or manual user verification&#39;, owner: &#39;Parent integration owner&#39;, evidence: &#39;V1 passed 511 deformation and 107 mechanics checks, 360-frame close actions, 330-frame gameplay, and live customization/stealth/combat/traversal/camera/reset/F12. Current browser interactions and responsive widths remain policy-blocked; static syntax/IDs/parity are separate.&#39;, description: &#39;Preserved v1 is a runtime-correct baseline, not the finished realism objective. Do not bypass the recorded Browser Use URL-policy denial. The authorized isolated V4 candidate is tracked separately and is not yet default.&#39; },
-        { id: &#39;vigil-sculpt-quality&#39;, lane: &#39;waiting&#39;, area: &#39;Characters&#39;, title: &#39;R14 face/hair candidate · user visual judgement&#39;, effort: &#39;L&#39;, parallel: &#39;Exact source frozen · technical gates complete&#39;, dependency: &#39;User accepts gameplay-scale appearance and motion&#39;, owner: &#39;Parent integration; bounded face/rig/verification agents complete&#39;, evidence: &#39;Frozen30a2c06… R14:86,452 triangles,34,998 face triangles,49,315 exported GLB refs,74 joints,seven surfaces/five materials/four morphs. GLB/import/37LODs/rig451/runtime/deformation21642 and Godot/Blender review captures pass.&#39;, description: &#39;Warm light skin, clear mouth, connected dark beard/mustache and a single swept dark hair mass replace the rejected band/chip studies on the licensed CC0 anatomy and original costume. Close-up hair/beard remain stylized procedural surfaces, so user visual judgement—not counts—gates release. V1 stays default.&#39; },
-        { id: &#39;vigil-authored-motion&#39;, lane: &#39;waiting&#39;, area: &#39;Animation&#39;, title: &#39;R14 calf/leg tracking corrected · user movement review&#39;, effort: &#39;L&#39;, parallel: &#39;Internal geometry/render review complete · user gate&#39;, dependency: &#39;User-held gait judgement; source contact/flight polish if requested&#39;, owner: &#39;Parent adapter/integration; bounded kinematic, measurement and visual audits complete&#39;, evidence: &#39;Signed 30/60Hz full cycles at three presets pass. Ankle mean/max0.239/0.249 versus0.359/0.413 authored units; stance365, alignment10, mechanics200/202, attacks352, transitions67 and deformation21642 pass. Matched before/final reels; exact-title R14 PID30109 reset F12 verified.&#39;, description: &#39;Pose-dependent narrow ankle lanes and forward knee bend planes replace the ineffective fixed motion adduction. Knee flexion, foot attitude, root speed4.80 and frozen mesh are preserved. Old sparse/unsigned gait acceptance was reopened after user rejection. Source airborne pose, foot sliding and wider action stances remain polish limitations. Report: work/character-art-review/reports/2026-09-08-r14-leg-tracking.md. V1 stays default pending user judgement.&#39; },
-        { id: &#39;vigil-performance&#39;, lane: &#39;complete&#39;, area: &#39;Project&#39;, title: &#39;R14 paired performance passes&#39;, effort: &#39;M&#39;, parallel: &#39;Technical gate complete&#39;, dependency: &#39;Repeat after any asset/default/rendering change&#39;, owner: &#39;Verification owner · work/character-art-review/performance.gd&#39;, evidence: &#39;Quiet 1080p three-by-ten-second V1/R14 protocol passes. Actual courtyard R14 vs V1 mean/p95/p99 is5.0999/6.7529/7.1777 vs5.0924/6.6360/7.1421ms (~196 observed FPS each); artificial nine-rig R14 is18.5597/21.9153/24.8500ms.&#39;, description: &#39;R14 is +0.15% mean wall time in the real courtyard and +5.74% in the nine-visual-rig stress fixture. Stress copies are not enemy AIs; reciprocal cadence is not a GPU ceiling and GPU timing is unavailable. Exact report: work/character-art-review/reports/2026-09-08-r14-appearance-action-performance.md.&#39; },
-        { id: &#39;vigil-v2-integration&#39;, lane: &#39;waiting&#39;, area: &#39;Characters&#39;, title: &#39;Release frozen R14 only after user acceptance&#39;, effort: &#39;L&#39;, parallel: &#39;Sequential · parent only&#39;, dependency: &#39;User-held movement/takedown and visual acceptance&#39;, owner: &#39;Parent · narrow default-player integration, docs and derived board&#39;, evidence: &#39;R14 source archive, current action implementation, paired performance, strict tests and native space/C smoke pass. V1 mechanics200 remains green and V1 stays default.&#39;, description: &#39;Preserve explicit V1, rejected v2/v3/R12 and superseded gait evidence. After exact-SHA user appearance/movement/takedown acceptance, add only a narrow default wrapper, regress the actual default and leave one fresh Gloam Courtyard Spike (DEBUG) with F12 evidence. Riven stays deferred.&#39; },
-        { id: &#39;guard-hit-label&#39;, lane: &#39;waiting&#39;, area: &#39;Gameplay&#39;, title: &#39;Guard health label fixed · shared board handoff&#39;, effort: &#39;S&#39;, parallel: &#39;Runtime verified with action readability&#39;, dependency: &#39;Enclosing action checkpoint board UI gate&#39;, owner: &#39;Parent · main_3d.gd&#39;, evidence: &#39;198-check mechanics verifies immediate strike/perfect-counter health text. Final close/default contact frames and ordinary single hit show GUARD78 with matching health/Momentum.&#39;, description: &#39;Pulled into the related contact-timing pass and resolved: label updates even during stun. Damage values, defeat/reset remain verified. Browser handoff shares the existing policy gate; this is no longer an unfixed gameplay bug.&#39; },
-        { id: &#39;movement-sign-review&#39;, lane: &#39;later&#39;, area: &#39;Gameplay&#39;, title: &#39;Review the intended W/S direction convention&#39;, effort: &#39;S&#39;, parallel: &#39;Review only · no movement change authorized here&#39;, dependency: &#39;Confirm desired camera-relative forward/back convention&#39;, owner: &#39;Gameplay owner · preserve accepted timing and movement metrics&#39;, evidence: &#39;Live default-view S taps moved up-screen and W down-screen. Existing held and tap paths both use negative camera basis.z multiplied by input.y. Camera-relative transformation works; intended sign convention was not decided.&#39;, description: &#39;Recheck the intended control convention before a bounded fix. This observation predates any new movement change; the character milestone deliberately left controls and gameplay code unchanged.&#39; },
-        { id: &#39;animation-polish&#39;, lane: &#39;complete&#39;, area: &#39;Animation&#39;, title: &#39;Animation polish and action variants&#39;, effort: &#39;M&#39;, parallel: &#39;Complete&#39;, dependency: &#39;Verified crouch and jump/vault dimensions&#39;, owner: &#39;Actor-visual/pose owner · actors/character_visual_builder.gd only&#39;, evidence: &#39;204-frame default-camera sequence, complete mechanics regression, fixed-step grapple timing, dedicated finite-transform/silhouette probe, and fresh live crouch/evade/jump/strike/camera/reset/F12 smoke passed&#39;, description: &#39;Sharper grapple handoff, evade landing, crouch weight, jump/vault distinction, strike/counter impact, and warden telegraph/reaction were added without controller or mechanic changes.&#39; },
-        { id: &#39;riven-lantern&#39;, lane: &#39;complete&#39;, area: &#39;Level design&#39;, title: &#39;Riven Lantern Ward isolated gray-box&#39;, effort: &#39;L&#39;, parallel: &#39;Complete&#39;, dependency: &#39;Verified crouch and jump/vault movement envelope&#39;, owner: &#39;New non-default scene/script files only · no default or controller edits&#39;, evidence: &#39;38 × 28 measurement validation, headless editor/runtime, two 960x600 normal-renderer overview frames, route layers, collision, and traversal-fit labels passed&#39;, description: &#39;A static, controller-free route study now captures ground, covered, elevated, concealment, loopback, and movement-envelope opportunities without claiming playable integration.&#39; },
-        { id: &#39;map-integration&#39;, lane: &#39;waiting&#39;, area: &#39;Project&#39;, title: &#39;Choose Riven integration shape&#39;, effort: &#39;S&#39;, parallel: &#39;No&#39;, dependency: &#39;Animation-polish and isolated Riven evidence accepted&#39;, owner: &#39;Product/integration owner · no default-file changes before the choice&#39;, evidence: &#39;Explicitly choose separate playable scene, Lower Court expansion/replacement, or retained static route reference; then define the matching controller, launch, smoke, and evidence scope&#39;, description: &#39;Deferred while the player visual milestone runs; no Riven role has been selected. Each integration shape changes the game structure and verification boundary.&#39; }
-      ];
+      const rawTasks = [
+  {
+    &quot;id&quot;: &quot;action-readability&quot;,
+    &quot;lane&quot;: &quot;waiting&quot;,
+    &quot;area&quot;: &quot;Animation&quot;,
+    &quot;title&quot;: &quot;Action presentation · user action review&quot;,
+    &quot;effort&quot;: &quot;M&quot;,
+    &quot;parallel&quot;: &quot;Runtime passed; user review pending&quot;,
+    &quot;dependency&quot;: &quot;User movement and paired takedown judgement&quot;,
+    &quot;owner&quot;: &quot;Parent · controller/builder/adapter; independent test audit&quot;,
+    &quot;evidence&quot;: &quot;Mechanics200/202, target-free254, four attacks352, action motion198 and deformation21642; historical reels and native limits in CHECKPOINTS.&quot;,
+    &quot;description&quot;: &quot;Four target-free strikes with commit-owned contact, forward evade and paired takedown are technically verified. Close-up fingers and action feel remain review items.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/CHECKPOINTS.md&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;gloam-vigil-player&quot;,
+    &quot;lane&quot;: &quot;complete&quot;,
+    &quot;area&quot;: &quot;Characters&quot;,
+    &quot;title&quot;: &quot;First Gloam Vigil runtime baseline&quot;,
+    &quot;effort&quot;: &quot;L&quot;,
+    &quot;parallel&quot;: &quot;Complete runtime checkpoint&quot;,
+    &quot;dependency&quot;: &quot;None; board UI tracked separately&quot;,
+    &quot;owner&quot;: &quot;Parent integration owner&quot;,
+    &quot;evidence&quot;: &quot;511 deformation and107 mechanics checks; native customization, stealth, traversal, camera and reset in the preserved checkpoint ledger.&quot;,
+    &quot;description&quot;: &quot;V1 remains the playable default and a recoverable baseline. Its runtime acceptance does not establish the final realism goal.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/CHECKPOINTS.md&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;vigil-sculpt-quality&quot;,
+    &quot;lane&quot;: &quot;waiting&quot;,
+    &quot;area&quot;: &quot;Characters&quot;,
+    &quot;title&quot;: &quot;R14 face/hair candidate · user visual judgement&quot;,
+    &quot;effort&quot;: &quot;L&quot;,
+    &quot;parallel&quot;: &quot;Frozen candidate&quot;,
+    &quot;dependency&quot;: &quot;User accepts gameplay-scale appearance and motion&quot;,
+    &quot;owner&quot;: &quot;Character realism owner&quot;,
+    &quot;evidence&quot;: &quot;R14 GLB30a2c06…; rig451, deformation21642 and imported/studio review. Exact source and acceptance limits in PROJECT_STATE.&quot;,
+    &quot;description&quot;: &quot;Warm skin, clear mouth, connected beard and swept hair on original costume/CC0 anatomy. Stylized hair remains a user judgement; V1 stays default.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/CHECKPOINTS.md&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;vigil-authored-motion&quot;,
+    &quot;lane&quot;: &quot;waiting&quot;,
+    &quot;area&quot;: &quot;Animation&quot;,
+    &quot;title&quot;: &quot;R14 corrected gait · user held-movement review&quot;,
+    &quot;effort&quot;: &quot;L&quot;,
+    &quot;parallel&quot;: &quot;Technical correction complete&quot;,
+    &quot;dependency&quot;: &quot;User held movement and action feel&quot;,
+    &quot;owner&quot;: &quot;Character realism owner: rig, controller, native handoff&quot;,
+    &quot;evidence&quot;: &quot;Full-cycle six cases, stance365, mechanics200/202, deformation21642; report2026-09-08-r14-leg-tracking.md. Ankle mean/max0.239/0.249 authored units.&quot;,
+    &quot;description&quot;: &quot;Grounded ankle lanes now follow hip span and knees track forward. Root speed remains4.80; Shift is inert; crouch1.178. Flight, sliding and wider action stance remain polish limits. No new performance certificate after the solver change.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/CHECKPOINTS.md&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;vigil-performance&quot;,
+    &quot;lane&quot;: &quot;complete&quot;,
+    &quot;area&quot;: &quot;Project&quot;,
+    &quot;title&quot;: &quot;Historical R14 paired performance certificate&quot;,
+    &quot;effort&quot;: &quot;M&quot;,
+    &quot;parallel&quot;: &quot;Technical gate complete&quot;,
+    &quot;dependency&quot;: &quot;Repeat only for a material performance question after changes&quot;,
+    &quot;owner&quot;: &quot;Verification owner · work/character-art-review/performance.gd&quot;,
+    &quot;evidence&quot;: &quot;Quiet1080p courtyard R14 mean/p95/p99=5.0999/6.7529/7.1777ms before the leg solver change; exact protocol in the appearance-action-performance report.&quot;,
+    &quot;description&quot;: &quot;Preserved measurement of the earlier exact build. It is not a new certificate for the leg solver, an enemy-count promise or a GPU ceiling.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/CHECKPOINTS.md&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;vigil-v2-integration&quot;,
+    &quot;lane&quot;: &quot;waiting&quot;,
+    &quot;area&quot;: &quot;Characters&quot;,
+    &quot;title&quot;: &quot;Release R14 after user acceptance&quot;,
+    &quot;effort&quot;: &quot;L&quot;,
+    &quot;parallel&quot;: &quot;Sequential&quot;,
+    &quot;dependency&quot;: &quot;User appearance, held movement and paired takedown acceptance&quot;,
+    &quot;owner&quot;: &quot;Integration owner: narrow default switch&quot;,
+    &quot;evidence&quot;: &quot;Technical candidate gates in CHECKPOINTS; default remains V1.&quot;,
+    &quot;description&quot;: &quot;Preserve rejected and superseded source. After acceptance, switch the default narrowly, regress the actual default and leave fresh exact-title native/F12 evidence.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/CHECKPOINTS.md&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;guard-hit-label&quot;,
+    &quot;lane&quot;: &quot;complete&quot;,
+    &quot;area&quot;: &quot;Gameplay&quot;,
+    &quot;title&quot;: &quot;Guard health label updates during stun&quot;,
+    &quot;effort&quot;: &quot;S&quot;,
+    &quot;parallel&quot;: &quot;Runtime complete&quot;,
+    &quot;dependency&quot;: &quot;None; board UI tracked separately&quot;,
+    &quot;owner&quot;: &quot;Parent · main_3d.gd&quot;,
+    &quot;evidence&quot;: &quot;Contact-time label checks and live GUARD78 evidence in the preserved ledger.&quot;,
+    &quot;description&quot;: &quot;Strike and perfect-counter health text refresh immediately, including while stunned; damage and reset remain unchanged.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/CHECKPOINTS.md&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;movement-sign-review&quot;,
+    &quot;lane&quot;: &quot;later&quot;,
+    &quot;area&quot;: &quot;Gameplay&quot;,
+    &quot;title&quot;: &quot;Review the intended W/S direction convention&quot;,
+    &quot;effort&quot;: &quot;S&quot;,
+    &quot;parallel&quot;: &quot;Review only · no movement change authorized here&quot;,
+    &quot;dependency&quot;: &quot;Confirm desired camera-relative forward/back convention&quot;,
+    &quot;owner&quot;: &quot;Gameplay owner · preserve accepted timing and movement metrics&quot;,
+    &quot;evidence&quot;: &quot;Live default-view S taps moved up-screen and W down-screen. Existing held and tap paths both use negative camera basis.z multiplied by input.y. Camera-relative transformation works; intended sign convention was not decided.&quot;,
+    &quot;description&quot;: &quot;Recheck the intended control convention before a bounded fix. This observation predates any new movement change; the character milestone deliberately left controls and gameplay code unchanged.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/CHECKPOINTS.md&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;animation-polish&quot;,
+    &quot;lane&quot;: &quot;complete&quot;,
+    &quot;area&quot;: &quot;Animation&quot;,
+    &quot;title&quot;: &quot;Animation polish and action variants&quot;,
+    &quot;effort&quot;: &quot;M&quot;,
+    &quot;parallel&quot;: &quot;Complete&quot;,
+    &quot;dependency&quot;: &quot;Verified crouch and jump/vault dimensions&quot;,
+    &quot;owner&quot;: &quot;Actor-visual/pose owner · actors/character_visual_builder.gd only&quot;,
+    &quot;evidence&quot;: &quot;204-frame default-camera sequence, complete mechanics regression, fixed-step grapple timing, dedicated finite-transform/silhouette probe, and fresh live crouch/evade/jump/strike/camera/reset/F12 smoke passed&quot;,
+    &quot;description&quot;: &quot;Sharper grapple handoff, evade landing, crouch weight, jump/vault distinction, strike/counter impact, and warden telegraph/reaction were added without controller or mechanic changes.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/CHECKPOINTS.md&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;riven-lantern&quot;,
+    &quot;lane&quot;: &quot;complete&quot;,
+    &quot;area&quot;: &quot;Level design&quot;,
+    &quot;title&quot;: &quot;Riven Lantern Ward isolated gray-box&quot;,
+    &quot;effort&quot;: &quot;L&quot;,
+    &quot;parallel&quot;: &quot;Complete&quot;,
+    &quot;dependency&quot;: &quot;Verified crouch and jump/vault movement envelope&quot;,
+    &quot;owner&quot;: &quot;New non-default scene/script files only · no default or controller edits&quot;,
+    &quot;evidence&quot;: &quot;38 × 28 measurement validation, headless editor/runtime, two 960x600 normal-renderer overview frames, route layers, collision, and traversal-fit labels passed&quot;,
+    &quot;description&quot;: &quot;A static, controller-free route study now captures ground, covered, elevated, concealment, loopback, and movement-envelope opportunities without claiming playable integration.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/CHECKPOINTS.md&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;map-integration&quot;,
+    &quot;lane&quot;: &quot;waiting&quot;,
+    &quot;area&quot;: &quot;Project&quot;,
+    &quot;title&quot;: &quot;Choose Riven integration shape&quot;,
+    &quot;effort&quot;: &quot;S&quot;,
+    &quot;parallel&quot;: &quot;No&quot;,
+    &quot;dependency&quot;: &quot;Animation-polish and isolated Riven evidence accepted&quot;,
+    &quot;owner&quot;: &quot;Product/integration owner · no default-file changes before the choice&quot;,
+    &quot;evidence&quot;: &quot;Explicitly choose separate playable scene, Lower Court expansion/replacement, or retained static route reference; then define the matching controller, launch, smoke, and evidence scope&quot;,
+    &quot;description&quot;: &quot;Deferred while the player visual milestone runs; no Riven role has been selected. Each integration shape changes the game structure and verification boundary.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/CHECKPOINTS.md&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;feedback-loop&quot;,
+    &quot;lane&quot;: &quot;complete&quot;,
+    &quot;area&quot;: &quot;Project&quot;,
+    &quot;title&quot;: &quot;Reproducible reviews and source preservation&quot;,
+    &quot;effort&quot;: &quot;M&quot;,
+    &quot;parallel&quot;: &quot;Tooling isolated from gameplay&quot;,
+    &quot;dependency&quot;: &quot;Rerun scenario after relevant changes&quot;,
+    &quot;owner&quot;: &quot;tools/review.py, tools/feedback, debug; no controller changes&quot;,
+    &quot;evidence&quot;: &quot;Two frozen runs:210/210 identical frames in21.06/19.66s. F12 image/state smoke and recovery tests pass. Full experiment in FEEDBACK_LOOP_RESULTS.&quot;,
+    &quot;description&quot;: &quot;Private Git, small curated evidence, verified milestone archive, immutable render snapshots and source/asset identity. Technical/visual/native verdicts remain separate.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/FEEDBACK_LOOP_RESULTS.md&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;board-ui&quot;,
+    &quot;lane&quot;: &quot;waiting&quot;,
+    &quot;area&quot;: &quot;Project&quot;,
+    &quot;title&quot;: &quot;Local board · rendered UI verification&quot;,
+    &quot;effort&quot;: &quot;S&quot;,
+    &quot;parallel&quot;: &quot;Independent of game acceptance&quot;,
+    &quot;dependency&quot;: &quot;Permitted local browser access or user manual review&quot;,
+    &quot;owner&quot;: &quot;Board tooling owner&quot;,
+    &quot;evidence&quot;: &quot;Source schema, generator parity and script syntax can be checked. The current file URL was rejected by Browser Use URL policy.&quot;,
+    &quot;description&quot;: &quot;Verify all tabs, area filter, selected task details and narrow/wide layouts when permitted. Static checks do not prove rendered behavior. Do not bypass the recorded policy denial.&quot;,
+    &quot;evidence_paths&quot;: [
+      &quot;docs/FEEDBACK_LOOP_RESULTS.md&quot;
+    ]
+  }
+];
+      const escapeText = value =&gt; String(value).replace(/[&amp;&lt;&gt;&quot;&#39;]/g, c =&gt; ({&#39;&amp;&#39;:&#39;&amp;amp;&#39;, &#39;&lt;&#39;:&#39;&amp;lt;&#39;, &#39;&gt;&#39;:&#39;&amp;gt;&#39;, &#39;&quot;&#39;:&#39;&amp;quot;&#39;, &quot;&#39;&quot;:&#39;&amp;#39;&#39;}[c]));
+      const tasks = rawTasks.map(task =&gt; Object.fromEntries(Object.entries(task).map(([key, value]) =&gt; [key, typeof value === &#39;string&#39; ? escapeText(value) : value])));
 
       let selectedId = &#39;vigil-authored-motion&#39;;
       const lanesRoot = root.querySelector(&#39;#gpb-lanes&#39;);
@@ -570,5 +730,5 @@
   &lt;/script&gt;
 &lt;/div&gt;
 "></iframe>
-</body>
-</html>
+    </body>
+    </html>

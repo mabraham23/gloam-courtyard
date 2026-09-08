@@ -1,0 +1,34 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+Movie Maker mode enabled, recording movie in 960×600 @ 30 FPS...
+R14_SINGLE_SPEED_SEQUENCE sha=30a2c06be42351252dada7f791619499c28e160af59455c7fa332bfad1070b0b front_review=false
+R14_SINGLE_SPEED_FRAME frame=0 segment=PLAIN WASD · IDLE position=(-5.3, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=10 segment=PLAIN WASD · IDLE position=(-5.3, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=20 segment=PLAIN WASD · CORRECTED RUN position=(-4.340001, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=30 segment=PLAIN WASD · CORRECTED RUN position=(-2.740001, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=40 segment=PLAIN WASD · CORRECTED RUN position=(-1.140001, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=50 segment=PLAIN WASD · CORRECTED RUN position=(0.459999, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=60 segment=PLAIN WASD · STOP position=(1.899999, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=70 segment=PLAIN WASD · STOP position=(1.899999, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=80 segment=SHIFT COMPARISON · IDLE position=(-5.3, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=90 segment=SHIFT + WASD · SAME RUN position=(-5.14, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=100 segment=SHIFT + WASD · SAME RUN position=(-3.540001, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=110 segment=SHIFT + WASD · SAME RUN position=(-1.94, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=120 segment=SHIFT + WASD · SAME RUN position=(-0.340001, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=130 segment=SHIFT + WASD · SAME RUN position=(1.259999, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=140 segment=SHIFT COMPARISON · STOP position=(1.899999, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=150 segment=START / STOP · IDLE position=(-5.3, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=160 segment=START / STOP · IDLE position=(-5.3, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=170 segment=START / STOP · FIRST RUN position=(-4.340001, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=180 segment=START / STOP · SETTLE position=(-2.900001, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=190 segment=START / STOP · SECOND RUN position=(-2.740001, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_FRAME frame=200 segment=START / STOP · SECOND RUN position=(-1.140001, 0.0, 4.3) run_pose=1.0
+R14_SINGLE_SPEED_SEQUENCE_OK frames=210 plain_distance=7.19999933242798 shifted_distance=7.19999933242798
+--------------------------------------------------------------------------------
+Done recording movie at path: /Users/markabraham/dev/batman/work/review-runs/20260908T173323Z-locomotion-5ad42e/frames/frame.png
+210 frames at 30 FPS (movie length: 00:00:07:00), recorded in 00:00:07 (100% of real-time speed).
+CPU render time: 0.56 seconds (average: 2.67 ms/frame)
+GPU render time: 0.00 seconds (average: 0.00 ms/frame)
+Encoding time: 4.64 seconds (average: 22.11 ms/frame)
+--------------------------------------------------------------------------------

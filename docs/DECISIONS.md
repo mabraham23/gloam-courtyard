@@ -2,6 +2,28 @@
 
 Append-only. Status is `Active` unless explicitly marked `Superseded`.
 
+## Current decision index
+
+Stable catalogue IDs below identify operative rules. The dated rationale remains
+append-only below; a newer decision may supersede one part of an older entry.
+Read relevant rationale when changing a rule, rather than replaying the whole log.
+
+<!-- decision-index:start -->
+| ID | Rule | Current scope / supersession |
+|---|---|---|
+| D-20260903-IP | Original dark-gothic IP | Active: original characters, names and assets; broad genre inspiration only. |
+| D-20260903-3D | Desktop-first Godot true 3D | Active: 2D retained as reference; constrained orthographic camera. |
+| D-20260904-ASSET | Licensed anatomical foundation | Active: verified CC0 base supersedes the pending external-base choice; V1 remains default until candidate acceptance. |
+| D-20260908-SPEED | One standing speed | Active: 4.80 WASD, inert Shift, crouch1.178. Supersedes separate walk/run control, preserving held-input ownership and old motion data. |
+| D-20260908-CONTACT | Target-independent presentation | Active: SPACE may whiff; damage requires commit-owned and contact-valid target context. |
+| D-20260908-LEGS | Pose-dependent grounded leg tracking | Active: signed full-cycle gates and visual review supersede sparse/unsigned fixed-angle gait acceptance. |
+| D-20260908-REVIEW | Frozen review before wider regression | Active: matched scenario, full identity and disclosed helpers; numerical pass cannot grant user visual acceptance. |
+| D-20260908-PRESERVE | Source control and selective preservation | Active: current source in private Git, selected milestones in private archives, raw local evidence protected by verified retention. |
+| D-20260908-BOARD | One task source and distinct gates | Active: board generated from roadmap data; board UI blocker tracked separately from runtime and user acceptance. |
+<!-- decision-index:end -->
+
+## Preserved dated rationale
+
 ## 2026-09-03 — Original dark-gothic IP (Active)
 
 The project uses original characters, names, visuals, symbols, costumes, architecture, and assets rather than Batman or any recognizable franchise likenesses. This keeps the prototype creatively and legally distinct while preserving only broad genre intent.
@@ -294,3 +316,32 @@ Signed full-cycle geometry, matched normal-renderer front/profile evidence and
 user gameplay-scale judgement govern acceptance. Numerical narrowing alone
 cannot establish natural motion. Preserve all prior assets, captures and V1
 default, and keep source flight/contact polish as explicit follow-up scope.
+
+## 2026-09-08 — Frozen reviews and selective preservation (Active)
+
+IDs: `D-20260908-REVIEW`, `D-20260908-PRESERVE`, `D-20260908-BOARD`.
+The user authorized private GitHub source control and experimental improvements
+to iteration speed, evidence quality and history preservation. Git commits now
+identify complete source states; source hashes additionally identify dirty
+snapshots. Candidate GLB identity alone is insufficient when the rig code changes.
+
+Use one bounded matched scenario and a gameplay-scale visual review before a
+large validation pass. Keep deterministic helper-driven evidence, ordinary native
+input and user acceptance explicitly distinct. F12 in the optional managed launcher
+pairs actual rendered pixels with source identity, camera, action state and recent
+inputs. A repeat-build control establishes capture stability; it does not establish
+that an animation is good or guarantee performance of future runs.
+
+Keep current source/assets and small curated evidence in Git. Store selected
+historical binaries with per-file hashes in a private milestone archive. Preserve
+unique legacy evidence locally; compact identical image bytes without breaking
+paths and compress silent audio with verified restoration. New raw runs may expire
+only under the documented verified-retention policy. This specifies lossless
+storage and a selection policy, not permission to erase rejected design history.
+
+Current state and active plans are brief; complete old text is archived verbatim.
+Task records in UPCOMING_TASKS generate both local board views. This supersedes
+manual copying of task statuses into HTML and coupling the same board-browser
+blocker to multiple completed runtime fixes. Runtime completion, user acceptance
+and board UI verification remain independent facts; the overall board handoff is
+still incomplete until its rendered UI checks can actually run.

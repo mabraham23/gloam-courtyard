@@ -1,0 +1,35 @@
+{
+  "same_build_control": true,
+  "source_same": true,
+  "identical_frames": 210,
+  "frames": 210,
+  "sample_rgb_mae_0_255": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "timings": [
+    {
+      "first_review_s": 16.622,
+      "import_s": 7.914,
+      "preview_s": 4.434,
+      "render_s": 8.053,
+      "snapshot_s": 0.591,
+      "total_s": 21.056
+    },
+    {
+      "first_review_s": 16.157,
+      "import_s": 7.803,
+      "preview_s": 3.505,
+      "render_s": 7.823,
+      "snapshot_s": 0.466,
+      "total_s": 19.662
+    }
+  ]
+}

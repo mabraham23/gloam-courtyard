@@ -1,0 +1,10 @@
+{
+  "verified_png_paths": 28553,
+  "verified_png_bytes": 4149976403,
+  "silent_audio_roundtrip": "captures/action-after-r1-close.wav",
+  "audio_roundtrip_sha256": "292174b99de2bf7efa79529a2a504120ef5ff9f9fd69612698cbc62b99b7ce15",
+  "shared_png_aliases": 4308,
+  "silent_audio_archives": 104,
+  "net_redundant_bytes_removed": 1068264400,
+  "note": "One restored silent WAV intentionally retained as a recovery demonstration. Unique PNGs and all historical PNG paths preserved."
+}

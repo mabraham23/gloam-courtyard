@@ -1,0 +1,9 @@
+{
+  "purpose": "Recoverable R7 appearance baseline and rejected R12 appearance milestone. These are source-history records, not game releases or acceptance of movement.",
+  "entries": [
+    {"path": "actors/gloam_vigil/v4/revisions/r7", "reason": "Frozen appearance baseline retained after native appearance review; subsequent movement was rejected."},
+    {"path": "actors/gloam_vigil/v4/revisions/r12", "reason": "Rejected appearance milestone before the R14 hair, mouth and beard direction; retain the source and rendered evidence for comparison."},
+    {"path": "actors/gloam_vigil/v4/PROVENANCE.md", "reason": "License and anatomical-source provenance for restoring these assets."},
+    {"path": "actors/gloam_vigil/v4/motion/PROVENANCE.md", "reason": "Motion source, permission and retarget history."}
+  ]
+}

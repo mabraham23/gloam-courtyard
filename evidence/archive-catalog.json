@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "release": "https://github.com/mabraham23/gloam-courtyard/releases/tag/preservation-2026-09-08",
+  "asset": "gloam-history-r7-r12.zip",
+  "sha256": "74874dd80f0049b2f3a10aad2d11253a260502873ad45481493810ae7f02dc3d",
+  "bytes": 23179636,
+  "files": 13,
+  "download_restore_verified": true,
+  "visibility": "private",
+  "note": "R7 appearance baseline and rejected R12. Not a game release. Other unique historic captures/assets remain local."
+}

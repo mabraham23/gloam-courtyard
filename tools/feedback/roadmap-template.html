@@ -1,0 +1,524 @@
+<div id="gloam-project-board">
+  <style>
+    #gloam-project-board {
+      --gpb-bg: light-dark(#f3f4f7, #0c1018);
+      --gpb-panel: light-dark(#ffffff, #141a25);
+      --gpb-panel-2: light-dark(#f8f9fb, #1a2230);
+      --gpb-text: light-dark(#172033, #edf1f8);
+      --gpb-muted: light-dark(#667085, #9ba8ba);
+      --gpb-line: light-dark(#d9dee8, #2b3647);
+      --gpb-primary: light-dark(#5d3fd3, #a790ff);
+      --gpb-primary-soft: light-dark(#eeeaff, #2a2449);
+      --gpb-now: light-dark(#b54708, #ffbd7a);
+      --gpb-next: light-dark(#175cd3, #82b4ff);
+      --gpb-parallel: light-dark(#067647, #67d9a4);
+      --gpb-later: light-dark(#6941c6, #b59cff);
+      --gpb-complete: light-dark(#475467, #b7c0cf);
+      color-scheme: light dark;
+      color: var(--gpb-text);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: transparent;
+    }
+    #gloam-project-board * { box-sizing: border-box; }
+    #gloam-project-board button,
+    #gloam-project-board select { font: inherit; }
+    #gloam-project-board .gpb-shell {
+      background: var(--gpb-bg);
+      border: 1px solid var(--gpb-line);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    #gloam-project-board .gpb-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 20px;
+      background: var(--gpb-panel);
+      border-bottom: 1px solid var(--gpb-line);
+    }
+    #gloam-project-board .gpb-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+    #gloam-project-board .gpb-mark {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      color: var(--gpb-primary);
+      background: var(--gpb-primary-soft);
+      flex: 0 0 auto;
+    }
+    #gloam-project-board .gpb-brand h1 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.25;
+      font-weight: 500;
+    }
+    #gloam-project-board .gpb-brand p,
+    #gloam-project-board .gpb-meta {
+      margin: 2px 0 0;
+      color: var(--gpb-muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    #gloam-project-board .gpb-health {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gpb-parallel);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    #gloam-project-board .gpb-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+    #gloam-project-board .gpb-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding: 8px 12px;
+      background: var(--gpb-panel);
+      border-bottom: 1px solid var(--gpb-line);
+    }
+    #gloam-project-board .gpb-tab {
+      border: 0;
+      border-radius: 7px;
+      padding: 8px 11px;
+      color: var(--gpb-muted);
+      background: transparent;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    #gloam-project-board .gpb-tab[aria-selected="true"] {
+      color: var(--gpb-text);
+      background: var(--gpb-primary-soft);
+    }
+    #gloam-project-board .gpb-panel { padding: 16px; }
+    #gloam-project-board .gpb-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    #gloam-project-board .gpb-toolbar-copy h2 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    #gloam-project-board .gpb-toolbar-copy p {
+      margin: 3px 0 0;
+      color: var(--gpb-muted);
+      font-size: 12px;
+    }
+    #gloam-project-board .gpb-filter {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gpb-muted);
+      font-size: 12px;
+    }
+    #gloam-project-board .gpb-filter select {
+      min-height: 36px;
+      color: var(--gpb-text);
+      background: var(--gpb-panel);
+      border: 1px solid var(--gpb-line);
+      border-radius: 7px;
+      padding: 6px 30px 6px 9px;
+    }
+    #gloam-project-board .gpb-board-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 14px;
+      align-items: start;
+    }
+    #gloam-project-board .gpb-lanes {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(130px, 1fr));
+      gap: 10px;
+      align-items: start;
+    }
+    #gloam-project-board .gpb-lane { min-width: 0; }
+    #gloam-project-board .gpb-lane-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin: 0 2px 8px;
+      color: var(--gpb-muted);
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    #gloam-project-board .gpb-count {
+      display: inline-grid;
+      place-items: center;
+      min-width: 22px;
+      height: 22px;
+      border-radius: 11px;
+      background: var(--gpb-panel-2);
+      color: var(--gpb-muted);
+    }
+    #gloam-project-board .gpb-stack { display: grid; gap: 8px; }
+    #gloam-project-board .gpb-task {
+      width: 100%;
+      text-align: left;
+      color: var(--gpb-text);
+      background: var(--gpb-panel);
+      border: 1px solid var(--gpb-line);
+      border-left: 3px solid var(--task-color, var(--gpb-line));
+      border-radius: 9px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    #gloam-project-board .gpb-task[aria-pressed="true"] {
+      border-color: var(--gpb-primary);
+      border-left-color: var(--task-color, var(--gpb-primary));
+      box-shadow: 0 0 0 2px var(--gpb-primary-soft);
+    }
+    #gloam-project-board .gpb-task-category {
+      color: var(--gpb-muted);
+      font-size: 11px;
+      line-height: 1.25;
+    }
+    #gloam-project-board .gpb-task-title {
+      margin-top: 5px;
+      font-size: 13px;
+      line-height: 1.35;
+      font-weight: 500;
+    }
+    #gloam-project-board .gpb-task-foot {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px 9px;
+      margin-top: 9px;
+      color: var(--gpb-muted);
+      font-size: 11px;
+    }
+    #gloam-project-board .gpb-detail {
+      position: sticky;
+      top: 8px;
+      background: var(--gpb-panel);
+      border: 1px solid var(--gpb-line);
+      border-radius: 10px;
+      padding: 14px;
+    }
+    #gloam-project-board .gpb-detail h3 {
+      margin: 6px 0 4px;
+      font-size: 16px;
+      line-height: 1.3;
+      font-weight: 500;
+    }
+    #gloam-project-board .gpb-detail p {
+      margin: 0 0 13px;
+      color: var(--gpb-muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    #gloam-project-board .gpb-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 13px;
+    }
+    #gloam-project-board .gpb-label {
+      color: var(--gpb-muted);
+      font-size: 11px;
+    }
+    #gloam-project-board .gpb-value {
+      margin-top: 2px;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    #gloam-project-board .gpb-evidence {
+      padding-top: 12px;
+      border-top: 1px solid var(--gpb-line);
+    }
+    #gloam-project-board .gpb-discuss {
+      width: 100%;
+      min-height: 38px;
+      margin-top: 13px;
+      border: 0;
+      border-radius: 8px;
+      color: light-dark(#ffffff, #101521);
+      background: var(--gpb-primary);
+      cursor: pointer;
+      font-weight: 500;
+    }
+    #gloam-project-board .gpb-flow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 20px;
+      align-items: stretch;
+      margin-top: 16px;
+    }
+    #gloam-project-board .gpb-phase {
+      position: relative;
+      min-height: 138px;
+      padding: 14px;
+      border-radius: 10px;
+      background: var(--gpb-panel);
+      border: 1px solid var(--gpb-line);
+    }
+    #gloam-project-board .gpb-phase:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      right: -18px;
+      top: 50%;
+      color: var(--gpb-muted);
+      transform: translateY(-50%);
+    }
+    #gloam-project-board .gpb-phase strong {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    #gloam-project-board .gpb-phase p {
+      margin: 0;
+      color: var(--gpb-muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    #gloam-project-board .gpb-timeline,
+    #gloam-project-board .gpb-source-list { display: grid; gap: 9px; margin-top: 14px; }
+    #gloam-project-board .gpb-decision,
+    #gloam-project-board .gpb-source {
+      display: grid;
+      grid-template-columns: 120px minmax(0, 1fr);
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--gpb-line);
+    }
+    #gloam-project-board .gpb-decision:last-child,
+    #gloam-project-board .gpb-source:last-child { border-bottom: 0; }
+    #gloam-project-board .gpb-decision time,
+    #gloam-project-board .gpb-source-code { color: var(--gpb-muted); font-size: 12px; }
+    #gloam-project-board .gpb-decision strong,
+    #gloam-project-board .gpb-source strong { display: block; font-size: 13px; font-weight: 500; }
+    #gloam-project-board .gpb-decision p,
+    #gloam-project-board .gpb-source p { margin: 3px 0 0; color: var(--gpb-muted); font-size: 12px; line-height: 1.45; }
+    #gloam-project-board .gpb-empty { color: var(--gpb-muted); font-size: 12px; padding: 12px 2px; }
+    #gloam-project-board [hidden] { display: none !important; }
+    @media (max-width: 900px) {
+      #gloam-project-board .gpb-board-layout { grid-template-columns: 1fr; }
+      #gloam-project-board .gpb-detail { position: static; }
+      #gloam-project-board .gpb-lanes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #gloam-project-board .gpb-flow { grid-template-columns: 1fr; gap: 20px; }
+      #gloam-project-board .gpb-phase { min-height: auto; }
+      #gloam-project-board .gpb-phase:not(:last-child)::after { content: "↓"; right: 14px; top: auto; bottom: -17px; transform: none; }
+    }
+    @media (max-width: 520px) {
+      #gloam-project-board .gpb-header,
+      #gloam-project-board .gpb-toolbar { align-items: flex-start; flex-direction: column; }
+      #gloam-project-board .gpb-panel { padding: 12px; }
+      #gloam-project-board .gpb-lanes { grid-template-columns: 1fr; }
+      #gloam-project-board .gpb-filter { width: 100%; justify-content: space-between; }
+      #gloam-project-board .gpb-filter select { flex: 1; }
+      #gloam-project-board .gpb-decision,
+      #gloam-project-board .gpb-source { grid-template-columns: 1fr; gap: 4px; }
+    }
+    @media (pointer: coarse) {
+      #gloam-project-board .gpb-tab,
+      #gloam-project-board .gpb-filter select,
+      #gloam-project-board .gpb-discuss { min-height: 44px; }
+    }
+  </style>
+
+  <section class="gpb-shell" aria-label="Gloam project planning dashboard">
+    <header class="gpb-header">
+      <div class="gpb-brand">
+        <div class="gpb-mark"><i data-lucide="moon-star" aria-hidden="true"></i></div>
+        <div>
+          <h1>Gloam project board</h1>
+          <p>Lower Court · original 3D stealth-action prototype</p>
+        </div>
+      </div>
+      <div class="gpb-health"><span class="gpb-dot"></span>__SUMMARY_HTML__</div>
+    </header>
+
+    <nav class="gpb-nav" role="tablist" aria-label="Project views">
+      <button class="gpb-tab" id="gpb-tab-board" type="button" role="tab" data-panel="board" aria-controls="gpb-panel-board" aria-selected="true">Board</button>
+      <button class="gpb-tab" id="gpb-tab-dependencies" type="button" role="tab" data-panel="dependencies" aria-controls="gpb-panel-dependencies" aria-selected="false">Dependencies</button>
+      <button class="gpb-tab" id="gpb-tab-decisions" type="button" role="tab" data-panel="decisions" aria-controls="gpb-panel-decisions" aria-selected="false">Decisions</button>
+      <button class="gpb-tab" id="gpb-tab-context" type="button" role="tab" data-panel="context" aria-controls="gpb-panel-context" aria-selected="false">Context structure</button>
+    </nav>
+
+    <section class="gpb-panel" id="gpb-panel-board" role="tabpanel" aria-labelledby="gpb-tab-board" data-view="board">
+      <div class="gpb-toolbar">
+        <div class="gpb-toolbar-copy">
+          <h2>Upcoming work</h2>
+          <p>Task status and dependencies are generated from the current roadmap</p>
+        </div>
+        <label class="gpb-filter">Area
+          <select id="gpb-area-filter">
+            <option value="all">All areas</option>
+            <option value="Characters">Characters</option>
+            <option value="Animation">Animation</option>
+            <option value="Movement">Movement</option>
+            <option value="Gameplay">Gameplay</option>
+            <option value="Level design">Level design</option>
+            <option value="Project">Project</option>
+          </select>
+        </label>
+      </div>
+      <div class="gpb-board-layout">
+        <div class="gpb-lanes" id="gpb-lanes" aria-label="Task lanes"></div>
+        <aside class="gpb-detail" id="gpb-detail" aria-live="polite"></aside>
+      </div>
+    </section>
+
+    <section class="gpb-panel" id="gpb-panel-dependencies" role="tabpanel" aria-labelledby="gpb-tab-dependencies" data-view="dependencies" hidden>
+      <div class="gpb-toolbar-copy">
+        <h2>Safe execution order</h2>
+        <p>Current dependency and ownership records</p>
+      </div>
+      <div class="gpb-flow" aria-label="Task dependencies">__PHASES_HTML__</div>
+    </section>
+
+    <section class="gpb-panel" id="gpb-panel-decisions" role="tabpanel" aria-labelledby="gpb-tab-decisions" data-view="decisions" hidden>
+      <div class="gpb-toolbar-copy">
+        <h2>Durable decisions</h2>
+        <p>Rationale stays historical even when implementation phases change</p>
+      </div>
+      <div class="gpb-timeline">__DECISIONS_HTML__</div>
+    </section>
+
+    <section class="gpb-panel" id="gpb-panel-context" role="tabpanel" aria-labelledby="gpb-tab-context" data-view="context" hidden>
+      <div class="gpb-toolbar-copy">
+        <h2>Context ownership</h2>
+        <p>Each file has one job so new agents can enter without replaying the conversation</p>
+      </div>
+      <div class="gpb-source-list">
+        <div class="gpb-source"><div class="gpb-source-code">AGENTS.md</div><div><strong>Working agreement</strong><p>Mandatory reading order, original-IP constraint, evidence rhythm, and update rules.</p></div></div>
+        <div class="gpb-source"><div class="gpb-source-code">PROJECT_STATE</div><div><strong>Current truth</strong><p>Active implementation, verified behavior, controls, known limits, and fresh-agent checklist.</p></div></div>
+        <div class="gpb-source"><div class="gpb-source-code">UPCOMING_TASKS</div><div><strong>Current roadmap</strong><p>Now, next, dependencies, effort, ownership boundaries, and parallelization status.</p></div></div>
+        <div class="gpb-source"><div class="gpb-source-code">DECISIONS</div><div><strong>Durable rationale</strong><p>Append-only active and superseded decisions; historical context is preserved.</p></div></div>
+        <div class="gpb-source"><div class="gpb-source-code">CHECKPOINTS</div><div><strong>Verification record</strong><p>Accepted evidence, captures, pass/fail results, and the next completion bar.</p></div></div>
+        <div class="gpb-source"><div class="gpb-source-code">visual-feedback-loop</div><div><strong>Runbook</strong><p>Launch, acquire, screenshot/action/screenshot, short capture, smoke play, and recovery.</p></div></div>
+        <div class="gpb-source"><div class="gpb-source-code">project-roadmap</div><div><strong>Derived local board</strong><p>Edit UPCOMING_TASKS records, regenerate both local pages, and verify permitted interactions and responsive widths.</p></div></div>
+      </div>
+    </section>
+  </section>
+  <div class="sr-only" id="gpb-live" aria-live="polite"></div>
+
+  <script>
+    (function () {
+      const root = document.getElementById('gloam-project-board');
+      if (!root) return;
+
+      const lanes = [
+        { id: 'now', label: 'Now', color: 'var(--gpb-now)' },
+        { id: 'next', label: 'Next', color: 'var(--gpb-next)' },
+        { id: 'waiting', label: 'Waiting / blocked', color: 'var(--gpb-parallel)' },
+        { id: 'later', label: 'Later', color: 'var(--gpb-later)' },
+        { id: 'complete', label: 'Recent complete', color: 'var(--gpb-complete)' }
+      ];
+
+      const rawTasks = __TASKS_JSON__;
+      const escapeText = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
+      const tasks = rawTasks.map(task => Object.fromEntries(Object.entries(task).map(([key, value]) => [key, typeof value === 'string' ? escapeText(value) : value])));
+
+      let selectedId = 'vigil-authored-motion';
+      const lanesRoot = root.querySelector('#gpb-lanes');
+      const detail = root.querySelector('#gpb-detail');
+      const filter = root.querySelector('#gpb-area-filter');
+      const live = root.querySelector('#gpb-live');
+
+      function renderBoard() {
+        const area = filter.value;
+        const visible = tasks.filter(task => area === 'all' || task.area === area);
+        if (!visible.some(task => task.id === selectedId)) {
+          const preferred = visible.find(task => task.lane === 'now') || visible[0];
+          selectedId = preferred ? preferred.id : '';
+        }
+        lanesRoot.innerHTML = '';
+
+        lanes.forEach(lane => {
+          const laneTasks = visible.filter(task => task.lane === lane.id);
+          const section = document.createElement('section');
+          section.className = 'gpb-lane';
+          section.innerHTML = '<div class="gpb-lane-head"><span>' + lane.label + '</span><span class="gpb-count">' + laneTasks.length + '</span></div><div class="gpb-stack"></div>';
+          const stack = section.querySelector('.gpb-stack');
+
+          if (!laneTasks.length) {
+            const empty = document.createElement('div');
+            empty.className = 'gpb-empty';
+            empty.textContent = 'No tasks in this area';
+            stack.appendChild(empty);
+          }
+
+          laneTasks.forEach(task => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'gpb-task';
+            button.style.setProperty('--task-color', lane.color);
+            button.setAttribute('aria-pressed', task.id === selectedId ? 'true' : 'false');
+            button.innerHTML = '<div class="gpb-task-category">' + task.area + '</div><div class="gpb-task-title">' + task.title + '</div><div class="gpb-task-foot"><span>Effort ' + task.effort + '</span><span>Parallel ' + task.parallel + '</span></div>';
+            button.addEventListener('click', function () {
+              selectedId = task.id;
+              renderBoard();
+              renderDetail();
+            });
+            stack.appendChild(button);
+          });
+
+          lanesRoot.appendChild(section);
+        });
+      }
+
+      function renderDetail() {
+        const task = tasks.find(item => item.id === selectedId);
+        if (!task) {
+          detail.innerHTML = '<div class="gpb-meta">No matching tasks</div><h3>Nothing in this area</h3><p>Choose another area to inspect its current work, dependencies, ownership boundary, and completion evidence.</p>';
+          return;
+        }
+        const lane = lanes.find(item => item.id === task.lane);
+        detail.innerHTML = '<div class="gpb-meta" style="color:' + lane.color + '">' + lane.label + ' · ' + task.area + '</div>' +
+          '<h3>' + task.title + '</h3>' +
+          '<p>' + task.description + '</p>' +
+          '<div class="gpb-detail-grid"><div><div class="gpb-label">Effort</div><div class="gpb-value">' + task.effort + '</div></div><div><div class="gpb-label">Parallel-safe</div><div class="gpb-value">' + task.parallel + '</div></div></div>' +
+          '<div class="gpb-detail-grid"><div><div class="gpb-label">Dependency</div><div class="gpb-value">' + task.dependency + '</div></div><div><div class="gpb-label">Area</div><div class="gpb-value">' + task.area + '</div></div></div>' +
+          '<div class="gpb-evidence"><div class="gpb-label">Owner / file boundary</div><div class="gpb-value">' + task.owner + '</div></div>' +
+          '<div class="gpb-evidence"><div class="gpb-label">Completion evidence</div><div class="gpb-value">' + task.evidence + '</div></div>' +
+          '<button type="button" class="gpb-discuss">Discuss this task</button>';
+
+        detail.querySelector('.gpb-discuss').addEventListener('click', async function () {
+          const prompt = 'Review the upcoming Gloam project task “' + task.title + '”. Explain its dependency, proposed scope, effort, parallelization boundary, and completion evidence. Help me decide whether to reprioritize or start it.';
+          if (window.openai && typeof window.openai.sendFollowUpMessage === 'function') {
+            await window.openai.sendFollowUpMessage({ prompt: prompt, title: 'Discuss ' + task.title });
+          } else {
+            live.textContent = 'Use the conversation to discuss ' + task.title + '.';
+          }
+        });
+      }
+
+      root.querySelectorAll('.gpb-tab').forEach(tab => {
+        tab.addEventListener('click', function () {
+          const target = tab.getAttribute('data-panel');
+          root.querySelectorAll('.gpb-tab').forEach(item => item.setAttribute('aria-selected', item === tab ? 'true' : 'false'));
+          root.querySelectorAll('[data-view]').forEach(panel => { panel.hidden = panel.getAttribute('data-view') !== target; });
+        });
+      });
+
+      filter.addEventListener('change', function () {
+        renderBoard();
+        renderDetail();
+        live.textContent = filter.value === 'all' ? 'Showing all project areas.' : 'Showing ' + filter.value + ' tasks.';
+      });
+
+      renderBoard();
+      renderDetail();
+      if (window.lucide && typeof window.lucide.createIcons === 'function') window.lucide.createIcons({ attrs: { width: 18, height: 18 } });
+    })();
+  </script>
+</div>

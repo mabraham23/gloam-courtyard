@@ -32,3 +32,5 @@ __pycache__/
 # Local process outputs; accepted reports in reports/ retain their raw logs.
 *.log
 !work/**/reports/*.log
+
+!evidence/**/*.log

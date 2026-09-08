@@ -1,0 +1,25 @@
+{
+  "source_commit": "5bfd290",
+  "files": {
+    "PROJECT_STATE.md": {
+      "sha256": "432015d090ca2373735f9758f1c3ee326840130fdc9a021551d4f46d3a344934",
+      "bytes": 51085,
+      "lines": 471
+    },
+    "UPCOMING_TASKS.md": {
+      "sha256": "386d20c569c312ea0d666c8d16cef64f13b14e427242c7383670afad71f0fe6c",
+      "bytes": 26629,
+      "lines": 305
+    },
+    "CHECKPOINTS.md": {
+      "sha256": "2594559bd673b56e21aac0256421ef9a7df4c9fddfad3e1877b2b8b14acecbe6",
+      "bytes": 106142,
+      "lines": 1083
+    },
+    "visual-feedback-loop.md": {
+      "sha256": "fe8028a2dece1809a198bab4c479dbf478337236beebdbdaa84dbdb66bdec19d",
+      "bytes": 10895,
+      "lines": 122
+    }
+  }
+}
