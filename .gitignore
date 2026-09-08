@@ -12,7 +12,8 @@ __pycache__/
 /captures/*
 !/captures/.gdignore
 /work/review-runs/
-/.artifacts/
+/.artifacts/*
+!/.artifacts/.gdignore
 /.review-build.json
 
 # Historical binary iterations and original download remain recoverable from

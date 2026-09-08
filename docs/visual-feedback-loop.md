@@ -24,7 +24,7 @@ an unintended candidate. `--ref` chooses an existing commit; omission snapshots
 current files and rejects changes during copying. This is a fixed-step diagnostic
 fixture with disclosed positioning/camera helpers, not native-input evidence.
 
-Godot must be on PATH, or pass `--godot /path/to/Godot`. Preview generation needs a
+Use Python3.12 or newer. Godot must be on PATH, or pass `--godot /path/to/Godot`. Preview generation needs a
 Python with Pillow; select it with `GLOAM_MEDIA_PYTHON` or the local ignored
 `.artifacts/toolchain.json` key `media_python`. The current machine is configured
 with the bundled Codex Python. This local dependency path is not committed.
