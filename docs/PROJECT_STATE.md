@@ -17,7 +17,30 @@ No Batman or other franchise names, likenesses, symbols, costumes, architecture,
 
 ## Current milestone
 
-**Waiting — the frozen R14 appearance/action candidate is technically accepted
+**Waiting — R14 calf spacing and outward flare corrected; user movement review
+next (September 8).** Grounded ankle lanes now follow hip width and the knees
+bend forward instead of bowing sideways. Mean/max moving ankle separation is
+0.239/0.249 authored units, down from 0.359/0.413; knee mean/max is 0.252/0.259.
+Matched front/profile/three-quarter rendering is visibly better. Signed
+full-cycle measurements pass at all three body sizes and 30/60 Hz, the expanded
+stance gate passes 365 checks, and full mesh/action deformation passes 21,642.
+Root speed remains 4.80 units/s and the frozen mesh is unchanged. Source flight
+pose/foot sliding and wider action stances remain animation-polish limitations.
+No new paired performance certificate is claimed after the solver change.
+Evidence and exact coordinate conventions:
+`work/character-art-review/reports/2026-09-08-r14-leg-tracking.md`.
+
+The current ordinary-input R14 review is open as PID `30109`, exact title
+`Gloam Courtyard Spike (DEBUG)`. Native C/Q/body size/reset/F12 were checked;
+continuous held movement was reviewed in deterministic normal-renderer reels.
+Fresh verified reset capture:
+`captures/courtyard_3d_2026-09-08_11-19-40_103804.png`.
+V1 stays default. The previous handoff and sparse gait acceptance below are
+historical and superseded by this correction, not user visual acceptance.
+
+### Historical R14 appearance/action evidence before gait rejection
+
+**Historical Waiting — the frozen R14 appearance/action candidate is technically accepted
 and live-smoked; user visual judgement still gates release.** R14 uses the same
 licensed anatomical foundation and 74-joint articulated rig with warmer light
 skin, a readable mouth, connected dark beard/mustache treatment, a single

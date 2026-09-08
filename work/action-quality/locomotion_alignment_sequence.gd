@@ -115,7 +115,9 @@ func _prepare_review_stage() -> void:
 		(canvas as CanvasLayer).visible = false
 	var floor_mesh := MeshInstance3D.new()
 	var plane := PlaneMesh.new()
-	plane.size = Vector2(8.0, 8.0)
+	# Cover the complete controller path; the old 8-unit plane ended mid-stride
+	# and made a supported foot look suspended against the background.
+	plane.size = Vector2(40.0, 40.0)
 	floor_mesh.mesh = plane
 	floor_mesh.position = Vector3(0.0, -0.01, 0.0)
 	var floor_material := StandardMaterial3D.new()

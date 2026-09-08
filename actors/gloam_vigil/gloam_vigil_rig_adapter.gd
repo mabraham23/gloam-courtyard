@@ -48,7 +48,8 @@ const PLANT_MAX_JOINT_STEP := 0.65
 # ankles. A small symmetric body-space hip adduction brings the calves/boots
 # under the pelvis while an opposite ankle correction preserves foot attitude.
 const R7_LOWER_LEG_ADDUCTION := 0.064
-const R7_GROUNDED_MOTION_ADDUCTION := 0.0045
+const R7_IDLE_ANKLE_HIP_RATIO := 0.96
+const R7_RUN_ANKLE_HIP_RATIO := 0.86
 
 
 static func attach(parent: Node3D, accent_color: Color, prefer_v2 := false, candidate_scene_path: String = "") -> Dictionary:
@@ -455,6 +456,9 @@ static func _apply_bone_global_delta(skeleton: Skeleton3D, bone: int, global_del
 
 
 static func _apply_r7_lower_leg_stance(rig: Dictionary, pose_state: StringName, pose_progress: float, attack_variant: StringName) -> void:
+	if pose_state == &"grounded":
+		_apply_r7_grounded_leg_tracking(rig)
+		return
 	# Calibrate presentation only. The gameplay root/collider and imported rest
 	# transforms remain unchanged, and dynamic traversal/fall poses keep their
 	# authored envelopes. Grounded, crouch and combat contacts share the narrower
@@ -477,11 +481,6 @@ static func _apply_r7_lower_leg_stance(rig: Dictionary, pose_state: StringName, 
 
 	var skeleton := rig["skeleton"] as Skeleton3D
 	var stance_angle := R7_LOWER_LEG_ADDUCTION
-	if pose_state == &"grounded":
-		# The captured swing briefly opens wider than the calibrated idle base.
-		# A sub-degree motion-only correction keeps the feet under the hips while
-		# preserving the source cadence, flexion, and planted-foot orientation.
-		stance_angle += R7_GROUNDED_MOTION_ADDUCTION * clampf(float(rig.get("previous_movement", 0.0)), 0.0, 1.0)
 	for side in ["L", "R"]:
 		var weight: float = weights[side]
 		if weight <= 0.0001:
@@ -498,6 +497,58 @@ static func _apply_r7_lower_leg_stance(rig: Dictionary, pose_state: StringName, 
 			rig["bone_indices"][StringName("foot.%s" % side)],
 			Quaternion(Vector3.BACK, -signed_angle * weight)
 		)
+
+
+static func _apply_r7_grounded_leg_tracking(rig: Dictionary) -> void:
+	# The imported rest legs widen from hips to boots. A fixed adduction angle
+	# narrows standing but reopens as each captured knee flexes. Solve the frontal
+	# ankle lane from this pose instead; rigid rotations at the hip preserve
+	# segment lengths, knee flexion and the ankle's sagittal stride (Z).
+	# This is neither a positional bone edit nor a gameplay/root-motion change.
+	var skeleton := rig["skeleton"] as Skeleton3D
+	skeleton.force_update_all_bone_transforms()
+	var indices: Dictionary = rig["bone_indices"]
+	var left_hip := skeleton.get_bone_global_pose(indices[&"thigh.L"]).origin
+	var right_hip := skeleton.get_bone_global_pose(indices[&"thigh.R"]).origin
+	var center_x := (left_hip.x + right_hip.x) * 0.5
+	var hip_span := right_hip.x - left_hip.x
+	var motion := smoothstep(0.04, 0.82, clampf(float(rig.get("previous_movement", 0.0)), 0.0, 1.0))
+	var lane_half_width := hip_span * 0.5 * lerpf(R7_IDLE_ANKLE_HIP_RATIO, R7_RUN_ANKLE_HIP_RATIO, motion)
+	for side in ["L", "R"]:
+		var thigh: int = indices[StringName("thigh.%s" % side)]
+		var shin: int = indices[StringName("shin.%s" % side)]
+		var foot: int = indices[StringName("foot.%s" % side)]
+		var hip := skeleton.get_bone_global_pose(thigh).origin
+		var foot_pose := skeleton.get_bone_global_pose(foot)
+		var vector := foot_pose.origin - hip
+		var frontal_length := Vector2(vector.x, vector.y).length()
+		if frontal_length < 0.05:
+			continue
+		var signed_lane := -lane_half_width if side == "L" else lane_half_width
+		var desired_x := center_x + signed_lane - hip.x
+		var desired_angle := asin(clampf(desired_x / frontal_length, -0.95, 0.95))
+		var current_angle := atan2(vector.x, -vector.y)
+		var correction := clampf(wrapf(desired_angle - current_angle, -PI, PI), -0.34, 0.34)
+		_apply_bone_global_delta(skeleton, thigh, Quaternion(Vector3.BACK, correction))
+		skeleton.force_update_all_bone_transforms()
+		# Narrowing the ankle alone can leave a bowed calf at deep flexion. Turn
+		# the whole leg about its hip-to-ankle chord so the knee folds forwards,
+		# not sideways. The chord endpoints and included knee angle do not move.
+		var chord := skeleton.get_bone_global_pose(foot).origin - hip
+		var upper := skeleton.get_bone_global_pose(shin).origin - hip
+		var axis := chord.normalized()
+		var bend := upper - axis * upper.dot(axis)
+		var forward_bend := Vector3.BACK - axis * Vector3.BACK.dot(axis)
+		if bend.length() > 0.008 and forward_bend.length() > 0.1 and bend.dot(forward_bend) > 0.0:
+			var bend_direction := bend.normalized()
+			var desired_direction := forward_bend.normalized()
+			var plane_angle := atan2(axis.dot(bend_direction.cross(desired_direction)), bend_direction.dot(desired_direction))
+			var bend_weight := smoothstep(0.008, 0.045, bend.length())
+			_apply_bone_global_delta(skeleton, thigh, Quaternion(axis, clampf(plane_angle, -0.75, 0.75) * bend_weight))
+			skeleton.force_update_all_bone_transforms()
+		var current_foot := skeleton.get_bone_global_pose(foot).basis.get_rotation_quaternion()
+		var original_foot := foot_pose.basis.get_rotation_quaternion()
+		_apply_bone_global_delta(skeleton, foot, original_foot * current_foot.inverse())
 
 
 static func _clamp_rotation(rotation: Quaternion, maximum_angle: float) -> Quaternion:

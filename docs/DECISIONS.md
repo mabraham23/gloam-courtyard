@@ -278,3 +278,19 @@ may be owned, and it must still pass contact-time validation. A whiff cannot
 acquire a target late or deal phantom damage. The existing one-slot final-
 recovery buffer also works for whiffs, while evade, crouch, jump, grapple,
 takedown, hurt and reset clear the queued action and target ownership.
+
+## 2026-09-08 — Pose-dependent grounded leg tracking (Active)
+
+User rejection of the still-wide calves supersedes fixed-angle-only grounded
+stance calibration and the old sparse/unsigned gait acceptance. Solve a narrow
+ankle lane from posed hip width, then direct the knee forward by rotating the
+whole leg about its hip-to-ankle chord. Preserve imported anatomy, segment
+lengths, knee flexion, foot attitude and ankle fore/aft travel; never translate
+bones or the gameplay root to disguise gait defects. Near-extension fading and
+bounded rotations guard singular or unexpected poses. Action-specific stances
+remain separate; this is not an unreviewed retarget/source rewrite.
+
+Signed full-cycle geometry, matched normal-renderer front/profile evidence and
+user gameplay-scale judgement govern acceptance. Numerical narrowing alone
+cannot establish natural motion. Preserve all prior assets, captures and V1
+default, and keep source flight/contact polish as explicit follow-up scope.

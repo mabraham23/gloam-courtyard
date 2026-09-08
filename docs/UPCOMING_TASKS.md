@@ -23,7 +23,25 @@ DEBUG build. If rejected, define a new authored-groom/texture scope; do not add
 geometry indefinitely or relabel technical counts as art acceptance. V1 stays
 default until acceptance and a narrow default-switch regression.
 
-## Waiting — R14 one-speed run and authored actions need user review
+## Waiting — corrected R14 leg tracking needs user movement judgement
+
+`vigil-authored-motion` was reopened after the user rejected wide/flared calves.
+The corrected grounded lane and knee-plane solve now passes matched rendered
+review, signed full-cycle checks across all body presets at 30/60 Hz, stance
+365, alignment 10 and full deformation 21,642. Mean/max moving ankle separation
+falls from 0.359/0.413 to 0.239/0.249 authored units; root speed and frozen R14
+mesh remain unchanged. Parent owns integration; bounded kinematic, measurement
+and visual audit agents are complete. V1 stays default.
+
+Next: user-held movement and judgement of the narrower gait. The source airborne
+pose, foot sliding and wider action-state transitions remain candidates for a
+separate polish pass. Do not call the gait final or treat sparse historical
+tests as its acceptance. Current normal-renderer before/final reels are
+`captures/r14-leg-tracking-before*` and `captures/r14-leg-tracking-final*`.
+Exact-title ordinary-input R14 review is open as PID 30109, reset F12
+`captures/courtyard_3d_2026-09-08_11-19-40_103804.png`. Full report:
+`work/character-art-review/reports/2026-09-08-r14-leg-tracking.md`.
+The prior PID28090 handoff and lower-leg13 result below are historical.
 
 Reuse `vigil-authored-motion`. Standing `WASD` remains one captured run at
 4.80 units/s, `Shift` remains inert, and crouch remains exactly 1.178 units/s.
