@@ -271,6 +271,7 @@ def live(args) -> None:
     godot = args.godot or shutil.which('godot')
     if not godot:
         raise RuntimeError('Godot executable is required')
+    godot = str(Path(godot).resolve())  # macOS app discovery needs the actual bundle executable, not the PATH symlink.
     run_id = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ') + '-live-' + uuid.uuid4().hex[:6]
     directory = ROOT / 'work/review-runs' / run_id
     project = ROOT / '.artifacts/snapshots' / run_id / 'project'
