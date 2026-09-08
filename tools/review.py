@@ -62,6 +62,11 @@ def fingerprint(project: Path) -> dict:
     if (project / 'work').exists():
         files.extend(p for p in (project / 'work').rglob('*.gd') if 'review-runs' not in p.parts)
     files.extend(p for p in project.glob('*') if p.is_file() and not p.name.startswith('.') and p.suffix in SOURCE_SUFFIXES)
+    if (project / '.git').exists():
+        # Ignore the same legacy/scratch files as snapshot(); an ignored old
+        # export must not make a current checkout appear different from its build.
+        allowed = set(subprocess.check_output(['git', '-C', str(project), 'ls-files', '--cached', '--others', '--exclude-standard', '-z']).decode().split('\0'))
+        files = [p for p in files if p.relative_to(project).as_posix() in allowed]
     sources = {p.relative_to(project).as_posix(): sha(p) for p in sorted(files)}
     joined = ''.join(f'{name}={value}\n' for name, value in sorted(sources.items()))
     return {'sha256': hashlib.sha256(joined.encode()).hexdigest(), 'files': sources}

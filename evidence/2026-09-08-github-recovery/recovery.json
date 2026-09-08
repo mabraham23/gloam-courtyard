@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/mabraham23/gloam-courtyard",
+  "commit": "d696fd78c96d86da93426be4f6c6935d74c7c90c",
+  "clean_clone_verified": true,
+  "rendered_frames": 277,
+  "action_keyframes": [
+    0,
+    4,
+    9,
+    88,
+    91,
+    132,
+    168,
+    178,
+    242
+  ],
+  "render_total_s": 27.303,
+  "runtime_asset_verified": true,
+  "default_mechanics": 200,
+  "candidate_mechanics": 202,
+  "curated_file_hashes_verified": true,
+  "bvh_bytes_preserved": true,
+  "notes": "Mechanics initially used an incorrect expected footer; the checker rejected it. The actual200-check success marker was then verified without rerunning that test."
+}

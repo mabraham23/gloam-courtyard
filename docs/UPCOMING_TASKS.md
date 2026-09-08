@@ -205,10 +205,12 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
       "parallel": "Tooling isolated from gameplay",
       "dependency": "Rerun scenario after relevant changes",
       "owner": "tools/review.py, tools/feedback, debug; no controller changes",
-      "evidence": "Two frozen runs:210/210 identical frames in21.06/19.66s. F12 image/state smoke and recovery tests pass. Full experiment in FEEDBACK_LOOP_RESULTS.",
+      "evidence": "Repeat control210/210 identical frames; clean GitHub clone action277 and mechanics200/202. Native exact-title/F12 image-state handoff verified at PID32337. See FEEDBACK_LOOP_RESULTS.",
       "description": "Private Git, small curated evidence, verified milestone archive, immutable render snapshots and source/asset identity. Technical/visual/native verdicts remain separate.",
       "evidence_paths": [
-        "docs/FEEDBACK_LOOP_RESULTS.md"
+        "docs/FEEDBACK_LOOP_RESULTS.md",
+        "evidence/2026-09-08-github-recovery/recovery.json",
+        "evidence/2026-09-08-native-review-handoff/observations.json"
       ]
     },
     {

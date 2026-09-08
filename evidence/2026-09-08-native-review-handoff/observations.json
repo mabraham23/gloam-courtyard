@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "observed_native_input": [
+    "C",
+    "Q",
+    "R",
+    "0",
+    "Space",
+    "F12"
+  ],
+  "window_title": "Gloam Courtyard Spike (DEBUG)",
+  "pid": 32337,
+  "commit": "3b570e1",
+  "source_sha256": "fe12a0046b138c51249603fce22ec3df96efb82d14837839bc83ef6c2365cf15",
+  "candidate": "R14; V1 is still production default",
+  "observations": [
+    "C gave4 Momentum; later captured position proves1.96units of forward travel.",
+    "Q visibly crouched and JSON agrees.",
+    "Native Space started a target-free strike; guard health100 and Momentum0.",
+    "R/0/F12 restored health100, Momentum0, guard100 and spawn/default camera.",
+    "All four image hashes match their sidecars; no changed source files."
+  ],
+  "limits": [
+    "Continuous held movement and paired native takedown were not performed in this tooling smoke.",
+    "InputEvent records alone are not native proof; this record supplements the observed computer-use actions.",
+    "User appearance and movement acceptance remain pending."
+  ],
+  "captures": {
+    "evade": {
+      "original": "captures/review_fe12a0046b13_32337_31215975.json",
+      "image_sha256": "bd886302a61865d81c8b33e8f76f2e0adb430a22853ff07fd8a3726ac1fa6b66",
+      "source_sha256": "fe12a0046b138c51249603fce22ec3df96efb82d14837839bc83ef6c2365cf15"
+    },
+    "crouch": {
+      "original": "captures/review_fe12a0046b13_32337_39124669.json",
+      "image_sha256": "563f052e743a5d9724bbd5add380e3c7b01a2b4de942f2c538534bfab0e31504",
+      "source_sha256": "fe12a0046b138c51249603fce22ec3df96efb82d14837839bc83ef6c2365cf15"
+    },
+    "strike-whiff": {
+      "original": "captures/review_fe12a0046b13_32337_49102327.json",
+      "image_sha256": "cbfb15f12b6a0d1a73c0c4266253dd3dd2b1b2f93602c2cafa428060385e71b6",
+      "source_sha256": "fe12a0046b138c51249603fce22ec3df96efb82d14837839bc83ef6c2365cf15"
+    },
+    "reset": {
+      "original": "captures/review_fe12a0046b13_32337_59721390.json",
+      "image_sha256": "7e91df2d395e1788d319c140a11f235f76141c237c402a7b55d1a685074771a0",
+      "source_sha256": "fe12a0046b138c51249603fce22ec3df96efb82d14837839bc83ef6c2365cf15"
+    }
+  }
+}

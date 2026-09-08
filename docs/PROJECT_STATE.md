@@ -30,13 +30,14 @@ No new paired performance certificate is claimed after the solver change.
 Evidence and exact coordinate conventions:
 `work/character-art-review/reports/2026-09-08-r14-leg-tracking.md`.
 
-The current ordinary-input R14 review is open as PID `30109`, exact title
-`Gloam Courtyard Spike (DEBUG)`. Native C/Q/body size/reset/F12 were checked;
-continuous held movement was reviewed in deterministic normal-renderer reels.
-Fresh verified reset capture:
-`captures/courtyard_3d_2026-09-08_11-19-40_103804.png`.
-V1 stays default. The previous handoff and sparse gait acceptance below are
-historical and superseded by this correction, not user visual acceptance.
+The current managed R14 review is open as PID `32337`, exact title
+`Gloam Courtyard Spike (DEBUG)`, runtime source `fe12a0046b13` from `3b570e1`.
+Native C/Q/Space/R/0/F12 and image/state hashes are verified. Reset health100,
+Momentum0, guard100 and the default camera are preserved in
+`evidence/2026-09-08-native-review-handoff/reset.png` plus JSON and observations.
+The runtime source fingerprint matches the current tree; later commits only add
+workflow evidence/docs. Continuous held movement and paired native takedown remain
+user-review gates. V1 stays default. PID30109 and earlier handoffs are historical.
 
 ## Character and acceptance boundary
 

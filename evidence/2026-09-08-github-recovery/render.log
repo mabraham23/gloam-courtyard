@@ -1,0 +1,106 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+Movie Maker mode enabled, recording movie in 960×600 @ 30 FPS...
+R7_ACTION_MOTION_SEQUENCE sha=30a2c06be42351252dada7f791619499c28e160af59455c7fa332bfad1070b0b half_speed=false
+REVIEW_RUNTIME_ASSET_OK sha=30a2c06be42351252dada7f791619499c28e160af59455c7fa332bfad1070b0b
+R7_ACTION_FRAME frame=0 beat=0 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=0.0333 player=(-1.65, 0.0, 0.0) pose=strike progress=0.0877 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=3 beat=3 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=0.1333 player=(-1.65, 0.0, 0.0) pose=strike progress=0.3509 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=6 beat=6 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=0.2333 player=(-1.65, 0.0, 0.0) pose=strike progress=0.614 guard_hp=78.0 guard_pose=stagger
+R7_ACTION_FRAME frame=9 beat=9 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=0.3333 player=(-1.65, 0.0, 0.0) pose=strike progress=0.8772 guard_hp=78.0 guard_pose=stagger
+R7_ACTION_FRAME frame=12 beat=12 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=0.4333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=stagger
+R7_ACTION_FRAME frame=15 beat=15 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=0.5333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=18 beat=18 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=0.6333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=21 beat=21 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=0.7333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=24 beat=24 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=0.8333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=27 beat=27 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=0.9333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=30 beat=30 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=1.0333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=33 beat=33 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=1.1333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=36 beat=36 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=1.2333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=39 beat=39 segment=STRIKE · PROFILE · WINDUP / CONTACT / RECOVER elapsed=1.3333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=42 beat=42 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=0.0333 player=(-1.65, 0.0, 0.0) pose=strike progress=0.0877 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=45 beat=45 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=0.1333 player=(-1.65, 0.0, 0.0) pose=strike progress=0.3509 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=48 beat=48 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=0.2333 player=(-1.65, 0.0, 0.0) pose=strike progress=0.614 guard_hp=78.0 guard_pose=stagger
+R7_ACTION_FRAME frame=51 beat=51 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=0.3333 player=(-1.65, 0.0, 0.0) pose=strike progress=0.8772 guard_hp=78.0 guard_pose=stagger
+R7_ACTION_FRAME frame=54 beat=54 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=0.4333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=stagger
+R7_ACTION_FRAME frame=57 beat=57 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=0.5333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=60 beat=60 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=0.6333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=63 beat=63 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=0.7333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=66 beat=66 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=0.8333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=69 beat=69 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=0.9333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=72 beat=72 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=1.0333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=75 beat=75 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=1.1333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=78 beat=78 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=1.2333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=81 beat=81 segment=STRIKE · OPPOSITE PROFILE · STRIKING ARM / TORSO elapsed=1.3333 player=(-1.65, 0.0, 0.0) pose=grounded progress=1.0 guard_hp=78.0 guard_pose=grounded
+R7_ACTION_FRAME frame=84 beat=84 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=0.0333 player=(-3.766667, 0.0, 1.5) pose=evade progress=0.0794 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=87 beat=87 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=0.1333 player=(-3.066667, 0.0, 1.5) pose=evade progress=0.3175 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=90 beat=90 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=0.2333 player=(-2.366667, 0.0, 1.5) pose=evade progress=0.5556 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=93 beat=93 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=0.3333 player=(-2.04, 0.0, 1.5) pose=evade progress=0.7937 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=96 beat=96 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=0.4333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=99 beat=99 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=0.5333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=102 beat=102 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=0.6333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=105 beat=105 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=0.7333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=108 beat=108 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=0.8333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=111 beat=111 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=0.9333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=114 beat=114 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=1.0333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=117 beat=117 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=1.1333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=120 beat=120 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=1.2333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=123 beat=123 segment=FORWARD EVADE · LOCKED PROFILE · DIRECTION / TRAVEL / LAND elapsed=1.3333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=126 beat=126 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=0.0333 player=(-3.766667, 0.0, 1.5) pose=evade progress=0.0794 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=129 beat=129 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=0.1333 player=(-3.066667, 0.0, 1.5) pose=evade progress=0.3175 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=132 beat=132 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=0.2333 player=(-2.366667, 0.0, 1.5) pose=evade progress=0.5556 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=135 beat=135 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=0.3333 player=(-2.04, 0.0, 1.5) pose=evade progress=0.7937 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=138 beat=138 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=0.4333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=141 beat=141 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=0.5333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=144 beat=144 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=0.6333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=147 beat=147 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=0.7333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=150 beat=150 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=0.8333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=153 beat=153 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=0.9333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=156 beat=156 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=1.0333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=159 beat=159 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=1.1333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=162 beat=162 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=1.2333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=165 beat=165 segment=FORWARD EVADE · LOCKED THREE-QUARTER · TUCK / ROTATION elapsed=1.3333 player=(-2.04, 0.0, 1.5) pose=grounded progress=1.0 guard_hp=100.0 guard_pose=grounded
+R7_ACTION_FRAME frame=168 beat=168 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=0.0333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.0303 guard_hp=100.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=171 beat=171 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=0.1333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.1212 guard_hp=100.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=174 beat=174 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=0.2333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.2121 guard_hp=100.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=177 beat=177 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=0.3333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.303 guard_hp=100.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=180 beat=180 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=0.4333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.3939 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=183 beat=183 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=0.5333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.4848 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=186 beat=186 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=0.6333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.5758 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=189 beat=189 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=0.7333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.6667 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=192 beat=192 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=0.8333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.7576 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=195 beat=195 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=0.9333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.8485 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=198 beat=198 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=1.0333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.9394 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=201 beat=201 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=1.1333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=204 beat=204 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=1.2333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=207 beat=207 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=1.3333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=210 beat=210 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=1.4333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=213 beat=213 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=1.5333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=216 beat=216 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=1.6333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=219 beat=219 segment=TAKEDOWN · PROFILE · CATCH / CONTACT / PULL / RELEASE elapsed=1.7333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=222 beat=222 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=0.0333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.0303 guard_hp=100.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=225 beat=225 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=0.1333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.1212 guard_hp=100.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=228 beat=228 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=0.2333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.2121 guard_hp=100.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=231 beat=231 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=0.3333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.303 guard_hp=100.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=234 beat=234 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=0.4333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.3939 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=237 beat=237 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=0.5333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.4848 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=240 beat=240 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=0.6333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.5758 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=243 beat=243 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=0.7333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.6667 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=246 beat=246 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=0.8333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.7576 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=249 beat=249 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=0.9333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.8485 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=252 beat=252 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=1.0333 player=(-3.63, 0.0, 0.2) pose=takedown progress=0.9394 guard_hp=0.0 guard_pose=takedown_victim
+R7_ACTION_FRAME frame=255 beat=255 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=1.1333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=258 beat=258 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=1.2333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=261 beat=261 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=1.3333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=264 beat=264 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=1.4333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=267 beat=267 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=1.5333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=270 beat=270 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=1.6333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_FRAME frame=273 beat=273 segment=TAKEDOWN · REAR THREE-QUARTER · HAND / TORSO / VICTIM PAIRING elapsed=1.7333 player=(-3.63, 0.0, 0.2) pose=grounded progress=1.0 guard_hp=0.0 guard_pose=defeated
+R7_ACTION_MOTION_SEQUENCE_OK frames=276
+--------------------------------------------------------------------------------
+Done recording movie at path: /Users/markabraham/dev/batman/.artifacts/github-restore-check/work/review-runs/20260908T174503Z-actions-32ecea/frames/frame.png
+277 frames at 30 FPS (movie length: 00:00:09:07), recorded in 00:00:14 (64% of real-time speed).
+CPU render time: 0.88 seconds (average: 3.18 ms/frame)
+GPU render time: 0.00 seconds (average: 0.00 ms/frame)
+Encoding time: 10.49 seconds (average: 37.87 ms/frame)
+--------------------------------------------------------------------------------

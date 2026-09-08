@@ -66,3 +66,24 @@ Detailed evidence, measured limits and unresolved board UI gate are in
 it does not promote R14, certify user movement judgement or close the board's
 rendered interaction/responsive gate. Native managed-launch handoff is recorded
 separately after it is observed.
+
+## Verified native managed review and GitHub recovery (2026-09-08)
+
+A fresh private GitHub clone at `d696fd7` rendered the277-frame action fixture in
+27.303seconds with a runtime-loaded R14 SHA assertion and the corrected phase
+keyframes. Default200 and candidate202 mechanics, committed evidence hashes and
+original BVH bytes pass. See `evidence/2026-09-08-github-recovery/`.
+
+The managed native launcher now resolves the actual macOS app executable.
+Exact-title PID32337, game/tooling commit `3b570e1`, source `fe12a0046b13` was
+acquired and visually inspected. Native C gave4 Momentum and completed1.96units
+of forward travel; Q visibly crouched; Space began a target-free strike with no
+phantom damage; R/0/F12 restored the initial state. Four saved images match their
+sidecars and have no changed source files. The final reset was opened and left
+ready: `evidence/2026-09-08-native-review-handoff/reset.png`, JSON and observations.
+
+This bounded tooling smoke does not claim continuous native holding, paired
+native takedown, user taste or a new performance certificate. V1 remains default;
+R14 and the board UI keep their existing user/policy gates. The live code source
+matches the current tree; subsequent evidence/document commits do not require
+another gameplay relaunch.

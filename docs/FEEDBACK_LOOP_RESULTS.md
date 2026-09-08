@@ -13,6 +13,8 @@ The prior source baseline is `b176305`.
 | Review identity and F12 | Normal-renderer smoke saved PNG plus code/asset identity, camera, state and recent-input JSON; image hash matched; no changed source files | Automated capture is explicitly not native-input acceptance |
 | Existing-renderer refusal | Corrected a bug that missed relative `--path .` launches; the lease then refused PID30109 without stopping it | Other agents must cooperate with the lease; an unmanaged process can still start later |
 | Legacy compaction | 28,553 eligible PNG paths verified against their original hashes. 4,308 duplicate aliases shared. 104 silent WAVs archived; one restored exactly. Net redundant bytes removed: 1,068,264,400 | Unique historic images remain local; this is not a full-cloud backup or net disk-space measurement after adding new review runs |
+| Fresh GitHub clone | Clean checkout rendered277 frames in27.303seconds with the expected runtime asset SHA and phase keyframes; default200 and candidate202 mechanics pass. Curated-file hashes and original BVH bytes survive checkout | Recovery tested on this Mac with Godot4.7.2/Python3.14 and configured Pillow |
+| Native managed launcher | Resolved the Godot app executable after the PATH symlink was not discoverable to computer control. Exact-title PID32337 passed native C/Q/Space/R/0/F12; all four image/sidecar hashes agree | Held movement and paired native takedown remain user review; V1 remains default |
 | Private milestone recovery | Downloaded the 23,179,636-byte R7/R12 archive from GitHub; verified/restored all13 files; both GLBs match their local originals | Source history archive, not a game release |
 | Current-state reading | `PROJECT_STATE.md` reduced from471 to92 lines at migration; exact original text and hashes retained | Reading reduction is measured; agent reasoning-time savings are not yet measured |
 | Local board | One task data block generates both board pages; current decision index generates its decision view | Rendered interactions and responsive layouts remain URL-policy-blocked |
@@ -43,3 +45,24 @@ or headless checks as those gates.
 The board browser attempt in this session was explicitly rejected by Browser Use
 URL policy for the local file. No workaround was attempted. Static generation and
 syntax checks are recorded separately; `board-ui` remains Waiting.
+
+## Recovery and final native evidence
+
+`evidence/2026-09-08-github-recovery/` preserves the clean-clone render manifest,
+phase contact sheet, runtime asset assertion and200/202 mechanics logs.
+`evidence/2026-09-08-native-review-handoff/` preserves four native-input captures,
+state sidecars and an observations record. The final reset is code source
+`fe12a0046b13`, game/tooling commit `3b570e1`, PID32337, health100, Momentum0,
+guard100 and the default camera. It was visually inspected and left open.
+
+The original audit is retained in
+[history/2026-09-08-feedback-loop-audit.md](history/2026-09-08-feedback-loop-audit.md).
+Later tooling/doc fixes are separate commits rather than overwritten history.
+
+The final source-consistency check also caught ignored historical V2 exports
+being counted in the working-tree identity but excluded from frozen snapshots.
+Identity now uses the same Git inclusion rules; the current code hash exactly
+matches the live build. The fresh-clone action frames also matched the preserved
+local277-frame run byte for byte. Verified temporary recovery copies and inactive
+clean snapshots were removed afterward; unique dirty source and the live snapshot
+remain local.

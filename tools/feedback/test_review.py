@@ -2,6 +2,7 @@ import importlib.util
 import json
 from pathlib import Path
 import tempfile
+import subprocess
 import unittest
 
 spec = importlib.util.spec_from_file_location('review', Path(__file__).resolve().parents[1] / 'review.py')
@@ -30,6 +31,11 @@ class ReviewTests(unittest.TestCase):
             (root / 'work').mkdir()
             (root / 'work/candidate_fixture.gd').write_text('extends RefCounted\n')
             self.assertNotEqual(second, review.fingerprint(root)['sha256'])
+            subprocess.run(['git', 'init', '-q', str(root)], check=True)
+            third = review.fingerprint(root)['sha256']
+            (root / '.gitignore').write_text('old-export.glb\n')
+            (root / 'old-export.glb').write_bytes(b'ignored historic asset')
+            self.assertEqual(third, review.fingerprint(root)['sha256'])
 
     def test_mismatched_comparison_rejected_before_output(self):
         with tempfile.TemporaryDirectory() as folder:
