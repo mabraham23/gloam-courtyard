@@ -187,3 +187,28 @@ changed source. Current runtime matches the final rendered pose. Held movement
 in the reel is scripted; user feel remains pending. Earlier jump review and R14
 release gates stay open. Boards generated/schema checked; rendered UI gate remains
 separate. [Evidence, rejected variants and limitations](../evidence/2026-09-10-crouch-arms/README.md).
+
+## Waiting — short black tousled hair (2026-09-10)
+
+R14 review restores black scalp/beard vertex colors and adds a fitted angular
+fringe plus low crown lock. The adapter uses a private material copy and the
+new mesh shares the existing head skin bind. Frozen GLB SHA remains `30a2c06be423…`.
+The 280-vertex / 436-triangle layer is included in all full-mesh bounds checks.
+
+Matched 270-frame front/quarter/profile/rear and run/jump/crouch renders pass and
+were inspected. Rig/material/head binding 454, crouch 1083 and full deformation
+22,164 pass with 49,595 vertices, three sizes and both sample rates. Import and
+default startup pass; the macOS sandbox CA warning is recorded separately.
+Sparse crown spikes were rejected; a rear lock failed lintel clearance and was
+removed. Final medium crouch height remains 1.995706 below the 2.0-unit lintel.
+
+Fresh native exact-title PID 48537, source `b8b794c3c1c3` matches the final render.
+Q enter/exit, V jump preparation, enlargement, R/0 reset and F12 were observed.
+Three saved PNG/state pairs match with zero source drift. Final reset inspected
+and left ready; PID 46972 is superseded. Native jump-start evidence is preparation,
+not airborne timing; continuous held input and paired takedown remain open.
+
+Evidence and preserved iteration identities: `evidence/2026-09-10-short-black-hair/`.
+User hairstyle, earlier crouch and jump preferences remain pending. V1 stays
+default, R14 remains a candidate; no new performance certificate. Generated-board
+schema/parity verification is separate from the existing rendered UI policy gate.

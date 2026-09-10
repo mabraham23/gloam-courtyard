@@ -61,6 +61,7 @@ func _run() -> void:
 
 	var ownership := _weight_ownership(rig, skeleton)
 	_check(bool(ownership["valid"]), "all imported skin arrays and bind references are valid")
+	_check_hair(rig, skeleton)
 	var counts := ownership["counts"] as Dictionary
 	var totals := ownership["totals"] as Dictionary
 	var weakest_count := INF
@@ -93,6 +94,30 @@ func _run() -> void:
 	)
 	Candidate.clear_material_overrides(parts)
 	_finish()
+
+
+func _check_hair(rig: Dictionary, skeleton: Skeleton3D) -> void:
+	var hair: MeshInstance3D
+	var face: MeshInstance3D = rig["face_mesh"]
+	var skin_colors_enabled := false
+	for surface in face.mesh.get_surface_count():
+		var material := face.get_active_material(surface) as BaseMaterial3D
+		if material != null and material.resource_name == "MAT_GV2_Skin":
+			skin_colors_enabled = material.vertex_color_use_as_albedo
+	_check(skin_colors_enabled, "R14 face retains authored black scalp and beard vertex colors")
+	for value in rig["mesh_instances"]:
+		if value.name == &"ShortBlackHair": hair = value
+	_check(hair != null, "short hair participates in the full-mesh deformation audit")
+	if hair == null: return
+	var follows_head := hair.skin == face.skin and hair.skeleton == face.skeleton
+	for surface in hair.mesh.get_surface_count():
+		var arrays := hair.mesh.surface_get_arrays(surface)
+		var weights: PackedFloat32Array = arrays[Mesh.ARRAY_WEIGHTS]
+		var bones: PackedInt32Array = arrays[Mesh.ARRAY_BONES]
+		for i in weights.size():
+			if weights[i] > 0.001:
+				follows_head = follows_head and skeleton.find_bone(hair.skin.get_bind_name(bones[i])) == skeleton.find_bone(&"head")
+	_check(follows_head, "every weighted hair vertex follows the existing head skin bind")
 
 
 func _expected_parents() -> Dictionary:
@@ -194,4 +219,3 @@ func _check(ok: bool, label: String) -> void:
 func _finish() -> void:
 	print("GLOAM_CHARACTER_ART_RIG_", "OK" if failures.is_empty() else "FAILED", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
-

@@ -107,6 +107,10 @@ static func attach(parent: Node3D, accent_color: Color, prefer_v2 := false, cand
 				# neutral lift keeps those dark PBR values readable in the moonlit GL
 				# compatibility renderer without flattening the material response.
 				instance_material.albedo_color = Color(1.10, 1.10, 1.10, 1.0)
+				if candidate_scene_path == "res://actors/gloam_vigil/v4/gloam_vigil_player_v4.glb" and material_name == "MAT_GV2_Skin":
+					# R14 encodes scalp, hair and beard color per vertex. The importer
+					# disables it on this textured material, making the hair skin-colored.
+					instance_material.vertex_color_use_as_albedo = true
 				material_instances[material_name] = instance_material
 			mesh_instance.set_surface_override_material(surface, instance_material)
 			if material_name == accent_name:
@@ -122,6 +126,8 @@ static func attach(parent: Node3D, accent_color: Color, prefer_v2 := false, cand
 	if is_v2:
 		face_mesh = _find_morph_mesh(mesh_instances, V2_MORPHS)
 		assert(face_mesh != null, "Gloam Vigil v2 face mesh must expose all facial morph targets")
+	if candidate_scene_path == "res://actors/gloam_vigil/v4/gloam_vigil_player_v4.glb":
+		mesh_instances.append(preload("res://actors/gloam_vigil/v4/hair/short_black_hair.gd").attach(face_mesh))
 
 	return {
 		"imported_root": imported_root,

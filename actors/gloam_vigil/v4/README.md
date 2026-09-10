@@ -92,3 +92,12 @@ foot planting, gameplay regression, paired 1080p normal-renderer performance,
 ordinary-input playthrough and a fresh exact-title DEBUG handoff. Imported
 triangle-index LODs do not reduce full skinned vertex/morph memory. No current
 v4 FPS result or supported enemy-count claim exists yet.
+
+## September 10 runtime hair companion
+
+Current review enables the authored black scalp/beard vertex colors and adds
+an original short angular fringe and low crown lock. See [hair/README.md](hair/README.md)
+for regeneration and binding details. The frozen GLB and its historical metrics
+above are unchanged. The added mesh contributes 280 vertices and 436 triangles;
+current full-mesh audits include it. See `evidence/2026-09-10-short-black-hair/`
+for matched Godot renders and current acceptance boundaries.

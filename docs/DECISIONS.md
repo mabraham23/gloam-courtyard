@@ -21,6 +21,7 @@ Read relevant rationale when changing a rule, rather than replaying the whole lo
 | D-20260908-PRESERVE | Source control and selective preservation | Active: current source in private Git, selected milestones in private archives, raw local evidence protected by verified retention. |
 | D-20260908-BOARD | One task source and distinct gates | Active: board generated from roadmap data; board UI blocker tracked separately from runtime and user acceptance. |
 | D-20260910-JUMP | Grounded jump phrase and movement-dependent takeoff | Active: stationary lift versus moving split-leg jump, with gentle air control and grounded preparation/impact; contextual vault preserved. |
+| D-20260910-HAIR | Short black tousled hair | Active: uneven fringe and low crown lock on R14; restores authored scalp/beard colors. Supersedes the smooth swept silhouette for current review, preserving the frozen GLB and V1 default. |
 <!-- decision-index:end -->
 
 ## Preserved dated rationale
@@ -364,3 +365,18 @@ collision and action exclusion. Put these now-distinct pose curves in the bounde
 presentation and floor contact. This is a narrow organization step, not a general
 animation framework. Preserve the frozen assets, ground controls, prior evidence
 and V1 default; normal-renderer and native evidence do not replace user feel.
+
+## 2026-09-10 — Short black tousled hairstyle (Active)
+
+The user supplied a short angular black hairstyle reference. Use its generic
+uneven fringe and crown silhouette on the existing original character. The new
+runtime companion is fitted to the licensed R14 head and shares its head skin
+bind; the reference image is not a texture or source asset. The R14 skin
+material already carries black scalp/beard vertex colors, but Godot had disabled
+their albedo use. Enable them on the isolated candidate material copy.
+
+The smooth swept appearance is superseded for current review. The exact R14 GLB,
+previous exports and intermediate captures remain preserved. Sparse crown spikes
+were rejected visually, and a rear lock was removed after full-mesh crouch
+clearance failed. Keep the final low crown and fitted fringe. This is a stylized
+mesh hairstyle, with user appearance judgement still pending; V1 stays default.

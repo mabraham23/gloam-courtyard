@@ -1,0 +1,26 @@
+[
+  {
+    "run": "20260910T174846Z-hair-c97df1",
+    "reason": "Color restored, but original swept cap too smooth.",
+    "technical_pass": true,
+    "source": "b427eb2a3427653c630f6f9c4b185daa1a210a17f609f97932fb1d892fe809de"
+  },
+  {
+    "run": "20260910T175235Z-hair-983f9d",
+    "reason": "Invalid construction attempt: generator failed surface fitting and JSON was absent. Not visual evidence.",
+    "technical_pass": false,
+    "source": "b9d416921dc1bd8fd3ae0ef3a57e3443e220667f43c20ee4489caf8da35de5f1"
+  },
+  {
+    "run": "20260910T175552Z-hair-b65033",
+    "reason": "Four thin crown tufts rejected visually; crouch lintel failed.",
+    "technical_pass": true,
+    "source": "d3cd39d4e8334408cfe7a350d189903e58f704f9b1b678a4c8eee941c9777999"
+  },
+  {
+    "run": "20260910T175735Z-hair-5a1744",
+    "reason": "Two lower crown locks; rear lock still failed crouch lintel and was removed.",
+    "technical_pass": true,
+    "source": "126816ceeda8721248c23eefde59be3eda7f4e6f2fed4454df169ac149221995"
+  }
+]

@@ -21,6 +21,11 @@ import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
 SCENARIOS = {
+    'hair': {'script': 'work/character-art-review/hair_sequence.gd', 'frames': 270,
+              'footer': 'HAIR_SEQUENCE_OK', 'args': [],
+              'keyframes': [20, 65, 110, 155, 187, 202, 208, 229, 258],
+              'question': 'Does short black tousled hair read clearly from every angle and during gameplay?',
+              'helpers': 'Fixed 30 Hz controller; front/quarter/profile/rear head close-ups then default camera; scripted held D, V and Q; guard moved away and labels hidden.'},
     'crouch': {'script': 'work/action-quality/crouch_sequence.gd', 'frames': 270,
                'footer': 'CROUCH_SEQUENCE_OK', 'args': [],
                'keyframes': [20, 45, 70, 83, 110, 135, 160, 173, 225],

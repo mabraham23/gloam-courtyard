@@ -17,32 +17,31 @@ No Batman or other franchise names, likenesses, symbols, costumes, architecture,
 
 ## Current milestone
 
-**Waiting — relaxed inward crouch arms ready for user review (September 10).**
-The user's front/profile screenshots showed extended arms outside the body.
-R14 crouch now bends the elbows forward and brings the hands inward with relaxed
-shoulders and a small moving counter-swing. One size-compensated block owns those
-arm targets; duplicate overwritten assignments were removed. Crouch speed, legs,
-clearance, jump curves and frozen assets are retained.
+**Waiting — short black hair ready for user review (September 10).**
+The R14 candidate now has a fitted uneven fringe and a low swept crown lock.
+A material import setting had disabled its authored black scalp/beard colors;
+those colors now render correctly. The new 280-vertex / 436-triangle hair layer
+shares the head skin bind. The frozen GLB, crouch and jump poses are retained.
 
-Matched 270-frame front/profile/gameplay captures were inspected. Actual-skeleton
-idle/moving cycles show 66–70 degrees of forward elbow flexion and inward wrists
-without crossing center. The old pose fails the two new geometry checks; the
-correction passes transitions 70, candidate mechanics 311 and full-mesh crouch
-1083. All three sizes retain floor contact and the 2.0-unit lintel clearance.
-Evidence: `evidence/2026-09-10-crouch-arms/`.
+Matched 270-frame front/quarter/profile/rear and gameplay captures were inspected.
+Rig/material/binding 454, crouch 1083 and full-mesh deformation 22,164 checks pass,
+including all 49,595 evaluated vertices at three sizes and both 30/60 Hz.
+Import and default startup pass. Evidence: `evidence/2026-09-10-short-black-hair/`.
 
-Current managed R14 review: PID 46972, exact title `Gloam Courtyard Spike (DEBUG)`,
-source `0a91576169a3`. Native Q enter/exit, settled crouch and enlarged R/0/F12 reset
-were inspected; saved PNG/state hashes match without source drift. PID 46188 is
-historical. The earlier jump elbow correction remains ready for user review.
-V1 remains default; native held movement and earlier R14 release gates stay open.
-The known sandbox macOS system-CA warning is separate from passing game checks.
+Current managed R14 review: PID 48537, exact title `Gloam Courtyard Spike (DEBUG)`,
+source `b8b794c3c1c3`, matching the final rendered source. Native Q, V preparation,
+window enlargement and R/0/F12 reset were inspected; three saved PNG/state pairs
+match without source drift. The game is left open. PID 46972 is historical.
+The earlier inward crouch arms and jump elbow correction remain open for user
+review. V1 remains default; native held movement and prior R14 release gates stay
+open. The known sandbox macOS system-CA warning is separate from game results.
 
 ## Character and acceptance boundary
 
 R14 is the isolated candidate; V1 is still the default. Exact R14 GLB SHA:
 `30a2c06be42351252dada7f791619499c28e160af59455c7fa332bfad1070b0b`.
-The source has 74 joints and 86,452 triangles. Hair/beard remain stylized procedural
+The frozen source has 74 joints and 86,452 triangles. The current runtime adds
+436 hair triangles (86,888 total before LOD). Hair/beard remain stylized mesh
 surfaces. The user must accept appearance, held movement and paired takedown before
 an integration owner makes a narrow default switch and tests that default.
 

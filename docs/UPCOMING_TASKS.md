@@ -6,14 +6,15 @@ edit this file, then run `python3 work/generate_project_roadmap_local.py`.
 
 ## Immediate review
 
-The inward crouch-arm correction and earlier jump elbow correction are technically
-verified and open for user review. Check stationary Q and held crouch movement.
+The short black hairstyle, inward crouch arms and earlier jump elbow correction
+are technically verified and open for user review. Check the hair from multiple
+angles, stationary Q and held crouch movement.
 Play stationary V, held WASD then V, repeated moving jumps and landing back into
 held movement. R14 appearance, continuous held gait and paired takedown also keep
 their existing acceptance gates; V1 remains default.
 The next default switch depends on user acceptance, not on more numerical counts.
-Source flight/contact polish and an authored hair/groom pass require bounded
-follow-up scope if the user rejects the corresponding visual result.
+Further flight/contact polish or hair detailing requires bounded follow-up scope
+if the user rejects the corresponding visual result.
 
 Runtime completion, user acceptance and board UI verification are distinct. The
 board's policy blocker is tracked once as `board-ui`; it does not turn completed
@@ -32,8 +33,24 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
 ```json
 {
   "schema": 1,
-  "summary": "Inward crouch arms and corrected jump ready for user review; R14 candidate, V1 default.",
+  "summary": "Short black hair, inward crouch arms and corrected jump ready for user review; R14 candidate, V1 default.",
   "tasks": [
+    {
+      "id": "short-black-hair",
+      "lane": "waiting",
+      "area": "Characters",
+      "title": "Short black hair \u00b7 user review",
+      "effort": "S",
+      "parallel": "Rendered angles, motion and native smoke passed",
+      "dependency": "User hairstyle judgement",
+      "owner": "Current appearance refinement task",
+      "evidence": "Matched 270-frame before/final review; rig 454, crouch 1083, full mesh 22164. Native Q/V/R/0/F12, source b8b794c3c1c3, PID 48537.",
+      "description": "Authored black scalp/beard colors restored; fitted uneven fringe and low crown lock share head skin bind. Frozen R14 GLB, movement poses and V1 default retained.",
+      "evidence_paths": [
+        "evidence/2026-09-10-short-black-hair/README.md",
+        "docs/CHECKPOINTS.md"
+      ]
+    },
     {
       "id": "crouch-arms",
       "lane": "waiting",
@@ -106,7 +123,7 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
       "dependency": "User accepts gameplay-scale appearance and motion",
       "owner": "Character realism owner",
       "evidence": "R14 GLB30a2c06\u2026; rig451, deformation21642 and imported/studio review. Exact source and acceptance limits in PROJECT_STATE.",
-      "description": "Warm skin, clear mouth, connected beard and swept hair on original costume/CC0 anatomy. Stylized hair remains a user judgement; V1 stays default.",
+      "description": "Warm skin, clear mouth and connected beard on original costume/CC0 anatomy. Current runtime adds short black fringe/crown hair; frozen R14 retained. User appearance judgement pending; V1 stays default.",
       "evidence_paths": [
         "docs/CHECKPOINTS.md"
       ]
