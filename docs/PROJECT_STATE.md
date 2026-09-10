@@ -17,25 +17,25 @@ No Batman or other franchise names, likenesses, symbols, costumes, architecture,
 
 ## Current milestone
 
-**Waiting — standing/moving jump refinement ready for user movement review
-(September 10).** Stationary V gathers on the floor for 0.12s, extends both legs
-through a 0.62s/1.35-unit vertical flight, then absorbs on the floor over 0.20s.
-V during actual held movement carries 2.2 units along the takeoff direction and
-uses a split-leg pose with alternating lead. Gentle WASD air adjustment remains;
-standing jumps have no uncommanded outward travel. Contextual vault is unchanged.
+**Waiting — running-jump arms and impact correction ready for user review
+(September 10).** User rejection reopened the prior jump visual review. Bent
+flight elbows, reduced shoulder reach and a deeper/longer knee-and-hip impact
+catch now replace the straight-looking arms and weak absorption. The existing
+standing/moving jump controller, phase times, distances and vault stay unchanged.
 
-Default/candidate mechanics309/311, full-mesh jump5598, legacy landing1302,
-transitions67, whiffs254, headless import/startup and 12 tooling checks pass.
-Matched normal-renderer close-up/default-camera evidence and native V/F12/C/Space/Q
-smoke are in `evidence/2026-09-10-jump-motion/`. User feel is still the acceptance
-bar, especially the short gather and landing control lock.
+Default 309/candidate 311 mechanics, transitions 67 and full-mesh jump 5646 pass.
+The 18 mesh cases cover all sizes, 30/60 Hz and both moving leads. Actual skeleton
+measurement gives moving-flight elbow minima 44–45 degrees, impact knee peaks 68–69
+degrees and pelvis drop 0.147–0.204 units. Matched profile/default-camera captures
+show the improvement; user feel remains the acceptance bar.
 
-Current managed R14 review: PID44250, exact title `Gloam Courtyard Spike (DEBUG)`,
-source `c9e551cb87cb`. The enlarged R/0/F12 reset image and state hashes are
-verified in `evidence/2026-09-10-jump-motion/native/reset.png` and JSON. Native
-standing jump shows fixed X/Z and airborne rise/recovery. Continuous held moving
-jumps are fixture-verified and await user/native held review. V1 stays default.
-September 8 and PID33868 handoffs are historical; no new performance certificate.
+Current managed R14 review: PID 45340, exact title `Gloam Courtyard Spike (DEBUG)`,
+source `bb51a808e92a`. Native V/F12/Q smoke and enlarged R/0/F12 reset were
+inspected; image/state hashes match with no changed source. Evidence:
+`evidence/2026-09-10-running-jump-impact/`. Continuous native held moving jumps
+remain a user-review gate. PID 44250 and the earlier jump appearance are historical.
+V1 remains default; no new performance certificate. Sandboxed headless checks have
+a benign macOS system-CA lookup warning, separate from passing script/game checks.
 
 ## Character and acceptance boundary
 

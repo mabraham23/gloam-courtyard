@@ -1,0 +1,23 @@
+{
+  "title": "Gloam Courtyard Spike (DEBUG)",
+  "pid": 45340,
+  "source_sha256": "bb51a808e92ae78f2510805687389ce353cb3b3f520b660beae9622e21c0381e",
+  "native_keys": [
+    "V",
+    "Q",
+    "R",
+    "0",
+    "F12"
+  ],
+  "standing_jump": true,
+  "running_jump_native": false,
+  "running_jump_evidence": "Matched fixed-step normal-renderer real-controller fixtures; native continuous holding still awaits user review.",
+  "reset_verified": true,
+  "window_left_open": true,
+  "capture_names": [
+    "apex",
+    "reset",
+    "crouch",
+    "landing"
+  ]
+}

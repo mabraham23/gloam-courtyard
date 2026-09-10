@@ -6,7 +6,8 @@ edit this file, then run `python3 work/generate_project_roadmap_local.py`.
 
 ## Immediate review
 
-The standing/moving jump pass is technically verified and open for user review.
+The running-jump arms and impact correction is technically verified and open for
+user review after rejection of the earlier straight arms and weak landing catch.
 Play stationary V, held WASD then V, repeated moving jumps and landing back into
 held movement. R14 appearance, continuous held gait and paired takedown also keep
 their existing acceptance gates; V1 remains default.
@@ -31,21 +32,21 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
 ```json
 {
   "schema": 1,
-  "summary": "Standing/moving jump ready for user review; R14 candidate, V1 default. Board UI gate separate.",
+  "summary": "Running-jump arm and impact correction ready for user review; R14 candidate, V1 default.",
   "tasks": [
     {
       "id": "vertical-jump",
       "lane": "waiting",
       "area": "Animation",
-      "title": "Standing/moving jumps \u00b7 user movement review",
+      "title": "Running-jump arms and impact \u00b7 user review",
       "effort": "M",
-      "parallel": "Runtime and native standing-jump smoke passed",
-      "dependency": "User judgement of gather, moving split and impact recovery",
+      "parallel": "Technical correction and native smoke passed",
+      "dependency": "User elbow silhouette and landing-catch judgement",
       "owner": "Current jump refinement task",
-      "evidence": "Default309/candidate311 mechanics; full-mesh5598, landing1302, transitions67, whiffs254; matched motion and native standing V/F12. Sourcec9e551cb87cb, PID44250.",
-      "description": "Grounded gather, extended standing flight, directional moving split with alternating lead, and grounded impact recovery. Gentle air control remains; contextual vault preserved. Held moving native feel awaits user review.",
+      "evidence": "Default 309/candidate 311, transitions 67, full-mesh 5646; matched held/mirrored running jump. Native V/Q/reset/F12, source bb51a808e92a, PID 45340.",
+      "description": "Bent flight elbows and reduced reach; deeper sustained knee/hip impact catch. Timing, travel, air control and contextual vault unchanged. Prior appearance rejected; current held moving user review pending.",
       "evidence_paths": [
-        "evidence/2026-09-10-jump-motion/README.md",
+        "evidence/2026-09-10-running-jump-impact/README.md",
         "docs/CHECKPOINTS.md"
       ]
     },

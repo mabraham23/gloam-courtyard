@@ -117,3 +117,26 @@ criteria: [jump review](../evidence/2026-09-10-jump-motion/README.md).
 Board regenerated and schema/parity checked; rendered board UI keeps its separate
 existing URL-policy blocker. Earlier R14 appearance/held-movement/takedown release
 gates remain open.
+
+## Waiting — running-jump bent arms and impact catch (2026-09-10 follow-up)
+
+The user rejected straight-looking flight arms and weak landing knee flexion.
+The jump-pose resource now keeps bent elbows, reduces shoulder reach and holds a
+deeper loaded impact pose before release. Controller timing/travel and the GLB
+are unchanged. This supersedes the earlier jump appearance verdict, not its
+preserved mechanics or native-input evidence.
+
+Matched 150-frame profile/default-camera fixtures cover held movement through
+landing and the mirrored lead with release. Actual rendered poses were inspected.
+Default 309/candidate 311 mechanics, transitions 67 and full-mesh 5646 pass. 18 cases
+at 30/60 Hz/all sizes/both moving leads retain floor/contact bounds; actual skeleton
+flight-elbow minima 44–45 degrees, knee impact peaks 68–69 degrees and pelvis drop
+0.147–0.204 units now supplement mesh safety. Headless import/startup pass; the
+sandboxed macOS system-CA warning is benign and separately recorded.
+
+Fresh exact-title PID 45340, source bb51a808e92a: native V/F12 captures airborne rise
+and grounded impact/recovery, Q works afterward, and enlarged R/0/F12 reset is
+inspected and left open. PNG/state hashes match with no source drift. Native held
+running/user visual judgement remain pending; V1 stays default. No new performance
+certificate. Board regenerated/schema-checked; its existing rendered UI gate stays
+separate. [Evidence and quirks](../evidence/2026-09-10-running-jump-impact/README.md).

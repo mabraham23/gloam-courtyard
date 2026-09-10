@@ -21,6 +21,16 @@ import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
 SCENARIOS = {
+    'running-jump': {'script': 'work/action-quality/running_jump_sequence.gd', 'frames': 150,
+                     'footer': 'RUNNING_JUMP_SEQUENCE_OK', 'args': [],
+                     'keyframes': [15, 26, 34, 35, 36, 38, 43, 101, 111],
+                     'question': 'Do bent flight arms and a sustained knee/hip landing catch look natural in a running jump?',
+                     'helpers': 'Fixed 30 Hz controller; held D through landing then mirrored lead with release; static profile camera; guard moved away and labels hidden.'},
+    'running-jump-gameplay': {'script': 'work/action-quality/running_jump_sequence.gd', 'frames': 150,
+                              'footer': 'RUNNING_JUMP_SEQUENCE_OK', 'args': ['--gameplay'],
+                              'keyframes': [15, 26, 34, 35, 36, 38, 43, 101, 111],
+                              'question': 'Are the bent arms and landing catch readable at default gameplay scale?',
+                              'helpers': 'Same running-jump controller fixture; default gameplay camera; guard moved away and labels hidden.'},
     'jumps': {'script': 'work/action-quality/jump_sequence.gd', 'frames': 240,
               'footer': 'JUMP_SEQUENCE_OK', 'args': [],
               'keyframes': [17, 19, 27, 37, 39, 47, 103, 152, 201],
