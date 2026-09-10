@@ -267,3 +267,47 @@ Evidence and rejected lighting/clearance/ridge iterations:
 `evidence/2026-09-10-swept-hair-silhouette/`. Hair taste and previous motion/release
 gates remain waiting; V1 stays default, with no new performance certificate.
 Board source validation remains separate from the existing rendered UI blocker.
+
+## Waiting — natural upper-body motion and native handoff (2026-09-10)
+
+User feedback identified rigid upper-body motion. The anatomical candidate now
+has a subtle thoracic curve, gait counter-rotation and staggered shoulder/head
+response, with distinct jump gather/release/landing offsets. Counter, traversal
+and hurt also receive small responses. Punches sequence hip, lower spine, ribs
+and chest into contact, then unwind with shoulder follow-through. Compact
+roll/kick/takedown curves retain their existing authored core poses. The layer
+is presentation-only, resets with bind, and eases across state transitions.
+
+Matched 480-frame `upper-body` runs cover locomotion/start/stop, crouch travel,
+standing/moving jump, all four strikes, counter, evade, takedown, grapple and
+normal gameplay scale. Final run `20260910T201912Z-upper-body-94418e`, source
+`3e4bb12bca1b`, was inspected against baseline `20260910T201155Z-upper-body-3ba571`.
+Helper positioning, fixed-step held input and explicit strike variants are
+recorded; this is not native held movement or performance evidence.
+
+Full deformation passes 22,164 checks on 50,243 vertices at three sizes/30–60 Hz.
+Jump 5,646, four attacks 352, transitions 70, action motion 198, default/candidate
+mechanics 309/311 and alignment 10 pass, along with import/default startup.
+The added crouch fold initially raised the large cape to 2.014432; cloth-root
+compensation fixes it without relaxing the 2.0 lintel. Final small/medium/large
+maxima are 1.945137/1.981129/1.972558. The old flat-chest test is explicitly
+superseded by the user's hunch request (mean/peak 10.506/13.022 within 12/15);
+original lower-trunk, foot, leg-plane, speed and collision bounds remain.
+The action sampler's obsolete pre-hair vertex count is corrected to the current
+50,243. Rejected logs/source identities remain preserved. macOS system-CA and
+sandboxed user-log/editor-settings warnings are separate from game results.
+
+Fresh exact-title PID 54186, run `20260910T202033Z-live-ae1dea`, matches the final
+rendered source. Native Q enter/exit, V preparation/rise and landed recovery,
+Space target-free left kick, C forward evade/+4 Momentum, and enlarged R/0/F12
+reset were observed. Seven PNG/state hashes match with no changed source files.
+The reset image is inspected, standing/grounded at 100 health and 0 Momentum,
+and the game is left open. Sub-second pose review comes from the matched fixture;
+native held gait, paired takedown and user naturalness judgement remain open.
+V1 stays default and the frozen R14/hair assets are retained.
+
+Evidence, reproduction, rejected iterations and remaining quirks:
+[upper-body review](../evidence/2026-09-10-upper-body-motion/README.md).
+Both board files were regenerated; schema/parity checks pass for 17 tasks and
+all 12 tooling tests pass. This is separate from the existing rendered board
+interaction/responsive policy gate and user acceptance.

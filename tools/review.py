@@ -21,6 +21,11 @@ import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
 SCENARIOS = {
+    'upper-body': {'script': 'work/action-quality/upper_body_sequence.gd', 'frames': 480,
+                   'footer': 'UPPER_BODY_SEQUENCE_OK', 'args': [],
+                   'keyframes': [20, 80, 99, 130, 163, 188, 190, 211, 344],
+                   'question': 'Does the spine and shoulder girdle participate naturally through gait, crouch, jumps and combat?',
+                   'helpers': 'Fixed 30 Hz actual controller; scripted held movement/actions and four explicit controller-committed strike variants; guard/camera placement and hidden labels; profile/quarter review then default gameplay.'},
     'hair': {'script': 'work/character-art-review/hair_sequence.gd', 'frames': 270,
               'footer': 'HAIR_SEQUENCE_OK', 'args': [],
               'keyframes': [20, 65, 110, 155, 187, 202, 208, 229, 258],

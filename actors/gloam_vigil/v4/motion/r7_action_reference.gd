@@ -47,13 +47,22 @@ static func _punch(progress: float, attack_variant: StringName) -> Dictionary:
 	var guard_pose := 0.26 + 0.74 * brace
 	var attack_ready := 0.26 * (1.0 - extension) * (1.0 - retract)
 	var impact := smoothstep(contact - 0.075, contact, progress) * (1.0 - smoothstep(contact, contact + 0.15, progress))
+	# Transfer the punch from hip to ribs to shoulder. Each curve still reaches
+	# the calibrated contact orientation on the same frame, but the pelvis starts
+	# earlier and unwinds first while the upper back follows the hand through.
+	var hip_drive := smoothstep(0.10, contact - 0.025, progress) * (1.0 - smoothstep(0.50, 0.82, progress))
+	var low_drive := smoothstep(0.13, contact - 0.015, progress) * (1.0 - smoothstep(0.54, 0.86, progress))
+	var rib_drive := smoothstep(0.17, contact, progress) * (1.0 - smoothstep(0.59, 0.92, progress))
+	var chest_drive := smoothstep(0.20, contact, progress) * (1.0 - smoothstep(0.63, 0.96, progress))
+	var follow := smoothstep(contact, contact + 0.16, progress) * (1.0 - smoothstep(0.68, 0.98, progress))
+	var back_flex := 0.065 * anticipation + 0.065 * follow
 	var result := {
-		&"pelvis": _euler(0.065 * brace, side * (-0.13 * anticipation + 0.22 * extension), side * -0.022 * extension),
-		&"spine": _euler(0.025 * brace, side * (-0.07 * anticipation + 0.11 * extension), side * 0.014 * extension),
-		&"spine_upper": _euler(0.034 * brace, side * (-0.11 * anticipation + 0.17 * extension), side * 0.022 * extension),
-		&"chest": _euler(0.04 * brace + 0.04 * impact, side * (-0.17 * anticipation + 0.27 * extension), side * 0.032 * extension),
-		&"neck": _euler(-0.03 * impact, side * (0.06 * anticipation - 0.09 * extension), side * -0.012 * extension),
-		&"head": _euler(-0.05 * impact, side * (0.07 * anticipation - 0.11 * extension), side * -0.016 * extension),
+		&"pelvis": _euler(0.065 * brace, side * (-0.13 * anticipation + 0.22 * hip_drive), side * -0.022 * extension),
+		&"spine": _euler(0.025 * brace + back_flex * 0.18, side * (-0.07 * anticipation + 0.11 * low_drive), side * 0.014 * extension),
+		&"spine_upper": _euler(0.034 * brace + back_flex * 0.34, side * (-0.11 * anticipation + 0.17 * rib_drive), side * 0.022 * extension),
+		&"chest": _euler(0.04 * brace + 0.04 * impact + back_flex * 0.48, side * (-0.17 * anticipation + 0.27 * chest_drive), side * 0.032 * extension),
+		&"neck": _euler(-0.03 * impact - back_flex * 0.24, side * (0.06 * anticipation - 0.09 * chest_drive), side * -0.012 * extension),
+		&"head": _euler(-0.05 * impact - back_flex * 0.32, side * (0.07 * anticipation - 0.11 * chest_drive), side * -0.016 * extension),
 	}
 	# Rear/attacking heel pivots while the opposite leg stays visibly loaded.
 	result[StringName("thigh.%s" % attack_suffix)] = _euler(-0.08 * brace + 0.08 * extension, side * 0.04 * extension, side * -0.025 * brace)
@@ -63,7 +72,7 @@ static func _punch(progress: float, attack_variant: StringName) -> Dictionary:
 	result[StringName("thigh.%s" % guard_suffix)] = _euler(0.11 * brace - 0.08 * extension, 0.0, side * 0.02 * brace)
 	result[StringName("shin.%s" % guard_suffix)] = _euler(0.23 * brace, 0.0, 0.0)
 	result[StringName("foot.%s" % guard_suffix)] = _euler(-0.09 * brace, 0.0, 0.0)
-	result[StringName("clavicle.%s" % attack_suffix)] = _euler(-0.18 * extension + 0.06 * anticipation, side * -0.04 * extension, side * 0.03 * extension)
+	result[StringName("clavicle.%s" % attack_suffix)] = _euler(-0.18 * extension + 0.06 * anticipation - 0.045 * follow, side * (-0.04 * extension + 0.07 * anticipation - 0.075 * follow), side * (0.03 * extension - 0.025 * follow))
 	# The imported rest arm hangs nearly vertically. Pitch supplies the reach;
 	# the substantial mirrored body-yaw below then draws that diagonal reach back
 	# onto the opponent centerline instead of leaving the fist flared outside the

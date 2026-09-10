@@ -51,7 +51,10 @@ func _run() -> void:
 	skin_cache = cached["surfaces"] as Array
 	expected_skin_vertices = int(cached["vertex_count"])
 	_check(bool(cached["valid"]), "exact R7 action sampler caches every skinned surface")
-	_check(expected_skin_vertices == 51170, "exact action sampler includes all 51,170 R14 Godot-imported skinned vertex references")
+	# The September 10 face compaction and replacement swept hair are applied
+	# at runtime over the frozen GLB. Include that current rendered geometry;
+	# 51,170 was the pre-hair imported surface count, not today's complete mesh.
+	_check(expected_skin_vertices == 50243, "exact action sampler includes all 50,243 current R14 skinned vertex references")
 
 	for fps in SAMPLE_RATES:
 		_test_strike(game, fps)

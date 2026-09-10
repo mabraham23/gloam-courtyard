@@ -62,8 +62,12 @@ func _run() -> void:
 	var source := _source_ranges()
 	var moving: Dictionary = _summaries(aggregate, WARMUP_FRAMES)
 	_require(absf(float(moving["root_speed_mps"]["mean"]) - 4.8) < 0.03, "gameplay root speed remains 4.8")
-	_require(float(moving["chest_rotation_pitch_deg"]["mean"]) < 8.0, "mean chest pitch is below 8 degrees")
-	_require(float(moving["chest_rotation_pitch_deg"]["max"]) < 11.0, "peak chest pitch is below 11 degrees")
+	# September 10: the requested relaxed upper-back hunch intentionally adds
+	# about four degrees to the former flat-chest calibration (8/11 degree bars).
+	# Keep a bounded presentation envelope and retain the original lower-trunk,
+	# leg and speed gates. These taste bounds never replace rendered user review.
+	_require(float(moving["chest_rotation_pitch_deg"]["mean"]) < 12.0, "mean relaxed chest pitch is below 12 degrees")
+	_require(float(moving["chest_rotation_pitch_deg"]["max"]) < 15.0, "peak relaxed chest pitch is below 15 degrees")
 	_require(float(moving["torso_position_pitch_deg"]["mean"]) < 12.0, "mean pelvis-to-chest lean is below 12 degrees")
 	_require(float(moving["left_knee_flare_deg"]["max"]) < 5.0, "left captured knee flare is below 5 degrees over neutral")
 	_require(float(moving["right_knee_flare_deg"]["max"]) < 8.0, "right captured knee flare is below 8 degrees over neutral")

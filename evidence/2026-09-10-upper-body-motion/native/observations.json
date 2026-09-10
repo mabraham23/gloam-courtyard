@@ -1,0 +1,152 @@
+{
+  "pid": 54186,
+  "source": "3e4bb12bca1b178d1e01102241b10c8d65f84b0924c9eafd1beb5af4e4312a73",
+  "observed_native_actions": [
+    "Exact DEBUG title and window enlargement",
+    "Q enter and exit",
+    "V preparation and airborne rise, grounded recovery message",
+    "Space target-free left kick and recovery",
+    "C forward evade and +4 Momentum",
+    "R/0 then F12; standing grounded 100 health/0 Momentum"
+  ],
+  "limitations": [
+    "Native taps do not prove continuous held movement.",
+    "Four-punch/kick comparison and paired takedown are scripted fixture evidence.",
+    "User visual and movement judgement remains pending."
+  ],
+  "captures": [
+    {
+      "capture": "review_3e4bb12bca1b_54186_19611486.json",
+      "image_sha256": "d55386e3eb81556211f82d29d140aec3a7f2b052f63afa129ba92ed425561b52",
+      "source_unchanged": true,
+      "state": {
+        "crouching": true,
+        "airborne": false,
+        "player": [
+          -6.0,
+          0.0,
+          2.5
+        ],
+        "health": 100.0,
+        "momentum": 0.0,
+        "attack": "right_punch",
+        "strike_timer": 0.0,
+        "target_locked": false
+      }
+    },
+    {
+      "capture": "review_3e4bb12bca1b_54186_30020867.json",
+      "image_sha256": "af6018bb50eb2470d3938e3f83792125c78b3ddb7f3e8aa69a97a9ab36e8b0f8",
+      "source_unchanged": true,
+      "state": {
+        "crouching": false,
+        "airborne": false,
+        "player": [
+          -6.0,
+          0.0,
+          2.5
+        ],
+        "health": 100.0,
+        "momentum": 0.0,
+        "attack": "right_punch",
+        "strike_timer": 0.0,
+        "target_locked": false
+      }
+    },
+    {
+      "capture": "review_3e4bb12bca1b_54186_30397383.json",
+      "image_sha256": "329ecc2559f654de7305ff0a16d8d8be5dc79d909cd226d71f58890873f77d99",
+      "source_unchanged": true,
+      "state": {
+        "crouching": false,
+        "airborne": true,
+        "player": [
+          -6.0,
+          0.492997646331787,
+          2.5
+        ],
+        "health": 100.0,
+        "momentum": 0.0,
+        "attack": "right_punch",
+        "strike_timer": 0.0,
+        "target_locked": false
+      }
+    },
+    {
+      "capture": "review_3e4bb12bca1b_54186_36986126.json",
+      "image_sha256": "02e8ad5dea70051b5d57ce044e036d546dc6d2311b16428a4036f12bb56ac9bf",
+      "source_unchanged": true,
+      "state": {
+        "crouching": false,
+        "airborne": false,
+        "player": [
+          -6.0,
+          0.0,
+          2.5
+        ],
+        "health": 100.0,
+        "momentum": 0.0,
+        "attack": "left_kick",
+        "strike_timer": 0.483333333333333,
+        "target_locked": false
+      }
+    },
+    {
+      "capture": "review_3e4bb12bca1b_54186_37345717.json",
+      "image_sha256": "7f33ae825c9e86c68ed5ffbf518b3588e101ccb8d8babee917426512fb306ed8",
+      "source_unchanged": true,
+      "state": {
+        "crouching": false,
+        "airborne": false,
+        "player": [
+          -6.0,
+          0.0,
+          2.5
+        ],
+        "health": 100.0,
+        "momentum": 0.0,
+        "attack": "left_kick",
+        "strike_timer": 0.350079,
+        "target_locked": false
+      }
+    },
+    {
+      "capture": "review_3e4bb12bca1b_54186_46573938.json",
+      "image_sha256": "b08bdd3d2d0983935e9136465791b161beaaa5078ffd374023be3d1db49b4236",
+      "source_unchanged": true,
+      "state": {
+        "crouching": false,
+        "airborne": false,
+        "player": [
+          -6.0,
+          0.0,
+          2.79166698455811
+        ],
+        "health": 100.0,
+        "momentum": 4.0,
+        "attack": "left_kick",
+        "strike_timer": 0.0,
+        "target_locked": false
+      }
+    },
+    {
+      "capture": "review_3e4bb12bca1b_54186_55403196.json",
+      "image_sha256": "3cdaabc089c07972c1bd491ba4d673698624ef3b153e7795d9e05661f420c37e",
+      "source_unchanged": true,
+      "state": {
+        "crouching": false,
+        "airborne": false,
+        "player": [
+          -6.0,
+          0.0,
+          2.5
+        ],
+        "health": 100.0,
+        "momentum": 0.0,
+        "attack": "right_punch",
+        "strike_timer": 0.0,
+        "target_locked": false
+      }
+    }
+  ]
+}

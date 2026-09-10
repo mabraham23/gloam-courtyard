@@ -6,6 +6,12 @@ edit this file, then run `python3 work/generate_project_roadmap_local.py`.
 
 ## Immediate review
 
+The new upper-body pass is ready for user movement judgement: try held WASD,
+Q crouch and crouch travel, standing/moving V, and repeated Space strikes.
+Review the subtle back curve, shoulder following, jump catch and hip-to-chest
+punch transfer. Full validation and an enlarged fresh native reset are complete;
+source `3e4bb12bca1b`, PID 54186. This remains the R14 candidate, with V1 default.
+
 The rebuilt swept haircut, clean-shaven face, inward crouch arms and earlier
 jump elbow correction are technically verified and open for user review. The
 second bowl-like cap was rejected; check the broad sweeps/fade from multiple
@@ -34,8 +40,24 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
 ```json
 {
   "schema": 1,
-  "summary": "Rebuilt swept haircut ready for review after the second bowl-cut rejection; prior motion gates pending, R14 candidate, V1 default.",
+  "summary": "Natural upper-body motion ready for review: subtle back curve, shoulder response and sequenced punches. Native reset open; R14 candidate, V1 default.",
   "tasks": [
+    {
+      "id": "upper-body-motion",
+      "lane": "waiting",
+      "area": "Animation",
+      "title": "Natural upper-body motion \u00b7 user review",
+      "effort": "M",
+      "parallel": "Matched 480-frame review and full validation passed",
+      "dependency": "User whole-body naturalness and held movement judgement",
+      "owner": "Current upper-body refinement task",
+      "evidence": "Full mesh 22164, jump 5646, attacks 352, transitions 70, action 198, mechanics 309/311, alignment 10. Seven native image/state pairs; final source 3e4bb12bca1b, PID 54186.",
+      "description": "Subtle thoracic curve and stride counter-rotation, shoulder/head following, jump chest response and hip-to-chest punch timing. Fixed large-crouch cape clearance; revised former flat-chest taste bounds explicitly. Fresh native reset open; V1 remains default.",
+      "evidence_paths": [
+        "evidence/2026-09-10-upper-body-motion/README.md",
+        "docs/CHECKPOINTS.md"
+      ]
+    },
     {
       "id": "short-black-hair",
       "lane": "waiting",

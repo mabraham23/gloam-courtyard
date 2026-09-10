@@ -17,26 +17,29 @@ No Batman or other franchise names, likenesses, symbols, costumes, architecture,
 
 ## Current milestone
 
-**Waiting — rebuilt swept haircut ready for review (September 10).**
-The user again rejected the remaining bowl-like profile in crouch. The rounded
-cap is now a close-clipped foundation with a broad fade above ears/back. Two
-wide central sweeps and two lower side sections carry the top volume; the uneven
-fringe and clean-shaven face remain. The original GLB and movement fixes stay intact.
+**Waiting — natural upper-body motion ready for review (September 10).**
+The character now has a subtle upper-back curve and stride counter-rotation,
+shoulders that follow the ribs, and a steadied head. Jump preparation/release/
+landing and other actions have small chest responses. Punch rotation transfers
+from hip through spine/chest, then unwinds with shoulder follow-through.
+The added crouch fold includes cape compensation; all sizes clear the lintel.
+Current swept hair, clean-shaven face, corrected arms and frozen GLB stay intact.
 
-Matched 270-frame front/quarter/side/rear, run/jump and closer raised crouched
-review was inspected. Rig/appearance 456 and full deformation 22,164 pass with
-50,243 vertices at three sizes and both sample rates. Medium crouch max is
-1.994088 below the 2.0 lintel. Full hair regeneration, managed imports and default
-startup pass. Earlier face attribute/expression/LOD integrity proof remains valid
-for the unchanged compaction code. Evidence:
-`evidence/2026-09-10-swept-hair-silhouette/`.
+Matched 480-frame before/after movement/action review was inspected. Full mesh
+22,164, actual jump 5,646, four attacks 352, transitions 70, action motion 198,
+default/candidate mechanics 309/311 and revised posture/leg alignment 10 pass.
+All 50,243 vertices are included; crouch maxima small/medium/large are
+1.945137/1.981129/1.972558 under 2.0. The user's requested hunch deliberately
+supersedes the older flat-chest taste limit; preserved failures and the fixed
+large-cape clearance regression are documented in the evidence review.
 
-Current managed R14 review: exact-title PID 52046, source `6b51a2c0db0c`, matching
-the final render. Enlarged native Q/V/C smoke and R/0/F12 reset were inspected;
-all three PNG/state pairs match with zero source drift. The fresh game is left
-open at 100 health / 0 Momentum. PID 50365 is historical. Earlier jump/crouch
-preference and R14 release gates remain open; V1 remains default. The known
-headless macOS system-CA sandbox warning is separate from game results.
+Current managed R14 review: exact-title PID 54186, source `3e4bb12bca1b`, matching
+the final render. Enlarged native Q/V/Space/C smoke and R/0/F12 reset were inspected;
+all seven image/state pairs match with zero source drift. The fresh game remains
+open at 100 health / 0 Momentum. PID 52046 is historical. Upper-body naturalness,
+earlier appearance/motion preferences and R14 release gates remain user review;
+V1 remains default. No new performance certificate is claimed.
+Evidence: `evidence/2026-09-10-upper-body-motion/`.
 
 ## Character and acceptance boundary
 

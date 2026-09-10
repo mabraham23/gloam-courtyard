@@ -1,0 +1,252 @@
+ERROR: Failed to open 'user://logs/godot2026-09-10T14.15.26.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS active courtyard scene loads
+PASS action sampling uses the exact expanded R7 candidate
+PASS action sampling uses current R14 appearance GLB SHA
+PASS R7 anatomical action layer is selected
+PASS exact R7 action sampler caches every skinned surface
+ERROR: FAIL exact action sampler includes all 51,170 R14 Godot-imported skinned vertex references
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://work/action-quality/r7_action_motion.gd:557)
+       [1] _run (res://work/action-quality/r7_action_motion.gd:54)
+PASS 30hz right-punch strike begins with exact duration (actual=0.360000 expected=0.360000 tolerance=0.002500)
+PASS 30hz strike cannot resolve before contact (actual=100.000000 expected=100.000000 tolerance=0.002500)
+PASS 30hz strike cannot award Momentum before contact (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 30hz strike resolves damage on first contact step (actual=78.000000 expected=78.000000 tolerance=0.002500)
+PASS 30hz strike awards Momentum once at contact (actual=13.000000 expected=13.000000 tolerance=0.002500)
+PASS 30hz strike animation never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.002500)
+R7_ACTION_STRIKE fps=30 shoulder_forward=-1.46631336212158 elbow_forward=-0.97438549995422 hand_forward=-0.59463584423065 hand_lead=0.37974965572357
+PASS 30hz strike contact puts elbow ahead of shoulder along facing
+PASS 30hz strike contact is fist-leading instead of cross-chest
+PASS 30hz strike contact skeleton is finite
+PASS 30hz strike presentation ends (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 30hz strike recovery cannot repeat damage (actual=78.000000 expected=78.000000 tolerance=0.002500)
+PASS 30hz strike recovery cannot repeat Momentum (actual=13.000000 expected=13.000000 tolerance=0.002500)
+PASS 30hz strike recovers a neutral action pivot
+PASS 30hz evade neutral CPU skinning evaluates
+PASS 30hz evade neutral CPU skinning includes full R7 mesh
+PASS 30hz yaw 0 evade starts exact travel timer (actual=0.280000 expected=0.280000 tolerance=0.002500)
+PASS 30hz yaw 0 evade starts exact lock timer (actual=0.420000 expected=0.420000 tolerance=0.002500)
+PASS 30hz yaw 0 evade awards Momentum once (actual=4.000000 expected=4.000000 tolerance=0.002500)
+R7_ACTION_EVADE_LAUNCH fps=30 yaw_deg=0.0 upper_lead=0.74280077219009 boot_trail=0.39790251851082 action_height=0.97883754968643
+PASS 30hz yaw 0 evade sends head/shoulder ahead of pelvis
+PASS 30hz yaw 0 evade launch keeps boots trailing the hips
+PASS 30hz yaw 0 evade launch does not add early aerial lift
+R7_ACTION_EVADE_TRAVEL fps=30 yaw_deg=0.0 travel=(0.0, 0.0, 1.96) forward=1.96000015735626 lateral=0.0
+PASS 30hz yaw 0 evade preserves exact facing-direction travel (actual=1.960000 expected=1.960000 tolerance=0.004000)
+PASS 30hz yaw 0 evade has no lateral drift
+PASS 30hz yaw 0 evade travel ends at 0.28 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+R7_ACTION_EVADE_HEIGHT fps=30 yaw_deg=0.0 neutral_bone_top=2.73050856590271 neutral_top_bone=eye.L maximum_bone_top=2.76660394668579 maximum_top_bone=root maximum_progress=0.44047619047619 maximum_pivot_y=1.23175275325775
+PASS 30hz yaw 0 evade joint envelope stays below standing bone-top plus 0.10 m
+R7_ACTION_EVADE_SKIN fps=30 neutral_max_y=2.94700384140015 action_max_y=2.95034670829773 action_min_y=-0.00751090049744 maximum_progress=0.98412698412698 maximum_pivot_y=0.95130056142807 minimum_progress=0.44047619047619 minimum_pivot_y=1.23175275325775 minimum_debug={ "mesh": &"GV2_Cape", "surface": "MAT_GV2_Suit_Cloth", "vertex": 76, "point": (-0.434394, -0.007511, 1.889076), "owners": ["cape_tip.L:1.00"] }
+PASS 30hz evade full R7 mesh stays above the -0.03 m floor bar
+PASS 30hz evade full R7 mesh stays below standing height plus 0.05 m
+PASS 30hz yaw 0 post-travel evade lock adds no distance (actual=(0.0, 0.0, 1.96) expected=(0.0, 0.0, 1.96) tolerance=0.002500)
+PASS 30hz yaw 0 evade lock ends at 0.42 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 30hz yaw 0 evade preserves launch-facing yaw
+R7_ACTION_EVADE_RECOVERY fps=30 yaw_deg=0.0 angle_error=0.0 position_error=0.00052672624588
+PASS 30hz yaw 0 evade recovers upright action pivot
+PASS 30hz yaw 0 evade skeleton remains finite
+PASS 30hz yaw 90 evade starts exact travel timer (actual=0.280000 expected=0.280000 tolerance=0.002500)
+PASS 30hz yaw 90 evade starts exact lock timer (actual=0.420000 expected=0.420000 tolerance=0.002500)
+PASS 30hz yaw 90 evade awards Momentum once (actual=4.000000 expected=4.000000 tolerance=0.002500)
+R7_ACTION_EVADE_LAUNCH fps=30 yaw_deg=90.0 upper_lead=0.74280077219009 boot_trail=0.39790251851082 action_height=0.97883754968643
+PASS 30hz yaw 90 evade sends head/shoulder ahead of pelvis
+PASS 30hz yaw 90 evade launch keeps boots trailing the hips
+PASS 30hz yaw 90 evade launch does not add early aerial lift
+R7_ACTION_EVADE_TRAVEL fps=30 yaw_deg=90.0 travel=(1.96, 0.0, -0.0) forward=1.96000015735626 lateral=0.00000008567432
+PASS 30hz yaw 90 evade preserves exact facing-direction travel (actual=1.960000 expected=1.960000 tolerance=0.004000)
+PASS 30hz yaw 90 evade has no lateral drift
+PASS 30hz yaw 90 evade travel ends at 0.28 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+R7_ACTION_EVADE_HEIGHT fps=30 yaw_deg=90.0 neutral_bone_top=2.73050856590271 neutral_top_bone=eye.L maximum_bone_top=2.76660394668579 maximum_top_bone=root maximum_progress=0.44047619047619 maximum_pivot_y=1.23175275325775
+PASS 30hz yaw 90 evade joint envelope stays below standing bone-top plus 0.10 m
+PASS 30hz yaw 90 post-travel evade lock adds no distance (actual=(1.96, 0.0, -0.0) expected=(1.96, 0.0, -0.0) tolerance=0.002500)
+PASS 30hz yaw 90 evade lock ends at 0.42 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 30hz yaw 90 evade preserves launch-facing yaw
+R7_ACTION_EVADE_RECOVERY fps=30 yaw_deg=90.0 angle_error=0.0 position_error=0.00052672624588
+PASS 30hz yaw 90 evade recovers upright action pivot
+PASS 30hz yaw 90 evade skeleton remains finite
+PASS 30hz yaw 180 evade starts exact travel timer (actual=0.280000 expected=0.280000 tolerance=0.002500)
+PASS 30hz yaw 180 evade starts exact lock timer (actual=0.420000 expected=0.420000 tolerance=0.002500)
+PASS 30hz yaw 180 evade awards Momentum once (actual=4.000000 expected=4.000000 tolerance=0.002500)
+R7_ACTION_EVADE_LAUNCH fps=30 yaw_deg=180.0 upper_lead=0.74280077219009 boot_trail=0.39790254831314 action_height=0.97883754968643
+PASS 30hz yaw 180 evade sends head/shoulder ahead of pelvis
+PASS 30hz yaw 180 evade launch keeps boots trailing the hips
+PASS 30hz yaw 180 evade launch does not add early aerial lift
+R7_ACTION_EVADE_TRAVEL fps=30 yaw_deg=180.0 travel=(-0.0, 0.0, -1.96) forward=1.96000015735626 lateral=0.00000017134863
+PASS 30hz yaw 180 evade preserves exact facing-direction travel (actual=1.960000 expected=1.960000 tolerance=0.004000)
+PASS 30hz yaw 180 evade has no lateral drift
+PASS 30hz yaw 180 evade travel ends at 0.28 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+R7_ACTION_EVADE_HEIGHT fps=30 yaw_deg=180.0 neutral_bone_top=2.73050856590271 neutral_top_bone=eye.L maximum_bone_top=2.76660394668579 maximum_top_bone=root maximum_progress=0.44047619047619 maximum_pivot_y=1.23175275325775
+PASS 30hz yaw 180 evade joint envelope stays below standing bone-top plus 0.10 m
+PASS 30hz yaw 180 post-travel evade lock adds no distance (actual=(-0.0, 0.0, -1.96) expected=(-0.0, 0.0, -1.96) tolerance=0.002500)
+PASS 30hz yaw 180 evade lock ends at 0.42 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 30hz yaw 180 evade preserves launch-facing yaw
+R7_ACTION_EVADE_RECOVERY fps=30 yaw_deg=180.0 angle_error=0.0 position_error=0.00052672624588
+PASS 30hz yaw 180 evade recovers upright action pivot
+PASS 30hz yaw 180 evade skeleton remains finite
+PASS 30hz yaw -90 evade starts exact travel timer (actual=0.280000 expected=0.280000 tolerance=0.002500)
+PASS 30hz yaw -90 evade starts exact lock timer (actual=0.420000 expected=0.420000 tolerance=0.002500)
+PASS 30hz yaw -90 evade awards Momentum once (actual=4.000000 expected=4.000000 tolerance=0.002500)
+R7_ACTION_EVADE_LAUNCH fps=30 yaw_deg=-90.0 upper_lead=0.74280077219009 boot_trail=0.3979024887085 action_height=0.97883754968643
+PASS 30hz yaw -90 evade sends head/shoulder ahead of pelvis
+PASS 30hz yaw -90 evade launch keeps boots trailing the hips
+PASS 30hz yaw -90 evade launch does not add early aerial lift
+R7_ACTION_EVADE_TRAVEL fps=30 yaw_deg=-90.0 travel=(-1.96, 0.0, -0.0) forward=1.96000015735626 lateral=0.00000008567432
+PASS 30hz yaw -90 evade preserves exact facing-direction travel (actual=1.960000 expected=1.960000 tolerance=0.004000)
+PASS 30hz yaw -90 evade has no lateral drift
+PASS 30hz yaw -90 evade travel ends at 0.28 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+R7_ACTION_EVADE_HEIGHT fps=30 yaw_deg=-90.0 neutral_bone_top=2.73050856590271 neutral_top_bone=eye.L maximum_bone_top=2.76660394668579 maximum_top_bone=root maximum_progress=0.44047619047619 maximum_pivot_y=1.23175275325775
+PASS 30hz yaw -90 evade joint envelope stays below standing bone-top plus 0.10 m
+PASS 30hz yaw -90 post-travel evade lock adds no distance (actual=(-1.96, 0.0, -0.0) expected=(-1.96, 0.0, -0.0) tolerance=0.002500)
+PASS 30hz yaw -90 evade lock ends at 0.42 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 30hz yaw -90 evade preserves launch-facing yaw
+R7_ACTION_EVADE_RECOVERY fps=30 yaw_deg=-90.0 angle_error=0.0 position_error=0.00052672624588
+PASS 30hz yaw -90 evade recovers upright action pivot
+PASS 30hz yaw -90 evade skeleton remains finite
+PASS 30hz takedown begins with exact duration (actual=1.100000 expected=1.100000 tolerance=0.002500)
+PASS 30hz takedown does not defeat on input
+R7_ACTION_TAKEDOWN_PRECONTACT fps=30 victim_body_z=0.0 player_approach=0.51999998092651
+PASS 30hz takedown victim remains active before contact
+PASS 30hz takedown cannot damage before contact (actual=100.000000 expected=100.000000 tolerance=0.002500)
+PASS 30hz takedown cannot award Momentum before contact (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 30hz takedown victim does not begin falling before 0.34-second contact
+PASS 30hz reserved takedown guard cannot move before contact (actual=(-4.6, 0.0, 0.2) expected=(-4.6, 0.0, 0.2) tolerance=0.002500)
+R7_ACTION_TAKEDOWN_CONTROL fps=30 max_assigned_shoulder_gap=0.61550450325012
+PASS 30hz takedown establishes two asymmetric shoulder control points before contact
+PASS 30hz takedown pre-contact skeleton is finite
+PASS 30hz takedown defeats on first contact step
+PASS 30hz takedown contact zeros guard health (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 30hz takedown contact awards Momentum once (actual=35.000000 expected=35.000000 tolerance=0.002500)
+PASS 30hz takedown collision-safe approach remains capped
+PASS 30hz takedown approach has no lateral drift
+PASS 30hz takedown victim falls monotonically after gameplay contact
+PASS 30hz takedown presentation ends at 1.10 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 30hz takedown recovery cannot repeat Momentum (actual=35.000000 expected=35.000000 tolerance=0.002500)
+PASS 30hz takedown leaves the player action pivot upright
+PASS 30hz takedown recovery skeleton is finite
+PASS 60hz right-punch strike begins with exact duration (actual=0.360000 expected=0.360000 tolerance=0.002500)
+PASS 60hz strike cannot resolve before contact (actual=100.000000 expected=100.000000 tolerance=0.002500)
+PASS 60hz strike cannot award Momentum before contact (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 60hz strike resolves damage on first contact step (actual=78.000000 expected=78.000000 tolerance=0.002500)
+PASS 60hz strike awards Momentum once at contact (actual=13.000000 expected=13.000000 tolerance=0.002500)
+PASS 60hz strike animation never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.002500)
+R7_ACTION_STRIKE fps=60 shoulder_forward=-1.46631336212158 elbow_forward=-0.97438549995422 hand_forward=-0.59463584423065 hand_lead=0.37974965572357
+PASS 60hz strike contact puts elbow ahead of shoulder along facing
+PASS 60hz strike contact is fist-leading instead of cross-chest
+PASS 60hz strike contact skeleton is finite
+PASS 60hz strike presentation ends (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 60hz strike recovery cannot repeat damage (actual=78.000000 expected=78.000000 tolerance=0.002500)
+PASS 60hz strike recovery cannot repeat Momentum (actual=13.000000 expected=13.000000 tolerance=0.002500)
+PASS 60hz strike recovers a neutral action pivot
+PASS 60hz evade neutral CPU skinning evaluates
+PASS 60hz evade neutral CPU skinning includes full R7 mesh
+PASS 60hz yaw 0 evade starts exact travel timer (actual=0.280000 expected=0.280000 tolerance=0.002500)
+PASS 60hz yaw 0 evade starts exact lock timer (actual=0.420000 expected=0.420000 tolerance=0.002500)
+PASS 60hz yaw 0 evade awards Momentum once (actual=4.000000 expected=4.000000 tolerance=0.002500)
+R7_ACTION_EVADE_LAUNCH fps=60 yaw_deg=0.0 upper_lead=0.74280089139938 boot_trail=0.3979024887085 action_height=0.97185093164444
+PASS 60hz yaw 0 evade sends head/shoulder ahead of pelvis
+PASS 60hz yaw 0 evade launch keeps boots trailing the hips
+PASS 60hz yaw 0 evade launch does not add early aerial lift
+R7_ACTION_EVADE_TRAVEL fps=60 yaw_deg=0.0 travel=(0.0, 0.0, 1.96) forward=1.96000003814697 lateral=0.0
+PASS 60hz yaw 0 evade preserves exact facing-direction travel (actual=1.960000 expected=1.960000 tolerance=0.004000)
+PASS 60hz yaw 0 evade has no lateral drift
+PASS 60hz yaw 0 evade travel ends at 0.28 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+R7_ACTION_EVADE_HEIGHT fps=60 yaw_deg=0.0 neutral_bone_top=2.73050856590271 neutral_top_bone=eye.L maximum_bone_top=2.76320266723633 maximum_top_bone=root maximum_progress=0.40079365079365 maximum_pivot_y=1.21991300582886
+PASS 60hz yaw 0 evade joint envelope stays below standing bone-top plus 0.10 m
+R7_ACTION_EVADE_SKIN fps=60 neutral_max_y=2.94700384140015 action_max_y=2.95061278343201 action_min_y=-0.01525497436523 maximum_progress=1.0 maximum_pivot_y=0.95495438575745 minimum_progress=0.32142857142857 minimum_pivot_y=1.19012558460236 minimum_debug={ "mesh": &"ShortBlackHair", "surface": "", "vertex": 508, "point": (-0.00476, -0.015255, 1.361667), "owners": ["head:1.00"] }
+PASS 60hz evade full R7 mesh stays above the -0.03 m floor bar
+PASS 60hz evade full R7 mesh stays below standing height plus 0.05 m
+PASS 60hz yaw 0 post-travel evade lock adds no distance (actual=(0.0, 0.0, 1.96) expected=(0.0, 0.0, 1.96) tolerance=0.002500)
+PASS 60hz yaw 0 evade lock ends at 0.42 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 60hz yaw 0 evade preserves launch-facing yaw
+R7_ACTION_EVADE_RECOVERY fps=60 yaw_deg=0.0 angle_error=0.0 position_error=0.00250816345215
+PASS 60hz yaw 0 evade recovers upright action pivot
+PASS 60hz yaw 0 evade skeleton remains finite
+PASS 60hz yaw 90 evade starts exact travel timer (actual=0.280000 expected=0.280000 tolerance=0.002500)
+PASS 60hz yaw 90 evade starts exact lock timer (actual=0.420000 expected=0.420000 tolerance=0.002500)
+PASS 60hz yaw 90 evade awards Momentum once (actual=4.000000 expected=4.000000 tolerance=0.002500)
+R7_ACTION_EVADE_LAUNCH fps=60 yaw_deg=90.0 upper_lead=0.74280089139938 boot_trail=0.3979024887085 action_height=0.97185093164444
+PASS 60hz yaw 90 evade sends head/shoulder ahead of pelvis
+PASS 60hz yaw 90 evade launch keeps boots trailing the hips
+PASS 60hz yaw 90 evade launch does not add early aerial lift
+R7_ACTION_EVADE_TRAVEL fps=60 yaw_deg=90.0 travel=(1.96, 0.0, -0.0) forward=1.96000003814697 lateral=0.00000008567433
+PASS 60hz yaw 90 evade preserves exact facing-direction travel (actual=1.960000 expected=1.960000 tolerance=0.004000)
+PASS 60hz yaw 90 evade has no lateral drift
+PASS 60hz yaw 90 evade travel ends at 0.28 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+R7_ACTION_EVADE_HEIGHT fps=60 yaw_deg=90.0 neutral_bone_top=2.73050856590271 neutral_top_bone=eye.L maximum_bone_top=2.76320266723633 maximum_top_bone=root maximum_progress=0.40079365079365 maximum_pivot_y=1.21991300582886
+PASS 60hz yaw 90 evade joint envelope stays below standing bone-top plus 0.10 m
+PASS 60hz yaw 90 post-travel evade lock adds no distance (actual=(1.96, 0.0, -0.0) expected=(1.96, 0.0, -0.0) tolerance=0.002500)
+PASS 60hz yaw 90 evade lock ends at 0.42 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 60hz yaw 90 evade preserves launch-facing yaw
+R7_ACTION_EVADE_RECOVERY fps=60 yaw_deg=90.0 angle_error=0.0 position_error=0.00250816345215
+PASS 60hz yaw 90 evade recovers upright action pivot
+PASS 60hz yaw 90 evade skeleton remains finite
+PASS 60hz yaw 180 evade starts exact travel timer (actual=0.280000 expected=0.280000 tolerance=0.002500)
+PASS 60hz yaw 180 evade starts exact lock timer (actual=0.420000 expected=0.420000 tolerance=0.002500)
+PASS 60hz yaw 180 evade awards Momentum once (actual=4.000000 expected=4.000000 tolerance=0.002500)
+R7_ACTION_EVADE_LAUNCH fps=60 yaw_deg=180.0 upper_lead=0.74280089139938 boot_trail=0.3979024887085 action_height=0.97185093164444
+PASS 60hz yaw 180 evade sends head/shoulder ahead of pelvis
+PASS 60hz yaw 180 evade launch keeps boots trailing the hips
+PASS 60hz yaw 180 evade launch does not add early aerial lift
+R7_ACTION_EVADE_TRAVEL fps=60 yaw_deg=180.0 travel=(-0.0, 0.0, -1.96) forward=1.96000003814697 lateral=0.00000017134866
+PASS 60hz yaw 180 evade preserves exact facing-direction travel (actual=1.960000 expected=1.960000 tolerance=0.004000)
+PASS 60hz yaw 180 evade has no lateral drift
+PASS 60hz yaw 180 evade travel ends at 0.28 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+R7_ACTION_EVADE_HEIGHT fps=60 yaw_deg=180.0 neutral_bone_top=2.73050856590271 neutral_top_bone=eye.L maximum_bone_top=2.76320266723633 maximum_top_bone=root maximum_progress=0.40079365079365 maximum_pivot_y=1.21991300582886
+PASS 60hz yaw 180 evade joint envelope stays below standing bone-top plus 0.10 m
+PASS 60hz yaw 180 post-travel evade lock adds no distance (actual=(-0.0, 0.0, -1.96) expected=(-0.0, 0.0, -1.96) tolerance=0.002500)
+PASS 60hz yaw 180 evade lock ends at 0.42 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 60hz yaw 180 evade preserves launch-facing yaw
+R7_ACTION_EVADE_RECOVERY fps=60 yaw_deg=180.0 angle_error=0.0 position_error=0.00250816345215
+PASS 60hz yaw 180 evade recovers upright action pivot
+PASS 60hz yaw 180 evade skeleton remains finite
+PASS 60hz yaw -90 evade starts exact travel timer (actual=0.280000 expected=0.280000 tolerance=0.002500)
+PASS 60hz yaw -90 evade starts exact lock timer (actual=0.420000 expected=0.420000 tolerance=0.002500)
+PASS 60hz yaw -90 evade awards Momentum once (actual=4.000000 expected=4.000000 tolerance=0.002500)
+R7_ACTION_EVADE_LAUNCH fps=60 yaw_deg=-90.0 upper_lead=0.74280089139938 boot_trail=0.3979024887085 action_height=0.97185093164444
+PASS 60hz yaw -90 evade sends head/shoulder ahead of pelvis
+PASS 60hz yaw -90 evade launch keeps boots trailing the hips
+PASS 60hz yaw -90 evade launch does not add early aerial lift
+R7_ACTION_EVADE_TRAVEL fps=60 yaw_deg=-90.0 travel=(-1.96, 0.0, -0.0) forward=1.96000003814697 lateral=0.00000008567433
+PASS 60hz yaw -90 evade preserves exact facing-direction travel (actual=1.960000 expected=1.960000 tolerance=0.004000)
+PASS 60hz yaw -90 evade has no lateral drift
+PASS 60hz yaw -90 evade travel ends at 0.28 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+R7_ACTION_EVADE_HEIGHT fps=60 yaw_deg=-90.0 neutral_bone_top=2.73050856590271 neutral_top_bone=eye.L maximum_bone_top=2.76320266723633 maximum_top_bone=root maximum_progress=0.40079365079365 maximum_pivot_y=1.21991300582886
+PASS 60hz yaw -90 evade joint envelope stays below standing bone-top plus 0.10 m
+PASS 60hz yaw -90 post-travel evade lock adds no distance (actual=(-1.96, 0.0, -0.0) expected=(-1.96, 0.0, -0.0) tolerance=0.002500)
+PASS 60hz yaw -90 evade lock ends at 0.42 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 60hz yaw -90 evade preserves launch-facing yaw
+R7_ACTION_EVADE_RECOVERY fps=60 yaw_deg=-90.0 angle_error=0.0 position_error=0.00250816345215
+PASS 60hz yaw -90 evade recovers upright action pivot
+PASS 60hz yaw -90 evade skeleton remains finite
+PASS 60hz takedown begins with exact duration (actual=1.100000 expected=1.100000 tolerance=0.002500)
+PASS 60hz takedown does not defeat on input
+R7_ACTION_TAKEDOWN_PRECONTACT fps=60 victim_body_z=0.0 player_approach=0.51999998092651
+PASS 60hz takedown victim remains active before contact
+PASS 60hz takedown cannot damage before contact (actual=100.000000 expected=100.000000 tolerance=0.002500)
+PASS 60hz takedown cannot award Momentum before contact (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 60hz takedown victim does not begin falling before 0.34-second contact
+PASS 60hz reserved takedown guard cannot move before contact (actual=(-4.6, 0.0, 0.2) expected=(-4.6, 0.0, 0.2) tolerance=0.002500)
+R7_ACTION_TAKEDOWN_CONTROL fps=60 max_assigned_shoulder_gap=0.60888981819153
+PASS 60hz takedown establishes two asymmetric shoulder control points before contact
+PASS 60hz takedown pre-contact skeleton is finite
+PASS 60hz takedown defeats on first contact step
+PASS 60hz takedown contact zeros guard health (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 60hz takedown contact awards Momentum once (actual=35.000000 expected=35.000000 tolerance=0.002500)
+PASS 60hz takedown collision-safe approach remains capped
+PASS 60hz takedown approach has no lateral drift
+PASS 60hz takedown victim falls monotonically after gameplay contact
+PASS 60hz takedown presentation ends at 1.10 seconds (actual=0.000000 expected=0.000000 tolerance=0.002500)
+PASS 60hz takedown recovery cannot repeat Momentum (actual=35.000000 expected=35.000000 tolerance=0.002500)
+PASS 60hz takedown leaves the player action pivot upright
+PASS 60hz takedown recovery skeleton is finite
+R7_ACTION_MOTION_FAILED checks=198 failures=1
+ - exact action sampler includes all 51,170 R14 Godot-imported skinned vertex references

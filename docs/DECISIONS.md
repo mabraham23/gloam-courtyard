@@ -22,6 +22,7 @@ Read relevant rationale when changing a rule, rather than replaying the whole lo
 | D-20260908-BOARD | One task source and distinct gates | Active: board generated from roadmap data; board UI blocker tracked separately from runtime and user acceptance. |
 | D-20260910-JUMP | Grounded jump phrase and movement-dependent takeoff | Active: stationary lift versus moving split-leg jump, with gentle air control and grounded preparation/impact; contextual vault preserved. |
 | D-20260910-HAIR | Swept black hair, clean shave | Active: close-clipped faded sides/back and broad overlapping top sweeps. Supersedes both rejected bowl-like caps; clean-shaven face, frozen GLB and V1 default retained. |
+| D-20260910-UPPER | Natural spine and shoulder participation | Active: subtle candidate back curve, staggered shoulder response and hip-to-chest punch transfer; requested hunch supersedes the older flat-chest 8/11 degree presentation bounds. Mechanics, clearance and V1 default retained. |
 <!-- decision-index:end -->
 
 ## Preserved dated rationale
@@ -409,3 +410,23 @@ does not show a skin-lighting seam. Rejected narrow ridges, excessive rear volum
 and their evidence remain preserved. Add the closer raised crouched profile to
 matched review because the previous wide frame concealed the user's complaint.
 User appearance acceptance, native held movement and the V1 default remain separate.
+
+## 2026-09-10 — Upper-back movement and sequenced shoulder response (Active)
+
+The user found the upper body rigid across movement and combat and requested a
+slight walking hunch plus natural back/shoulder movement during punches and other
+actions. Keep a small candidate-only additive resource for thoracic flexion,
+stride counter-rotation, shoulder follow and head stabilization. Ease it across
+states; bind/reset cannot retain offsets. Existing authored punch channels now
+transfer hip, spine, ribs and chest rotation at staggered times, reaching the same
+calibrated contact orientation. Keep the compact evade/kick/takedown curves and
+frozen assets, original costume, gameplay timing and root authority.
+
+This supersedes only the prior flat-chest presentation ceiling: requested relaxed
+chest pitch is bounded at mean <12 and peak <15 degrees instead of <8/<11. The
+measured candidate is 10.506/13.022; the original pelvis-to-chest mean <12, root
+speed and leg-plane gates remain. This explicit change in posture direction does
+not convert a numerical check into human acceptance. The old report is preserved.
+A large-crouch cape/lintel regression was corrected by counteracting the added
+ribcage fold in the hanging cloth; the 2.0-unit clearance limit stays unchanged.
+V1 remains default, and the candidate's user review/release gates stay open.

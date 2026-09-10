@@ -230,6 +230,7 @@ static func _sync_v2_pose(
 		_set_anatomical_rotation(rig, bone_name, Vector3.ZERO)
 	_reset_morphs(rig)
 	if pose_state == &"bind":
+		rig.erase("upper_body_offsets")
 		return
 
 	var pelvis_euler := (drivers["pelvis_root"] as Node3D).rotation
@@ -265,6 +266,7 @@ static func _sync_v2_pose(
 		# clavicle, spine and hand chains. The legacy drivers still animate every
 		# other candidate, and gameplay/root motion remains controller-owned.
 		_apply_animation_channels(rig, R7_ACTION.sample(pose_state, pose_progress, attack_variant))
+		_apply_upper_body_motion(rig, pose_state, pose_progress, phase, movement, delta)
 		# The source rig's phalanges do not hinge around body-space X. Override
 		# the legacy clip/action curls with measured mirrored flex axes so R7 hands
 		# close into their palms instead of opening into a claw.
@@ -720,6 +722,30 @@ static func _apply_r7_grounded_secondary(rig: Dictionary, phase: float, motion: 
 	_set_anatomical_rotation(rig, &"thigh_twist.R", Vector3(0.0, -0.042 * stride, 0.0))
 	_set_anatomical_rotation(rig, &"shin_twist.L", Vector3(0.0, -0.030 * follow, 0.0))
 	_set_anatomical_rotation(rig, &"shin_twist.R", Vector3(0.0, 0.030 * follow, 0.0))
+
+
+static func _apply_upper_body_motion(rig: Dictionary, state: StringName, progress: float, phase: float, movement: float, delta: float) -> void:
+	var motion = preload("res://actors/gloam_vigil/v4/motion/upper_body_motion.gd")
+	var targets: Dictionary = motion.sample(state, progress, phase, movement)
+	var offsets: Dictionary = rig.get("upper_body_offsets", {})
+	var skeleton := rig["skeleton"] as Skeleton3D
+	for channel: StringName in motion.CHANNELS:
+		# Ribs follow the lower spine, then clavicles/head settle a little later.
+		# Exponential easing is frame-rate independent and also releases offsets
+		# into action poses, so cancellation never leaves a stale shoulder shrug.
+		var response := 20.0 if channel == &"spine" else 16.0
+		if String(channel).begins_with("clavicle") or channel in [&"neck", &"head"]:
+			response = 13.0
+		var previous: Vector3 = offsets.get(channel, Vector3.ZERO)
+		var offset := previous.lerp(targets[channel], 1.0 - exp(-response * maxf(delta, 0.0)))
+		if delta <= 0.0:
+			offset = targets[channel]
+		offsets[channel] = offset
+		var index: int = rig["bone_indices"][channel]
+		var rest: Quaternion = rig["global_rest_rotations"][channel]
+		var local_offset := rest.inverse() * Quaternion.from_euler(offset) * rest
+		skeleton.set_bone_pose_rotation(index, (skeleton.get_bone_pose_rotation(index) * local_offset).normalized())
+	rig["upper_body_offsets"] = offsets
 
 
 static func _apply_action_secondary(rig: Dictionary, pose_state: StringName, pose_progress: float) -> void:
