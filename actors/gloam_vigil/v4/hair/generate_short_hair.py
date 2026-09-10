@@ -88,19 +88,20 @@ def tapered_scalp():
         for segment in range(1 if ring == 0 else segments):
             azimuth = math.tau*segment/segments
             front = math.cos(azimuth)
-            # Rise around the ears, turn down into the nape, and break the
-            # old horizontal rim. The top keeps length; sides hug the skull.
-            boundary = 1.61 - 0.55*front - 0.10*front*front
+            # Raise the back as well as the sides. The clipped foundation
+            # never extends into the old low, continuous dark nape rim.
+            boundary = 1.48 - 0.30*front - 0.10*front*front
             boundary += 0.035*math.sin(5*azimuth+0.4) + 0.020*math.sin(9*azimuth)
             polar = t*boundary
             direction = (math.sin(polar)*math.sin(azimuth), math.cos(polar), math.sin(polar)*front)
             point, normal, uv = scalp_hit(direction)
-            top = max(0.0, direction[1])**2
-            waves = math.sin(math.pi*t)**1.2 * (0.5+0.5*math.sin(6*azimuth-4*t))
-            volume = 0.0005 + (0.0018+0.005*top+0.003*waves)*(1-t**4)
-            # Feather the close-cut perimeter into the underlying skin using
-            # the same texture UVs. This avoids a thick dark helmet edge.
-            fade = max(0.0, (t-0.88)/0.12)
+            # This is only the closely clipped foundation. Long hair is built
+            # as overlapping locks below, not as volume on a spherical cap.
+            volume = 0.00055
+            # A broad graduated fade makes the ear/back region visibly short.
+            # The old narrow fade left a continuous dark bowl-shaped rim.
+            fade_start = 0.78 if front > 0.65 else 0.43
+            fade = max(0.0, (t-fade_start)/(1.0-fade_start))
             fade = fade*fade*(3-2*fade)
             result['vertices'].append([round(point[i]+normal[i]*volume,7) for i in range(3)])
             result['normals'].append([round(x,7) for x in normal])
@@ -134,6 +135,55 @@ def front_surface(x, y):
 vertices, faces = [], []
 
 
+def top_surface(x, z):
+    """Highest anatomical head point at X/Z; old hair is never a fit surface."""
+    hits = []
+    for ids in head_triangles:
+        a, b, c = (points[i] for i in ids)
+        den = (b[2]-c[2])*(a[0]-c[0]) + (c[0]-b[0])*(a[2]-c[2])
+        if abs(den) < 1e-10: continue
+        u = ((b[2]-c[2])*(x-c[0]) + (c[0]-b[0])*(z-c[2]))/den
+        v = ((c[2]-a[2])*(x-c[0]) + (a[0]-c[0])*(z-c[2]))/den
+        if min(u,v,1-u-v) >= -1e-6:
+            hits.append(u*a[1]+v*b[1]+(1-u-v)*c[1])
+    if not hits: raise ValueError(f'Top lock missed the head: {x}, {z}')
+    return max(hits)
+
+
+def swept_lock(root, middle, tip, width, lift):
+    """Broad rooted sheet, folded ridge and pointed end following the skull.
+
+    Curves run across the crown rather than standing up as isolated spikes.
+    The narrow ridge and overlapping ends break the smooth dome silhouette.
+    """
+    start = len(vertices)
+    rows, columns = 11, 9
+    dx, dz = tip[0]-root[0], tip[1]-root[1]
+    length = math.hypot(dx,dz)
+    lateral = (dz/length,-dx/length)
+    for row in range(rows):
+        t = row/(rows-1)
+        center = [(1-t)**2*root[i]+2*t*(1-t)*middle[i]+t*t*tip[i] for i in range(2)]
+        half_width = width*(0.60+0.40*math.sin(math.pi*t))*(1-t)**0.62 + 0.0003
+        rise = lift*math.sin(math.pi*t)**0.72 + 0.003*t
+        for column in range(columns):
+            q = 2*column/(columns-1)-1
+            x,z = [center[i]+lateral[i]*half_width*q for i in range(2)]
+            # Keep the back of the crown short: it becomes the highest point
+            # when the head pitches into crouch. Length grows toward the front.
+            rear_taper = min(1.0,max(0.0,(z+0.035)/0.085))
+            # Round each folded cross-section while retaining the asymmetric
+            # pointed end; a triangular ridge read as teeth from the rear.
+            ridge = max(0.0,math.cos(q*math.pi*0.5))**1.2
+            y = top_surface(x,z) + 0.0014 + rise*rear_taper*ridge
+            vertices.append((x,y,z))
+    for row in range(rows-1):
+        for col in range(columns-1):
+            a = start+row*columns+col
+            # +Y outward in source space; the runtime reverses for Godot.
+            faces.extend([(a,a+columns,a+1),(a+1,a+columns,a+columns+1)])
+
+
 def fringe(root_x, root_y, tip_x, tip_y, width, relief):
     """A broad attached root, swept ridge, and fine asymmetric tapered tip."""
     start = len(vertices)
@@ -154,41 +204,19 @@ def fringe(root_x, root_y, tip_x, tip_y, width, relief):
             faces.extend([(a, a + columns, a + 1), (a + 1, a + columns, a + columns + 1)])
 
 
-def tuft(root, middle, tip, width, normal):
-    """Closed, flattened lock with a swept tip; never a round cone/spike."""
-    start = len(vertices)
-    sections = 7
-    # Lateral axis is perpendicular to the length and the outward normal.
-    length = [tip[i] - root[i] for i in range(3)]
-    lateral = [length[1]*normal[2] - length[2]*normal[1], length[2]*normal[0] - length[0]*normal[2], length[0]*normal[1] - length[1]*normal[0]]
-    magnitude = math.sqrt(sum(x*x for x in lateral))
-    lateral = [x / magnitude for x in lateral]
-    for section in range(sections):
-        t = section / (sections - 1)
-        center = [(1-t)**2 * root[i] + 2*t*(1-t)*middle[i] + t*t*tip[i] for i in range(3)]
-        w = width * (1-t)**0.70 + 0.0002
-        h = 0.002 + 0.006 * math.sin(math.pi*t)
-        for q, depth in [(-1, 0), (0, 1), (1, 0), (0, -0.35)]:
-            vertices.append(tuple(center[i] + lateral[i]*w*q + normal[i]*h*depth for i in range(3)))
-    for section in range(sections-1):
-        for side in range(4):
-            a = start + section*4 + side
-            b = start + section*4 + (side+1)%4
-            faces.extend([(a,b,a+4),(b,b+4,a+4)])
-    faces.extend([(start, start+2, start+1), (start, start+3, start+2)])
-    end = start+(sections-1)*4
-    faces.extend([(end,end+1,end+2),(end,end+2,end+3)])
-
-
 # Uneven fringe with an offset part: broad locks, clear forehead breaks, clear eyes.
 fringe(-0.040, 2.146, -0.071, 2.068, 0.024, 0.008)
 fringe(0.004, 2.161, -0.030, 2.091, 0.026, 0.013)
 fringe(0.041, 2.151, 0.025, 2.080, 0.027, 0.010)
 fringe(0.073, 2.126, 0.073, 2.075, 0.015, 0.006)
-# A low, broad crown lock avoids isolated spikes at the sides of the head.
-tuft((0.003,2.148,0.046),(0.018,2.176,0.062),(0.033,2.183,0.079),0.041,(0,1,0))
+# Layered diagonal sweeps have separate roots and uneven lengths. The outer
+# locks sit lower, exposing the fade instead of extending a helmet over it.
+swept_lock((-0.060,-0.012),(-0.078,0.040),(-0.068,0.105),0.022,0.006)
+swept_lock((-0.039,-0.028),(-0.026,0.035),(-0.051,0.126),0.048,0.018)
+swept_lock((0.010,-0.046),(0.032,0.040),(0.017,0.132),0.047,0.021)
+swept_lock((0.057,-0.015),(0.077,0.038),(0.074,0.107),0.022,0.008)
 
-result = {'schema': 1, 'description': 'Original fitted angular fringe and short crown lock; model coordinates, head skin binding.',
+result = {'schema': 1, 'description': 'Original overlapping swept top locks, angular fringe and broadly faded close-clipped sides; model coordinates, head skin binding.',
           'vertices': [[round(x,7) for x in p] for p in vertices], 'triangles': faces,
           'scalp': tapered_scalp()}
 (ROOT/'short_black_hair.json').write_text(json.dumps(result, separators=(',', ':')) + '\n')

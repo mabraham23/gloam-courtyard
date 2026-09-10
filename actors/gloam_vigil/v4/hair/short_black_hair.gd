@@ -31,8 +31,8 @@ static func attach(face: MeshInstance3D) -> MeshInstance3D:
 	var mesh := surface.commit()
 	var material := StandardMaterial3D.new()
 	material.resource_name = "MAT_Short_Black_Hair"
-	material.albedo_color = Color("#11141b")
-	material.roughness = 0.88
+	material.albedo_color = Color("#171b23")
+	material.roughness = 0.70
 	material.metallic = 0.0
 	material.cull_mode = BaseMaterial3D.CULL_DISABLED
 	mesh.surface_set_material(0, material)
@@ -51,13 +51,14 @@ static func attach(face: MeshInstance3D) -> MeshInstance3D:
 			cap.set_uv(Vector2(uv[0], uv[1]))
 			cap.set_color(Color(color[0], color[1], color[2]))
 			cap.add_vertex(Vector3(p[0], p[1], p[2]))
-	cap.generate_normals()
+	# The clipped foundation has no raised cap volume. Interpolated anatomical
+	# normals and the same skin lighting let the faded edge disappear into skin.
 	cap.index()
 	cap.commit(mesh)
 	var scalp_material := face.get_active_material(0).duplicate() as StandardMaterial3D
 	scalp_material.resource_name = "MAT_Tapered_Scalp"
 	scalp_material.normal_enabled = false
-	scalp_material.diffuse_mode = BaseMaterial3D.DIFFUSE_BURLEY
+	scalp_material.diffuse_mode = BaseMaterial3D.DIFFUSE_LAMBERT_WRAP
 	scalp_material.cull_mode = BaseMaterial3D.CULL_DISABLED
 	mesh.surface_set_material(1, scalp_material)
 	var instance := MeshInstance3D.new()

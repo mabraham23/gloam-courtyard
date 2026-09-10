@@ -240,3 +240,30 @@ stopped before this fresh launch. PID 48537 is superseded.
 Evidence: `evidence/2026-09-10-tapered-hair-clean-shave/`. User appearance and earlier
 motion gates remain pending; V1 stays default, with no new performance claim.
 Board generation/schema/parity and its existing rendered UI blocker remain separate.
+
+## Waiting — broad swept hair and clipped fade (2026-09-10 follow-up)
+
+The user again rejected the bowl-like crouched profile. The cap foundation now
+hugs the scalp with a broad fade; two wide central sweeps and two low side sections
+replace the rounded top volume. The fitted fringe and clean shave remain. This
+supersedes the preceding haircut shape, not its preserved evidence or face work.
+
+Matched 270-frame before/after uses the same new closer crouched camera alongside
+front, quarter, side, rear and run/jump views. Final run
+`20260910T194429Z-hair-88afb3`, source `6b51a2c0db0c`, inspected. Rig 456 and full
+deformation 22,164 pass with 50,243 vertices at three sizes and 30/60 Hz. Medium
+crouch max 1.994088 clears the unchanged 2.0 lintel. Full generation reproduces the
+JSON; managed imports and default startup pass. Headless CA warning and one
+sandboxed global-editor-settings write failure are separate from the game checks.
+
+Fresh exact-title PID 52046, run `20260910T194554Z-live-70926c`, matches the final
+rendered source. Native Q/F12, Q/V, C/F12 and R/0/final F12 were exercised with
+screenshots between action groups. All three PNG/state pairs match without source
+drift. Final reset is standing, grounded, 100 health and 0 Momentum; game left
+open. Native taps certify this smoke only; scripted reel/full-mesh checks carry
+the sub-second motion evidence, while held input remains a user review gate.
+
+Evidence and rejected lighting/clearance/ridge iterations:
+`evidence/2026-09-10-swept-hair-silhouette/`. Hair taste and previous motion/release
+gates remain waiting; V1 stays default, with no new performance certificate.
+Board source validation remains separate from the existing rendered UI blocker.

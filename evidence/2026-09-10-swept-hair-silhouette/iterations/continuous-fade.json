@@ -1,0 +1,6 @@
+{
+  "run": "20260910T193740Z-hair-12ed24",
+  "source": "37a1330a99c44dea1773ed8eff5a6c152b022bc5ef9af4678fd372880105a46c",
+  "snapshot": "/Users/markabraham/dev/batman/.artifacts/snapshots/20260910T193740Z-hair-12ed24/project",
+  "verdict": "Fade lighting seam resolved, but a second crown section still exceeded the crouch lintel by 0.003805."
+}

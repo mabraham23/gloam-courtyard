@@ -1,0 +1,6 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+GLOAM_CHARACTER_ART_RIG_REPORT path=res://actors/gloam_vigil/v4/gloam_vigil_player_v4.glb sha256=30a2c06be42351252dada7f791619499c28e160af59455c7fa332bfad1070b0b weighted_vertices=50243 weakest_count=cape.L:272.0 weakest_total=ring.01.R:9.77236595470458 eye_left=(-0.042042, 2.01846, 0.155697) eye_right=(0.041995, 2.01846, 0.155687) foot_left=(-0.21564, 0.17, -0.077535) foot_right=(0.215434, 0.17, -0.077536)
+GLOAM_CHARACTER_ART_RIG_OK checks=456 failures=0

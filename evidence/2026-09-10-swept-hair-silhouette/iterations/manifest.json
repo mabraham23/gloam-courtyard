@@ -1,0 +1,7 @@
+{
+  "run": "work/review-runs/20260910T193450Z-hair-95b909",
+  "source": "17c4b60306b1f81b79cc22420a58bcfad5aca4f2c0280aebf1d02ba32e1c6660",
+  "snapshot": "/Users/markabraham/dev/batman/.artifacts/snapshots/20260910T193450Z-hair-95b909/project",
+  "verdict": "Superseded: layered top breaks the smooth dome, but the fade lighting differs from skin and rear locks exceed the crouch lintel by 0.006388. Correct the material/normal continuity and lower/move forward the rear locks.",
+  "baseline_camera_adjustment": "20260910T193007Z-hair-deb192 superseded only as framing: moved crouch focus upward in 20260910T193114Z-hair-bfcc46 so the head is clear of the HUD. Both use unchanged pre-edit hair."
+}

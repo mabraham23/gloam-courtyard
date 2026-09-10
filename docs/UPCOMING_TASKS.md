@@ -6,9 +6,10 @@ edit this file, then run `python3 work/generate_project_roadmap_local.py`.
 
 ## Immediate review
 
-The tapered haircut and clean-shaven face, inward crouch arms and earlier jump
-elbow correction are technically verified and open for user review. Check the
-hair from multiple angles, stationary Q and held crouch movement.
+The rebuilt swept haircut, clean-shaven face, inward crouch arms and earlier
+jump elbow correction are technically verified and open for user review. The
+second bowl-like cap was rejected; check the broad sweeps/fade from multiple
+angles, stationary Q and held crouch movement.
 Play stationary V, held WASD then V, repeated moving jumps and landing back into
 held movement. R14 appearance, continuous held gait and paired takedown also keep
 their existing acceptance gates; V1 remains default.
@@ -33,21 +34,21 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
 ```json
 {
   "schema": 1,
-  "summary": "Tapered haircut and clean-shaven face ready for review; prior motion gates pending, R14 candidate, V1 default.",
+  "summary": "Rebuilt swept haircut ready for review after the second bowl-cut rejection; prior motion gates pending, R14 candidate, V1 default.",
   "tasks": [
     {
       "id": "short-black-hair",
       "lane": "waiting",
       "area": "Characters",
-      "title": "Tapered hair and clean shave \u00b7 user review",
+      "title": "Swept haircut and fade \u00b7 user review",
       "effort": "S",
-      "parallel": "Matched profile, full motion and native Q/F12 passed",
-      "dependency": "User accepts the revised profile and clean-shaven face",
+      "parallel": "Matched crouched profile, full motion and native smoke passed",
+      "dependency": "User accepts the rebuilt silhouette and clean-shaven face",
       "owner": "Current appearance refinement task",
-      "evidence": "Matched 270-frame review; rig 456, full mesh 22164; face channels, four expressions and eleven LODs preserved. Live source 0f0db98db221, PID 50365.",
-      "description": "Old bowl-like shell replaced with an ear/nape taper; beard and mustache removed, lips retained. Native active-play capture verified; reset was left pending after user interaction. V1 default retained.",
+      "evidence": "Matched 270-frame review including closer crouched profile; rig 456, full mesh 22164 over 50243 vertices. Native Q/V/C and reset/F12, source 6b51a2c0db0c, PID 52046.",
+      "description": "Second bowl-like cap rejected. Close-clipped fade with two broad central sweeps and lower side sections; uneven fringe and clean shave retained. Fresh reset game left open; V1 remains default.",
       "evidence_paths": [
-        "evidence/2026-09-10-tapered-hair-clean-shave/README.md",
+        "evidence/2026-09-10-swept-hair-silhouette/README.md",
         "docs/CHECKPOINTS.md"
       ]
     },
@@ -123,7 +124,7 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
       "dependency": "User accepts gameplay-scale appearance and motion",
       "owner": "Character realism owner",
       "evidence": "R14 GLB30a2c06\u2026; rig451, deformation21642 and imported/studio review. Exact source and acceptance limits in PROJECT_STATE.",
-      "description": "Warm skin and clean-shaven face on original costume/CC0 anatomy. Current runtime uses tapered black hair; frozen R14 retained. User appearance judgement pending; V1 stays default.",
+      "description": "Warm skin and clean-shaven face on original costume/CC0 anatomy. Current runtime uses broad swept black hair with faded sides/back; frozen R14 retained. User appearance judgement pending; V1 stays default.",
       "evidence_paths": [
         "docs/CHECKPOINTS.md"
       ]

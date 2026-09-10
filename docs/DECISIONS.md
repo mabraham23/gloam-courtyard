@@ -21,7 +21,7 @@ Read relevant rationale when changing a rule, rather than replaying the whole lo
 | D-20260908-PRESERVE | Source control and selective preservation | Active: current source in private Git, selected milestones in private archives, raw local evidence protected by verified retention. |
 | D-20260908-BOARD | One task source and distinct gates | Active: board generated from roadmap data; board UI blocker tracked separately from runtime and user acceptance. |
 | D-20260910-JUMP | Grounded jump phrase and movement-dependent takeoff | Active: stationary lift versus moving split-leg jump, with gentle air control and grounded preparation/impact; contextual vault preserved. |
-| D-20260910-HAIR | Tapered black hair, clean shave | Active: closer ear/nape taper, retained fringe/crown and clean-shaven face. Supersedes the round shell and earlier beard/mustache preference; frozen GLB and V1 default retained. |
+| D-20260910-HAIR | Swept black hair, clean shave | Active: close-clipped faded sides/back and broad overlapping top sweeps. Supersedes both rejected bowl-like caps; clean-shaven face, frozen GLB and V1 default retained. |
 <!-- decision-index:end -->
 
 ## Preserved dated rationale
@@ -394,3 +394,18 @@ expressions and eleven face LOD levels preserved. The clean skin uses Lambert-wr
 diffuse lighting because Burley's grazing cutoff produced a harsh dark jaw area;
 normal maps and shadows remain enabled. Temporary unlit and disabled-shadow/map
 experiments remain diagnostic history. User appearance judgement is still pending.
+
+## 2026-09-10 — Replace the remaining bowl silhouette with broad sweeps (Active)
+
+The user's second bowl-cut rejection supersedes the tapered-cap shape retained
+in the preceding entry. Reduce that foundation to close-clipped hair with a broad
+fade and put longer volume into two wide central sweeps plus two low side sections.
+Keep the uneven fringe and clean-shaven face. Use the reference only for generic
+short black hair direction; preserve original identity, costume and the frozen GLB.
+
+The back of the crown stays short for forward-pitched crouch clearance. The faded
+foundation shares anatomical normals and face diffuse lighting so its boundary
+does not show a skin-lighting seam. Rejected narrow ridges, excessive rear volume
+and their evidence remain preserved. Add the closer raised crouched profile to
+matched review because the previous wide frame concealed the user's complaint.
+User appearance acceptance, native held movement and the V1 default remain separate.

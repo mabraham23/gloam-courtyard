@@ -17,33 +17,33 @@ No Batman or other franchise names, likenesses, symbols, costumes, architecture,
 
 ## Current milestone
 
-**Waiting — tapered haircut and clean-shaven face ready for review (September 10).**
-The user rejected the round side profile and requested beard/mustache removal.
-The old R14 shell/nape strips are replaced by a closer taper around the ears and
-neck. The fringe and low crown remain; facial-hair color is removed while warm
-lips and anatomy are preserved. Skin uses softer Lambert-wrap diffuse lighting.
+**Waiting — rebuilt swept haircut ready for review (September 10).**
+The user again rejected the remaining bowl-like profile in crouch. The rounded
+cap is now a close-clipped foundation with a broad fade above ears/back. Two
+wide central sweeps and two lower side sections carry the top volume; the uneven
+fringe and clean-shaven face remain. The original GLB and movement fixes stay intact.
 
-Matched 270-frame front/quarter/side/rear and gameplay review was inspected.
-Rig/appearance 456 and full deformation 22,164 pass with 49,875 vertices at three
-sizes and both sample rates. An independent comparator verifies all 17,767
-surviving face vertices, four expressions and eleven face LOD levels. Medium
-crouch stays below the lintel at 1.991893. Import/default startup pass.
-Evidence: `evidence/2026-09-10-tapered-hair-clean-shave/`.
+Matched 270-frame front/quarter/side/rear, run/jump and closer raised crouched
+review was inspected. Rig/appearance 456 and full deformation 22,164 pass with
+50,243 vertices at three sizes and both sample rates. Medium crouch max is
+1.994088 below the 2.0 lintel. Full hair regeneration, managed imports and default
+startup pass. Earlier face attribute/expression/LOD integrity proof remains valid
+for the unchanged compaction code. Evidence:
+`evidence/2026-09-10-swept-hair-silhouette/`.
 
-Current managed R14 review: exact-title PID 50365, source `0f0db98db221`, matching
-the final render. Enlarged native Q/F12 was inspected with matching PNG/state and
-zero source drift. The user was already playing; a computer-control interaction
-notice blocked reset. After state refresh the current play state was left open,
-so no final reset capture is claimed. PID 48537 is historical. Earlier jump/crouch
-preference and the R14 release gates remain open; V1 remains default. The known
-sandbox macOS system-CA warning is separate from game results.
+Current managed R14 review: exact-title PID 52046, source `6b51a2c0db0c`, matching
+the final render. Enlarged native Q/V/C smoke and R/0/F12 reset were inspected;
+all three PNG/state pairs match with zero source drift. The fresh game is left
+open at 100 health / 0 Momentum. PID 50365 is historical. Earlier jump/crouch
+preference and R14 release gates remain open; V1 remains default. The known
+headless macOS system-CA sandbox warning is separate from game results.
 
 ## Character and acceptance boundary
 
 R14 is the isolated candidate; V1 is still the default. Exact R14 GLB SHA:
 `30a2c06be42351252dada7f791619499c28e160af59455c7fa332bfad1070b0b`.
 The frozen source has 74 joints and 86,452 triangles. Current runtime removes
-1,412 old hair triangles and adds 2,932 replacement triangles (87,972 before LOD).
+1,412 old hair triangles and adds 3,520 replacement triangles (88,560 before LOD).
 The face is clean-shaven; hair remains stylized mesh geometry. The user must accept appearance, held movement and paired takedown before
 an integration owner makes a narrow default switch and tests that default.
 

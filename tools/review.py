@@ -25,7 +25,7 @@ SCENARIOS = {
               'footer': 'HAIR_SEQUENCE_OK', 'args': [],
               'keyframes': [20, 65, 110, 155, 187, 202, 208, 229, 258],
               'question': 'Does short black tousled hair read clearly from every angle and during gameplay?',
-              'helpers': 'Fixed 30 Hz controller; front/quarter/profile/rear head close-ups then default camera; scripted held D, V and Q; guard moved away and labels hidden.'},
+              'helpers': 'Fixed 30 Hz controller; front/quarter/profile/rear head close-ups, default run/jump camera, then raised crouched profile; scripted held D, V and Q; guard moved away and labels hidden.'},
     'crouch': {'script': 'work/action-quality/crouch_sequence.gd', 'frames': 270,
                'footer': 'CROUCH_SEQUENCE_OK', 'args': [],
                'keyframes': [20, 45, 70, 83, 110, 135, 160, 173, 225],

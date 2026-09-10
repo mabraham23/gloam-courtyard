@@ -1,0 +1,6 @@
+{
+  "run": "20260910T194204Z-hair-35b2c7",
+  "source": "95db01b1d7acc4701418d7175512256980803dc9cf878b756eb275a4d8c83b91",
+  "snapshot": "/Users/markabraham/dev/batman/.artifacts/snapshots/20260910T194204Z-hair-35b2c7/project",
+  "verdict": "Rounding the cross-sections alone left too many repeated crown peaks. Superseded by two wider central sweeps and two low outer sections. A wider-root fit attempt missed the skull; narrowing roots before widening the body fixed the generator without writing a partial asset."
+}

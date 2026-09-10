@@ -14,6 +14,14 @@ func _process(_delta: float) -> bool:
 	if frame >= 180:
 		game.reset_camera()
 		label.text = "BLACK HAIR · GAMEPLAY\nRun / jump / crouch with the same attached hairstyle"
+		if frame >= 240:
+			# Match the user's raised profile view; the previous wide gameplay
+			# frame hid the rounded cap that remained visible when crouching.
+			var focus: Vector3 = game.player_root.position + Vector3(0.0, 1.10, 0.0)
+			game.camera.position = focus + Vector3(1.1, 1.65, 4.0)
+			game.camera.look_at(focus)
+			game.camera.size = 2.8
+			label.text = "BLACK HAIR · CROUCHED PROFILE\nRaised gameplay angle · same courtyard lighting"
 	else:
 		var view := floori(frame / 45.0)
 		var skeleton: Skeleton3D = game.player_visual_parts.authored_rig.skeleton
