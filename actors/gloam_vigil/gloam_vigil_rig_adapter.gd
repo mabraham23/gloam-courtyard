@@ -231,6 +231,7 @@ static func _sync_v2_pose(
 	_reset_morphs(rig)
 	if pose_state == &"bind":
 		rig.erase("upper_body_offsets")
+		rig.erase("pose_handoff")
 		return
 
 	var pelvis_euler := (drivers["pelvis_root"] as Node3D).rotation
@@ -272,6 +273,7 @@ static func _sync_v2_pose(
 		# close into their palms instead of opening into a claw.
 		_apply_v4_hand_animation(rig, pose_state, pose_progress, attack_variant)
 		_apply_r7_lower_leg_stance(rig, pose_state, pose_progress, attack_variant)
+		preload("res://actors/gloam_vigil/v4/motion/pose_handoff.gd").apply(rig, pose_state, attack_variant, movement, delta)
 	_apply_face_animation(rig, pose_state, delta, pose_progress)
 
 
@@ -1227,7 +1229,10 @@ static func _update_foot_contact(
 	var response := 1.0 - exp(-24.0 * delta)
 	# Resolve downward contact immediately; ease the release back into free motion.
 	var previous_lift: float = rig["contact_lift"]
-	var lift := target_lift if planted_side != "" or target_lift > previous_lift else lerpf(previous_lift, target_lift, response)
+	# A grounded jump gather/landing must release the preceding gait's lift now.
+	# Easing that stale offset left the blended feet hovering before takeoff.
+	var jump_plant := bool(rig.get("anatomical_profile", false)) and pose_state in [&"jump_prepare", &"jump_land"]
+	var lift := target_lift if jump_plant or planted_side != "" or target_lift > previous_lift else lerpf(previous_lift, target_lift, response)
 	rig["contact_lift"] = lift
 	imported_root.position.y = lift
 

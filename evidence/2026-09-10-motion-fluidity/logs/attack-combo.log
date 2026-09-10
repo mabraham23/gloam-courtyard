@@ -1,0 +1,369 @@
+ERROR: Failed to open 'user://logs/godot2026-09-10T15.13.20.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS active courtyard scene loads
+PASS four-attack sampling uses exact R7
+PASS seeded selector reaches right_punch
+PASS seeded selector reaches left_punch
+PASS seeded selector reaches left_kick
+PASS seeded selector reaches right_kick
+PASS seeded selector avoids every immediate repeat when alternatives exist
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS mid-range selector chooses a reach-valid kick
+PASS right-side target context measurably favors right-side attacks
+ATTACK_SELECTOR seed=7707 counts={ &"left_punch": 74, &"right_punch": 61, &"left_kick": 19, &"right_kick": 38 } direction_right=101 direction_left=59
+PASS locked contact applies unchanged 22 damage once (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS locked contact applies unchanged 13 Momentum once (actual=13.00000 expected=13.00000 tolerance=0.00300)
+PASS held locomotion cannot slide a live strike (actual=(0.0, 0.0, -1.48) expected=(0.0, 0.0, -1.48) tolerance=0.00300)
+PASS strike recovery cannot repeat contact (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS out-of-range input owns no target
+PASS late range entry cannot acquire a target (actual=100.00000 expected=100.00000 tolerance=0.00300)
+PASS late range entry resolves one whiff cost (actual=12.00000 expected=12.00000 tolerance=0.00300)
+PASS vault barrier blocks target ownership
+PASS blocked target cannot take attack damage (actual=100.00000 expected=100.00000 tolerance=0.00300)
+PASS different-height target owns no contact
+PASS elevated target cannot take grounded damage (actual=100.00000 expected=100.00000 tolerance=0.00300)
+PASS target behind visible facing cannot own contact
+PASS behind-facing target cannot take attack damage (actual=100.00000 expected=100.00000 tolerance=0.00300)
+PASS target crossing behind before contact invalidates the locked hit (actual=100.00000 expected=100.00000 tolerance=0.00300)
+PASS crossing behind clears any pending combo ownership
+PASS one late recovery press fills the bounded buffer
+PASS repeated late presses cannot stack the one-slot buffer
+PASS buffer starts exactly one follow-up after recovery
+PASS buffered follow-up cannot immediately repeat
+PASS buffered startup cannot stack contact on the prior hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS interruption clears live attack timer (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS interruption clears buffer and target ownership
+PASS interruption clears combo history
+PASS reset clears pending contact target and buffer state
+PASS 30hz 0.88 right_punch elbow follows shoulder forward
+PASS 30hz 0.88 right_punch fist leads contact
+PASS 30hz 0.88 right_punch active fist stays separated ahead of guard
+PASS 30hz 0.88 right_punch guard hand stays above its elbow
+PASS 30hz 0.88 right_punch active fingers hold a compact contact curl
+PASS 30hz 0.88 right_punch active distal row closes from neutral
+PASS 30hz 0.88 right_punch skeleton remains finite
+PASS 30hz 0.88 right_punch never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.00300)
+PASS 30hz 0.88 right_punch applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 0.88 right_punch recovery folds fist above elbow
+PASS 30hz 0.88 right_punch recovery retracts fist from contact
+PASS 30hz 0.88 right_punch active fingers stay compact through readable recovery
+PASS 30hz 0.88 right_punch completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 30hz 0.88 right_punch recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 0.88 left_punch elbow follows shoulder forward
+PASS 30hz 0.88 left_punch fist leads contact
+PASS 30hz 0.88 left_punch active fist stays separated ahead of guard
+PASS 30hz 0.88 left_punch guard hand stays above its elbow
+PASS 30hz 0.88 left_punch active fingers hold a compact contact curl
+PASS 30hz 0.88 left_punch active distal row closes from neutral
+PASS 30hz 0.88 left_punch skeleton remains finite
+PASS 30hz 0.88 left_punch never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.00300)
+PASS 30hz 0.88 left_punch applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 0.88 left_punch recovery folds fist above elbow
+PASS 30hz 0.88 left_punch recovery retracts fist from contact
+PASS 30hz 0.88 left_punch active fingers stay compact through readable recovery
+PASS 30hz 0.88 left_punch completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 30hz 0.88 left_punch recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 0.88 left_kick lifts the free knee
+PASS 30hz 0.88 left_kick foot leads contact
+PASS 30hz 0.88 left_kick skeleton remains finite
+PASS 30hz 0.88 left_kick never writes gameplay root (actual=(0.0, 0.0, -2.18) expected=(0.0, 0.0, -2.18) tolerance=0.00300)
+PASS 30hz 0.88 left_kick applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 0.88 left_kick recovery re-chambers before lowering
+PASS 30hz 0.88 left_kick recovery withdraws the striking foot
+PASS 30hz 0.88 left_kick skinned support sole stays planted
+PASS 30hz 0.88 left_kick completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 30hz 0.88 left_kick recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 0.88 right_kick lifts the free knee
+PASS 30hz 0.88 right_kick foot leads contact
+PASS 30hz 0.88 right_kick skeleton remains finite
+PASS 30hz 0.88 right_kick never writes gameplay root (actual=(0.0, 0.0, -2.18) expected=(0.0, 0.0, -2.18) tolerance=0.00300)
+PASS 30hz 0.88 right_kick applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 0.88 right_kick recovery re-chambers before lowering
+PASS 30hz 0.88 right_kick recovery withdraws the striking foot
+PASS 30hz 0.88 right_kick skinned support sole stays planted
+PASS 30hz 0.88 right_kick completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 30hz 0.88 right_kick recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.00 right_punch elbow follows shoulder forward
+PASS 30hz 1.00 right_punch fist leads contact
+PASS 30hz 1.00 right_punch active fist stays separated ahead of guard
+PASS 30hz 1.00 right_punch guard hand stays above its elbow
+PASS 30hz 1.00 right_punch active fingers hold a compact contact curl
+PASS 30hz 1.00 right_punch active distal row closes from neutral
+PASS 30hz 1.00 right_punch skeleton remains finite
+PASS 30hz 1.00 right_punch never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.00300)
+PASS 30hz 1.00 right_punch applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.00 right_punch recovery folds fist above elbow
+PASS 30hz 1.00 right_punch recovery retracts fist from contact
+PASS 30hz 1.00 right_punch active fingers stay compact through readable recovery
+PASS 30hz 1.00 right_punch completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 30hz 1.00 right_punch recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.00 left_punch elbow follows shoulder forward
+PASS 30hz 1.00 left_punch fist leads contact
+PASS 30hz 1.00 left_punch active fist stays separated ahead of guard
+PASS 30hz 1.00 left_punch guard hand stays above its elbow
+PASS 30hz 1.00 left_punch active fingers hold a compact contact curl
+PASS 30hz 1.00 left_punch active distal row closes from neutral
+PASS 30hz 1.00 left_punch skeleton remains finite
+PASS 30hz 1.00 left_punch never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.00300)
+PASS 30hz 1.00 left_punch applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.00 left_punch recovery folds fist above elbow
+PASS 30hz 1.00 left_punch recovery retracts fist from contact
+PASS 30hz 1.00 left_punch active fingers stay compact through readable recovery
+PASS 30hz 1.00 left_punch completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 30hz 1.00 left_punch recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.00 left_kick lifts the free knee
+PASS 30hz 1.00 left_kick foot leads contact
+PASS 30hz 1.00 left_kick skeleton remains finite
+PASS 30hz 1.00 left_kick never writes gameplay root (actual=(0.0, 0.0, -2.18) expected=(0.0, 0.0, -2.18) tolerance=0.00300)
+PASS 30hz 1.00 left_kick applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.00 left_kick recovery re-chambers before lowering
+PASS 30hz 1.00 left_kick recovery withdraws the striking foot
+PASS 30hz 1.00 left_kick skinned support sole stays planted
+PASS 30hz 1.00 left_kick completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 30hz 1.00 left_kick recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.00 right_kick lifts the free knee
+PASS 30hz 1.00 right_kick foot leads contact
+PASS 30hz 1.00 right_kick skeleton remains finite
+PASS 30hz 1.00 right_kick never writes gameplay root (actual=(0.0, 0.0, -2.18) expected=(0.0, 0.0, -2.18) tolerance=0.00300)
+PASS 30hz 1.00 right_kick applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.00 right_kick recovery re-chambers before lowering
+PASS 30hz 1.00 right_kick recovery withdraws the striking foot
+PASS 30hz 1.00 right_kick skinned support sole stays planted
+PASS 30hz 1.00 right_kick completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 30hz 1.00 right_kick recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.16 right_punch elbow follows shoulder forward
+PASS 30hz 1.16 right_punch fist leads contact
+PASS 30hz 1.16 right_punch active fist stays separated ahead of guard
+PASS 30hz 1.16 right_punch guard hand stays above its elbow
+PASS 30hz 1.16 right_punch active fingers hold a compact contact curl
+PASS 30hz 1.16 right_punch active distal row closes from neutral
+PASS 30hz 1.16 right_punch skeleton remains finite
+PASS 30hz 1.16 right_punch never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.00300)
+PASS 30hz 1.16 right_punch applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.16 right_punch recovery folds fist above elbow
+PASS 30hz 1.16 right_punch recovery retracts fist from contact
+PASS 30hz 1.16 right_punch active fingers stay compact through readable recovery
+PASS 30hz 1.16 right_punch completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 30hz 1.16 right_punch recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.16 left_punch elbow follows shoulder forward
+PASS 30hz 1.16 left_punch fist leads contact
+PASS 30hz 1.16 left_punch active fist stays separated ahead of guard
+PASS 30hz 1.16 left_punch guard hand stays above its elbow
+PASS 30hz 1.16 left_punch active fingers hold a compact contact curl
+PASS 30hz 1.16 left_punch active distal row closes from neutral
+PASS 30hz 1.16 left_punch skeleton remains finite
+PASS 30hz 1.16 left_punch never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.00300)
+PASS 30hz 1.16 left_punch applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.16 left_punch recovery folds fist above elbow
+PASS 30hz 1.16 left_punch recovery retracts fist from contact
+PASS 30hz 1.16 left_punch active fingers stay compact through readable recovery
+PASS 30hz 1.16 left_punch completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 30hz 1.16 left_punch recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.16 left_kick lifts the free knee
+PASS 30hz 1.16 left_kick foot leads contact
+PASS 30hz 1.16 left_kick skeleton remains finite
+PASS 30hz 1.16 left_kick never writes gameplay root (actual=(0.0, 0.0, -2.18) expected=(0.0, 0.0, -2.18) tolerance=0.00300)
+PASS 30hz 1.16 left_kick applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.16 left_kick recovery re-chambers before lowering
+PASS 30hz 1.16 left_kick recovery withdraws the striking foot
+PASS 30hz 1.16 left_kick skinned support sole stays planted
+PASS 30hz 1.16 left_kick completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 30hz 1.16 left_kick recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.16 right_kick lifts the free knee
+PASS 30hz 1.16 right_kick foot leads contact
+PASS 30hz 1.16 right_kick skeleton remains finite
+PASS 30hz 1.16 right_kick never writes gameplay root (actual=(0.0, 0.0, -2.18) expected=(0.0, 0.0, -2.18) tolerance=0.00300)
+PASS 30hz 1.16 right_kick applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 30hz 1.16 right_kick recovery re-chambers before lowering
+PASS 30hz 1.16 right_kick recovery withdraws the striking foot
+PASS 30hz 1.16 right_kick skinned support sole stays planted
+PASS 30hz 1.16 right_kick completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 30hz 1.16 right_kick recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 0.88 right_punch elbow follows shoulder forward
+PASS 60hz 0.88 right_punch fist leads contact
+PASS 60hz 0.88 right_punch active fist stays separated ahead of guard
+PASS 60hz 0.88 right_punch guard hand stays above its elbow
+PASS 60hz 0.88 right_punch active fingers hold a compact contact curl
+PASS 60hz 0.88 right_punch active distal row closes from neutral
+PASS 60hz 0.88 right_punch skeleton remains finite
+PASS 60hz 0.88 right_punch never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.00300)
+PASS 60hz 0.88 right_punch applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 0.88 right_punch recovery folds fist above elbow
+PASS 60hz 0.88 right_punch recovery retracts fist from contact
+PASS 60hz 0.88 right_punch active fingers stay compact through readable recovery
+PASS 60hz 0.88 right_punch completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 60hz 0.88 right_punch recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 0.88 left_punch elbow follows shoulder forward
+PASS 60hz 0.88 left_punch fist leads contact
+PASS 60hz 0.88 left_punch active fist stays separated ahead of guard
+PASS 60hz 0.88 left_punch guard hand stays above its elbow
+PASS 60hz 0.88 left_punch active fingers hold a compact contact curl
+PASS 60hz 0.88 left_punch active distal row closes from neutral
+PASS 60hz 0.88 left_punch skeleton remains finite
+PASS 60hz 0.88 left_punch never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.00300)
+PASS 60hz 0.88 left_punch applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 0.88 left_punch recovery folds fist above elbow
+PASS 60hz 0.88 left_punch recovery retracts fist from contact
+PASS 60hz 0.88 left_punch active fingers stay compact through readable recovery
+PASS 60hz 0.88 left_punch completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 60hz 0.88 left_punch recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 0.88 left_kick lifts the free knee
+PASS 60hz 0.88 left_kick foot leads contact
+PASS 60hz 0.88 left_kick skeleton remains finite
+PASS 60hz 0.88 left_kick never writes gameplay root (actual=(0.0, 0.0, -2.18) expected=(0.0, 0.0, -2.18) tolerance=0.00300)
+PASS 60hz 0.88 left_kick applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 0.88 left_kick recovery re-chambers before lowering
+PASS 60hz 0.88 left_kick recovery withdraws the striking foot
+PASS 60hz 0.88 left_kick skinned support sole stays planted
+PASS 60hz 0.88 left_kick completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 60hz 0.88 left_kick recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 0.88 right_kick lifts the free knee
+PASS 60hz 0.88 right_kick foot leads contact
+PASS 60hz 0.88 right_kick skeleton remains finite
+PASS 60hz 0.88 right_kick never writes gameplay root (actual=(0.0, 0.0, -2.18) expected=(0.0, 0.0, -2.18) tolerance=0.00300)
+PASS 60hz 0.88 right_kick applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 0.88 right_kick recovery re-chambers before lowering
+PASS 60hz 0.88 right_kick recovery withdraws the striking foot
+PASS 60hz 0.88 right_kick skinned support sole stays planted
+PASS 60hz 0.88 right_kick completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 60hz 0.88 right_kick recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+ATTACK_NEUTRAL_GEOMETRY shoulder.L=(-0.379179, 2.344012, -1.560819) elbow.L=(-0.430187, 1.854433, -1.521416) hand.L=(-0.505856, 1.482131, -1.425969) shoulder.R=(0.403224, 2.336191, -1.555954) elbow.R=(0.444756, 1.844187, -1.563) hand.R=(0.512921, 1.461454, -1.513841) active_distal_span=0.13178600370884
+ATTACK_CONTACT_GEOMETRY variant=right_punch shoulder=(-0.352934, 2.392836, -1.466313) elbow=(-0.371108, 2.36063, -0.974385) hand=(-0.395333, 2.453513, -0.594636) reach=0.87481486797333 forward_lead=0.87167751789093 guard_elbow=(0.061496, 1.865449, -0.777878) guard_hand=(0.184865, 2.236278, -0.806459)
+PASS 60hz 1.00 right_punch elbow follows shoulder forward
+PASS 60hz 1.00 right_punch fist leads contact
+PASS 60hz 1.00 right_punch active fist stays separated ahead of guard
+PASS 60hz 1.00 right_punch guard hand stays above its elbow
+PASS 60hz 1.00 right_punch active fingers hold a compact contact curl
+PASS 60hz 1.00 right_punch active distal row closes from neutral
+PASS 60hz 1.00 right_punch skeleton remains finite
+PASS 60hz 1.00 right_punch never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.00300)
+PASS 60hz 1.00 right_punch applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 1.00 right_punch recovery folds fist above elbow
+PASS 60hz 1.00 right_punch recovery retracts fist from contact
+PASS 60hz 1.00 right_punch active fingers stay compact through readable recovery
+PASS 60hz 1.00 right_punch completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 60hz 1.00 right_punch recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+ATTACK_CONTACT_GEOMETRY variant=left_punch shoulder=(0.352955, 2.393061, -1.466336) elbow=(0.371358, 2.360557, -0.974436) hand=(0.396065, 2.453737, -0.594656) reach=0.87485158443451 forward_lead=0.87167948484421 guard_elbow=(-0.061445, 1.865871, -0.777981) guard_hand=(-0.184412, 2.236674, -0.806845)
+PASS 60hz 1.00 left_punch elbow follows shoulder forward
+PASS 60hz 1.00 left_punch fist leads contact
+PASS 60hz 1.00 left_punch active fist stays separated ahead of guard
+PASS 60hz 1.00 left_punch guard hand stays above its elbow
+PASS 60hz 1.00 left_punch active fingers hold a compact contact curl
+PASS 60hz 1.00 left_punch active distal row closes from neutral
+PASS 60hz 1.00 left_punch skeleton remains finite
+PASS 60hz 1.00 left_punch never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.00300)
+PASS 60hz 1.00 left_punch applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 1.00 left_punch recovery folds fist above elbow
+PASS 60hz 1.00 left_punch recovery retracts fist from contact
+PASS 60hz 1.00 left_punch active fingers stay compact through readable recovery
+PASS 60hz 1.00 left_punch completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 60hz 1.00 left_punch recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+ATTACK_KICK_GUARD variant=left_kick hand.L=(-0.589656, 2.309389, -1.769731) hand.R=(0.507317, 2.376785, -1.441037) head=(0.115838, 2.467907, -2.145096)
+PASS 60hz 1.00 left_kick lifts the free knee
+PASS 60hz 1.00 left_kick foot leads contact
+PASS 60hz 1.00 left_kick skeleton remains finite
+PASS 60hz 1.00 left_kick never writes gameplay root (actual=(0.0, 0.0, -2.18) expected=(0.0, 0.0, -2.18) tolerance=0.00300)
+PASS 60hz 1.00 left_kick applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 1.00 left_kick recovery re-chambers before lowering
+PASS 60hz 1.00 left_kick recovery withdraws the striking foot
+ATTACK_SUPPORT_SOLE variant=left_kick clearance_range=(-0.0, 0.002704)
+PASS 60hz 1.00 left_kick skinned support sole stays planted
+PASS 60hz 1.00 left_kick completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 60hz 1.00 left_kick recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+ATTACK_KICK_GUARD variant=right_kick hand.L=(-0.477318, 2.382503, -1.44264) hand.R=(0.565983, 2.321551, -1.756811) head=(-0.115827, 2.467832, -2.145056)
+PASS 60hz 1.00 right_kick lifts the free knee
+PASS 60hz 1.00 right_kick foot leads contact
+PASS 60hz 1.00 right_kick skeleton remains finite
+PASS 60hz 1.00 right_kick never writes gameplay root (actual=(0.0, 0.0, -2.18) expected=(0.0, 0.0, -2.18) tolerance=0.00300)
+PASS 60hz 1.00 right_kick applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 1.00 right_kick recovery re-chambers before lowering
+PASS 60hz 1.00 right_kick recovery withdraws the striking foot
+ATTACK_SUPPORT_SOLE variant=right_kick clearance_range=(-0.0, 0.006067)
+PASS 60hz 1.00 right_kick skinned support sole stays planted
+PASS 60hz 1.00 right_kick completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 60hz 1.00 right_kick recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 1.16 right_punch elbow follows shoulder forward
+PASS 60hz 1.16 right_punch fist leads contact
+PASS 60hz 1.16 right_punch active fist stays separated ahead of guard
+PASS 60hz 1.16 right_punch guard hand stays above its elbow
+PASS 60hz 1.16 right_punch active fingers hold a compact contact curl
+PASS 60hz 1.16 right_punch active distal row closes from neutral
+PASS 60hz 1.16 right_punch skeleton remains finite
+PASS 60hz 1.16 right_punch never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.00300)
+PASS 60hz 1.16 right_punch applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 1.16 right_punch recovery folds fist above elbow
+PASS 60hz 1.16 right_punch recovery retracts fist from contact
+PASS 60hz 1.16 right_punch active fingers stay compact through readable recovery
+PASS 60hz 1.16 right_punch completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 60hz 1.16 right_punch recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 1.16 left_punch elbow follows shoulder forward
+PASS 60hz 1.16 left_punch fist leads contact
+PASS 60hz 1.16 left_punch active fist stays separated ahead of guard
+PASS 60hz 1.16 left_punch guard hand stays above its elbow
+PASS 60hz 1.16 left_punch active fingers hold a compact contact curl
+PASS 60hz 1.16 left_punch active distal row closes from neutral
+PASS 60hz 1.16 left_punch skeleton remains finite
+PASS 60hz 1.16 left_punch never writes gameplay root (actual=(0.0, 0.0, -1.55) expected=(0.0, 0.0, -1.55) tolerance=0.00300)
+PASS 60hz 1.16 left_punch applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 1.16 left_punch recovery folds fist above elbow
+PASS 60hz 1.16 left_punch recovery retracts fist from contact
+PASS 60hz 1.16 left_punch active fingers stay compact through readable recovery
+PASS 60hz 1.16 left_punch completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 60hz 1.16 left_punch recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 1.16 left_kick lifts the free knee
+PASS 60hz 1.16 left_kick foot leads contact
+PASS 60hz 1.16 left_kick skeleton remains finite
+PASS 60hz 1.16 left_kick never writes gameplay root (actual=(0.0, 0.0, -2.18) expected=(0.0, 0.0, -2.18) tolerance=0.00300)
+PASS 60hz 1.16 left_kick applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 1.16 left_kick recovery re-chambers before lowering
+PASS 60hz 1.16 left_kick recovery withdraws the striking foot
+PASS 60hz 1.16 left_kick skinned support sole stays planted
+PASS 60hz 1.16 left_kick completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 60hz 1.16 left_kick recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 1.16 right_kick lifts the free knee
+PASS 60hz 1.16 right_kick foot leads contact
+PASS 60hz 1.16 right_kick skeleton remains finite
+PASS 60hz 1.16 right_kick never writes gameplay root (actual=(0.0, 0.0, -2.18) expected=(0.0, 0.0, -2.18) tolerance=0.00300)
+PASS 60hz 1.16 right_kick applies one normal hit (actual=78.00000 expected=78.00000 tolerance=0.00300)
+PASS 60hz 1.16 right_kick recovery re-chambers before lowering
+PASS 60hz 1.16 right_kick recovery withdraws the striking foot
+PASS 60hz 1.16 right_kick skinned support sole stays planted
+PASS 60hz 1.16 right_kick completes recovery (actual=0.00000 expected=0.00000 tolerance=0.00300)
+PASS 60hz 1.16 right_kick recovery repeats no damage (actual=78.00000 expected=78.00000 tolerance=0.00300)
+R7_ATTACK_COMBO_OK checks=352 failures=0

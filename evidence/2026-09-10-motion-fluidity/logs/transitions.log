@@ -1,0 +1,80 @@
+ERROR: Failed to open 'user://logs/godot2026-09-10T15.12.35.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS active courtyard scene loads
+PASS focused transitions use exact frozen R7
+PASS jump begins before overlap probe
+PASS grapple rejects an active jump instead of parking stale jump state
+PASS rejected grapple leaves the active jump coherent
+PASS jump completes normally after rejected grapple
+PASS in-range grapple begins from an open-space crouch
+PASS grapple exits open-space crouch before traversal
+PASS grapple midpoint clears the perch lip instead of crossing its mesh
+PASS strike begins before traversal cancellation probe
+PASS grapple may conventionally replace a grounded strike
+PASS grapple clears pending strike contact
+PASS counter begins before overlap probes
+PASS crouch rejects counter recovery
+PASS jump rejects counter recovery
+PASS grapple rejects counter recovery
+PASS rejected overlaps do not cancel counter presentation (actual=0.44000 expected=0.44000 tolerance=0.00200)
+PASS 30hz hurt preserves 18 damage (actual=82.00000 expected=82.00000 tolerance=0.00200)
+PASS 30hz hurt preserves 25 Momentum loss (actual=25.00000 expected=25.00000 tolerance=0.00200)
+PASS 30hz hurt starts presentation timer (actual=0.38000 expected=0.38000 tolerance=0.00200)
+PASS 30hz hurt produces a visible non-displacing recoil
+PASS 30hz hurt pose does not displace gameplay root (actual=(-6.0, 0.0, 2.5) expected=(-6.0, 0.0, 2.5) tolerance=0.00200)
+PASS 30hz hurt presentation recovers (actual=0.00000 expected=0.00000 tolerance=0.00200)
+PASS 30hz health clamps to zero (actual=0.00000 expected=0.00000 tolerance=0.00200)
+PASS 30hz downed input cannot move player (actual=(-6.0, 0.0, 2.5) expected=(-6.0, 0.0, 2.5) tolerance=0.00200)
+PASS 30hz downed input cannot start actions
+PASS 30hz downed presentation preserves gameplay root (actual=(-6.0, 0.0, 2.5) expected=(-6.0, 0.0, 2.5) tolerance=0.00200)
+PASS 30hz downed state freezes hostile simulation (actual=(7.15749, 0.0, -3.99528) expected=(7.15749, 0.0, -3.99528) tolerance=0.00200)
+PASS 30hz downed pose uses a coherent whole-body side collapse
+PASS 30hz camera remains available while downed
+PASS 30hz restart restores downed player (actual=100.00000 expected=100.00000 tolerance=0.00200)
+PASS 30hz restart clears downed presentation (actual=0.00000 expected=0.00000 tolerance=0.00200)
+PASS 60hz hurt preserves 18 damage (actual=82.00000 expected=82.00000 tolerance=0.00200)
+PASS 60hz hurt preserves 25 Momentum loss (actual=25.00000 expected=25.00000 tolerance=0.00200)
+PASS 60hz hurt starts presentation timer (actual=0.38000 expected=0.38000 tolerance=0.00200)
+PASS 60hz hurt produces a visible non-displacing recoil
+PASS 60hz hurt pose does not displace gameplay root (actual=(-6.0, 0.0, 2.5) expected=(-6.0, 0.0, 2.5) tolerance=0.00200)
+PASS 60hz hurt presentation recovers (actual=0.00000 expected=0.00000 tolerance=0.00200)
+PASS 60hz health clamps to zero (actual=0.00000 expected=0.00000 tolerance=0.00200)
+PASS 60hz downed input cannot move player (actual=(-6.0, 0.0, 2.5) expected=(-6.0, 0.0, 2.5) tolerance=0.00200)
+PASS 60hz downed input cannot start actions
+PASS 60hz downed presentation preserves gameplay root (actual=(-6.0, 0.0, 2.5) expected=(-6.0, 0.0, 2.5) tolerance=0.00200)
+PASS 60hz downed state freezes hostile simulation (actual=(7.268351, 0.0, -4.01365) expected=(7.268351, 0.0, -4.01365) tolerance=0.00200)
+PASS 60hz downed pose uses a coherent whole-body side collapse
+PASS 60hz camera remains available while downed
+PASS 60hz restart restores downed player (actual=100.00000 expected=100.00000 tolerance=0.00200)
+PASS 60hz restart clears downed presentation (actual=0.00000 expected=0.00000 tolerance=0.00200)
+PASS paired-pose fixture begins a real eligible takedown
+PASS paired-pose fixture reaches the real takedown contact
+PASS takedown victim falls as one connected body instead of folding at the helmet
+PASS takedown victim settles at supported floor height
+PASS paired takedown completes without leaving its action pose active (actual=0.00000 expected=0.00000 tolerance=0.00200)
+PASS defeated guard preserves the coherent side-fall silhouette
+PASS R7 crouch keeps both hands visibly ahead of the folded chest: 0.2631
+PASS crouch elbows keep a relaxed forward fold through idle and travel
+PASS crouch wrists stay inward of their elbows through the full cycle
+PASS crouch hands keep their own side of the body center
+CROUCH_ARMS flex_deg=(65.77514, 70.36595) min_inward=0.0797515809536 center_clearance=0.14258375810459
+PASS R7 jump keeps mass slightly forward instead of arching backward
+PASS R7 jump separates lead and trailing legs
+PASS R7 jump uses a contralateral arm silhouette
+PASS R7 landing recovery releases compression before returning to grounded
+PASS R7 downed chest settles near the floor instead of hovering: 0.5116
+PASS R7 downed head remains supported near the fallen chest: 0.4586
+PASS R7 downed head and chest preserve a connected side-fall silhouette
+PASS R7 downed lower hand braces near the floor: 0.3150
+PASS R7 downed lower toe supplies grounded support: 0.0751
+PASS success state rejects movement input (actual=(-6.0, 0.0, 2.5) expected=(-6.0, 0.0, 2.5) tolerance=0.00200)
+PASS success state rejects action input
+PASS camera remains available after success
+PASS restart remains available after success
+GLOAM_ACTION_QUALITY_TRANSITIONS_OK checks=70 failures=0

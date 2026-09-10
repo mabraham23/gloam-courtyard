@@ -311,3 +311,50 @@ Evidence, reproduction, rejected iterations and remaining quirks:
 Both board files were regenerated; schema/parity checks pass for 17 tasks and
 all 12 tooling tests pass. This is separate from the existing rendered board
 interaction/responsive policy gate and user acceptance.
+
+
+## Waiting — whole-body continuity and recovery follow-up (2026-09-10)
+
+The user rejected the previous upper-body pass as still stiff. Its source and
+technical evidence remain valid historical records; the visual adequacy claim
+is superseded. Actual posed-skeleton sampling found a 111.65° crouch-exit jump,
+109.23° movement-release jump and 85.99° punch-exit jump between 30 Hz frames.
+The older pose/mechanics checks did not cover these temporal discontinuities.
+
+Candidate pose handoffs now bridge the final captured/procedural channels,
+including bounded outgoing rotation, action-specific entry/exit durations and
+start/stop intent. Resets/low-clearance crouch bypass inertia. Punch guard/recovery
+curves unfold once and release through the bridge. Jump limbs continue gathering
+through the apex; stale gait contact lift is cleared during grounded jump phases.
+Controller timing, speed, damage and trajectory remain unchanged.
+
+Final normal-rendered run `20260910T211726Z-upper-body-c14329`, source
+`9134ed3156787e01e533cae8841a6fb2524ac4823d02a583cfebe4653f4fed72`,
+is matched against `20260910T201912Z-upper-body-94418e` with the same 480-frame
+fixture/seed/engine/cameras. Dense before/after stop, rise and punch frames were
+inspected. Final maximum action-boundary step is 25.38°, stop interval 30.38°,
+and any-frame peak 59.97°. The new three-part continuity regression fails on the
+preserved baseline and passes on final source; this is not human acceptance.
+
+Final full mesh 22,164/22,164 over 50,243 vertices; jump 5,646; attacks 352;
+transitions 70; action motion 198; default/candidate mechanics 309/311; alignment
+10; import/default startup pass. Existing tolerances are unchanged. A reduced
+contact guard was rejected by fist-separation checks. Six initial jump samples
+hovered before takeoff; their retained failure log documents the corrected stale
+contact-lift regression. Final all-size 30/60 Hz jump and mesh checks pass.
+
+Native managed `20260910T211830Z-live-d9c704`, PID 55861, exact DEBUG title,
+was enlarged and exercised with Q enter/exit, V, Space, C, R/0/F12. Six original
+PNG/state pairs match hashes and contain zero changed source files. Captures show
+jump preparation, left-punch startup and evade/+4 Momentum; they do not claim
+native held movement or damage contact. Final reset is grounded, health 100,
+Momentum 0, guard 100, default camera, no action, left open. Live/render/current
+source fingerprints match. macOS sandbox/CA messages are distinct from checks.
+
+Next: user judgement of continuous starts/stops, crouch travel/rise, moving jump
+and repeat strikes; existing paired takedown and candidate release gates remain.
+V1 stays default. Board source regeneration/tests and its existing rendered UI
+policy gate remain separate. [Review and limitations](../evidence/2026-09-10-motion-fluidity/README.md).
+
+Board source verification: `ROADMAP_CHECK_OK tasks=17`; all 12 tooling tests pass.
+The existing rendered board UI gate remains pending.

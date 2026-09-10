@@ -23,6 +23,7 @@ Read relevant rationale when changing a rule, rather than replaying the whole lo
 | D-20260910-JUMP | Grounded jump phrase and movement-dependent takeoff | Active: stationary lift versus moving split-leg jump, with gentle air control and grounded preparation/impact; contextual vault preserved. |
 | D-20260910-HAIR | Swept black hair, clean shave | Active: close-clipped faded sides/back and broad overlapping top sweeps. Supersedes both rejected bowl-like caps; clean-shaven face, frozen GLB and V1 default retained. |
 | D-20260910-UPPER | Natural spine and shoulder participation | Active: subtle candidate back curve, staggered shoulder response and hip-to-chest punch transfer; requested hunch supersedes the older flat-chest 8/11 degree presentation bounds. Mechanics, clearance and V1 default retained. |
+| D-20260910-FLUIDITY | Final-pose continuity across actions | Active: bounded candidate handoffs and temporal regression accompany pose checks; prior upper-body-only visual adequacy is superseded by user feedback. Contact timing and V1 default retained. |
 <!-- decision-index:end -->
 
 ## Preserved dated rationale
@@ -430,3 +431,22 @@ not convert a numerical check into human acceptance. The old report is preserved
 A large-crouch cape/lintel regression was corrected by counteracting the added
 ribcage fold in the hanging cloth; the 2.0-unit clearance limit stays unchanged.
 V1 remains default, and the candidate's user review/release gates stay open.
+
+
+## 2026-09-10 — Final-pose continuity across actions (Active)
+
+User feedback found the subtle upper-body pass still stiff. The adapter's final
+captured/procedural channels could overwrite smoothed drivers and change a major
+joint by 86–112 degrees in one 30 Hz frame at an action switch or movement release.
+Additive upper-back movement alone cannot solve this problem.
+
+Bridge the candidate's fully composed poses on action and start/stop changes,
+with bounded outgoing rotation and short action-specific durations. Complete punch
+entry before calibrated contact; preserve direct reset and low-clearance crouch.
+Keep guard/recovery timing continuous and avoid a static midair split-pose hold.
+The new controller-level temporal regression complements existing shape, floor,
+contact and gameplay checks; numerical improvement does not grant user acceptance.
+
+This supersedes the sufficiency of the earlier upper-body-only visual pass, not
+its requested hunch, shoulder response or protected controller values. Retain its
+source/evidence for comparison. V1 remains default pending the established gates.

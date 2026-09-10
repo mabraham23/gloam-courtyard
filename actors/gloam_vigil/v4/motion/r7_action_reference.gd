@@ -39,12 +39,15 @@ static func _punch(progress: float, attack_variant: StringName) -> Dictionary:
 	var contact := AttackCatalog.contact_progress(attack_variant)
 	var anticipation := smoothstep(0.0, 0.16, progress) * (1.0 - smoothstep(0.23, contact, progress))
 	var extension := smoothstep(0.15, contact, progress) * (1.0 - smoothstep(0.57, 0.90, progress))
-	var brace := smoothstep(0.02, 0.18, progress) * (1.0 - smoothstep(0.67, 0.97, progress))
-	var retract := smoothstep(contact + 0.08, 0.68, progress) * (1.0 - smoothstep(0.84, 0.99, progress))
+	# Load the body through the windup. Keep the returning fist folded until
+	# the pose handoff releases it;
+	# folding and dropping it again inside 0.1 s caused the old recovery snap.
+	var brace := smoothstep(0.0, 0.34, progress) * (1.0 - smoothstep(0.70, 1.0, progress))
+	var retract := smoothstep(contact + 0.035, 0.82, progress)
 	var retract_fold := retract * (1.0 - extension)
-	# A low persistent fighting guard gives a buffered follow-up the same entry
-	# silhouette as the prior recovery instead of flashing through hands-down idle.
-	var guard_pose := 0.26 + 0.74 * brace
+	# Build the supporting guard across the entire windup and retain it until
+	# release. The pose bridge carries the current arms into buffered follow-ups.
+	var guard_pose := smoothstep(0.0, contact, progress)
 	var attack_ready := 0.26 * (1.0 - extension) * (1.0 - retract)
 	var impact := smoothstep(contact - 0.075, contact, progress) * (1.0 - smoothstep(contact, contact + 0.15, progress))
 	# Transfer the punch from hip to ribs to shoulder. Each curve still reaches
@@ -79,7 +82,7 @@ static func _punch(progress: float, attack_variant: StringName) -> Dictionary:
 	# shoulder. This value comes from measured shoulder-to-fist contact geometry.
 	result[StringName("upper_arm.%s" % attack_suffix)] = _euler(0.34 * anticipation - 1.54 * extension - 0.52 * retract_fold - 0.48 * attack_ready, side * (-0.11 * anticipation - 0.82 * extension + 0.10 * retract_fold), side * (0.065 * extension - 0.05 * retract_fold))
 	result[StringName("upper_arm_twist.%s" % attack_suffix)] = _euler(-0.08 * extension, side * -0.09 * extension, side * 0.025 * extension)
-	result[StringName("forearm.%s" % attack_suffix)] = _euler(0.94 * anticipation + 0.08 * extension - 2.35 * retract_fold - 2.65 * attack_ready, 0.0, side * -0.02 * extension)
+	result[StringName("forearm.%s" % attack_suffix)] = _euler(0.94 * anticipation + 0.08 * extension - 1.85 * retract_fold - 2.65 * attack_ready, 0.0, side * -0.02 * extension)
 	result[StringName("forearm_twist.%s" % attack_suffix)] = _euler(0.08 * anticipation, side * -0.07 * extension, 0.0)
 	result[StringName("hand.%s" % attack_suffix)] = _euler(-0.07 * impact, 0.0, side * 0.022 * extension)
 	result[StringName("clavicle.%s" % guard_suffix)] = _euler(-0.08 * guard_pose, side * 0.04 * guard_pose, side * -0.025 * guard_pose)

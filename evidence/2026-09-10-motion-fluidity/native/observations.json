@@ -1,0 +1,199 @@
+{
+  "native_app": "org.godotengine.godot",
+  "verified_title": "Gloam Courtyard Spike (DEBUG)",
+  "method": "CUA native key taps and screenshots; no held-movement claim",
+  "observations": [
+    {
+      "label": "crouch",
+      "original": "captures/review_9134ed315678_55861_32758968.json",
+      "sha256": "fe833406f99824ca3185da84dbe7ac1d474019704cb66c279aef4083397db466",
+      "source": "9134ed3156787e01e533cae8841a6fb2524ac4823d02a583cfebe4653f4fed72",
+      "pid": 55861,
+      "health": 100.0,
+      "momentum": 0.0,
+      "guard_health": 100.0,
+      "crouching": true,
+      "jump_active": false,
+      "jump_t": 0.0,
+      "airborne": false,
+      "attack": "right_punch",
+      "strike_timer": 0.0,
+      "evade_timer": 0.0,
+      "player": [
+        -6.0,
+        0.0,
+        2.5
+      ],
+      "camera": {
+        "pitch": 0.47,
+        "position": [
+          14.0038185119629,
+          11.8752498626709,
+          16.2674121856689
+        ],
+        "size": 18.5,
+        "yaw": 0.69
+      }
+    },
+    {
+      "label": "rise",
+      "original": "captures/review_9134ed315678_55861_44454220.json",
+      "sha256": "0f4c161074f60161ed446bba318e0b1b909310b067707c2a0316ca95aa7313fa",
+      "source": "9134ed3156787e01e533cae8841a6fb2524ac4823d02a583cfebe4653f4fed72",
+      "pid": 55861,
+      "health": 100.0,
+      "momentum": 0.0,
+      "guard_health": 100.0,
+      "crouching": false,
+      "jump_active": false,
+      "jump_t": 0.0,
+      "airborne": false,
+      "attack": "right_punch",
+      "strike_timer": 0.0,
+      "evade_timer": 0.0,
+      "player": [
+        -6.0,
+        0.0,
+        2.5
+      ],
+      "camera": {
+        "pitch": 0.47,
+        "position": [
+          14.0038185119629,
+          11.8752498626709,
+          16.2674121856689
+        ],
+        "size": 18.5,
+        "yaw": 0.69
+      }
+    },
+    {
+      "label": "jump",
+      "original": "captures/review_9134ed315678_55861_52040427.json",
+      "sha256": "9b88b8ac012bf733a2dc2dc193c63bfb3b3b80a0b7b1552d63031e3c10fca2fa",
+      "source": "9134ed3156787e01e533cae8841a6fb2524ac4823d02a583cfebe4653f4fed72",
+      "pid": 55861,
+      "health": 100.0,
+      "momentum": 0.0,
+      "guard_health": 100.0,
+      "crouching": false,
+      "jump_active": true,
+      "jump_t": 0.0177304964539007,
+      "airborne": false,
+      "attack": "right_punch",
+      "strike_timer": 0.0,
+      "evade_timer": 0.0,
+      "player": [
+        -6.0,
+        0.0,
+        2.5
+      ],
+      "camera": {
+        "pitch": 0.47,
+        "position": [
+          14.0038185119629,
+          11.8752498626709,
+          16.2674121856689
+        ],
+        "size": 18.5,
+        "yaw": 0.69
+      }
+    },
+    {
+      "label": "strike",
+      "original": "captures/review_9134ed315678_55861_60964123.json",
+      "sha256": "0fabb68292a13bf296b2e9d28f5b9f4bfd895a5921444755f29961923fdbed52",
+      "source": "9134ed3156787e01e533cae8841a6fb2524ac4823d02a583cfebe4653f4fed72",
+      "pid": 55861,
+      "health": 100.0,
+      "momentum": 0.0,
+      "guard_health": 100.0,
+      "crouching": false,
+      "jump_active": false,
+      "jump_t": 1.0,
+      "airborne": false,
+      "attack": "left_punch",
+      "strike_timer": 0.357217757575759,
+      "evade_timer": 0.0,
+      "player": [
+        -6.0,
+        0.0,
+        2.5
+      ],
+      "camera": {
+        "pitch": 0.47,
+        "position": [
+          14.0038185119629,
+          11.8752498626709,
+          16.2674121856689
+        ],
+        "size": 18.5,
+        "yaw": 0.69
+      }
+    },
+    {
+      "label": "evade",
+      "original": "captures/review_9134ed315678_55861_71655721.json",
+      "sha256": "44ca9cda00558ef8b12c7222b2b3630bf8efaa7202d1a97519b045df68996a35",
+      "source": "9134ed3156787e01e533cae8841a6fb2524ac4823d02a583cfebe4653f4fed72",
+      "pid": 55861,
+      "health": 100.0,
+      "momentum": 4.0,
+      "guard_health": 100.0,
+      "crouching": false,
+      "jump_active": false,
+      "jump_t": 1.0,
+      "airborne": false,
+      "attack": "left_punch",
+      "strike_timer": 0.0,
+      "evade_timer": 0.238333333333333,
+      "player": [
+        -6.0,
+        0.0,
+        2.79166698455811
+      ],
+      "camera": {
+        "pitch": 0.47,
+        "position": [
+          14.0038185119629,
+          11.8752498626709,
+          16.2674121856689
+        ],
+        "size": 18.5,
+        "yaw": 0.69
+      }
+    },
+    {
+      "label": "reset",
+      "original": "captures/review_9134ed315678_55861_84161932.json",
+      "sha256": "0761f43ca08fcaaf397303f41134b29f7f12ffbf31c650ff08b98c8da7e2039a",
+      "source": "9134ed3156787e01e533cae8841a6fb2524ac4823d02a583cfebe4653f4fed72",
+      "pid": 55861,
+      "health": 100.0,
+      "momentum": 0.0,
+      "guard_health": 100.0,
+      "crouching": false,
+      "jump_active": false,
+      "jump_t": 0.0,
+      "airborne": false,
+      "attack": "right_punch",
+      "strike_timer": 0.0,
+      "evade_timer": 0.0,
+      "player": [
+        -6.0,
+        0.0,
+        2.5
+      ],
+      "camera": {
+        "pitch": 0.47,
+        "position": [
+          14.0038185119629,
+          11.8752498626709,
+          16.2674121856689
+        ],
+        "size": 18.5,
+        "yaw": 0.69
+      }
+    }
+  ]
+}

@@ -122,3 +122,10 @@ Both local board files were regenerated; `ROADMAP_CHECK_OK tasks=17` and all
 12 tooling tests pass. Rendered board interactions/responsive layouts keep the
 existing policy gate; no browser workaround was attempted. Final source identity
 was rechecked against the live snapshot with `CURRENT_TREE_MATCHES_LIVE_CODE`.
+
+
+## Subsequent user feedback
+
+The user found this pass still stiff. Its technical evidence is preserved, but
+its visual adequacy is superseded by the [whole-body fluidity follow-up](../2026-09-10-motion-fluidity/README.md),
+which diagnoses and corrects the abrupt final-pose switches missed here.

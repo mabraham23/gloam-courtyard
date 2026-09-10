@@ -17,29 +17,32 @@ No Batman or other franchise names, likenesses, symbols, costumes, architecture,
 
 ## Current milestone
 
-**Waiting — natural upper-body motion ready for review (September 10).**
-The character now has a subtle upper-back curve and stride counter-rotation,
-shoulders that follow the ribs, and a steadied head. Jump preparation/release/
-landing and other actions have small chest responses. Punch rotation transfers
-from hip through spine/chest, then unwinds with shoulder follow-through.
-The added crouch fold includes cape compensation; all sizes clear the lintel.
-Current swept hair, clean-shaven face, corrected arms and frozen GLB stay intact.
+**Waiting — whole-body fluidity follow-up ready for review (September 10).**
+The user found the previous upper-body pass still stiff. A frame-by-frame audit
+found abrupt switches between captured gait and procedural action poses: up to
+111.65 degrees at an action boundary and 109.23 degrees when stopping. The small
+spine/shoulder offsets did not address these transitions.
 
-Matched 480-frame before/after movement/action review was inspected. Full mesh
-22,164, actual jump 5,646, four attacks 352, transitions 70, action motion 198,
-default/candidate mechanics 309/311 and revised posture/leg alignment 10 pass.
-All 50,243 vertices are included; crouch maxima small/medium/large are
-1.945137/1.981129/1.972558 under 2.0. The user's requested hunch deliberately
-supersedes the older flat-chest taste limit; preserved failures and the fixed
-large-cape clearance regression are documented in the evidence review.
+The candidate now carries the preceding visible pose through action changes,
+starts/stops and recovery. Crouch exit unfolds gradually, punches build and retain
+their guard through recovery, and jump limbs keep gathering through the apex.
+Grounded jump phases release stale gait foot-height compensation. The existing
+hunch and shoulder response remain; contact timing and controller values stay intact.
 
-Current managed R14 review: exact-title PID 54186, source `3e4bb12bca1b`, matching
-the final render. Enlarged native Q/V/Space/C smoke and R/0/F12 reset were inspected;
-all seven image/state pairs match with zero source drift. The fresh game remains
-open at 100 health / 0 Momentum. PID 52046 is historical. Upper-body naturalness,
-earlier appearance/motion preferences and R14 release gates remain user review;
-V1 remains default. No new performance certificate is claimed.
-Evidence: `evidence/2026-09-10-upper-body-motion/`.
+Matched 480-frame review was inspected, including dense stop/rise/punch strips.
+The new continuity regression fails on the previous build and passes now: maximum
+action-boundary step 25.38 degrees, stop interval 30.38, whole sequence 59.97.
+Full mesh 22,164, jump 5,646, four attacks 352, transitions 70, action motion 198,
+default/candidate mechanics 309/311 and existing alignment 10 pass. No existing
+clearance, contact or posture bounds were relaxed. All 50,243 vertices are included.
+
+Current managed R14 review: exact-title PID 55861, source `9134ed315678`, matching
+the final render and current source. Native Q/V/Space/C smoke and R/0/F12 reset
+were inspected; all six image/state pairs match with zero source drift. The fresh
+game remains open at 100 health / 0 Momentum. PID 54186 is historical. Whole-body
+fluidity, held movement and earlier R14 release gates remain user review; V1 stays
+default. No new performance certificate is claimed.
+Evidence: `evidence/2026-09-10-motion-fluidity/`.
 
 ## Character and acceptance boundary
 

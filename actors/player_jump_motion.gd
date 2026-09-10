@@ -19,7 +19,11 @@ static func sample(state: StringName, progress: float, moving: bool, lead: float
 	else:
 		compression = 1.0 - smoothstep(0.0, 0.24, p)
 		lift = smoothstep(0.02, 0.24, p) * (1.0 - smoothstep(0.62, 0.94, p))
-		split = lift if moving else 0.0
+		# Keep the legs and arms travelling through the apex instead of holding
+		# the same split pose for a quarter second. Gather the trailing limbs
+		# progressively for landing while preserving both mirrored lead poses.
+		split = lift * lerpf(1.0, 0.68, smoothstep(0.30, 0.80, p)) if moving else 0.0
+		lift *= 1.0 - 0.12 * sin(smoothstep(0.24, 0.74, p) * PI)
 		landing_ready = smoothstep(0.76, 1.0, p) * 0.32
 	compression += landing_ready
 	var side := clampf(lead, -1.0, 1.0)
