@@ -49,6 +49,8 @@ func capture() -> void:
 		"recent_inputs": recent_inputs.duplicate(true), "held_keys": game.held_keys.keys(),
 		"player": vector(game.player_root.position), "guard": vector(game.guard_root.position),
 		"health": game.player_health, "momentum": game.momentum, "guard_health": game.guard_health,
+		"jump_active": game.jump_active, "jump_t": game.jump_t, "jump_moving": game.jump_moving,
+		"jump_lead": game.jump_lead, "airborne": game.player_airborne, "vault": game.jump_is_vault,
 		"crouching": game.crouching, "attack": str(game.player_attack_variant),
 		"strike_timer": game.player_strike_timer, "evade_timer": game.evade_timer,
 		"takedown_timer": game.player_takedown_timer, "target_locked": game.player_attack_target_locked,

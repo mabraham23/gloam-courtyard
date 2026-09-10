@@ -87,3 +87,33 @@ native takedown, user taste or a new performance certificate. V1 remains default
 R14 and the board UI keep their existing user/policy gates. The live code source
 matches the current tree; subsequent evidence/document commits do not require
 another gameplay relaunch.
+
+## Waiting — standing/moving jump phrase and native handoff (2026-09-10)
+
+User refinement supersedes unconditional outward free jumping and the intermediate
+all-vertical moving-jump policy. A free jump now has grounded0.12s preparation,
+0.62s parabolic flight to1.35 units and grounded0.20s impact recovery. Stationary
+jumps extend both legs and rise in place; already-moving jumps carry2.2 units in
+the takeoff direction with an alternating split-leg pose. Air input remains gentle
+and normalized; a held launch direction does not stack extra forward speed.
+Vault retains0.48s/1.05 apex/2.2 travel. Root speed and frozen GLB stay unchanged.
+
+Matched240-frame before/after and default-camera runs passed and were inspected.
+Default309/candidate311 mechanics, real-controller full-mesh jump5598 (18 cases,
+all sizes,30/60Hz,both moving leads), legacy landing1302, transitions67, whiffs254,
+headless import/startup and12 tooling checks pass. Floor/contact tolerances are
+unchanged. No broader deformation or performance certificate is newly claimed.
+
+Native exact-title PID44250, sourcec9e551cb87cb: V/F12 burst captured on-floor
+preparation, rise to observed1.3323 and grounded recovery at unchangedX/Z. Second
+jump alternates the lead. C produced1.96 travel/+4 Momentum, Space began a whiff,
+Q visibly crouched, and enlarged R/0/F12 reset was inspected and left open with
+health100/Momentum0/guard100/default camera. All saved image hashes match sidecars;
+no source files differ from the frozen build. Held moving-jump native/user feel
+remains pending; fixture input is labelled separately. V1 stays default.
+
+Full identity, selected original frames, logs, bug/quirk review and next user
+criteria: [jump review](../evidence/2026-09-10-jump-motion/README.md).
+Board regenerated and schema/parity checked; rendered board UI keeps its separate
+existing URL-policy blocker. Earlier R14 appearance/held-movement/takedown release
+gates remain open.

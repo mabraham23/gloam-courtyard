@@ -53,10 +53,10 @@ func _test_traversal_exclusion(game) -> void:
 	game.player_root.position = game.ANCHOR_POSITION
 	game.last_travel_direction = Vector3.RIGHT
 	game.jump_or_vault()
-	_check(game.jump_active and game.player_airborne, "jump begins before overlap probe")
+	_check(game.jump_active and not game.player_airborne, "jump begins before overlap probe")
 	game.grapple()
 	_check(not game.grapple_active, "grapple rejects an active jump instead of parking stale jump state")
-	_check(game.jump_active and game.player_airborne, "rejected grapple leaves the active jump coherent")
+	_check(game.jump_active and not game.player_airborne, "rejected grapple leaves the active jump coherent")
 	_step(game, game.jump_duration + 0.05, 60)
 	_check(not game.jump_active and not game.player_airborne, "jump completes normally after rejected grapple")
 
@@ -185,7 +185,7 @@ func _test_r7_motion_semantics(game) -> void:
 	var hand_forward := (left_hand.z + right_hand.z) * 0.5 - chest.z
 	_check(hand_forward > 0.08, "R7 crouch keeps both hands visibly ahead of the folded chest: %.4f" % hand_forward)
 
-	Builder.pose_player(parts, 0.0, 0.0, 1.0, &"jump", 0.50)
+	Builder.pose_player(parts, 0.0, 0.0, 1.0, &"jump", 0.50, &"right_punch", 0.0, 1.0, true)
 	var torso := parts["torso_root"] as Node3D
 	var left_leg := parts["left_leg"] as Node3D
 	var right_leg := parts["right_leg"] as Node3D
@@ -195,8 +195,8 @@ func _test_r7_motion_semantics(game) -> void:
 	_check(left_leg.rotation.x * right_leg.rotation.x < 0.0, "R7 jump separates lead and trailing legs")
 	_check(left_arm.rotation.x * right_arm.rotation.x < 0.0, "R7 jump uses a contralateral arm silhouette")
 
-	Builder.pose_player(parts, 0.0, 0.0, 1.0, &"jump", 1.0)
-	_check((parts["left_knee"] as Node3D).rotation.x < 0.08 and (parts["right_knee"] as Node3D).rotation.x < 0.08, "R7 jump releases landing compression before returning to grounded")
+	Builder.pose_player(parts, 0.0, 0.0, 1.0, &"jump_land", 1.0)
+	_check((parts["left_knee"] as Node3D).rotation.x < 0.08 and (parts["right_knee"] as Node3D).rotation.x < 0.08, "R7 landing recovery releases compression before returning to grounded")
 
 	for frame in 45:
 		Builder.pose_player(parts, 0.0, 0.0, 1.0 / 60.0, &"downed", minf(float(frame + 1) / 36.0, 1.0))

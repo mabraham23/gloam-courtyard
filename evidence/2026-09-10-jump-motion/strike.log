@@ -1,0 +1,263 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS active courtyard scene loads
+PASS target-independent strike fixture uses exact frozen R7
+PASS empty_space SPACE starts a visible target-independent strike
+PASS empty_space selects a valid neutral attack variant
+PASS empty_space owns no invalid target contact
+TARGET_FREE_STRIKE_VISIBLE context=empty_space started=true variant=right_kick pose_delta=2.23775672912598 root=(0.0, 0.0, 0.0)
+PASS empty_space strike reaches a visibly distinct articulated pose
+PASS empty_space strike causes no phantom guard damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS empty_space strike reports no phantom connected contact
+PASS empty_space strike preserves gameplay root (actual=(0.0, 0.0, 0.0) expected=(0.0, 0.0, 0.0) tolerance=0.003000)
+PASS facing_away SPACE starts a visible target-independent strike
+PASS facing_away selects a valid neutral attack variant
+PASS facing_away owns no invalid target contact
+TARGET_FREE_STRIKE_VISIBLE context=facing_away started=true variant=right_punch pose_delta=2.91593408584595 root=(0.0, 0.0, 0.0)
+PASS facing_away strike reaches a visibly distinct articulated pose
+PASS facing_away strike causes no phantom guard damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS facing_away strike reports no phantom connected contact
+PASS facing_away strike preserves gameplay root (actual=(0.0, 0.0, 0.0) expected=(0.0, 0.0, 0.0) tolerance=0.003000)
+PASS post_defeat SPACE starts a visible target-independent strike
+PASS post_defeat selects a valid neutral attack variant
+PASS post_defeat owns no invalid target contact
+TARGET_FREE_STRIKE_VISIBLE context=post_defeat started=true variant=right_kick pose_delta=2.23775672912598 root=(0.0, 0.0, 0.0)
+PASS post_defeat strike reaches a visibly distinct articulated pose
+PASS post_defeat strike causes no phantom guard damage (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS post_defeat strike reports no phantom connected contact
+PASS post_defeat strike preserves gameplay root (actual=(0.0, 0.0, 0.0) expected=(0.0, 0.0, 0.0) tolerance=0.003000)
+PASS safe_perch SPACE starts a visible target-independent strike
+PASS safe_perch selects a valid neutral attack variant
+PASS safe_perch owns no invalid target contact
+TARGET_FREE_STRIKE_VISIBLE context=safe_perch started=true variant=right_kick pose_delta=2.23775672912598 root=(6.0, 3.04, -2.4)
+PASS safe_perch strike reaches a visibly distinct articulated pose
+PASS safe_perch strike causes no phantom guard damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS safe_perch strike reports no phantom connected contact
+PASS safe_perch strike preserves gameplay root (actual=(6.0, 3.04, -2.4) expected=(6.0, 3.04, -2.4) tolerance=0.003000)
+PASS safe-perch strike remains visibly supported on the perch
+PASS neutral SPACE sample 0 begins an action
+PASS neutral SPACE sample 0 remains target-free
+PASS neutral SPACE sample 0 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 0 remains a whiff
+PASS neutral SPACE sample 0 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 1 begins an action
+PASS neutral SPACE sample 1 remains target-free
+PASS neutral SPACE sample 1 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 1 remains a whiff
+PASS neutral SPACE sample 1 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 2 begins an action
+PASS neutral SPACE sample 2 remains target-free
+PASS neutral SPACE sample 2 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 2 remains a whiff
+PASS neutral SPACE sample 2 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 3 begins an action
+PASS neutral SPACE sample 3 remains target-free
+PASS neutral SPACE sample 3 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 3 remains a whiff
+PASS neutral SPACE sample 3 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 4 begins an action
+PASS neutral SPACE sample 4 remains target-free
+PASS neutral SPACE sample 4 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 4 remains a whiff
+PASS neutral SPACE sample 4 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 5 begins an action
+PASS neutral SPACE sample 5 remains target-free
+PASS neutral SPACE sample 5 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 5 remains a whiff
+PASS neutral SPACE sample 5 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 6 begins an action
+PASS neutral SPACE sample 6 remains target-free
+PASS neutral SPACE sample 6 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 6 remains a whiff
+PASS neutral SPACE sample 6 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 7 begins an action
+PASS neutral SPACE sample 7 remains target-free
+PASS neutral SPACE sample 7 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 7 remains a whiff
+PASS neutral SPACE sample 7 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 8 begins an action
+PASS neutral SPACE sample 8 remains target-free
+PASS neutral SPACE sample 8 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 8 remains a whiff
+PASS neutral SPACE sample 8 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 9 begins an action
+PASS neutral SPACE sample 9 remains target-free
+PASS neutral SPACE sample 9 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 9 remains a whiff
+PASS neutral SPACE sample 9 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 10 begins an action
+PASS neutral SPACE sample 10 remains target-free
+PASS neutral SPACE sample 10 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 10 remains a whiff
+PASS neutral SPACE sample 10 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 11 begins an action
+PASS neutral SPACE sample 11 remains target-free
+PASS neutral SPACE sample 11 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 11 remains a whiff
+PASS neutral SPACE sample 11 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 12 begins an action
+PASS neutral SPACE sample 12 remains target-free
+PASS neutral SPACE sample 12 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 12 remains a whiff
+PASS neutral SPACE sample 12 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 13 begins an action
+PASS neutral SPACE sample 13 remains target-free
+PASS neutral SPACE sample 13 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 13 remains a whiff
+PASS neutral SPACE sample 13 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 14 begins an action
+PASS neutral SPACE sample 14 remains target-free
+PASS neutral SPACE sample 14 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 14 remains a whiff
+PASS neutral SPACE sample 14 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 15 begins an action
+PASS neutral SPACE sample 15 remains target-free
+PASS neutral SPACE sample 15 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 15 remains a whiff
+PASS neutral SPACE sample 15 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 16 begins an action
+PASS neutral SPACE sample 16 remains target-free
+PASS neutral SPACE sample 16 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 16 remains a whiff
+PASS neutral SPACE sample 16 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 17 begins an action
+PASS neutral SPACE sample 17 remains target-free
+PASS neutral SPACE sample 17 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 17 remains a whiff
+PASS neutral SPACE sample 17 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 18 begins an action
+PASS neutral SPACE sample 18 remains target-free
+PASS neutral SPACE sample 18 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 18 remains a whiff
+PASS neutral SPACE sample 18 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 19 begins an action
+PASS neutral SPACE sample 19 remains target-free
+PASS neutral SPACE sample 19 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 19 remains a whiff
+PASS neutral SPACE sample 19 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 20 begins an action
+PASS neutral SPACE sample 20 remains target-free
+PASS neutral SPACE sample 20 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 20 remains a whiff
+PASS neutral SPACE sample 20 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 21 begins an action
+PASS neutral SPACE sample 21 remains target-free
+PASS neutral SPACE sample 21 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 21 remains a whiff
+PASS neutral SPACE sample 21 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 22 begins an action
+PASS neutral SPACE sample 22 remains target-free
+PASS neutral SPACE sample 22 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 22 remains a whiff
+PASS neutral SPACE sample 22 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 23 begins an action
+PASS neutral SPACE sample 23 remains target-free
+PASS neutral SPACE sample 23 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 23 remains a whiff
+PASS neutral SPACE sample 23 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 24 begins an action
+PASS neutral SPACE sample 24 remains target-free
+PASS neutral SPACE sample 24 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 24 remains a whiff
+PASS neutral SPACE sample 24 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 25 begins an action
+PASS neutral SPACE sample 25 remains target-free
+PASS neutral SPACE sample 25 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 25 remains a whiff
+PASS neutral SPACE sample 25 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 26 begins an action
+PASS neutral SPACE sample 26 remains target-free
+PASS neutral SPACE sample 26 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 26 remains a whiff
+PASS neutral SPACE sample 26 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 27 begins an action
+PASS neutral SPACE sample 27 remains target-free
+PASS neutral SPACE sample 27 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 27 remains a whiff
+PASS neutral SPACE sample 27 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 28 begins an action
+PASS neutral SPACE sample 28 remains target-free
+PASS neutral SPACE sample 28 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 28 remains a whiff
+PASS neutral SPACE sample 28 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 29 begins an action
+PASS neutral SPACE sample 29 remains target-free
+PASS neutral SPACE sample 29 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 29 remains a whiff
+PASS neutral SPACE sample 29 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 30 begins an action
+PASS neutral SPACE sample 30 remains target-free
+PASS neutral SPACE sample 30 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 30 remains a whiff
+PASS neutral SPACE sample 30 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE sample 31 begins an action
+PASS neutral SPACE sample 31 remains target-free
+PASS neutral SPACE sample 31 applies no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS neutral SPACE sample 31 remains a whiff
+PASS neutral SPACE sample 31 completes (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS neutral SPACE selection reaches right_punch
+PASS neutral SPACE selection reaches left_punch
+PASS neutral SPACE selection reaches left_kick
+PASS neutral SPACE selection reaches right_kick
+PASS neutral SPACE selection avoids immediate repeats
+PASS neutral variant sequence causes no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+TARGET_FREE_STRIKE_VARIETY seed=92841 counts={ &"left_kick": 11, &"right_punch": 10, &"right_kick": 5, &"left_punch": 6 } immediate_repeats=0
+PASS first buffered-sequence whiff causes no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS first target-free contact applies one whiff cost (actual=22.000000 expected=22.000000 tolerance=0.003000)
+PASS one SPACE press buffers during the final recovery tenth of a whiff
+PASS repeated late SPACE cannot stack beyond the one-slot whiff buffer
+TARGET_FREE_STRIKE_BUFFER first=left_punch second=right_punch followup_started=true timer=0.36
+PASS late whiff buffer starts exactly one target-free follow-up
+PASS buffered target-free follow-up uses a different neutral variant
+PASS buffered target-free follow-up owns no target
+PASS buffered startup causes no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS buffered whiff contact causes no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS buffered follow-up applies exactly one additional whiff cost (actual=14.000000 expected=14.000000 tolerance=0.003000)
+PASS one-slot whiff buffer cannot start a third action (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS completed whiff buffer clears queue and target ownership
+PASS complete buffered whiff sequence causes no phantom damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS interruption fixture owns one late whiff buffer
+PASS evade starts while interrupting target-free recovery
+PASS evade interruption clears strike timer (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS evade interruption clears pending contact
+PASS evade interruption clears buffered follow-up
+PASS evade interruption clears target ownership
+PASS evade-interrupted whiff cannot deal stale damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS interruption fixture owns one late whiff buffer
+PASS crouch starts while interrupting target-free recovery
+PASS crouch interruption clears strike timer (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS crouch interruption clears pending contact
+PASS crouch interruption clears buffered follow-up
+PASS crouch interruption clears target ownership
+PASS interruption fixture owns one late whiff buffer
+PASS jump preparation starts while interrupting target-free recovery
+PASS jump interruption clears strike timer (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS jump interruption clears pending contact
+PASS jump interruption clears buffered follow-up
+PASS jump interruption clears target ownership
+PASS interruption fixture owns one late whiff buffer
+PASS grapple starts while interrupting target-free recovery
+PASS grapple interruption clears strike timer (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS grapple interruption clears pending contact
+PASS grapple interruption clears buffered follow-up
+PASS grapple interruption clears target ownership
+PASS interruption fixture owns one late whiff buffer
+PASS takedown starts while interrupting target-free recovery
+PASS takedown interruption clears strike timer (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS takedown interruption clears pending contact
+PASS takedown interruption clears buffered follow-up
+PASS takedown interruption clears target ownership
+PASS interruption fixture owns one late whiff buffer
+PASS hurt presentation starts during target-free recovery
+PASS hurt interruption clears strike timer (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS hurt interruption clears pending contact
+PASS hurt interruption clears buffered follow-up
+PASS hurt interruption clears target ownership
+PASS hurt-interrupted whiff cannot deal stale damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+PASS interruption fixture owns one late whiff buffer
+PASS reset interruption clears strike timer (actual=0.000000 expected=0.000000 tolerance=0.003000)
+PASS reset interruption clears pending contact
+PASS reset interruption clears buffered follow-up
+PASS reset interruption clears target ownership
+PASS reset-interrupted whiff cannot deal stale damage (actual=100.000000 expected=100.000000 tolerance=0.003000)
+TARGET_INDEPENDENT_STRIKE_OK checks=254 failures=0

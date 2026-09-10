@@ -20,6 +20,7 @@ Read relevant rationale when changing a rule, rather than replaying the whole lo
 | D-20260908-REVIEW | Frozen review before wider regression | Active: matched scenario, full identity and disclosed helpers; numerical pass cannot grant user visual acceptance. |
 | D-20260908-PRESERVE | Source control and selective preservation | Active: current source in private Git, selected milestones in private archives, raw local evidence protected by verified retention. |
 | D-20260908-BOARD | One task source and distinct gates | Active: board generated from roadmap data; board UI blocker tracked separately from runtime and user acceptance. |
+| D-20260910-JUMP | Grounded jump phrase and movement-dependent takeoff | Active: stationary lift versus moving split-leg jump, with gentle air control and grounded preparation/impact; contextual vault preserved. |
 <!-- decision-index:end -->
 
 ## Preserved dated rationale
@@ -345,3 +346,21 @@ manual copying of task statuses into HTML and coupling the same board-browser
 blocker to multiple completed runtime fixes. Runtime completion, user acceptance
 and board UI verification remain independent facts; the overall board handoff is
 still incomplete until its rendered UI checks can actually run.
+
+## 2026-09-10 — Standing and moving jump phrases (Active)
+
+ID: `D-20260910-JUMP`. The user requested grounded pre-jump knee flexion, leg
+extension in the air and a grounded landing catch, then revised the movement
+policy: stationary jumps go straight up/down while jumps begun during actual
+movement carry that direction with the earlier split-leg character. This
+supersedes unconditional2.2-unit forward free jumps and the interim policy that
+also removed moving-jump travel. Retain a small held WASD air adjustment, with no
+extra forward stacking when the original movement key remains held. Alternate the
+leading leg per successful free jump. Keep the dedicated barrier vault intact.
+
+The controller owns grounded preparation, airborne travel, impact recovery,
+collision and action exclusion. Put these now-distinct pose curves in the bounded
+`actors/player_jump_motion.gd` resource, with the existing builder/adapter applying
+presentation and floor contact. This is a narrow organization step, not a general
+animation framework. Preserve the frozen assets, ground controls, prior evidence
+and V1 default; normal-renderer and native evidence do not replace user feel.

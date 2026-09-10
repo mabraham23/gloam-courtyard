@@ -54,9 +54,14 @@ const CROUCH_MOVE_SPEED := 1.178
 const LOW_PASSAGE_MIN := Vector2(-9.0, 3.15)
 const LOW_PASSAGE_MAX := Vector2(-7.0, 4.45)
 const LOW_PASSAGE_CLEARANCE := 2.0
-const JUMP_DURATION := 0.62
+const JUMP_PREPARE_DURATION := 0.12
+const JUMP_FLIGHT_DURATION := 0.62
+const JUMP_LAND_DURATION := 0.20
+const JUMP_DURATION := JUMP_PREPARE_DURATION + JUMP_FLIGHT_DURATION + JUMP_LAND_DURATION
+const JUMP_MOVING_DISTANCE := 2.2
 const JUMP_HEIGHT := 1.35
-const JUMP_DISTANCE := 2.2
+const JUMP_AIR_SPEED := 1.40
+const VAULT_DISTANCE := 2.2
 const VAULT_DURATION := 0.48
 const VAULT_HEIGHT := 1.05
 const VAULT_OBSTACLE_CENTER := Vector3(5.0, 0.42, 3.9)
@@ -114,6 +119,9 @@ var jump_duration := JUMP_DURATION
 var jump_height := JUMP_HEIGHT
 var jump_start := Vector3.ZERO
 var jump_end := Vector3.ZERO
+var jump_lead := -1.0
+var jump_moving := false
+var jump_direction := Vector3.ZERO
 var success := false
 var player_scale := 1.0
 var outfit_index := 0
@@ -535,6 +543,9 @@ func reset_game() -> void:
 	jump_height = JUMP_HEIGHT
 	jump_start = Vector3.ZERO
 	jump_end = Vector3.ZERO
+	jump_lead = -1.0
+	jump_moving = false
+	jump_direction = Vector3.ZERO
 	impact_flash_timer = 0.0
 	counter_flash_timer = 0.0
 	player_root.rotation = Vector3.ZERO
@@ -639,10 +650,41 @@ func move_player(delta: float) -> void:
 			set_message("LANDED: elevated perch.", 1.6)
 		return
 	if jump_active:
+		var previous_elapsed := jump_t * jump_duration
 		jump_t = minf(jump_t + delta / jump_duration, 1.0)
-		var horizontal_progress := smoothstep(0.0, 1.0, jump_t)
-		player_root.position = jump_start.lerp(jump_end, horizontal_progress)
-		player_root.position.y = lerpf(jump_start.y, jump_end.y, horizontal_progress) + sin(jump_t * PI) * jump_height
+		var elapsed := jump_t * jump_duration
+		if jump_is_vault:
+			var travel := smoothstep(0.0, 1.0, jump_t)
+			player_root.position = jump_start.lerp(jump_end, travel)
+			player_root.position.y = sin(jump_t * PI) * jump_height
+		else:
+			# Integrate only the airborne portion, including frames crossing launch
+			# or touchdown. The gather and impact crouch happen on the actual floor.
+			var flight_end := JUMP_PREPARE_DURATION + JUMP_FLIGHT_DURATION
+			var air_delta := maxf(0.0, minf(elapsed, flight_end) - maxf(previous_elapsed, JUMP_PREPARE_DURATION))
+			var flight_t := clampf((elapsed - JUMP_PREPARE_DURATION) / JUMP_FLIGHT_DURATION, 0.0, 1.0)
+			var input := get_move_input()
+			var steering := camera.global_transform.basis.x * input.x - camera.global_transform.basis.z * input.y
+			steering.y = 0.0
+			if steering.length() > 0.01:
+				steering = steering.normalized()
+			if jump_moving:
+				# Keeping the original movement key held does not stack another
+				# forward impulse. Sideways input steers; opposing input can brake.
+				steering -= jump_direction * maxf(steering.dot(jump_direction), 0.0)
+			var travel := steering * JUMP_AIR_SPEED * air_delta
+			if jump_moving:
+				travel += jump_direction * (JUMP_MOVING_DISTANCE / JUMP_FLIGHT_DURATION) * air_delta
+			if travel.length() > 0.00001:
+				move_player_world(travel.normalized(), travel.length())
+			if jump_moving:
+				player_facing_yaw = atan2(jump_direction.x, jump_direction.z)
+			jump_end = Vector3(player_root.position.x, 0.0, player_root.position.z)
+			player_root.position.y = 4.0 * flight_t * (1.0 - flight_t) * jump_height
+			player_airborne = elapsed > JUMP_PREPARE_DURATION and elapsed < flight_end
+			if elapsed >= flight_end and not guard_defeated and actors_share_level(0.0, guard_root.position.y):
+				player_root.position = resolve_actor_separation(player_root.position, jump_start, guard_root.position, minimum_actor_separation())
+				jump_end = player_root.position
 		if jump_t >= 1.0:
 			jump_active = false
 			player_airborne = false
@@ -704,10 +746,20 @@ func move_player_world(direction: Vector3, distance: float) -> void:
 	var candidate := player_root.position + direction * distance
 	candidate.x = clampf(candidate.x, -9.1, 9.1)
 	candidate.z = clampf(candidate.z, -5.2, 5.2)
-	if not crouching and is_in_low_passage(candidate) and not is_in_low_passage(previous_position):
+	var clearance_candidate := candidate
+	var clearance_previous := previous_position
+	if jump_active and not jump_is_vault:
+		# Reserve safe floor beneath a free jump so steering at the apex cannot
+		# enter the lintel or strand the landing inside the dedicated vault wall.
+		clearance_candidate.y = 0.0
+		clearance_previous.y = 0.0
+	if not crouching and is_in_low_passage(clearance_candidate) and not is_in_low_passage(clearance_previous):
 		candidate = previous_position
 		set_message("LOW CLEARANCE: Q to crouch before entering.", 1.2)
-	if not jump_active and is_inside_vault_obstacle(candidate) and not is_inside_vault_obstacle(previous_position):
+	var crosses_barrier := is_inside_vault_obstacle(clearance_candidate) and not is_inside_vault_obstacle(clearance_previous)
+	if jump_active and not jump_is_vault:
+		crosses_barrier = path_intersects_vault_obstacle(clearance_previous, clearance_candidate)
+	if (not jump_active or not jump_is_vault) and crosses_barrier:
 		candidate = previous_position
 		set_message("LOW BARRIER: V to vault or route around.", 1.2)
 	if not guard_defeated and actors_share_level(candidate.y, guard_root.position.y):
@@ -855,7 +907,7 @@ func update_character_poses(delta: float) -> void:
 	# left a full run pose playing after the gameplay root had stopped. Drive the
 	# captured gait from actual displacement in this frame instead.
 	var has_locomotion := player_moved_this_frame if anatomical_motion else player_move_timer > 0.0
-	var player_target := 1.0 if has_locomotion and not grapple_active and not player_airborne else 0.0
+	var player_target := 1.0 if has_locomotion and not grapple_active and not player_airborne and not jump_active else 0.0
 	var player_was_stationary := player_move_blend <= 0.001
 	var blend_rate := 12.0 if anatomical_motion else 7.5
 	player_move_blend = move_toward(player_move_blend, player_target, delta * blend_rate)
@@ -884,6 +936,16 @@ func update_character_poses(delta: float) -> void:
 	elif jump_active:
 		player_pose = &"vault" if jump_is_vault else &"jump"
 		player_pose_progress = jump_t
+		if not jump_is_vault:
+			var elapsed := jump_t * jump_duration
+			if elapsed < JUMP_PREPARE_DURATION:
+				player_pose = &"jump_prepare"
+				player_pose_progress = elapsed / JUMP_PREPARE_DURATION
+			elif elapsed < JUMP_PREPARE_DURATION + JUMP_FLIGHT_DURATION:
+				player_pose_progress = (elapsed - JUMP_PREPARE_DURATION) / JUMP_FLIGHT_DURATION
+			else:
+				player_pose = &"jump_land"
+				player_pose_progress = (elapsed - JUMP_PREPARE_DURATION - JUMP_FLIGHT_DURATION) / JUMP_LAND_DURATION
 	elif invulnerable > 0.0:
 		player_pose = &"evade"
 		player_pose_progress = 1.0 - invulnerable / EVADE_INVULNERABILITY_DURATION
@@ -906,7 +968,7 @@ func update_character_poses(delta: float) -> void:
 		# Collision grants low clearance immediately. Constrain the visual to the
 		# measured low pose inside the lintel; retain natural easing in open space.
 		player_pose_delta = 1.0
-	CharacterVisualBuilder.pose_player(player_visual_parts, player_step_phase, player_move_blend, player_pose_delta, player_pose, player_pose_progress, player_attack_variant, player_run_blend)
+	CharacterVisualBuilder.pose_player(player_visual_parts, player_step_phase, player_move_blend, player_pose_delta, player_pose, player_pose_progress, player_attack_variant, player_run_blend, jump_lead, jump_moving)
 
 	var guard_target := 1.0 if guard_is_moving else 0.0
 	guard_move_blend = move_toward(guard_move_blend, guard_target, delta * 6.5)
@@ -1017,7 +1079,7 @@ func strike() -> void:
 		if player_strike_timer <= PLAYER_ATTACK_BUFFER_WINDOW and not player_strike_pending:
 			player_attack_buffered = true
 		return
-	if success or player_health <= 0.0 or player_takedown_timer > 0.0 or invulnerable > 0.0 or grapple_active or player_airborne or player_counter_timer > 0.0 or player_hurt_timer > 0.0:
+	if success or player_health <= 0.0 or player_takedown_timer > 0.0 or invulnerable > 0.0 or grapple_active or player_airborne or jump_active or player_counter_timer > 0.0 or player_hurt_timer > 0.0:
 		return
 	if crouching and is_in_low_passage(player_root.position):
 		set_message("LOW CLEARANCE: leave the passage before striking.", 1.2)
@@ -1115,7 +1177,7 @@ func update_player_actions(delta: float) -> void:
 		var chain_requested := player_attack_buffered
 		player_attack_buffered = false
 		player_attack_target_locked = false
-		if chain_requested and not success and player_health > 0.0 and player_takedown_timer <= 0.0 and invulnerable <= 0.0 and not grapple_active and not player_airborne and player_counter_timer <= 0.0 and player_hurt_timer <= 0.0:
+		if chain_requested and not success and player_health > 0.0 and player_takedown_timer <= 0.0 and invulnerable <= 0.0 and not grapple_active and not player_airborne and not jump_active and player_counter_timer <= 0.0 and player_hurt_timer <= 0.0:
 			_begin_strike()
 	player_takedown_timer = maxf(player_takedown_timer - delta, 0.0)
 	if player_takedown_pending and player_takedown_timer <= PLAYER_TAKEDOWN_DURATION - PLAYER_TAKEDOWN_CONTACT:
@@ -1176,7 +1238,7 @@ func _attack_target_context_valid(maximum_range: float) -> bool:
 	return not path_intersects_vault_obstacle(player_root.position, guard_root.position)
 
 func counter() -> void:
-	if success or player_health <= 0.0 or attack_timer <= 0.0 or guard_defeated or player_takedown_timer > 0.0 or invulnerable > 0.0 or grapple_active or player_airborne:
+	if success or player_health <= 0.0 or attack_timer <= 0.0 or guard_defeated or player_takedown_timer > 0.0 or invulnerable > 0.0 or grapple_active or player_airborne or jump_active:
 		return
 	player_counter_timer = PLAYER_COUNTER_DURATION
 	cancel_strike()
@@ -1200,7 +1262,7 @@ func counter() -> void:
 		defeat_guard("Guard down. Reach the violet gate.")
 
 func evade() -> void:
-	if success or player_health <= 0.0 or invulnerable > 0.0 or player_takedown_timer > 0.0 or grapple_active or player_airborne:
+	if success or player_health <= 0.0 or invulnerable > 0.0 or player_takedown_timer > 0.0 or grapple_active or player_airborne or jump_active:
 		return
 	if crouching and is_in_low_passage(player_root.position):
 		set_message("LOW CLEARANCE: leave the passage before evading.", 1.2)
@@ -1230,7 +1292,7 @@ func toggle_crouch() -> void:
 		crouching = false
 		set_message("CROUCH EXIT: full height restored.", 0.9)
 		return
-	if grapple_active or player_airborne or evade_timer > 0.0:
+	if grapple_active or player_airborne or jump_active or evade_timer > 0.0:
 		set_message("CROUCH UNAVAILABLE during traversal.", 1.0)
 		return
 	crouching = true
@@ -1255,30 +1317,40 @@ func jump_or_vault() -> void:
 	if direction.length() <= 0.01:
 		direction = Vector3(sin(player_facing_yaw), 0.0, cos(player_facing_yaw))
 	direction = direction.normalized()
-	var candidate_end := player_root.position + direction * JUMP_DISTANCE
+	var candidate_end := player_root.position + direction * VAULT_DISTANCE
 	candidate_end.x = clampf(candidate_end.x, -9.1, 9.1)
 	candidate_end.z = clampf(candidate_end.z, -5.2, 5.2)
-	if is_in_low_passage(candidate_end):
+	var vaulting := path_intersects_vault_obstacle(player_root.position, candidate_end)
+	if vaulting and is_in_low_passage(candidate_end):
 		set_message("LOW CLEARANCE: jump route is obstructed.", 1.2)
 		return
-	if candidate_end.distance_to(player_root.position) < 0.75:
+	if vaulting and (candidate_end.distance_to(player_root.position) < 0.75 or is_inside_vault_obstacle(candidate_end)):
 		set_message("JUMP BLOCKED: not enough landing room.", 1.0)
 		return
 	jump_start = player_root.position
+	# A held key alone is insufficient: the preceding controller frame must
+	# actually have moved. Stationary/blocked presses therefore lift in place.
+	jump_moving = not vaulting and get_move_input().length() > 0.01 and player_moved_this_frame
+	jump_direction = last_travel_direction.normalized() if jump_moving else Vector3.ZERO
 	cancel_strike()
-	jump_end = candidate_end
+	jump_end = candidate_end if vaulting else jump_start
 	jump_end.y = 0.0
-	jump_is_vault = path_intersects_vault_obstacle(jump_start, jump_end)
+	jump_is_vault = vaulting
+	if not vaulting:
+		jump_lead = -jump_lead
 	jump_duration = VAULT_DURATION if jump_is_vault else JUMP_DURATION
 	jump_height = VAULT_HEIGHT if jump_is_vault else JUMP_HEIGHT
 	jump_t = 0.0
 	jump_active = true
-	player_airborne = true
-	player_facing_yaw = atan2(direction.x, direction.z)
-	set_message("VAULT: %.2fs, %.2f-unit apex." % [jump_duration, jump_height] if jump_is_vault else "JUMP: %.2fs, %.2f-unit apex." % [jump_duration, jump_height], 1.2)
+	player_airborne = vaulting
+	if vaulting:
+		player_facing_yaw = atan2(direction.x, direction.z)
+	player_root.rotation.x = 0.0
+	player_root.rotation.z = 0.0
+	set_message("VAULT: %.2fs, %.2f-unit apex." % [jump_duration, jump_height] if jump_is_vault else ("MOVING JUMP: carry takeoff direction; WASD adjusts in air." if jump_moving else "STANDING JUMP: gather, rise and absorb; WASD adjusts in air."), 1.2)
 
 func stealth_takedown() -> void:
-	if success or player_health <= 0.0 or guard_defeated or player_takedown_timer > 0.0 or invulnerable > 0.0 or grapple_active or player_airborne:
+	if success or player_health <= 0.0 or guard_defeated or player_takedown_timer > 0.0 or invulnerable > 0.0 or grapple_active or player_airborne or jump_active:
 		return
 	var to_player := player_root.position - guard_root.position
 	to_player.y = 0.0

@@ -1,0 +1,29 @@
+{
+  "title": "Gloam Courtyard Spike (DEBUG)",
+  "pid": 44250,
+  "source_sha256": "c9e551cb87cb203fe0b963aa3a29e658cb71e3a345910acea91faaf91f84a4bc",
+  "ordinary_native_keys": [
+    "R",
+    "0",
+    "V",
+    "F12",
+    "C",
+    "Space",
+    "Q"
+  ],
+  "standing_jump_native": true,
+  "moving_jump_native": false,
+  "moving_jump_evidence": "Fixed-step real-controller normal-renderer fixture; no native held-input capability was used.",
+  "second_jump_lead": -1,
+  "reset_verified": true,
+  "window_left_open": true,
+  "captures": {
+    "prepare": "captures/review_c9e551cb87cb_44250_43408711.json",
+    "apex": "captures/review_c9e551cb87cb_44250_75138133.json",
+    "absorb": "captures/review_c9e551cb87cb_44250_75823565.json",
+    "evade": "captures/review_c9e551cb87cb_44250_101953922.json",
+    "strike": "captures/review_c9e551cb87cb_44250_102205831.json",
+    "crouch": "captures/review_c9e551cb87cb_44250_115754268.json",
+    "reset": "captures/review_c9e551cb87cb_44250_148631734.json"
+  }
+}

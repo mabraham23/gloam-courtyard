@@ -1,0 +1,22 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+JUMP_DEFORMATION_SOURCE sha=30a2c06be42351252dada7f791619499c28e160af59455c7fa332bfad1070b0b
+JUMP_DEFORMATION_CASE preset=small fps=30 variant=0 frames=38 ground_sole_min=-0.00000004470348 max=0.01735345646739
+JUMP_DEFORMATION_CASE preset=small fps=30 variant=1 frames=38 ground_sole_min=-0.00010508741252 max=0.01735026203096
+JUMP_DEFORMATION_CASE preset=small fps=30 variant=-1 frames=38 ground_sole_min=-0.00010508741252 max=0.01737137697637
+JUMP_DEFORMATION_CASE preset=small fps=60 variant=0 frames=75 ground_sole_min=-0.000000057742 max=0.02262791618705
+JUMP_DEFORMATION_CASE preset=small fps=60 variant=1 frames=75 ground_sole_min=-0.00000002980232 max=0.02195804566145
+JUMP_DEFORMATION_CASE preset=small fps=60 variant=-1 frames=75 ground_sole_min=-0.00000002980232 max=0.02208458632231
+JUMP_DEFORMATION_CASE preset=medium fps=30 variant=0 frames=38 ground_sole_min=-0.00000003166497 max=0.01971993409097
+JUMP_DEFORMATION_CASE preset=medium fps=30 variant=1 frames=38 ground_sole_min=-0.00011942489073 max=0.01971630007029
+JUMP_DEFORMATION_CASE preset=medium fps=30 variant=-1 frames=38 ground_sole_min=-0.00011942489073 max=0.01974029652774
+JUMP_DEFORMATION_CASE preset=medium fps=60 variant=0 frames=75 ground_sole_min=-0.00000006332994 max=0.02571354620159
+JUMP_DEFORMATION_CASE preset=medium fps=60 variant=1 frames=75 ground_sole_min=-0.00000005587935 max=0.02495236881077
+JUMP_DEFORMATION_CASE preset=medium fps=60 variant=-1 frames=75 ground_sole_min=-0.00000005587935 max=0.02509616501629
+JUMP_DEFORMATION_CASE preset=large fps=30 variant=0 frames=38 ground_sole_min=-0.00000003399327 max=0.02287502959371
+JUMP_DEFORMATION_CASE preset=large fps=30 variant=1 frames=38 ground_sole_min=-0.00013846857473 max=0.02287081629038
+JUMP_DEFORMATION_CASE preset=large fps=30 variant=-1 frames=38 ground_sole_min=-0.00013846857473 max=0.02289864979684
+JUMP_DEFORMATION_CASE preset=large fps=60 variant=0 frames=75 ground_sole_min=-0.00000005215406 max=0.02982768416405
+JUMP_DEFORMATION_CASE preset=large fps=60 variant=1 frames=75 ground_sole_min=-0.00000004470348 max=0.02894472330809
+JUMP_DEFORMATION_CASE preset=large fps=60 variant=-1 frames=75 ground_sole_min=-0.00000004097819 max=0.02911152690649
+GLOAM_CHARACTER_ART_DEFORMATION_OK checks=5598 failures=0 max_vertices=49315

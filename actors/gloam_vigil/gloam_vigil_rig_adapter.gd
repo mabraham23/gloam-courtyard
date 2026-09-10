@@ -1149,7 +1149,7 @@ static func _update_foot_contact(
 		return
 	var imported_root := rig["imported_root"] as Node3D
 	var skeleton := rig["skeleton"] as Skeleton3D
-	var grounded := pose_state in [&"grounded", &"crouch", &"strike", &"counter", &"takedown", &"grapple_recover"]
+	var grounded := pose_state in [&"jump_prepare", &"jump_land", &"grounded", &"crouch", &"strike", &"counter", &"takedown", &"grapple_recover"]
 	if pose_state == &"evade":
 		# Sole contact applies at takeoff/landing, never while the roll is inverted.
 		var roll: float = (drivers["action_root"] as Node3D).rotation.x

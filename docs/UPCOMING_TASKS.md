@@ -6,8 +6,10 @@ edit this file, then run `python3 work/generate_project_roadmap_local.py`.
 
 ## Immediate review
 
-The realism owner has completed the grounded leg correction. Review the current
-R14 appearance, continuous held movement and paired takedown; V1 remains default.
+The standing/moving jump pass is technically verified and open for user review.
+Play stationary V, held WASD then V, repeated moving jumps and landing back into
+held movement. R14 appearance, continuous held gait and paired takedown also keep
+their existing acceptance gates; V1 remains default.
 The next default switch depends on user acceptance, not on more numerical counts.
 Source flight/contact polish and an authored hair/groom pass require bounded
 follow-up scope if the user rejects the corresponding visual result.
@@ -29,8 +31,24 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
 ```json
 {
   "schema": 1,
-  "summary": "R14 user review pending; V1 default. Board UI gate is separate.",
+  "summary": "Standing/moving jump ready for user review; R14 candidate, V1 default. Board UI gate separate.",
   "tasks": [
+    {
+      "id": "vertical-jump",
+      "lane": "waiting",
+      "area": "Animation",
+      "title": "Standing/moving jumps \u00b7 user movement review",
+      "effort": "M",
+      "parallel": "Runtime and native standing-jump smoke passed",
+      "dependency": "User judgement of gather, moving split and impact recovery",
+      "owner": "Current jump refinement task",
+      "evidence": "Default309/candidate311 mechanics; full-mesh5598, landing1302, transitions67, whiffs254; matched motion and native standing V/F12. Sourcec9e551cb87cb, PID44250.",
+      "description": "Grounded gather, extended standing flight, directional moving split with alternating lead, and grounded impact recovery. Gentle air control remains; contextual vault preserved. Held moving native feel awaits user review.",
+      "evidence_paths": [
+        "evidence/2026-09-10-jump-motion/README.md",
+        "docs/CHECKPOINTS.md"
+      ]
+    },
     {
       "id": "action-readability",
       "lane": "waiting",
@@ -86,7 +104,7 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
       "dependency": "User held movement and action feel",
       "owner": "Character realism owner: rig, controller, native handoff",
       "evidence": "Full-cycle six cases, stance365, mechanics200/202, deformation21642; report2026-09-08-r14-leg-tracking.md. Ankle mean/max0.239/0.249 authored units.",
-      "description": "Grounded ankle lanes now follow hip span and knees track forward. Root speed remains4.80; Shift is inert; crouch1.178. Flight, sliding and wider action stance remain polish limits. No new performance certificate after the solver change.",
+      "description": "Grounded ankle lanes now follow hip span and knees track forward. Root speed remains4.80; Shift is inert; crouch1.178. Standing/moving jump refinement is tracked separately; gait flight, sliding and wider action stance remain polish limits. No new performance certificate after the solver change.",
       "evidence_paths": [
         "docs/CHECKPOINTS.md"
       ]

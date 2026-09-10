@@ -26,7 +26,7 @@ const ACTIONS := [
 	{"state": &"evade", "duration": 0.42, "contact": -1.0},
 	{"state": &"grapple", "duration": 0.32, "contact": -1.0},
 	{"state": &"grapple_recover", "duration": 0.32, "contact": -1.0},
-	{"state": &"jump", "duration": 0.62, "contact": -1.0},
+	{"state": &"jump", "duration": 0.94, "contact": -1.0},
 	{"state": &"vault", "duration": 0.48, "contact": -1.0},
 	{"state": &"counter", "duration": 0.44, "contact": -1.0},
 	{"state": &"fall", "duration": 0.50, "contact": -1.0},
@@ -73,7 +73,7 @@ func _run() -> void:
 		# Fast full-mesh landing-clearance check while tuning the flight phrase.
 		# The default command still covers every action at both sample rates.
 		for preset in BODY_PRESETS:
-			await _run_action_case(String(preset[0]), float(preset[1]), 60, &"jump", 0.62)
+			await _run_action_case(String(preset[0]), float(preset[1]), 60, &"jump", 0.94)
 		_finish()
 		return
 	if "--locomotion-only" in OS.get_cmdline_user_args():
@@ -315,9 +315,19 @@ func _sample_action(
 		# Traverse the same vertical actor path as main_3d.gd. Pose-only sampling at
 		# floor height incorrectly classifies airborne feet/cape as floor strikes.
 		var pose_progress := progress
+		var frame_state := state
 		match state:
 			&"jump":
-				actor.position.y = actor_reference.origin.y + sin(progress * PI) * 1.35
+				var flight_t := clampf((elapsed - 0.12) / 0.62, 0.0, 1.0)
+				actor.position.y = actor_reference.origin.y + 4.0 * flight_t * (1.0 - flight_t) * 1.35
+				if elapsed < 0.12:
+					frame_state = &"jump_prepare"
+					pose_progress = elapsed / 0.12
+				elif elapsed < 0.74:
+					pose_progress = flight_t
+				else:
+					frame_state = &"jump_land"
+					pose_progress = (elapsed - 0.74) / 0.20
 			&"vault":
 				actor.position.y = actor_reference.origin.y + sin(progress * PI) * 1.05
 			&"grapple":
@@ -332,7 +342,7 @@ func _sample_action(
 			_:
 				actor.position.y = actor_reference.origin.y
 		var expected_actor_transform := actor.transform
-		Builder.pose_player(parts, 0.0, 0.0, delta, state, pose_progress, attack_variant)
+		Builder.pose_player(parts, 0.0, 0.0, delta, frame_state, pose_progress, attack_variant)
 		_check(_transform_close(actor.transform, expected_actor_transform), "%s %dhz %s frame %d leaves gameplay actor to controller" % [preset_label, fps, state, frame])
 		var sample := _bounds(host, skeleton, cache)
 		_validate_frame(sample, expected_vertices, "%s %dhz %s frame %d" % [preset_label, fps, state, frame], true)

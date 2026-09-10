@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+GLOAM_CHARACTER_ART_LANDING_SOURCE sha256=30a2c06be42351252dada7f791619499c28e160af59455c7fa332bfad1070b0b
+GLOAM_CHARACTER_ART_ACTION preset=small fps=60 state=jump variant= frames=56 min_y=-0.00000006146729 max_y=3.92995166778564 lowest={ "mesh": &"GV2_Body", "surface": "MAT_GV2_Gear", "vertex": 5807, "point": (-0.255764, -0.0, 0.174173), "source": (-0.21564, 0.012, 0.216465), "skinned": (-0.215639, 0.009623, 0.14661), "owners": ["toe.L:1.00"] }
+GLOAM_CHARACTER_ART_ACTION preset=medium fps=60 state=jump variant= frames=56 min_y=-0.00000005960464 max_y=4.28178453445435 lowest={ "mesh": &"GV2_Body", "surface": "MAT_GV2_Gear", "vertex": 5807, "point": (-0.291113, -0.0, 0.162136), "source": (-0.21564, 0.012, 0.216465), "skinned": (-0.215639, 0.029628, 0.120101), "owners": ["toe.L:1.00"] }
+GLOAM_CHARACTER_ART_ACTION preset=large fps=60 state=jump variant= frames=56 min_y=-0.00000004470348 max_y=4.75089550018311 lowest={ "mesh": &"GV2_Body", "surface": "MAT_GV2_Gear", "vertex": 5807, "point": (-0.337314, -0.0, 0.207128), "source": (-0.21564, 0.012, 0.216465), "skinned": (-0.215639, 0.01831, 0.132266), "owners": ["toe.L:1.00"] }
+GLOAM_CHARACTER_ART_DEFORMATION_OK checks=1302 failures=0 max_vertices=49315

@@ -7,6 +7,8 @@ extends RefCounted
 ## rig adapter; the accepted procedural player remains below as a preserved
 ## reference, and the courtyard guard remains procedural.
 
+const PlayerJumpMotion = preload("res://actors/player_jump_motion.gd")
+
 const GloamVigilRigAdapter = preload("res://actors/gloam_vigil/gloam_vigil_rig_adapter.gd")
 const R7WalkReference = preload("res://actors/gloam_vigil/v4/motion/cmu_walk_reference.gd")
 const R7RunReference = preload("res://actors/gloam_vigil/v4/motion/cmu_run_reference.gd")
@@ -380,7 +382,7 @@ static func build_guard(parent: Node3D) -> Dictionary:
 	}
 
 
-static func pose_player(parts: Dictionary, phase: float, movement_amount: float, delta: float, pose_state: StringName = &"grounded", pose_progress := 0.0, attack_variant: StringName = &"right_punch", run_amount := 0.0) -> void:
+static func pose_player(parts: Dictionary, phase: float, movement_amount: float, delta: float, pose_state: StringName = &"grounded", pose_progress := 0.0, attack_variant: StringName = &"right_punch", run_amount := 0.0, jump_lead := 1.0, jump_moving := false) -> void:
 	var anatomical_profile := parts.has("authored_rig") and bool(parts["authored_rig"].get("anatomical_profile", false))
 	var movement := smoothstep(0.0, 1.0, clampf(movement_amount, 0.0, 1.0))
 	var gait := sin(phase)
@@ -604,7 +606,34 @@ static func pose_player(parts: Dictionary, phase: float, movement_amount: float,
 		core_response_scale = 0.88
 		cloth_response_scale = 0.72
 		action_response_scale = 0.78
-	elif pose_state == &"jump" or pose_state == &"vault":
+	elif pose_state in [&"jump_prepare", &"jump", &"jump_land"]:
+		var jump := PlayerJumpMotion.sample(pose_state, pose_progress, jump_moving, jump_lead)
+		left_leg_target = jump.thigh.x
+		right_leg_target = jump.thigh.y
+		left_knee_target = jump.knee.x
+		right_knee_target = jump.knee.y
+		left_ankle_target = jump.ankle
+		right_ankle_target = jump.ankle
+		left_arm_target = jump.arm.x
+		right_arm_target = jump.arm.y
+		left_arm_yaw = -0.06
+		right_arm_yaw = 0.06
+		left_arm_roll = -jump.arm_spread
+		right_arm_roll = jump.arm_spread
+		left_elbow_target = jump.elbow.x
+		right_elbow_target = jump.elbow.y
+		rise_target = jump.rise
+		sway_target = 0.0
+		forward_target = 0.0
+		pelvis_rotation = Vector3(jump.pelvis, 0.0, 0.0)
+		torso_rotation = Vector3(jump.torso, 0.0, 0.0)
+		head_rotation = Vector3(jump.head, 0.0, 0.0)
+		left_tail_target = jump.tail
+		right_tail_target = jump.tail
+		limb_response_scale = 1.65
+		core_response_scale = 1.7
+		cloth_response_scale = 0.90
+	elif pose_state == &"vault":
 		var air_progress := clampf(float(pose_progress), 0.0, 1.0)
 		var takeoff_release := smoothstep(0.06, 0.24, air_progress)
 		var flight := smoothstep(0.08, 0.30, air_progress) * (1.0 - smoothstep(0.66, 0.92, air_progress))

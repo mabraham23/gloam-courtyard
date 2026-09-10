@@ -16,7 +16,7 @@ func _run() -> void:
 		await process_frame
 		var cache := _cache_surfaces(rig, skeleton)
 		_sample_action(host, actor, parts, rig, skeleton, cache["surfaces"], String(preset[0]), 60,
-			&"jump", 0.62, -1.0, int(cache["vertex_count"]), actor.transform, {"hands": 0.0, "cape": 0.0})
+			&"jump", 0.94, -1.0, int(cache["vertex_count"]), actor.transform, {"hands": 0.0, "cape": 0.0})
 		Candidate.clear_material_overrides(parts)
 		host.queue_free()
 		await process_frame

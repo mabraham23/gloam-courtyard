@@ -21,6 +21,16 @@ import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
 SCENARIOS = {
+    'jumps': {'script': 'work/action-quality/jump_sequence.gd', 'frames': 240,
+              'footer': 'JUMP_SEQUENCE_OK', 'args': [],
+              'keyframes': [17, 19, 27, 37, 39, 47, 103, 152, 201],
+              'question': 'Do grounded gather and impact absorption frame distinct standing and moving jumps with alternating legs?',
+              'helpers': 'Fixed 30 Hz controller; scripted V and held WASD; guard moved away; static three-quarter camera; labels hidden.'},
+    'jumps-gameplay': {'script': 'work/action-quality/jump_sequence.gd', 'frames': 240,
+                       'footer': 'JUMP_SEQUENCE_OK', 'args': ['--gameplay'],
+                       'keyframes': [17, 19, 27, 37, 39, 47, 103, 152, 201],
+                       'question': 'Does vertical jumping and gentle air steering read at the default gameplay scale?',
+                       'helpers': 'Same fixed-step jump fixture; default gameplay camera; guard moved away; labels hidden.'},
     'locomotion': {'script': 'work/action-quality/single_speed_sequence.gd', 'frames': 210,
                    'footer': 'R14_SINGLE_SPEED_SEQUENCE_OK', 'args': [],
                    'question': 'Do the knees track forward and does run/start/stop read naturally?',

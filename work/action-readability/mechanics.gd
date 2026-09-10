@@ -427,55 +427,169 @@ func _test_crouch_and_clearance(game) -> void:
 
 
 func _test_jump_and_vault(game) -> void:
-	game.reset_game()
-	game.guard_root.position = Vector3(-8.0, 0.0, -5.0)
-	game.player_root.position = Vector3(-4.0, 0.0, -3.0)
-	game.last_travel_direction = Vector3.FORWARD
-	var free_start: Vector3 = game.player_root.position
+	_jump_test_reset(game)
+	var start: Vector3 = game.player_root.position
 	game.jump_or_vault()
-	_check(game.jump_active and not game.jump_is_vault, "free jump selects outside obstacle path")
-	_check_close(game.jump_duration, 0.62, "free jump duration")
-	_check_close(game.jump_height, 1.35, "free jump apex constant")
-	_check_close(game.flat_distance(game.jump_start, game.jump_end), 2.2, "free jump distance")
-	_step(game, 0.31)
-	_check_close(game.player_root.position.y, 1.35, "free jump midpoint reaches 1.35-unit apex", 0.002)
+	_check(game.jump_active and not game.jump_is_vault and not game.jump_moving, "stationary input selects standing jump")
+	_check(not game.player_airborne, "jump starts with actual grounded preparation")
+	_check_close(game.jump_duration, 0.94, "jump includes preparation, flight and landing recovery")
+	_step(game, 0.10)
+	_check_vec3(game.player_root.position, start, "prepare keeps gameplay root on floor")
+	_check(game.player_visual_parts["left_knee"].rotation.x > 0.30, "prepare visibly flexes the knees before takeoff")
+	game.evade()
+	game.strike()
+	game.toggle_crouch()
+	game.grapple()
+	_check(game.invulnerable == 0.0 and game.player_strike_timer == 0.0 and not game.crouching and not game.grapple_active, "grounded preparation reserves the jump action")
+	_step(game, 0.33)
+	_check_close(game.player_root.position.y, 1.35, "standing flight reaches the existing 1.35-unit apex", 0.002)
+	_check(game.player_airborne, "airborne flag begins after preparation")
+	_check(game.player_visual_parts["left_knee"].rotation.x < 0.25, "standing jump extends legs at apex")
 	game.damage_player(18.0, "probe")
-	_check_close(game.player_health, 82.0, "free jump does not add invulnerability")
-	_step(game, 0.31)
-	_check(not game.jump_active and not game.player_airborne, "free jump lands grounded")
-	_check_close(game.flat_distance(free_start, game.player_root.position), 2.2, "free jump landing distance")
+	_check_close(game.player_health, 82.0, "jump does not add invulnerability")
+	_step(game, 0.311)
+	_check(not game.player_airborne and game.jump_active, "touchdown is grounded during impact recovery")
+	_check_vec3(game.player_root.position, start, "unsteered jump lands at its takeoff point")
+	_step(game, 0.055)
+	_check(game.player_visual_parts["left_knee"].rotation.x > 0.30, "impact flexes the knees after touchdown")
+	_step(game, 0.145)
+	_check(not game.jump_active and not game.player_airborne, "jump returns to grounded controls")
 
-	game.reset_game()
-	game.guard_root.position = Vector3(-8.0, 0.0, -5.0)
+	_jump_test_reset(game)
 	game.player_root.position = Vector3(4.55, 0.0, 3.9)
 	var barrier_start: Vector3 = game.player_root.position
 	game.move_player_world(Vector3.RIGHT, 0.20)
-	_check_vec3(game.player_root.position, barrier_start, "walking is blocked by low vault barrier")
-
+	_check_vec3(game.player_root.position, barrier_start, "walking stays blocked by low barrier")
 	game.player_root.position = Vector3(3.8, 0.0, 3.9)
 	game.last_travel_direction = Vector3.RIGHT
-	var vault_start: Vector3 = game.player_root.position
 	game.jump_or_vault()
-	_check(game.jump_active and game.jump_is_vault, "contextual path selects vault")
-	_check_close(game.jump_duration, 0.48, "vault duration")
-	_check_close(game.jump_height, 1.05, "vault apex constant")
+	_check(game.jump_active and game.jump_is_vault and game.player_airborne, "contextual path selects existing vault")
+	_check_close(game.jump_duration, 0.48, "vault duration unchanged")
+	_key_event(game, KEY_A, true)
 	_step(game, 0.24)
-	_check_close(game.player_root.position.y, 1.05, "vault midpoint reaches 1.05-unit apex", 0.002)
+	_check_close(game.player_root.position.y, 1.05, "vault midpoint apex unchanged", 0.002)
 	_step(game, 0.24)
 	_check(not game.jump_active and not game.player_airborne, "vault lands grounded")
-	_check_close(game.flat_distance(vault_start, game.player_root.position), 2.2, "vault clears barrier to accepted landing distance")
+	_check_close(game.player_root.position.x, 6.0, "held input cannot redirect committed 2.2-unit vault")
 
-	game.reset_game()
-	game.player_root.position = Vector3(9.0, 0.0, 0.0)
-	game.last_travel_direction = Vector3.RIGHT
-	game.jump_or_vault()
-	_check(not game.jump_active, "jump rejects insufficient boundary landing room")
-
-	game.reset_game()
+	_jump_test_reset(game)
 	game.player_root.position = Vector3(-8.0, 0.0, 3.8)
 	game.crouching = true
 	game.jump_or_vault()
 	_check(not game.jump_active and game.crouching, "jump rejects low-passage bypass")
+	_test_jump_air_control(game)
+
+
+func _jump_test_reset(game) -> void:
+	game.reset_game()
+	game.player_root.position = Vector3(-3.0, 0.0, 0.0)
+	game.guard_root.position = Vector3(30.0, 0.0, 30.0)
+	game.guard_stun = 999.0
+	game.camera_yaw = 0.0
+	game.update_camera(0.0)
+
+
+func _finish_jump(game, hz: int) -> void:
+	var steps := 0
+	while game.jump_active and steps < hz * 2:
+		_step(game, 1.0 / float(hz))
+		steps += 1
+	_check(not game.jump_active, "jump completes at %s Hz" % hz)
+
+
+func _test_jump_air_control(game) -> void:
+	for hz in [30, 60]:
+		for yaw in [0.0, PI / 2.0]:
+			for keys in [[KEY_D], [KEY_D, KEY_W], [KEY_A], [KEY_S]]:
+				_jump_test_reset(game)
+				game.camera_yaw = yaw
+				game.update_camera(0.0)
+				var start: Vector3 = game.player_root.position
+				game.jump_or_vault()
+				for key in keys: _key_event(game, key, true)
+				var input: Vector2 = game.get_move_input()
+				var direction: Vector3 = game.camera.global_transform.basis.x * input.x - game.camera.global_transform.basis.z * input.y
+				direction.y = 0.0
+				_finish_jump(game, hz)
+				_check_vec3(game.player_root.position, start + direction.normalized() * 0.868,
+					"standing jump air control normalized at keys=%s yaw=%.2f Hz=%s" % [keys, yaw, hz], 0.002)
+
+				_jump_test_reset(game)
+				game.camera_yaw = yaw
+				game.update_camera(0.0)
+				for key in keys: _key_event(game, key, true)
+				_step(game, 0.10)
+				start = game.player_root.position
+				game.jump_or_vault()
+				_check(game.jump_moving, "actual held movement selects a moving jump")
+				_step(game, 0.15)
+				game.held_keys.clear()
+				_finish_jump(game, hz)
+				_check_vec3(game.player_root.position, start + direction.normalized() * 2.2,
+					"moving jump carries takeoff direction after release at keys=%s yaw=%.2f Hz=%s" % [keys, yaw, hz], 0.002)
+
+	_jump_test_reset(game)
+	game.jump_or_vault()
+	_step(game, 0.22)
+	var stationary_x: float = game.player_root.position.x
+	_press_and_release(game, KEY_D)
+	_step(game, 0.05)
+	_check_close(game.player_root.position.x, stationary_x, "zero-duration airborne tap gives no travel")
+	_key_event(game, KEY_D, true)
+	_step(game, 0.15)
+	_key_event(game, KEY_D, false)
+	var released_x: float = game.player_root.position.x
+	_check_close(released_x - stationary_x, 0.21, "midair input begins gentle steering")
+	_step(game, 0.10)
+	_check_close(game.player_root.position.x, released_x, "release stops standing-jump air adjustment")
+	_key_event(game, KEY_A, true)
+	_step(game, 0.10)
+	_check_close(game.player_root.position.x, released_x - 0.14, "opposing air input reverses adjustment")
+	game._notification(MainLoop.NOTIFICATION_APPLICATION_FOCUS_OUT)
+	var focus_x: float = game.player_root.position.x
+	_finish_jump(game, 60)
+	_check_close(game.player_root.position.x, focus_x, "focus loss clears air steering")
+
+	_jump_test_reset(game)
+	var leads: Array[float] = []
+	var thigh_differences: Array[float] = []
+	for repeat in 2:
+		_key_event(game, KEY_D, true)
+		_step(game, 0.10)
+		var start: Vector3 = game.player_root.position
+		game.jump_or_vault()
+		leads.append(game.jump_lead)
+		_step(game, 0.43)
+		thigh_differences.append(game.player_visual_parts["left_leg"].rotation.x - game.player_visual_parts["right_leg"].rotation.x)
+		game.jump_or_vault()
+		_check_close(game.jump_lead, leads[-1], "rejected midair jump does not change leading leg")
+		_finish_jump(game, 60)
+		_check_close(game.flat_distance(start, game.player_root.position), 2.2, "holding launch direction does not stack extra forward speed")
+	_check_close(leads[0], -leads[1], "successive jumps alternate their leading leg")
+	_check(thigh_differences[0] * thigh_differences[1] < -0.20, "moving jumps visibly mirror the split-leg pose")
+	game.reset_game()
+	_check_close(game.jump_lead, -1.0, "restart resets deterministic jump variation")
+
+	for obstacle in ["lintel", "barrier", "boundary"]:
+		_jump_test_reset(game)
+		game.last_travel_direction = Vector3.FORWARD
+		if obstacle == "lintel": game.player_root.position = Vector3(-6.95, 0.0, 3.8)
+		elif obstacle == "barrier": game.player_root.position = Vector3(4.55, 0.0, 3.9)
+		else: game.player_root.position = Vector3(9.0, 0.0, 0.0)
+		game.jump_or_vault()
+		_step(game, 0.43)
+		_key_event(game, KEY_A if obstacle == "lintel" else KEY_D, true)
+		_finish_jump(game, 60)
+		var landed: Vector3 = game.player_root.position
+		_check(not game.is_in_low_passage(landed) and not game.is_inside_vault_obstacle(landed), "safe landing footprint at " + obstacle)
+		_check(landed.x <= 9.101 and landed.x >= -9.101, "air steering respects courtyard bounds")
+	_jump_test_reset(game)
+	game.player_root.position = Vector3(4.55, 0.0, 3.9)
+	game.last_travel_direction = Vector3.FORWARD
+	game.jump_or_vault()
+	_key_event(game, KEY_D, true)
+	_step(game, 0.94)
+	_check_close(game.player_root.position.x, 4.55, "long air frame cannot skip the vault wall")
 
 
 func _test_takedown_action_timing(game) -> void:

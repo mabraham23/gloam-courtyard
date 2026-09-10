@@ -18,6 +18,10 @@ python3 tools/review.py compare work/review-runs/BEFORE_ID work/review-runs/AFTE
   --output evidence/DATE-QUESTION
 ```
 
+`jumps` and `jumps-gameplay` cover stationary repeats, air input, contextual vault
+and running takeoff with the same controller fixture. `work/action-quality/jump_deformation.gd`
+checks every actual jump-phase frame, all sizes/rates and both moving leads.
+
 `locomotion-front` uses the same held-input fixture from the front; `actions` covers
 paired strike, forward evade and takedown. `--expect-asset SHA256` prevents testing
 an unintended candidate. `--ref` chooses an existing commit; omission snapshots

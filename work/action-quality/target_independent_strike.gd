@@ -198,7 +198,7 @@ func _test_interruptions(game) -> void:
 	_prepare_buffered_whiff(game, Vector3.ZERO, Vector3(8.0, 0.0, -5.0), 20.0)
 	game.last_travel_direction = Vector3.FORWARD
 	game.jump_or_vault()
-	_check(game.jump_active and game.player_airborne, "jump starts while interrupting target-free recovery")
+	_check(game.jump_active and not game.player_airborne, "jump preparation starts while interrupting target-free recovery")
 	_assert_attack_cleared(game, "jump interruption")
 
 	# Grapple uses its normal in-range route and clears the strike state first.
