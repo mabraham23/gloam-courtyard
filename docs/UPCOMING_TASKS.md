@@ -6,8 +6,8 @@ edit this file, then run `python3 work/generate_project_roadmap_local.py`.
 
 ## Immediate review
 
-The running-jump arms and impact correction is technically verified and open for
-user review after rejection of the earlier straight arms and weak landing catch.
+The jump elbow direction correction is technically verified and open for user
+review after the user caught backwards bending in the previous arm pass.
 Play stationary V, held WASD then V, repeated moving jumps and landing back into
 held movement. R14 appearance, continuous held gait and paired takedown also keep
 their existing acceptance gates; V1 remains default.
@@ -32,21 +32,21 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
 ```json
 {
   "schema": 1,
-  "summary": "Running-jump arm and impact correction ready for user review; R14 candidate, V1 default.",
+  "summary": "Jump elbow direction corrected and ready for user review; R14 candidate, V1 default.",
   "tasks": [
     {
       "id": "vertical-jump",
       "lane": "waiting",
       "area": "Animation",
-      "title": "Running-jump arms and impact \u00b7 user review",
+      "title": "Jump elbow direction \u00b7 user review",
       "effort": "M",
-      "parallel": "Technical correction and native smoke passed",
-      "dependency": "User elbow silhouette and landing-catch judgement",
+      "parallel": "Signed direction regression and native smoke passed",
+      "dependency": "User corrected running-jump and landing judgement",
       "owner": "Current jump refinement task",
-      "evidence": "Default 309/candidate 311, transitions 67, full-mesh 5646; matched held/mirrored running jump. Native V/Q/reset/F12, source bb51a808e92a, PID 45340.",
-      "description": "Bent flight elbows and reduced reach; deeper sustained knee/hip impact catch. Timing, travel, air control and contextual vault unchanged. Prior appearance rejected; current held moving user review pending.",
+      "evidence": "Old signed elbow check fails 12 moving cases; corrected full-mesh 5646, mechanics 309/311, transitions 67 pass. Native V/Q/F12/reset, source 2dfc70da70c6, PID 46188.",
+      "description": "Forearms now fold forward through the jump. Prior backwards elbow pose rejected. Alternating leads and deeper landing catch retained; held moving user review pending.",
       "evidence_paths": [
-        "evidence/2026-09-10-running-jump-impact/README.md",
+        "evidence/2026-09-10-jump-elbow-direction/README.md",
         "docs/CHECKPOINTS.md"
       ]
     },

@@ -1,0 +1,200 @@
+[
+  {
+    "preset": "small",
+    "fps": "30",
+    "variant": "0",
+    "frames": "38",
+    "ground_sole_min": "-0.0000000342261",
+    "max": "0.02331413328648",
+    "elbow_min_deg": "47.6605222646374",
+    "knee_peak_deg": "69.1429493553774",
+    "pelvis_drop": "0.15443909168243"
+  },
+  {
+    "preset": "small",
+    "fps": "30",
+    "variant": "1",
+    "frames": "38",
+    "ground_sole_min": "-0.00010508741252",
+    "max": "0.02170425280929",
+    "elbow_min_deg": "82.4290196685078",
+    "knee_peak_deg": "69.1557559600711",
+    "pelvis_drop": "0.15448045730591"
+  },
+  {
+    "preset": "small",
+    "fps": "30",
+    "variant": "-1",
+    "frames": "38",
+    "ground_sole_min": "-0.00010508741252",
+    "max": "0.02171053364873",
+    "elbow_min_deg": "82.3677323810853",
+    "knee_peak_deg": "69.1517261484608",
+    "pelvis_drop": "0.15439057350159"
+  },
+  {
+    "preset": "small",
+    "fps": "60",
+    "variant": "0",
+    "frames": "75",
+    "ground_sole_min": "-0.000000057742",
+    "max": "0.02215446904302",
+    "elbow_min_deg": "47.4651925147534",
+    "knee_peak_deg": "67.7438670661703",
+    "pelvis_drop": "0.14718806743622"
+  },
+  {
+    "preset": "small",
+    "fps": "60",
+    "variant": "1",
+    "frames": "75",
+    "ground_sole_min": "-0.00000004842877",
+    "max": "0.0220119394362",
+    "elbow_min_deg": "81.4470638621026",
+    "knee_peak_deg": "67.8002434475796",
+    "pelvis_drop": "0.14734697341919"
+  },
+  {
+    "preset": "small",
+    "fps": "60",
+    "variant": "-1",
+    "frames": "75",
+    "ground_sole_min": "-0.00000004656613",
+    "max": "0.02204570546746",
+    "elbow_min_deg": "81.3855511784375",
+    "knee_peak_deg": "67.7825327670618",
+    "pelvis_drop": "0.14711475372314"
+  },
+  {
+    "preset": "medium",
+    "fps": "30",
+    "variant": "0",
+    "frames": "38",
+    "ground_sole_min": "-0.00000004470348",
+    "max": "0.02649337053299",
+    "elbow_min_deg": "47.6605222646374",
+    "knee_peak_deg": "69.1429493553774",
+    "pelvis_drop": "0.17549896240234"
+  },
+  {
+    "preset": "medium",
+    "fps": "30",
+    "variant": "1",
+    "frames": "38",
+    "ground_sole_min": "-0.00011942489073",
+    "max": "0.02466400712729",
+    "elbow_min_deg": "82.4290196685078",
+    "knee_peak_deg": "69.1557559600711",
+    "pelvis_drop": "0.17554593086243"
+  },
+  {
+    "preset": "medium",
+    "fps": "30",
+    "variant": "-1",
+    "frames": "38",
+    "ground_sole_min": "-0.00011942489073",
+    "max": "0.02467114105821",
+    "elbow_min_deg": "82.3677323810853",
+    "knee_peak_deg": "69.1517261484608",
+    "pelvis_drop": "0.17544388771057"
+  },
+  {
+    "preset": "medium",
+    "fps": "60",
+    "variant": "0",
+    "frames": "75",
+    "ground_sole_min": "-0.00000006332994",
+    "max": "0.02517555467784",
+    "elbow_min_deg": "47.4651925147534",
+    "knee_peak_deg": "67.7438670661703",
+    "pelvis_drop": "0.16725921630859"
+  },
+  {
+    "preset": "medium",
+    "fps": "60",
+    "variant": "1",
+    "frames": "75",
+    "ground_sole_min": "-0.00000004842877",
+    "max": "0.02501349151134",
+    "elbow_min_deg": "81.4470638621026",
+    "knee_peak_deg": "67.8002434475796",
+    "pelvis_drop": "0.16743969917297"
+  },
+  {
+    "preset": "medium",
+    "fps": "60",
+    "variant": "-1",
+    "frames": "75",
+    "ground_sole_min": "-0.00000004842877",
+    "max": "0.02505186200142",
+    "elbow_min_deg": "81.3855511784375",
+    "knee_peak_deg": "67.7825327670618",
+    "pelvis_drop": "0.16717576980591"
+  },
+  {
+    "preset": "large",
+    "fps": "30",
+    "variant": "0",
+    "frames": "38",
+    "ground_sole_min": "-0.00000005960464",
+    "max": "0.03073220141232",
+    "elbow_min_deg": "47.6605222646374",
+    "knee_peak_deg": "69.1429493553774",
+    "pelvis_drop": "0.20357871055603"
+  },
+  {
+    "preset": "large",
+    "fps": "30",
+    "variant": "1",
+    "frames": "38",
+    "ground_sole_min": "-0.00013846857473",
+    "max": "0.02861022762954",
+    "elbow_min_deg": "82.4290196685078",
+    "knee_peak_deg": "69.1557559600711",
+    "pelvis_drop": "0.20363318920135"
+  },
+  {
+    "preset": "large",
+    "fps": "30",
+    "variant": "-1",
+    "frames": "38",
+    "ground_sole_min": "-0.00013846857473",
+    "max": "0.02861850522459",
+    "elbow_min_deg": "82.3677323810853",
+    "knee_peak_deg": "69.1517261484608",
+    "pelvis_drop": "0.20351481437683"
+  },
+  {
+    "preset": "large",
+    "fps": "60",
+    "variant": "0",
+    "frames": "75",
+    "ground_sole_min": "-0.00000005960464",
+    "max": "0.02920363098383",
+    "elbow_min_deg": "47.4651925147534",
+    "knee_peak_deg": "67.7438670661703",
+    "pelvis_drop": "0.19402062892914"
+  },
+  {
+    "preset": "large",
+    "fps": "60",
+    "variant": "1",
+    "frames": "75",
+    "ground_sole_min": "-0.00000005215406",
+    "max": "0.02901564352214",
+    "elbow_min_deg": "81.4470638621026",
+    "knee_peak_deg": "67.8002434475796",
+    "pelvis_drop": "0.19422996044159"
+  },
+  {
+    "preset": "large",
+    "fps": "60",
+    "variant": "-1",
+    "frames": "75",
+    "ground_sole_min": "-0.00000005960464",
+    "max": "0.02906015329063",
+    "elbow_min_deg": "81.3855511784375",
+    "knee_peak_deg": "67.7825327670618",
+    "pelvis_drop": "0.19392383098602"
+  }
+]

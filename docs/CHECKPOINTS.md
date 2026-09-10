@@ -140,3 +140,27 @@ inspected and left open. PNG/state hashes match with no source drift. Native hel
 running/user visual judgement remain pending; V1 stays default. No new performance
 certificate. Board regenerated/schema-checked; its existing rendered UI gate stays
 separate. [Evidence and quirks](../evidence/2026-09-10-running-jump-impact/README.md).
+
+## Waiting — correct forward jump elbow flexion (2026-09-10 follow-up)
+
+The user caught backwards elbow bending in the prior pass. Its visual verdict is
+superseded; the unsigned angle gate had accepted hyperextension. Jump forearm
+body-X drivers now use the forward-flexion sign. All other jump curves, controller
+behavior and frozen assets are retained.
+
+The signed actual-skeleton check rejects the old pose in all 12 moving cases
+(about -56 degrees); the corrected 18-case full-mesh run passes 5646 checks, with
+moving-flight minima 81.39–82.43 degrees. Knee/pelvis/floor gates remain passing.
+Default/candidate mechanics 309/311, transitions 67, editor import and default
+startup pass. Sandbox system-CA and user-log write errors are recorded separately
+from game results, with stdout evidence preserved. Matched
+profile frames 26/101 and gameplay-scale sequences were inspected for both leads.
+
+Fresh exact-title native PID 46188, source `2dfc70da70c6`: V/F12 captured stationary
+rise at fixed X/Z, Q worked after recovery, and the enlarged R/0/F12 reset image was
+inspected and left open. Image hashes match sidecars without source drift. Running
+motion evidence is a held-input controller fixture; native held input and user
+judgement remain separate. V1 stays default. Board generated/schema checked, with
+its existing rendered UI gate open. No new performance certificate.
+
+[Correction evidence and limitations](../evidence/2026-09-10-jump-elbow-direction/README.md).

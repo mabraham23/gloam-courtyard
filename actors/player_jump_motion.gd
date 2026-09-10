@@ -33,9 +33,9 @@ static func sample(state: StringName, progress: float, moving: bool, lead: float
 		"ankle": -0.30 * compression - 0.05 * lift,
 		"arm": Vector2(-0.26 * compression - 0.36 * lift + 0.48 * split * side,
 			-0.26 * compression - 0.36 * lift - 0.48 * split * side),
-		# Carry the bent running arms through the leap instead of reaching out
-		# with almost locked elbows. Subtle opposite variation mirrors the lead.
-		"elbow": Vector2(0.35 + 0.16 * lift + 0.72 * split + 0.25 * compression + 0.08 * split * side,
+		# Negative body-X flexes the forearm toward the character's front (+Z).
+		# Positive values bend it backwards; keep both mirrored leads anatomical.
+		"elbow": -Vector2(0.35 + 0.16 * lift + 0.72 * split + 0.25 * compression + 0.08 * split * side,
 			0.35 + 0.16 * lift + 0.72 * split + 0.25 * compression - 0.08 * split * side),
 		"arm_spread": 0.055 + 0.07 * lift,
 		"rise": -0.12 * compression,

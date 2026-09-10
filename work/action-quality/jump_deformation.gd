@@ -79,4 +79,13 @@ func _joint_bend(skeleton: Skeleton3D, start: String, joint: String, finish: Str
 	var a := skeleton.get_bone_global_pose(skeleton.find_bone(start)).origin
 	var b := skeleton.get_bone_global_pose(skeleton.find_bone(joint)).origin
 	var c := skeleton.get_bone_global_pose(skeleton.find_bone(finish)).origin
-	return PI - (a - b).angle_to(c - b)
+	var bend := PI - (a - b).angle_to(c - b)
+	if start.begins_with("upper_arm."):
+		# Measure direction as well as magnitude: a backwards elbow previously
+		# passed the unsigned angle check. Transport the forward-flexion axis
+		# with the posed upper arm so shoulder swing cannot reverse the verdict.
+		var index := skeleton.find_bone(start)
+		var transport := skeleton.get_bone_global_pose(index).basis * skeleton.get_bone_global_rest(index).basis.inverse()
+		var flex_axis := transport * Vector3.LEFT
+		bend *= signf((b - a).cross(c - b).dot(flex_axis))
+	return bend
