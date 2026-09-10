@@ -1,0 +1,45 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Cannot open file 'res://.godot/imported/gloam_vigil_player.glb-9cd042fd769a1a5e0e426580e8331fcf.scn'.
+   at: load (core/io/resource_format_binary.cpp:1156)
+ERROR: Failed loading resource: res://.godot/imported/gloam_vigil_player.glb-9cd042fd769a1a5e0e426580e8331fcf.scn.
+   at: _load (core/io/resource_loader.cpp:317)
+ERROR: Failed loading resource: res://actors/gloam_vigil/gloam_vigil_player.glb.
+   at: _load (core/io/resource_loader.cpp:317)
+SCRIPT ERROR: Parse Error: Could not preload resource file "res://actors/gloam_vigil/gloam_vigil_player.glb".
+          at: GDScript::reload (res://actors/gloam_vigil/gloam_vigil_rig_adapter.gd:7)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://actors/character_visual_builder.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://work/character-art-review/candidate_fixture.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (/tmp/gloam_crouch_regression.gd:0)
+ERROR: Failed to load script "/tmp/gloam_crouch_regression.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS active courtyard scene loads
+SCRIPT ERROR: Invalid call. Nonexistent function 'attach' in base 'GDScript'.
+          at: build_player (res://actors/character_visual_builder.gd:50)
+          GDScript backtrace (most recent call first):
+              [0] build_player (res://actors/character_visual_builder.gd:50)
+              [1] build_player (res://main_3d.gd:372)
+              [2] _ready (res://main_3d.gd:172)
+              [3] _run (/tmp/gloam_crouch_regression.gd:27)
+SCRIPT ERROR: Invalid access to property or key 'accent_material' on a base object of type 'Dictionary'.
+          at: build_player (res://main_3d.gd:373)
+          GDScript backtrace (most recent call first):
+              [0] build_player (res://main_3d.gd:373)
+              [1] _ready (res://main_3d.gd:172)
+              [2] _run (/tmp/gloam_crouch_regression.gd:27)
+SCRIPT ERROR: Invalid access to property or key 'left_leg' on a base object of type 'Dictionary'.
+          at: pose_player (res://actors/character_visual_builder.gd:1052)
+          GDScript backtrace (most recent call first):
+              [0] pose_player (res://actors/character_visual_builder.gd:1052)
+              [1] reset_game (res://main_3d.gd:561)
+              [2] _ready (res://main_3d.gd:175)
+              [3] _run (/tmp/gloam_crouch_regression.gd:27)
+SCRIPT ERROR: Invalid access to property or key 'visual_root' on a base object of type 'Dictionary'.
+          at: _run (/tmp/gloam_crouch_regression.gd:32)
+          GDScript backtrace (most recent call first):
+              [0] _run (/tmp/gloam_crouch_regression.gd:32)

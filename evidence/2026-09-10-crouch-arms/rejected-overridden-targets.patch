@@ -1,0 +1,31 @@
+--- a/actors/character_visual_builder.gd
++++ b/actors/character_visual_builder.gd
+@@ -571,17 +571,17 @@
+ 		left_ankle_target = -0.20 - left_leg_target * 0.18
+ 		right_ankle_target = -0.18 - right_leg_target * 0.18
+ 		if anatomical_profile:
+-			# Counter-swing the supporting leg and keep the hands ahead of the
+-			# folded trunk. Small trailing values were carried backward by the old
+-			# extreme torso hinge in native play.
+-			left_arm_target = gait * 0.18 * crouch_move - 0.72
+-			right_arm_target = -gait * 0.18 * crouch_move - 0.64
+-			left_arm_yaw = -0.10
+-			right_arm_yaw = 0.10
+-			left_arm_roll = -0.10
+-			right_arm_roll = 0.10
+-			left_elbow_target = 0.62
+-			right_elbow_target = 0.68
++			# Relax the shoulders and carry softly folded forearms in front of
++			# the abdomen. Negative X flexes forward; mirrored yaw brings the
++			# hands toward the center without crossing or flaring the elbows.
++			left_arm_target = gait * 0.10 * crouch_move - 0.32
++			right_arm_target = -gait * 0.10 * crouch_move - 0.28
++			left_arm_yaw = -0.35
++			right_arm_yaw = 0.35
++			left_arm_roll = -0.08
++			right_arm_roll = 0.08
++			left_elbow_target = -0.82
++			right_elbow_target = -0.90
+ 		else:
+ 			left_arm_target = -gait * 0.16 * crouch_move - 0.18
+ 			right_arm_target = gait * 0.16 * crouch_move - 0.12

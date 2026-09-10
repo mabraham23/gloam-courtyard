@@ -21,6 +21,11 @@ import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
 SCENARIOS = {
+    'crouch': {'script': 'work/action-quality/crouch_sequence.gd', 'frames': 270,
+               'footer': 'CROUCH_SEQUENCE_OK', 'args': [],
+               'keyframes': [20, 45, 70, 83, 110, 135, 160, 173, 225],
+               'question': 'Do the crouch arms bend forward and inward naturally at rest and while moving?',
+               'helpers': 'Fixed 30 Hz controller; scripted Q and held D; following front/profile cameras then default gameplay camera; guard moved away and labels hidden.'},
     'running-jump': {'script': 'work/action-quality/running_jump_sequence.gd', 'frames': 150,
                      'footer': 'RUNNING_JUMP_SEQUENCE_OK', 'args': [],
                      'keyframes': [15, 26, 34, 35, 36, 38, 43, 101, 111],

@@ -184,6 +184,7 @@ func _test_r7_motion_semantics(game) -> void:
 	var chest := skeleton.get_bone_global_pose(skeleton.find_bone("chest")).origin
 	var hand_forward := (left_hand.z + right_hand.z) * 0.5 - chest.z
 	_check(hand_forward > 0.08, "R7 crouch keeps both hands visibly ahead of the folded chest: %.4f" % hand_forward)
+	_test_crouch_arm_geometry(parts, skeleton)
 
 	Builder.pose_player(parts, 0.0, 0.0, 1.0, &"jump", 0.50, &"right_punch", 0.0, 1.0, true)
 	var torso := parts["torso_root"] as Node3D
@@ -210,6 +211,34 @@ func _test_r7_motion_semantics(game) -> void:
 	_check(absf(downed_head_y - downed_chest_y) < 0.15, "R7 downed head and chest preserve a connected side-fall silhouette")
 	_check(downed_support_hand_y > 0.10 and downed_support_hand_y < 0.45, "R7 downed lower hand braces near the floor: %.4f" % downed_support_hand_y)
 	_check(downed_support_toe_y > -0.03 and downed_support_toe_y < 0.18, "R7 downed lower toe supplies grounded support: %.4f" % downed_support_toe_y)
+
+
+func _test_crouch_arm_geometry(parts: Dictionary, skeleton: Skeleton3D) -> void:
+	var min_flex := INF
+	var max_flex := -INF
+	var min_inward := INF
+	var min_center_clearance := INF
+	# Cover the full idle and moving crouch cycle on actual bone positions.
+	# Positive flexion and inward wrists are independent of driver magnitudes.
+	for moving in [0.0, 1.0]:
+		for frame in 32:
+			Builder.pose_player(parts, TAU * frame / 32.0, moving, 1.0, &"crouch", moving)
+			var chest := skeleton.get_bone_global_pose(skeleton.find_bone("chest")).origin
+			for side in ["L", "R"]:
+				var index := skeleton.find_bone("upper_arm." + side)
+				var shoulder := skeleton.get_bone_global_pose(index).origin
+				var elbow := skeleton.get_bone_global_pose(skeleton.find_bone("forearm." + side)).origin
+				var wrist := skeleton.get_bone_global_pose(skeleton.find_bone("hand." + side)).origin
+				var transport := skeleton.get_bone_global_pose(index).basis * skeleton.get_bone_global_rest(index).basis.inverse()
+				var flex := (PI - (shoulder - elbow).angle_to(wrist - elbow)) * signf((elbow - shoulder).cross(wrist - elbow).dot(transport * Vector3.LEFT))
+				min_flex = minf(min_flex, flex)
+				max_flex = maxf(max_flex, flex)
+				min_inward = minf(min_inward, absf(elbow.x - chest.x) - absf(wrist.x - chest.x))
+				min_center_clearance = minf(min_center_clearance, (wrist.x - chest.x) * signf(shoulder.x - chest.x))
+	_check(min_flex >= deg_to_rad(40.0) and max_flex <= deg_to_rad(110.0), "crouch elbows keep a relaxed forward fold through idle and travel")
+	_check(min_inward >= 0.03, "crouch wrists stay inward of their elbows through the full cycle")
+	_check(min_center_clearance >= 0.06, "crouch hands keep their own side of the body center")
+	print("CROUCH_ARMS flex_deg=", Vector2(rad_to_deg(min_flex), rad_to_deg(max_flex)), " min_inward=", min_inward, " center_clearance=", min_center_clearance)
 
 
 func _bone_height_from_root(game, skeleton: Skeleton3D, bone_name: String) -> float:

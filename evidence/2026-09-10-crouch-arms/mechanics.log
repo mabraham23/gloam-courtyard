@@ -1,0 +1,316 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS active main_3d scene loads
+PASS mechanics fixture selected exact 74-bone character-art path
+PASS mechanics fixture fingerprints character-art GLB
+PASS reset player spawn (actual=(-6.0, 0.0, 2.5) expected=(-6.0, 0.0, 2.5) tolerance=0.00100)
+PASS reset guard spawn (actual=(0.0, 0.0, 0.0) expected=(0.0, 0.0, 0.0) tolerance=0.00100)
+PASS reset player health (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS reset Momentum (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS reset guard health (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS reset clears terminal states
+PASS body preset 1 value (actual=0.88000 expected=0.88000 tolerance=0.00100)
+PASS body preset 1 scale (actual=(1.188, 1.188, 1.188) expected=(1.188, 1.188, 1.188) tolerance=0.00100)
+PASS body preset 2 value (actual=1.00000 expected=1.00000 tolerance=0.00100)
+PASS body preset 2 scale (actual=(1.35, 1.35, 1.35) expected=(1.35, 1.35, 1.35) tolerance=0.00100)
+PASS body preset 3 value (actual=1.16000 expected=1.16000 tolerance=0.00100)
+PASS body preset 3 scale (actual=(1.566, 1.566, 1.566) expected=(1.566, 1.566, 1.566) tolerance=0.00100)
+PASS accent index toggles
+PASS authored accent material remains customizable
+PASS player resolves to 1.48 personal space (actual=1.48000 expected=1.48000 tolerance=0.01100)
+PASS guard resolves to 1.48 personal space (actual=1.48000 expected=1.48000 tolerance=0.01100)
+PASS strike starts its selected exact action duration (actual=0.38000 expected=0.38000 tolerance=0.00100)
+PASS strike does not damage on input (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS strike does not award Momentum on input (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS strike remains pending before selected contact (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS strike contact deals 22 damage once (actual=78.00000 expected=78.00000 tolerance=0.00100)
+PASS strike contact refreshes guard health label immediately
+PASS strike contact grants 13 Momentum once (actual=13.00000 expected=13.00000 tolerance=0.00100)
+PASS strike contact starts reaction duration (actual=0.32000 expected=0.32000 tolerance=0.00100)
+PASS strike recovery never repeats damage (actual=78.00000 expected=78.00000 tolerance=0.00100)
+PASS strike recovery never repeats Momentum (actual=13.00000 expected=13.00000 tolerance=0.00100)
+PASS strike mash does not reset active timer (actual=0.43000 expected=0.43000 tolerance=0.00100)
+PASS strike mash still produces one contact (actual=78.00000 expected=78.00000 tolerance=0.00100)
+PASS strike mash after contact does not repeat damage (actual=78.00000 expected=78.00000 tolerance=0.00100)
+PASS strike mash grants Momentum once (actual=13.00000 expected=13.00000 tolerance=0.00100)
+PASS counter cancels pending strike (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS counter damage replaces cancelled strike contact (actual=70.00000 expected=70.00000 tolerance=0.00100)
+PASS counter refreshes guard health label immediately
+PASS counter Momentum replaces cancelled strike contact (actual=28.00000 expected=28.00000 tolerance=0.00100)
+PASS cancelled strike cannot contact after counter (actual=70.00000 expected=70.00000 tolerance=0.00100)
+PASS evade cancels pending strike (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS cancelled strike cannot contact during evade (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS cancelled strike leaves only evade Momentum (actual=4.00000 expected=4.00000 tolerance=0.00100)
+PASS reset cancels pending strike (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS reset strike never reaches stale contact (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS reset strike never awards stale Momentum (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS strike contact rechecks range instead of using stale input range (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS out-of-range contact applies one whiff cost (actual=12.00000 expected=12.00000 tolerance=0.00100)
+PASS range-suitable kick retains its input target through contact (actual=78.00000 expected=78.00000 tolerance=0.00100)
+PASS locked mid-range kick grants normal Momentum (actual=13.00000 expected=13.00000 tolerance=0.00100)
+PASS invalid input range cannot acquire a late target (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS unlocked late entry resolves as one whiff (actual=12.00000 expected=12.00000 tolerance=0.00100)
+PASS strike contact rejects guard on another height (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS elevated player cannot begin a grounded strike (actual=20.00000 expected=20.00000 tolerance=0.00100)
+PASS guard opens exact 0.72-second attack window (actual=0.72000 expected=0.72000 tolerance=0.00100)
+PASS guard attack window exposes marker
+PASS perfect counter deals 30 damage (actual=70.00000 expected=70.00000 tolerance=0.00100)
+PASS perfect counter grants 28 Momentum (actual=28.00000 expected=28.00000 tolerance=0.00100)
+PASS perfect counter reaction duration (actual=0.55000 expected=0.55000 tolerance=0.00100)
+PASS player counter duration (actual=0.44000 expected=0.44000 tolerance=0.00100)
+PASS ordinary counter deals no damage (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS ordinary counter grants 8 Momentum (actual=8.00000 expected=8.00000 tolerance=0.00100)
+PASS ordinary counter reaction duration (actual=0.25000 expected=0.25000 tolerance=0.00100)
+PASS uncountered attack deals 18 damage (actual=82.00000 expected=82.00000 tolerance=0.00100)
+PASS uncountered attack breaks 25 Momentum (actual=25.00000 expected=25.00000 tolerance=0.00100)
+PASS defeat enters terminal guard state
+PASS defeat zeros guard health (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS defeat grants 35 Momentum (actual=45.00000 expected=45.00000 tolerance=0.00100)
+PASS defeat clears vision and attack marker
+PASS guard remains visible before fade delay
+PASS guard is opaque before fade delay (actual=0.00000 expected=0.00000 tolerance=0.00200)
+PASS guard fade begins after 0.78 seconds
+PASS guard visual and label remove at 1.45 seconds
+PASS defeated guard leaves no invisible blocker
+PASS restart restores guard visual
+PASS restart restores guard label and vision
+PASS restart restores guard health after defeat (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS grapple rejects reset spawn outside range
+PASS grapple activates inside 3.5-unit ring
+PASS grapple traversal duration at fixed 60 FPS (actual=0.33333 expected=0.32000 tolerance=0.04000)
+PASS grapple exact perch landing (actual=(6.0, 3.04, -2.4) expected=(6.0, 3.04, -2.4) tolerance=0.00200)
+PASS grapple lands in real perch state
+PASS grapple recovery timer begins (actual=0.32000 expected=0.32000 tolerance=0.00100)
+PASS perch movement works during visual recovery
+PASS crossing perch footprint begins fall
+PASS fall restores grounded state
+PASS fall lands on courtyard floor (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS ground guard cannot hit player through perch (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS perch-height attack is explicitly rejected
+PASS evade movement duration (actual=0.28000 expected=0.28000 tolerance=0.00100)
+PASS evade invulnerability duration (actual=0.42000 expected=0.42000 tolerance=0.00100)
+PASS evade grants 4 Momentum (actual=4.00000 expected=4.00000 tolerance=0.00100)
+PASS evade snapshots visible yaw instead of stale travel direction (actual=(-0.0, 0.0, -1.0) expected=(0.0, 0.0, -1.0) tolerance=0.00200)
+PASS evade rejects damage while invulnerable (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS movement tap cannot stack displacement during evade (actual=(-2.0, 0.0, 1.0) expected=(-2.0, 0.0, 1.0) tolerance=0.00100)
+PASS evade input cannot reset active movement timer (actual=0.28000 expected=0.28000 tolerance=0.00100)
+PASS evade repeat cannot stack Momentum (actual=4.00000 expected=4.00000 tolerance=0.00100)
+PASS evade shows a positive forward spin during travel
+PASS evade integrates exact 0.28s x 7.0m/s travel (actual=1.96000 expected=1.96000 tolerance=0.00200)
+PASS held movement cannot bend evade direction (actual=(0.0, 0.0, -1.0) expected=(0.0, 0.0, -1.0) tolerance=0.00200)
+PASS evade movement ends at 0.28 seconds (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS evade retains 0.14-second post-travel invulnerability (actual=0.14000 expected=0.14000 tolerance=0.00200)
+PASS evade cannot retrigger during post-travel invulnerability (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS post-travel retrigger cannot stack Momentum (actual=4.00000 expected=4.00000 tolerance=0.00100)
+PASS evade completes one full forward spin (actual=6.28319 expected=6.28319 tolerance=0.08000)
+PASS evade invulnerability expires (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS released input adds no post-travel displacement (actual=(-2.0, 0.0, -0.96) expected=(-2.0, 0.0, -0.96) tolerance=0.00100)
+PASS damage resumes after evade (actual=82.00000 expected=82.00000 tolerance=0.00100)
+PASS evade can retrigger only after invulnerability ends (actual=0.28000 expected=0.28000 tolerance=0.00100)
+PASS new evade after recovery grants Momentum once after prior damage broke Momentum (actual=4.00000 expected=4.00000 tolerance=0.00100)
+PASS evade rejects airborne state (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS airborne evade adds no invulnerability (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS evade rejects grapple state (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS rejected traversal evades add no Momentum (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS evade respects courtyard boundary collision
+PASS boundary evade never rebounds through its start
+PASS evade preserves guard collision separation
+PASS evade can carry off perch into a fall without cancelling invulnerability
+PASS forward-roll pose remains visible after evade leaves perch
+PASS crouch toggles on
+PASS standing WASD uses the single run speed (actual=4.80001 expected=4.80000 tolerance=0.01000)
+PASS crouch preserves its prior absolute travel speed (actual=1.17800 expected=1.17800 tolerance=0.01000)
+PASS crouch ratio reflects preserved absolute speed (actual=0.24542 expected=0.24542 tolerance=0.00200)
+PASS standing entry is blocked by 2.0-unit passage (actual=(-6.9, 0.0, 3.8) expected=(-6.9, 0.0, 3.8) tolerance=0.00100)
+PASS crouched player enters low passage
+PASS standing is rejected under lintel
+PASS evade is rejected under lintel (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS strike is rejected under lintel (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS crouched player clears passage
+PASS full height returns after clearing passage
+PASS stationary input selects standing jump
+PASS jump starts with actual grounded preparation
+PASS jump includes preparation, flight and landing recovery (actual=0.94000 expected=0.94000 tolerance=0.00100)
+PASS prepare keeps gameplay root on floor (actual=(-3.0, 0.0, 0.0) expected=(-3.0, 0.0, 0.0) tolerance=0.00100)
+PASS prepare visibly flexes the knees before takeoff
+PASS grounded preparation reserves the jump action
+PASS standing flight reaches the existing 1.35-unit apex (actual=1.35000 expected=1.35000 tolerance=0.00200)
+PASS airborne flag begins after preparation
+PASS standing jump extends legs at apex
+PASS jump does not add invulnerability (actual=82.00000 expected=82.00000 tolerance=0.00100)
+PASS touchdown is grounded during impact recovery
+PASS unsteered jump lands at its takeoff point (actual=(-3.0, 0.0, 0.0) expected=(-3.0, 0.0, 0.0) tolerance=0.00100)
+PASS impact flexes the knees after touchdown
+PASS jump returns to grounded controls
+PASS walking stays blocked by low barrier (actual=(4.55, 0.0, 3.9) expected=(4.55, 0.0, 3.9) tolerance=0.00100)
+PASS contextual path selects existing vault
+PASS vault duration unchanged (actual=0.48000 expected=0.48000 tolerance=0.00100)
+PASS vault midpoint apex unchanged (actual=1.05000 expected=1.05000 tolerance=0.00200)
+PASS vault lands grounded
+PASS held input cannot redirect committed 2.2-unit vault (actual=6.00000 expected=6.00000 tolerance=0.00100)
+PASS jump rejects low-passage bypass
+PASS jump completes at 30 Hz
+PASS standing jump air control normalized at keys=[68] yaw=0.00 Hz=30 (actual=(-2.132001, 0.0, 0.0) expected=(-2.132, 0.0, 0.0) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 30 Hz
+PASS moving jump carries takeoff direction after release at keys=[68] yaw=0.00 Hz=30 (actual=(-0.32, 0.0, 0.0) expected=(-0.32, 0.0, 0.0) tolerance=0.00200)
+PASS jump completes at 30 Hz
+PASS standing jump air control normalized at keys=[68, 87] yaw=0.00 Hz=30 (actual=(-2.352111, 0.0, 0.577637) expected=(-2.352111, 0.0, 0.577637) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 30 Hz
+PASS moving jump carries takeoff direction after release at keys=[68, 87] yaw=0.00 Hz=30 (actual=(-0.999607, 0.0, 1.783487) expected=(-0.999607, 0.0, 1.783487) tolerance=0.00200)
+PASS jump completes at 30 Hz
+PASS standing jump air control normalized at keys=[65] yaw=0.00 Hz=30 (actual=(-3.867999, 0.0, 0.0) expected=(-3.868, 0.0, 0.0) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 30 Hz
+PASS moving jump carries takeoff direction after release at keys=[65] yaw=0.00 Hz=30 (actual=(-5.679998, 0.0, 0.0) expected=(-5.68, 0.0, 0.0) tolerance=0.00200)
+PASS jump completes at 30 Hz
+PASS standing jump air control normalized at keys=[83] yaw=0.00 Hz=30 (actual=(-3.0, 0.0, -0.868) expected=(-3.0, 0.0, -0.868) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 30 Hz
+PASS moving jump carries takeoff direction after release at keys=[83] yaw=0.00 Hz=30 (actual=(-3.0, 0.0, -2.679999) expected=(-3.0, 0.0, -2.68) tolerance=0.00200)
+PASS jump completes at 30 Hz
+PASS standing jump air control normalized at keys=[68] yaw=1.57 Hz=30 (actual=(-3.0, 0.0, -0.868) expected=(-3.0, 0.0, -0.868) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 30 Hz
+PASS moving jump carries takeoff direction after release at keys=[68] yaw=1.57 Hz=30 (actual=(-3.0, 0.0, -2.679999) expected=(-3.0, 0.0, -2.68) tolerance=0.00200)
+PASS jump completes at 30 Hz
+PASS standing jump air control normalized at keys=[68, 87] yaw=1.57 Hz=30 (actual=(-2.422364, 0.0, -0.647889) expected=(-2.422363, 0.0, -0.647889) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 30 Hz
+PASS moving jump carries takeoff direction after release at keys=[68, 87] yaw=1.57 Hz=30 (actual=(-1.216513, 0.0, -2.000393) expected=(-1.216513, 0.0, -2.000393) tolerance=0.00200)
+PASS jump completes at 30 Hz
+PASS standing jump air control normalized at keys=[65] yaw=1.57 Hz=30 (actual=(-3.0, 0.0, 0.868) expected=(-3.0, 0.0, 0.868) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 30 Hz
+PASS moving jump carries takeoff direction after release at keys=[65] yaw=1.57 Hz=30 (actual=(-3.0, 0.0, 2.679999) expected=(-3.0, 0.0, 2.68) tolerance=0.00200)
+PASS jump completes at 30 Hz
+PASS standing jump air control normalized at keys=[83] yaw=1.57 Hz=30 (actual=(-3.867999, 0.0, 0.0) expected=(-3.868, 0.0, 0.0) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 30 Hz
+PASS moving jump carries takeoff direction after release at keys=[83] yaw=1.57 Hz=30 (actual=(-5.679998, 0.0, 0.0) expected=(-5.68, 0.0, 0.0) tolerance=0.00200)
+PASS jump completes at 60 Hz
+PASS standing jump air control normalized at keys=[68] yaw=0.00 Hz=60 (actual=(-2.132001, 0.0, 0.0) expected=(-2.132, 0.0, 0.0) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 60 Hz
+PASS moving jump carries takeoff direction after release at keys=[68] yaw=0.00 Hz=60 (actual=(-0.320001, 0.0, 0.0) expected=(-0.32, 0.0, 0.0) tolerance=0.00200)
+PASS jump completes at 60 Hz
+PASS standing jump air control normalized at keys=[68, 87] yaw=0.00 Hz=60 (actual=(-2.352107, 0.0, 0.577637) expected=(-2.352111, 0.0, 0.577637) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 60 Hz
+PASS moving jump carries takeoff direction after release at keys=[68, 87] yaw=0.00 Hz=60 (actual=(-0.999605, 0.0, 1.783487) expected=(-0.999607, 0.0, 1.783487) tolerance=0.00200)
+PASS jump completes at 60 Hz
+PASS standing jump air control normalized at keys=[65] yaw=0.00 Hz=60 (actual=(-3.867999, 0.0, 0.0) expected=(-3.868, 0.0, 0.0) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 60 Hz
+PASS moving jump carries takeoff direction after release at keys=[65] yaw=0.00 Hz=60 (actual=(-5.679998, 0.0, 0.0) expected=(-5.68, 0.0, 0.0) tolerance=0.00200)
+PASS jump completes at 60 Hz
+PASS standing jump air control normalized at keys=[83] yaw=0.00 Hz=60 (actual=(-3.0, 0.0, -0.868) expected=(-3.0, 0.0, -0.868) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 60 Hz
+PASS moving jump carries takeoff direction after release at keys=[83] yaw=0.00 Hz=60 (actual=(-3.0, 0.0, -2.679998) expected=(-3.0, 0.0, -2.68) tolerance=0.00200)
+PASS jump completes at 60 Hz
+PASS standing jump air control normalized at keys=[68] yaw=1.57 Hz=60 (actual=(-3.0, 0.0, -0.868) expected=(-3.0, 0.0, -0.868) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 60 Hz
+PASS moving jump carries takeoff direction after release at keys=[68] yaw=1.57 Hz=60 (actual=(-3.0, 0.0, -2.679998) expected=(-3.0, 0.0, -2.68) tolerance=0.00200)
+PASS jump completes at 60 Hz
+PASS standing jump air control normalized at keys=[68, 87] yaw=1.57 Hz=60 (actual=(-2.42236, 0.0, -0.647889) expected=(-2.422363, 0.0, -0.647889) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 60 Hz
+PASS moving jump carries takeoff direction after release at keys=[68, 87] yaw=1.57 Hz=60 (actual=(-1.216511, 0.0, -2.000393) expected=(-1.216513, 0.0, -2.000393) tolerance=0.00200)
+PASS jump completes at 60 Hz
+PASS standing jump air control normalized at keys=[65] yaw=1.57 Hz=60 (actual=(-3.0, 0.0, 0.868) expected=(-3.0, 0.0, 0.868) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 60 Hz
+PASS moving jump carries takeoff direction after release at keys=[65] yaw=1.57 Hz=60 (actual=(-3.0, 0.0, 2.679998) expected=(-3.0, 0.0, 2.68) tolerance=0.00200)
+PASS jump completes at 60 Hz
+PASS standing jump air control normalized at keys=[83] yaw=1.57 Hz=60 (actual=(-3.867999, 0.0, 0.0) expected=(-3.868, 0.0, 0.0) tolerance=0.00200)
+PASS actual held movement selects a moving jump
+PASS jump completes at 60 Hz
+PASS moving jump carries takeoff direction after release at keys=[83] yaw=1.57 Hz=60 (actual=(-5.679998, 0.0, 0.0) expected=(-5.68, 0.0, 0.0) tolerance=0.00200)
+PASS zero-duration airborne tap gives no travel (actual=-3.00000 expected=-3.00000 tolerance=0.00100)
+PASS midair input begins gentle steering (actual=0.21000 expected=0.21000 tolerance=0.00100)
+PASS release stops standing-jump air adjustment (actual=-2.79000 expected=-2.79000 tolerance=0.00100)
+PASS opposing air input reverses adjustment (actual=-2.93000 expected=-2.93000 tolerance=0.00100)
+PASS jump completes at 60 Hz
+PASS focus loss clears air steering (actual=-2.93000 expected=-2.93000 tolerance=0.00100)
+PASS rejected midair jump does not change leading leg (actual=1.00000 expected=1.00000 tolerance=0.00100)
+PASS jump completes at 60 Hz
+PASS holding launch direction does not stack extra forward speed (actual=2.20000 expected=2.20000 tolerance=0.00100)
+PASS rejected midair jump does not change leading leg (actual=-1.00000 expected=-1.00000 tolerance=0.00100)
+PASS jump completes at 60 Hz
+PASS holding launch direction does not stack extra forward speed (actual=2.20000 expected=2.20000 tolerance=0.00100)
+PASS successive jumps alternate their leading leg (actual=1.00000 expected=1.00000 tolerance=0.00100)
+PASS moving jumps visibly mirror the split-leg pose
+PASS restart resets deterministic jump variation (actual=-1.00000 expected=-1.00000 tolerance=0.00100)
+PASS jump completes at 60 Hz
+PASS safe landing footprint at lintel
+PASS air steering respects courtyard bounds
+PASS jump completes at 60 Hz
+PASS safe landing footprint at barrier
+PASS air steering respects courtyard bounds
+PASS jump completes at 60 Hz
+PASS safe landing footprint at boundary
+PASS air steering respects courtyard bounds
+PASS long air frame cannot skip the vault wall (actual=4.55000 expected=4.55000 tolerance=0.00100)
+PASS takedown action begins from ambush concealment
+PASS takedown starts exact 1.10-second action (actual=1.10000 expected=1.10000 tolerance=0.00100)
+PASS takedown does not defeat on input
+PASS takedown does not award Momentum on input (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS takedown mash cannot restart its action timer (actual=1.10000 expected=1.10000 tolerance=0.00100)
+PASS takedown mash cannot force early contact
+PASS takedown mash cannot stack Momentum (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS strike is blocked during takedown (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS evade is blocked during takedown (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS traversal actions are blocked during takedown
+PASS movement tap is blocked during takedown (actual=(-2.6, 0.0, 0.2) expected=(-2.6, 0.0, 0.2) tolerance=0.00100)
+PASS reserved takedown guard does not run AI (actual=(-4.6, 0.0, 0.2) expected=(-4.6, 0.0, 0.2) tolerance=0.00100)
+PASS reserved takedown guard cannot open attack (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS takedown remains pending at 0.20 seconds
+PASS takedown remains pending before 0.34-second contact
+PASS takedown defeats once at 0.34-second contact
+PASS takedown contact zeros guard health (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS takedown contact grants 35 Momentum once (actual=35.00000 expected=35.00000 tolerance=0.00100)
+PASS takedown auto-approach is capped at 0.62 metres
+PASS takedown auto-approach never moves away from guard
+PASS held movement cannot add lateral takedown displacement
+PASS takedown recovery never repeats guard contact (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS takedown recovery never repeats Momentum (actual=35.00000 expected=35.00000 tolerance=0.00100)
+PASS takedown presentation continues after contact
+PASS takedown action ends after 1.10 seconds (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS reset cancels pending takedown (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS reset prevents stale takedown contact
+PASS reset restores guard before stale contact (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS reset prevents stale takedown Momentum (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS non-concealed takedown never reserves action (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS out-of-range takedown never starts (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS height-rejection takedown remains concealed and in flat range
+PASS different-height takedown never starts (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS height rejection leaves guard active
+PASS low-passage takedown fixture meets concealment and range prerequisites
+PASS takedown is rejected under lintel (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS low-passage takedown rejection leaves guard active
+PASS behind but non-concealed takedown fails
+PASS ambush shadow provides concealment
+PASS concealed but frontal takedown fails
+PASS original darkness remains valid concealment
+PASS default-camera held D reaches ambush shadow
+PASS default stealth route reaches takedown range
+PASS concealed behind takedown begins authored action
+PASS concealed behind takedown contacts when warden exposes back
+PASS silent takedown grants 35 Momentum (actual=35.00000 expected=35.00000 tolerance=0.00100)
+PASS defeated guard unlocks exit success
+PASS final restart clears success and defeat
+PASS final restart restores health (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS final restart clears Momentum (actual=0.00000 expected=0.00000 tolerance=0.00100)
+PASS final restart restores guard health (actual=100.00000 expected=100.00000 tolerance=0.00100)
+PASS final restart restores player spawn (actual=(-6.0, 0.0, 2.5) expected=(-6.0, 0.0, 2.5) tolerance=0.00100)
+PASS final restart restores guard spawn (actual=(0.0, 0.0, 0.0) expected=(0.0, 0.0, 0.0) tolerance=0.00100)
+PASS final restart restores camera yaw (actual=0.69000 expected=0.69000 tolerance=0.00100)
+PASS final restart restores camera pitch (actual=0.47000 expected=0.47000 tolerance=0.00100)
+PASS final restart restores orthographic size (actual=18.50000 expected=18.50000 tolerance=0.00100)
+PASS final restart restores objective
+GLOAM_CHARACTER_ART_MECHANICS_OK checks=311 failures=0

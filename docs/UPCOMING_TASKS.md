@@ -6,8 +6,8 @@ edit this file, then run `python3 work/generate_project_roadmap_local.py`.
 
 ## Immediate review
 
-The jump elbow direction correction is technically verified and open for user
-review after the user caught backwards bending in the previous arm pass.
+The inward crouch-arm correction and earlier jump elbow correction are technically
+verified and open for user review. Check stationary Q and held crouch movement.
 Play stationary V, held WASD then V, repeated moving jumps and landing back into
 held movement. R14 appearance, continuous held gait and paired takedown also keep
 their existing acceptance gates; V1 remains default.
@@ -32,8 +32,24 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
 ```json
 {
   "schema": 1,
-  "summary": "Jump elbow direction corrected and ready for user review; R14 candidate, V1 default.",
+  "summary": "Inward crouch arms and corrected jump ready for user review; R14 candidate, V1 default.",
   "tasks": [
+    {
+      "id": "crouch-arms",
+      "lane": "waiting",
+      "area": "Animation",
+      "title": "Relaxed crouch arms \u00b7 user review",
+      "effort": "S",
+      "parallel": "Rendered and native crouch checks passed",
+      "dependency": "User crouch silhouette and movement judgement",
+      "owner": "Current crouch refinement task",
+      "evidence": "Matched front/profile/gameplay; signed inward geometry; transitions 70, mechanics 311, full-mesh crouch 1083. Native Q/F12/reset, source 0a91576169a3, PID 46972.",
+      "description": "Forward-folded elbows and inward hands with relaxed shoulders and small travel counter-swing. Crouch clearance, speed, jump and frozen assets retained. User acceptance pending.",
+      "evidence_paths": [
+        "evidence/2026-09-10-crouch-arms/README.md",
+        "docs/CHECKPOINTS.md"
+      ]
+    },
     {
       "id": "vertical-jump",
       "lane": "waiting",

@@ -570,19 +570,9 @@ static func pose_player(parts: Dictionary, phase: float, movement_amount: float,
 		right_knee_target = 0.70 + maxf(gait, 0.0) * 0.20 * crouch_move
 		left_ankle_target = -0.20 - left_leg_target * 0.18
 		right_ankle_target = -0.18 - right_leg_target * 0.18
-		if anatomical_profile:
-			# Counter-swing the supporting leg and keep the hands ahead of the
-			# folded trunk. Small trailing values were carried backward by the old
-			# extreme torso hinge in native play.
-			left_arm_target = gait * 0.18 * crouch_move - 0.72
-			right_arm_target = -gait * 0.18 * crouch_move - 0.64
-			left_arm_yaw = -0.10
-			right_arm_yaw = 0.10
-			left_arm_roll = -0.10
-			right_arm_roll = 0.10
-			left_elbow_target = 0.62
-			right_elbow_target = 0.68
-		else:
+		# The anatomical arms are composed with their size-dependent torso
+		# compensation below, so there is only one owner for their targets.
+		if not anatomical_profile:
 			left_arm_target = -gait * 0.16 * crouch_move - 0.18
 			right_arm_target = gait * 0.16 * crouch_move - 0.12
 			left_elbow_target = 0.38
@@ -1012,14 +1002,17 @@ static func pose_player(parts: Dictionary, phase: float, movement_amount: float,
 			# mid-build clearance comes from a very small additional body fold.
 			torso_rotation.x += 0.035 * medium_clearance
 			head_rotation.x -= 0.020 * medium_clearance
-			# Compensate for the parent chest fold in body space. These shoulders
-			# look large in isolation because the core has already rotated forward;
-			# their combined world-space result is a relaxed, ready hand position in
-			# front of the chest rather than behind the hips.
-			left_arm_target = -lerpf(1.08, 1.58, anatomical_size) + gait * float(pose_progress) * 0.18
-			right_arm_target = -lerpf(1.00, 1.50, anatomical_size) - gait * float(pose_progress) * 0.18
-			left_elbow_target = 0.66
-			right_elbow_target = 0.72
+			# Compensate for the chest fold while keeping the shoulders relaxed.
+			# Negative X folds the elbows forward; mirrored yaw carries the hands
+			# toward the abdomen, with a small counter-swing during crouch travel.
+			left_arm_target = -lerpf(0.68, 1.18, anatomical_size) + gait * float(pose_progress) * 0.10
+			right_arm_target = -lerpf(0.62, 1.12, anatomical_size) - gait * float(pose_progress) * 0.10
+			left_arm_yaw = 0.50
+			right_arm_yaw = -0.50
+			left_arm_roll = -0.08
+			right_arm_roll = 0.08
+			left_elbow_target = -0.82
+			right_elbow_target = -0.90
 		else:
 			# Preserve the accepted v1 authored-player clearance pose exactly.
 			left_leg_target = -1.23 - large_build * 0.14 + crouch_gait

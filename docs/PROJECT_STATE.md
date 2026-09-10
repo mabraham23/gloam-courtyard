@@ -17,23 +17,26 @@ No Batman or other franchise names, likenesses, symbols, costumes, architecture,
 
 ## Current milestone
 
-**Waiting — jump elbow direction corrected, ready for user review (September 10).**
-The user identified backwards elbow bending in the last running-jump pass. That
-visual verdict is superseded. The jump elbow driver now flexes forward; shoulder
-motion, alternating split legs, landing catch, controller timing and travel remain.
+**Waiting — relaxed inward crouch arms ready for user review (September 10).**
+The user's front/profile screenshots showed extended arms outside the body.
+R14 crouch now bends the elbows forward and brings the hands inward with relaxed
+shoulders and a small moving counter-swing. One size-compensated block owns those
+arm targets; duplicate overwritten assignments were removed. Crouch speed, legs,
+clearance, jump curves and frozen assets are retained.
 
-The elbow check now measures signed flexion on the actual skeleton. It rejects
-all 12 moving cases on the old pose (about -56 degrees), then passes on the
-correction (moving-flight minima 81–82 degrees). Full-mesh 5646, default/candidate
-mechanics 309/311 and transitions 67 pass. Matched profile and gameplay captures
-show both leads with forward-folding forearms. User movement judgement is pending.
+Matched 270-frame front/profile/gameplay captures were inspected. Actual-skeleton
+idle/moving cycles show 66–70 degrees of forward elbow flexion and inward wrists
+without crossing center. The old pose fails the two new geometry checks; the
+correction passes transitions 70, candidate mechanics 311 and full-mesh crouch
+1083. All three sizes retain floor contact and the 2.0-unit lintel clearance.
+Evidence: `evidence/2026-09-10-crouch-arms/`.
 
-Current managed R14 review: PID 46188, exact title `Gloam Courtyard Spike (DEBUG)`,
-source `2dfc70da70c6`. Native V/F12/Q smoke and enlarged R/0/F12 reset were inspected;
-PNG/state hashes match, with no changed source. Evidence:
-`evidence/2026-09-10-jump-elbow-direction/`. PID 45340 is the rejected historical
-handoff. V1 remains default; native held running and earlier R14 release gates stay
-open. The known sandboxed macOS system-CA warning is separate from passing checks.
+Current managed R14 review: PID 46972, exact title `Gloam Courtyard Spike (DEBUG)`,
+source `0a91576169a3`. Native Q enter/exit, settled crouch and enlarged R/0/F12 reset
+were inspected; saved PNG/state hashes match without source drift. PID 46188 is
+historical. The earlier jump elbow correction remains ready for user review.
+V1 remains default; native held movement and earlier R14 release gates stay open.
+The known sandbox macOS system-CA warning is separate from passing game checks.
 
 ## Character and acceptance boundary
 

@@ -164,3 +164,26 @@ judgement remain separate. V1 stays default. Board generated/schema checked, wit
 its existing rendered UI gate open. No new performance certificate.
 
 [Correction evidence and limitations](../evidence/2026-09-10-jump-elbow-direction/README.md).
+
+## Waiting — relaxed inward crouch arms (2026-09-10)
+
+User front/profile screenshots prompted a crouch-specific arm correction. Forward
+elbow flexion, inward mirrored yaw, reduced shoulder reach and modest counter-swing
+now keep the hands near the lower torso. The final size-compensated block owns the
+anatomical targets; earlier overwritten assignments are removed. Torso/leg posture,
+clearance, speed, jump curves, V1 default and frozen assets remain unchanged.
+
+Matched 270-frame front/profile/gameplay captures cover entry, idle, held travel,
+release and standing recovery. Actual-skeleton full idle/moving cycles give elbow
+flexion 65.78–70.37 degrees, minimum inward wrist offset 0.077 and center clearance
+0.154 authored units. Both new geometry gates reject the old pose and pass the
+correction. Transitions 70, candidate mechanics 311 and full-mesh crouch 1083 pass;
+all three sizes retain floor/lintel bounds. Editor import passes. Sandbox CA warning
+and the resolved historical-snapshot missing-import failure are documented separately.
+
+Fresh exact-title PID 46972, source `0a91576169a3`, native Q enter/exit, settled
+crouch and enlarged R/0/F12 reset were inspected. Images match sidecars with no
+changed source. Current runtime matches the final rendered pose. Held movement
+in the reel is scripted; user feel remains pending. Earlier jump review and R14
+release gates stay open. Boards generated/schema checked; rendered UI gate remains
+separate. [Evidence, rejected variants and limitations](../evidence/2026-09-10-crouch-arms/README.md).
