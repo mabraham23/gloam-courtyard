@@ -1,0 +1,44 @@
+[
+  {
+    "run": "20260910T190058Z-hair-a5e059",
+    "source": "502c3a55b465cfc5a0fe78c5f082210831f1db721633a29e818bc38bbf48fa4b",
+    "reason": "First taper: cap winding inverted; exposed jaw has harsh diffuse cutoff.",
+    "technical_pass": true
+  },
+  {
+    "run": "20260910T190227Z-hair-911693",
+    "source": "13ba4fe4b7dbb08eeb5e743e6962d65973eaa54172e68ced5779107a7d0121e4",
+    "reason": "Disabling hair shadow casting did not fix jaw lighting; reverted.",
+    "technical_pass": true
+  },
+  {
+    "run": "20260910T190439Z-hair-e253e3",
+    "source": "67a74cefa18188f87bba129b008dbb7e3f68458c1476c89845e8a4bcfe66280b",
+    "reason": "Cap winding/normals corrected; disabling skin normal map did not fix jaw lighting; skin map restored.",
+    "technical_pass": true
+  },
+  {
+    "run": "20260910T190604Z-hair-8098bc",
+    "source": "7140cb07a00c2de715c60e1eab808fbb64f2f4d1b035eb7cf5b199fe746daa3c",
+    "reason": "Disabling skin shadow reception did not fix diffuse cutoff; reverted.",
+    "technical_pass": true
+  },
+  {
+    "run": "20260910T190746Z-hair-6c108c",
+    "source": "2401bc6412c8ed196f691d923cad2d28495dbdbe356530a2bb40823d2772ba0e",
+    "reason": "Unlit diagnostic proved beard albedo removed; unlit skin rejected for loss of shading.",
+    "technical_pass": true
+  },
+  {
+    "run": "20260910T190946Z-hair-7bb9a7",
+    "source": "c6f6cafa56e1276b57d25c17e13147bae75c51dac8f220bc8e31fcbc1e40f8a9",
+    "reason": "Retaining source compression flag (zero on R14 face) did not alter lighting.",
+    "technical_pass": true
+  },
+  {
+    "run": "20260910T191237Z-hair-72bfc3",
+    "source": "ece461de7ac170f02db6825999d7cc744b6f9fd08224a9e89952214e807b2453",
+    "reason": "Lambert-wrap skin softens grazing diffuse cutoff; final shape/material, before regression-label update.",
+    "technical_pass": true
+  }
+]

@@ -17,32 +17,34 @@ No Batman or other franchise names, likenesses, symbols, costumes, architecture,
 
 ## Current milestone
 
-**Waiting — short black hair ready for user review (September 10).**
-The R14 candidate now has a fitted uneven fringe and a low swept crown lock.
-A material import setting had disabled its authored black scalp/beard colors;
-those colors now render correctly. The new 280-vertex / 436-triangle hair layer
-shares the head skin bind. The frozen GLB, crouch and jump poses are retained.
+**Waiting — tapered haircut and clean-shaven face ready for review (September 10).**
+The user rejected the round side profile and requested beard/mustache removal.
+The old R14 shell/nape strips are replaced by a closer taper around the ears and
+neck. The fringe and low crown remain; facial-hair color is removed while warm
+lips and anatomy are preserved. Skin uses softer Lambert-wrap diffuse lighting.
 
-Matched 270-frame front/quarter/profile/rear and gameplay captures were inspected.
-Rig/material/binding 454, crouch 1083 and full-mesh deformation 22,164 checks pass,
-including all 49,595 evaluated vertices at three sizes and both 30/60 Hz.
-Import and default startup pass. Evidence: `evidence/2026-09-10-short-black-hair/`.
+Matched 270-frame front/quarter/side/rear and gameplay review was inspected.
+Rig/appearance 456 and full deformation 22,164 pass with 49,875 vertices at three
+sizes and both sample rates. An independent comparator verifies all 17,767
+surviving face vertices, four expressions and eleven face LOD levels. Medium
+crouch stays below the lintel at 1.991893. Import/default startup pass.
+Evidence: `evidence/2026-09-10-tapered-hair-clean-shave/`.
 
-Current managed R14 review: PID 48537, exact title `Gloam Courtyard Spike (DEBUG)`,
-source `b8b794c3c1c3`, matching the final rendered source. Native Q, V preparation,
-window enlargement and R/0/F12 reset were inspected; three saved PNG/state pairs
-match without source drift. The game is left open. PID 46972 is historical.
-The earlier inward crouch arms and jump elbow correction remain open for user
-review. V1 remains default; native held movement and prior R14 release gates stay
-open. The known sandbox macOS system-CA warning is separate from game results.
+Current managed R14 review: exact-title PID 50365, source `0f0db98db221`, matching
+the final render. Enlarged native Q/F12 was inspected with matching PNG/state and
+zero source drift. The user was already playing; a computer-control interaction
+notice blocked reset. After state refresh the current play state was left open,
+so no final reset capture is claimed. PID 48537 is historical. Earlier jump/crouch
+preference and the R14 release gates remain open; V1 remains default. The known
+sandbox macOS system-CA warning is separate from game results.
 
 ## Character and acceptance boundary
 
 R14 is the isolated candidate; V1 is still the default. Exact R14 GLB SHA:
 `30a2c06be42351252dada7f791619499c28e160af59455c7fa332bfad1070b0b`.
-The frozen source has 74 joints and 86,452 triangles. The current runtime adds
-436 hair triangles (86,888 total before LOD). Hair/beard remain stylized mesh
-surfaces. The user must accept appearance, held movement and paired takedown before
+The frozen source has 74 joints and 86,452 triangles. Current runtime removes
+1,412 old hair triangles and adds 2,932 replacement triangles (87,972 before LOD).
+The face is clean-shaven; hair remains stylized mesh geometry. The user must accept appearance, held movement and paired takedown before
 an integration owner makes a narrow default switch and tests that default.
 
 ## Current controls and protected values

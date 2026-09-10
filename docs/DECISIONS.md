@@ -21,7 +21,7 @@ Read relevant rationale when changing a rule, rather than replaying the whole lo
 | D-20260908-PRESERVE | Source control and selective preservation | Active: current source in private Git, selected milestones in private archives, raw local evidence protected by verified retention. |
 | D-20260908-BOARD | One task source and distinct gates | Active: board generated from roadmap data; board UI blocker tracked separately from runtime and user acceptance. |
 | D-20260910-JUMP | Grounded jump phrase and movement-dependent takeoff | Active: stationary lift versus moving split-leg jump, with gentle air control and grounded preparation/impact; contextual vault preserved. |
-| D-20260910-HAIR | Short black tousled hair | Active: uneven fringe and low crown lock on R14; restores authored scalp/beard colors. Supersedes the smooth swept silhouette for current review, preserving the frozen GLB and V1 default. |
+| D-20260910-HAIR | Tapered black hair, clean shave | Active: closer ear/nape taper, retained fringe/crown and clean-shaven face. Supersedes the round shell and earlier beard/mustache preference; frozen GLB and V1 default retained. |
 <!-- decision-index:end -->
 
 ## Preserved dated rationale
@@ -380,3 +380,17 @@ previous exports and intermediate captures remain preserved. Sparse crown spikes
 were rejected visually, and a rear lock was removed after full-mesh crouch
 clearance failed. Keep the final low crown and fitted fringe. This is a stylized
 mesh hairstyle, with user appearance judgement still pending; V1 stays default.
+
+## 2026-09-10 — Tapered sides and clean-shaven face (Active)
+
+The user rejected the round side profile as bowl-like, then explicitly requested
+removal of the beard and mustache. This supersedes the prior facial-hair preference
+and the first short-hair shell silhouette. Retain the uneven fringe and low crown,
+replace the old shell with a closer taper around ears/nape, and remove facial-hair
+color without changing the anatomical face or warm lips. Keep the frozen R14 GLB.
+
+Use a private compacted face mesh with its remaining vertex channels, four
+expressions and eleven face LOD levels preserved. The clean skin uses Lambert-wrap
+diffuse lighting because Burley's grazing cutoff produced a harsh dark jaw area;
+normal maps and shadows remain enabled. Temporary unlit and disabled-shadow/map
+experiments remain diagnostic history. User appearance judgement is still pending.

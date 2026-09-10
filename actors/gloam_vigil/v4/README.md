@@ -101,3 +101,12 @@ for regeneration and binding details. The frozen GLB and its historical metrics
 above are unchanged. The added mesh contributes 280 vertices and 436 triangles;
 current full-mesh audits include it. See `evidence/2026-09-10-short-black-hair/`
 for matched Godot renders and current acceptance boundaries.
+
+### Side-profile correction and clean shave
+
+The user rejected the September 10 round side profile and requested removal of
+the beard/mustache. The current runtime finish now replaces the shell with a
+close taper around the ears/nape and restores the lower face's skin color while
+preserving the lips. The previous companion and frozen R14 appearance remain
+preserved history. See [hair/README.md](hair/README.md) for current construction,
+metrics and evidence; the frozen-export counts above are historical asset counts.

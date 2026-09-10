@@ -212,3 +212,31 @@ Evidence and preserved iteration identities: `evidence/2026-09-10-short-black-ha
 User hairstyle, earlier crouch and jump preferences remain pending. V1 stays
 default, R14 remains a candidate; no new performance certificate. Generated-board
 schema/parity verification is separate from the existing rendered UI policy gate.
+
+## Waiting — tapered sides and clean-shaven face (2026-09-10)
+
+User rejection supersedes the first short-hair profile. A private runtime face
+removes the old round shell/nape strips and the beard/mustache color field. New
+hair fits the anatomical scalp, tapers around ears/nape and retains the earlier
+fringe/crown. The frozen GLB is unchanged; lips and face geometry are preserved.
+Lambert-wrap skin lighting softens a harsh grazing cutoff exposed by the shave;
+normal maps and shadows remain enabled. Diagnostic variants remain recorded.
+
+Matched 270-frame angles/gameplay reviewed; rig/appearance 456, deformation
+22,164, import and default startup pass. All 49,875 vertices are included at
+three sizes and 30/60 Hz. A separate comparator verifies 17,767 surviving face
+vertices/attributes, four expressions and eleven face LOD levels against the
+original. Medium crouch max 1.991893 remains below 2.0. MacOS sandbox CA warning
+is separate from the passing game results.
+
+Fresh native exact-title PID 50365, source `0f0db98db221`, matches the final render.
+Enlarged Q/F12 inspected and image/state hashes match without source drift. The
+run already contained user combat progress; that progress is not agent test
+credit. A user-interaction notice blocked the reset attempt. After state refresh,
+the existing play state was left open rather than forcing another input; no final
+reset capture is claimed. Only the earlier stale Project Manager PID 50250 was
+stopped before this fresh launch. PID 48537 is superseded.
+
+Evidence: `evidence/2026-09-10-tapered-hair-clean-shave/`. User appearance and earlier
+motion gates remain pending; V1 stays default, with no new performance claim.
+Board generation/schema/parity and its existing rendered UI blocker remain separate.

@@ -6,9 +6,9 @@ edit this file, then run `python3 work/generate_project_roadmap_local.py`.
 
 ## Immediate review
 
-The short black hairstyle, inward crouch arms and earlier jump elbow correction
-are technically verified and open for user review. Check the hair from multiple
-angles, stationary Q and held crouch movement.
+The tapered haircut and clean-shaven face, inward crouch arms and earlier jump
+elbow correction are technically verified and open for user review. Check the
+hair from multiple angles, stationary Q and held crouch movement.
 Play stationary V, held WASD then V, repeated moving jumps and landing back into
 held movement. R14 appearance, continuous held gait and paired takedown also keep
 their existing acceptance gates; V1 remains default.
@@ -33,21 +33,21 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
 ```json
 {
   "schema": 1,
-  "summary": "Short black hair, inward crouch arms and corrected jump ready for user review; R14 candidate, V1 default.",
+  "summary": "Tapered haircut and clean-shaven face ready for review; prior motion gates pending, R14 candidate, V1 default.",
   "tasks": [
     {
       "id": "short-black-hair",
       "lane": "waiting",
       "area": "Characters",
-      "title": "Short black hair \u00b7 user review",
+      "title": "Tapered hair and clean shave \u00b7 user review",
       "effort": "S",
-      "parallel": "Rendered angles, motion and native smoke passed",
-      "dependency": "User hairstyle judgement",
+      "parallel": "Matched profile, full motion and native Q/F12 passed",
+      "dependency": "User accepts the revised profile and clean-shaven face",
       "owner": "Current appearance refinement task",
-      "evidence": "Matched 270-frame before/final review; rig 454, crouch 1083, full mesh 22164. Native Q/V/R/0/F12, source b8b794c3c1c3, PID 48537.",
-      "description": "Authored black scalp/beard colors restored; fitted uneven fringe and low crown lock share head skin bind. Frozen R14 GLB, movement poses and V1 default retained.",
+      "evidence": "Matched 270-frame review; rig 456, full mesh 22164; face channels, four expressions and eleven LODs preserved. Live source 0f0db98db221, PID 50365.",
+      "description": "Old bowl-like shell replaced with an ear/nape taper; beard and mustache removed, lips retained. Native active-play capture verified; reset was left pending after user interaction. V1 default retained.",
       "evidence_paths": [
-        "evidence/2026-09-10-short-black-hair/README.md",
+        "evidence/2026-09-10-tapered-hair-clean-shave/README.md",
         "docs/CHECKPOINTS.md"
       ]
     },
@@ -123,7 +123,7 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
       "dependency": "User accepts gameplay-scale appearance and motion",
       "owner": "Character realism owner",
       "evidence": "R14 GLB30a2c06\u2026; rig451, deformation21642 and imported/studio review. Exact source and acceptance limits in PROJECT_STATE.",
-      "description": "Warm skin, clear mouth and connected beard on original costume/CC0 anatomy. Current runtime adds short black fringe/crown hair; frozen R14 retained. User appearance judgement pending; V1 stays default.",
+      "description": "Warm skin and clean-shaven face on original costume/CC0 anatomy. Current runtime uses tapered black hair; frozen R14 retained. User appearance judgement pending; V1 stays default.",
       "evidence_paths": [
         "docs/CHECKPOINTS.md"
       ]

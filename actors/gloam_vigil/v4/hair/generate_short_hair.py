@@ -20,7 +20,7 @@ def accessor(index):
     a = gltf['accessors'][index]
     view = gltf['bufferViews'][a['bufferView']]
     code = {5126: 'f', 5125: 'I', 5123: 'H'}[a['componentType']]
-    width = {'SCALAR': 1, 'VEC3': 3}[a['type']]
+    width = {'SCALAR': 1, 'VEC2': 2, 'VEC3': 3, 'VEC4': 4}[a['type']]
     size = struct.calcsize(code) * width
     start = view.get('byteOffset', 0) + a.get('byteOffset', 0)
     return [struct.unpack_from('<' + code * width, binary, start + i * view.get('byteStride', size)) for i in range(a['count'])]
@@ -31,6 +31,89 @@ points = accessor(face['attributes']['POSITION'])
 indices = [x[0] for x in accessor(face['indices'])]
 triangles = [tuple(points[i] for i in indices[n:n + 3]) for n in range(0, len(indices), 3)]
 triangles = [t for t in triangles if max(p[1] for p in t) > 2.06]
+
+# Fit the replacement to the anatomical head, excluding the old black shell.
+source_colors = accessor(face['attributes']['COLOR_0'])
+source_uvs = accessor(face['attributes']['TEXCOORD_0'])
+source_normals = accessor(face['attributes']['NORMAL'])
+head_triangles = [indices[n:n+3] for n in range(0, len(indices), 3)
+                  if max(points[i][1] for i in indices[n:n+3]) > 1.98
+                  and all(source_colors[i][0] > 265 for i in indices[n:n+3])]
+
+
+def dot(a, b):
+    return sum(x*y for x, y in zip(a, b))
+
+
+def sub(a, b):
+    return tuple(x-y for x, y in zip(a, b))
+
+
+def cross(a, b):
+    return (a[1]*b[2]-a[2]*b[1], a[2]*b[0]-a[0]*b[2], a[0]*b[1]-a[1]*b[0])
+
+
+def scalp_hit(direction):
+    center = (0.0, 2.049, 0.058)
+    best = None
+    for ids in head_triangles:
+        a, b, c = (points[i] for i in ids)
+        e1, e2 = sub(b, a), sub(c, a)
+        h = cross(direction, e2)
+        det = dot(e1, h)
+        if abs(det) < 1e-10: continue
+        origin = sub(center, a)
+        u = dot(origin, h)/det
+        if u < -1e-6 or u > 1.000001: continue
+        q = cross(origin, e1)
+        v = dot(direction, q)/det
+        distance = dot(e2, q)/det
+        if v < -1e-6 or u+v > 1.000001 or distance <= 0: continue
+        if best is None or distance < best[0]: best = (distance, ids, (1-u-v, u, v))
+    if best is None: raise ValueError(f'No anatomical scalp hit along {direction}')
+    distance, ids, weights = best
+    point = tuple(center[i]+direction[i]*distance for i in range(3))
+    normal = tuple(sum(source_normals[idx][i]*w for idx,w in zip(ids,weights)) for i in range(3))
+    magnitude = math.sqrt(dot(normal, normal))
+    normal = tuple(x/magnitude for x in normal)
+    uv = tuple(sum(source_uvs[idx][i]*w for idx,w in zip(ids,weights)) for i in range(2))
+    return point, normal, uv
+
+
+def tapered_scalp():
+    result = {key: [] for key in ['vertices', 'normals', 'uvs', 'colors', 'triangles']}
+    segments, rings = 64, 20
+    for ring in range(rings+1):
+        t = ring/rings
+        for segment in range(1 if ring == 0 else segments):
+            azimuth = math.tau*segment/segments
+            front = math.cos(azimuth)
+            # Rise around the ears, turn down into the nape, and break the
+            # old horizontal rim. The top keeps length; sides hug the skull.
+            boundary = 1.61 - 0.55*front - 0.10*front*front
+            boundary += 0.035*math.sin(5*azimuth+0.4) + 0.020*math.sin(9*azimuth)
+            polar = t*boundary
+            direction = (math.sin(polar)*math.sin(azimuth), math.cos(polar), math.sin(polar)*front)
+            point, normal, uv = scalp_hit(direction)
+            top = max(0.0, direction[1])**2
+            waves = math.sin(math.pi*t)**1.2 * (0.5+0.5*math.sin(6*azimuth-4*t))
+            volume = 0.0005 + (0.0018+0.005*top+0.003*waves)*(1-t**4)
+            # Feather the close-cut perimeter into the underlying skin using
+            # the same texture UVs. This avoids a thick dark helmet edge.
+            fade = max(0.0, (t-0.88)/0.12)
+            fade = fade*fade*(3-2*fade)
+            result['vertices'].append([round(point[i]+normal[i]*volume,7) for i in range(3)])
+            result['normals'].append([round(x,7) for x in normal])
+            result['uvs'].append([round(x,7) for x in uv])
+            result['colors'].append([round(x+(1-x)*fade,7) for x in (0.003,0.004,0.006)])
+    for segment in range(segments):
+        result['triangles'].append([0,1+segment,1+(segment+1)%segments])
+    for ring in range(1,rings):
+        a=1+(ring-1)*segments; b=a+segments
+        for segment in range(segments):
+            nxt=(segment+1)%segments
+            result['triangles'].extend([[a+segment,b+segment,a+nxt],[a+nxt,b+segment,b+nxt]])
+    return result
 
 
 def front_surface(x, y):
@@ -106,6 +189,7 @@ fringe(0.073, 2.126, 0.073, 2.075, 0.015, 0.006)
 tuft((0.003,2.148,0.046),(0.018,2.176,0.062),(0.033,2.183,0.079),0.041,(0,1,0))
 
 result = {'schema': 1, 'description': 'Original fitted angular fringe and short crown lock; model coordinates, head skin binding.',
-          'vertices': [[round(x,7) for x in p] for p in vertices], 'triangles': faces}
+          'vertices': [[round(x,7) for x in p] for p in vertices], 'triangles': faces,
+          'scalp': tapered_scalp()}
 (ROOT/'short_black_hair.json').write_text(json.dumps(result, separators=(',', ':')) + '\n')
-print(f'SHORT_HAIR_GENERATED vertices={len(vertices)} triangles={len(faces)}')
+print(f'SHORT_HAIR_GENERATED locks={len(vertices)} scalp={len(result["scalp"]["vertices"])} triangles={len(faces)+len(result["scalp"]["triangles"])}')

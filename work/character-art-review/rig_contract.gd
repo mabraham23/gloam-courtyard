@@ -104,7 +104,18 @@ func _check_hair(rig: Dictionary, skeleton: Skeleton3D) -> void:
 		var material := face.get_active_material(surface) as BaseMaterial3D
 		if material != null and material.resource_name == "MAT_GV2_Skin":
 			skin_colors_enabled = material.vertex_color_use_as_albedo
-	_check(skin_colors_enabled, "R14 face retains authored black scalp and beard vertex colors")
+	_check(skin_colors_enabled, "R14 face retains skin and lip vertex colors")
+	var skin_arrays := face.mesh.surface_get_arrays(0)
+	var clean_face := true
+	var lip_vertices := 0
+	for i in skin_arrays[Mesh.ARRAY_VERTEX].size():
+		var p: Vector3 = skin_arrays[Mesh.ARRAY_VERTEX][i]
+		var c: Color = skin_arrays[Mesh.ARRAY_COLOR][i]
+		if p.y < 2.0 and p.z > 0.05:
+			clean_face = clean_face and not (c.r < 0.98 and c.r <= c.g and c.g <= c.b)
+			if c.r > c.g + 0.02: lip_vertices += 1
+	_check(clean_face, "jaw and upper lip have no remaining cool facial-hair color field")
+	_check(lip_vertices > 20, "clean shave preserves the warm lip color region")
 	for value in rig["mesh_instances"]:
 		if value.name == &"ShortBlackHair": hair = value
 	_check(hair != null, "short hair participates in the full-mesh deformation audit")
