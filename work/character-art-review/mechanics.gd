@@ -33,6 +33,11 @@ func _run() -> void:
 	game.player_accent_material = candidate_parts["accent_material"]
 	_check(Candidate.is_exact_candidate(candidate_parts), "mechanics fixture selected exact 74-bone character-art path")
 	_check(FileAccess.get_sha256(Candidate.ASSET_PATH).length() == 64, "mechanics fixture fingerprints character-art GLB")
+	var default_guard_parts: Dictionary = game.guard_visual_parts
+	(default_guard_parts["visual_root"] as Node3D).visible = false
+	var candidate_guard_parts := Candidate.build_guard(game.guard_root)
+	game.guard_visual_parts = candidate_guard_parts
+	_check(Candidate.is_exact_guard(candidate_guard_parts), "mechanics fixture selected the exact R14 corporate sentry")
 
 	_test_reset_and_customization(game)
 	_test_spacing_and_combat(game)
@@ -47,7 +52,9 @@ func _run() -> void:
 	_test_stealth_exit_and_restart(game)
 
 	Candidate.clear_material_overrides(candidate_parts)
+	Candidate.clear_material_overrides(candidate_guard_parts)
 	Candidate.clear_material_overrides(default_parts)
+	Candidate.clear_material_overrides(default_guard_parts)
 	game.queue_free()
 	_finish()
 
@@ -57,4 +64,3 @@ func _finish() -> void:
 	for failure in failures:
 		print(" - ", failure)
 	quit(0 if failures.is_empty() else 1)
-

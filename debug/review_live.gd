@@ -16,6 +16,9 @@ func start() -> void:
 		game.player_visual_parts = Candidate.build_player(game.player_root, game.outfit_colors[game.outfit_index])
 		game.player_accent_material = game.player_visual_parts["accent_material"]
 		assert(Candidate.is_exact_candidate(game.player_visual_parts))
+		game.guard_visual_parts["visual_root"].free()
+		game.guard_visual_parts = Candidate.build_guard(game.guard_root)
+		assert(Candidate.is_exact_guard(game.guard_visual_parts))
 	game.reset_game()
 	game.reset_camera()
 	var identity := Identity.new()

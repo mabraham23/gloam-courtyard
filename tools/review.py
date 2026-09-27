@@ -21,6 +21,11 @@ import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
 SCENARIOS = {
+    'corporate-guard': {'script': 'work/corporate-guard/guard_sequence.gd', 'frames': 210,
+                        'footer': 'CORPORATE_GUARD_SEQUENCE_OK', 'args': [],
+                        'keyframes': [8, 38, 57, 82, 98, 112, 135, 154, 179],
+                        'question': 'Does the R14-based red corporate sentry clearly surpass the procedural warden while retaining readable enemy identity?',
+                        'helpers': 'Fixed 30 Hz side-by-side diagnostic; same courtyard light/scale, scripted idle/patrol/attack/reaction/defeat poses; firearm is a visual sidearm and close-range strike prop, not ranged gameplay.'},
     'upper-body': {'script': 'work/action-quality/upper_body_sequence.gd', 'frames': 480,
                    'footer': 'UPPER_BODY_SEQUENCE_OK', 'args': [],
                    'keyframes': [20, 80, 99, 130, 163, 188, 190, 211, 344],

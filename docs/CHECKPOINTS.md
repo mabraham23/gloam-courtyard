@@ -358,3 +358,45 @@ policy gate remain separate. [Review and limitations](../evidence/2026-09-10-mot
 
 Board source verification: `ROADMAP_CHECK_OK tasks=17`; all 12 tooling tests pass.
 The existing rendered board UI gate remains pending.
+
+## Waiting — R14 corporate sentry candidate (2026-09-27)
+
+The user preferred the current R14 player presentation and requested the enemy
+use the same high-quality base with a red corporate-guard identity, gun and
+helmet. Candidate review mode now replaces the procedural warden with the exact
+frozen R14 GLB/74-joint rig. The production V1 player and procedural warden remain
+the default pair; no player-release gate is silently closed.
+
+The candidate removes player-specific cape/hair, preserves authored normal and
+roughness response beneath a clear crimson suit, and adds charcoal gear, an
+original segmented red helmet/dark visor/comms assembly, plus a compact sidearm
+in a pelvis-following outer-thigh holster. The firearm is visual equipment only.
+Existing close-range AI, attack timing/damage, collision, stealth, counter,
+takedown, fade and reset behavior are unchanged; ranged combat is not claimed.
+
+Final managed review `20260927T225311Z-corporate-guard-5b6e96`, source
+`36805cdb75a9b514d2c63520dad6d075fbd16d41c24f5dadb9d82c8b439a5195`,
+rendered 210/210 fixed 30 Hz frames under the exact R14 asset SHA
+`30a2c06be42351252dada7f791619499c28e160af59455c7fa332bfad1070b0b`.
+Same-light/scale side-by-side idle, patrol, close-range strike, reaction and
+defeat keyframes were inspected. The new continuous anatomy is visibly less
+blocky; crimson/helmet identity and the offset holster remain readable through
+motion and the side fall.
+
+Guard structure/pose contract passes14 checks, full candidate mechanics passes
+312 checks, the managed sequence footer passes, and all12 feedback-tool tests
+pass. The nearly-black first tint and ambiguous hand prop are preserved rejected
+raw iterations. Evidence and exact limitations:
+`evidence/2026-09-27-corporate-sentry/`.
+
+Fresh managed live run `20260927T225539Z-live-f57781` launched the exact-title
+`Gloam Courtyard Spike (DEBUG)` candidate at PID 77731 and remains open. F12
+capture `review_36805cdb75a9_77731_47235777` records health 100, Momentum 0,
+guard 100, an automatic patrol position, the exact R14 asset SHA, source
+`36805cdb75a9b514d2c63520dad6d075fbd16d41c24f5dadb9d82c8b439a5195`
+and no changed source files. Native input in this capture was F12 only, so it is
+identity/reset/patrol evidence rather than combat or takedown acceptance.
+
+Next: user gameplay-scale judgement plus native attack/reaction, defeat or
+takedown review. Promotion to the production default and any ranged-fire
+mechanics remain separate decisions.

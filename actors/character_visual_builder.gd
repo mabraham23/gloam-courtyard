@@ -1075,6 +1075,28 @@ static func pose_player(parts: Dictionary, phase: float, movement_amount: float,
 
 
 static func pose_guard(parts: Dictionary, phase: float, movement_amount: float, delta: float, pose_state: StringName = &"grounded", pose_progress := 0.0, reaction_side := 1.0) -> void:
+	if parts.has("authored_rig"):
+		var authored_pose := &"grounded"
+		var authored_progress := float(pose_progress)
+		match pose_state:
+			&"attack":
+				authored_pose = &"strike"
+			&"stagger", &"restrained":
+				authored_pose = &"hurt"
+			&"takedown_victim", &"defeated":
+				authored_pose = &"downed"
+		pose_player(
+			parts,
+			phase,
+			movement_amount,
+			delta,
+			authored_pose,
+			authored_progress,
+			&"right_punch",
+			0.0
+		)
+		return
+
 	var movement := smoothstep(0.0, 1.0, clampf(movement_amount, 0.0, 1.0))
 	var gait := sin(phase)
 	var weight_shift := gait * movement

@@ -4,11 +4,16 @@ extends RefCounted
 ## Nothing in the default scene loads this helper.
 
 const Builder = preload("res://actors/character_visual_builder.gd")
+const CorporateSentry = preload("res://actors/corporate_guard/corporate_sentry_visual.gd")
 const ASSET_PATH := "res://actors/gloam_vigil/v4/gloam_vigil_player_v4.glb"
 
 
 static func build_player(parent: Node3D, accent: Color) -> Dictionary:
 	return Builder.build_player(parent, accent, true, ASSET_PATH)
+
+
+static func build_guard(parent: Node3D) -> Dictionary:
+	return CorporateSentry.build(parent)
 
 
 static func source_path(parts: Dictionary) -> String:
@@ -30,6 +35,10 @@ static func is_exact_candidate(parts: Dictionary) -> bool:
 	)
 
 
+static func is_exact_guard(parts: Dictionary) -> bool:
+	return CorporateSentry.is_exact(parts)
+
+
 static func clear_material_overrides(parts: Dictionary) -> void:
 	var rig := parts.get("authored_rig", {}) as Dictionary
 	for mesh_value in rig.get("mesh_instances", []):
@@ -40,4 +49,3 @@ static func clear_material_overrides(parts: Dictionary) -> void:
 		if mesh.mesh != null:
 			for surface in mesh.mesh.get_surface_count():
 				mesh.set_surface_override_material(surface, null)
-

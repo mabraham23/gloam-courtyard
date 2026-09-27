@@ -6,6 +6,12 @@ edit this file, then run `python3 work/generate_project_roadmap_local.py`.
 
 ## Immediate review
 
+The R14 corporate sentry is ready for user judgement. In the managed candidate
+build, inspect the red uniform and helmet at default gameplay scale, watch patrol
+movement, trigger a close-range attack/reaction, and defeat or takedown the guard.
+Confirm that the thigh holster reads as a compact sidearm without implying ranged
+damage. The production V1 player and procedural guard remain the default pair.
+
 The whole-body follow-up is ready for user judgement after the earlier subtle
 upper-body pass still looked stiff. Try held WASD starts/stops, Q rise and crouch
 travel, standing/moving V and repeated Space. Review the pose handoffs, guard
@@ -40,8 +46,24 @@ evidence paths. This block is authoritative; generated HTML is not edited by han
 ```json
 {
   "schema": 1,
-  "summary": "Whole-body fluidity follow-up: smooth action and start/stop handoffs, punch recovery and moving jump gather. Native reset open; R14 candidate, V1 default.",
+  "summary": "R14 corporate sentry candidate: crimson security uniform, segmented helmet and visual holstered sidearm on the same 74-joint base. Live user review pending; production defaults unchanged.",
   "tasks": [
+    {
+      "id": "corporate-sentry-visual",
+      "lane": "waiting",
+      "area": "Characters",
+      "title": "R14 corporate sentry · user review",
+      "effort": "M",
+      "parallel": "Candidate-only guard visual; production defaults preserved",
+      "dependency": "User accepts the red uniform, helmet, holster and gameplay-scale enemy read",
+      "owner": "Character visual integration owner",
+      "evidence": "Exact R14 74-joint base; guard contract 14, candidate mechanics 312, 210-frame rendered comparison and 12 tooling tests pass. Exact-title candidate PID 77731 is open; fresh F12 state at source 36805cdb75a9 has health 100, Momentum 0, guard 100 and no drift.",
+      "description": "Candidate mode replaces the procedural warden with an original crimson corporate sentry using the R14 body/rig, no player cape/hair, a segmented helmet and pelvis-following sidearm holster. Firearm is visual only; close-range mechanics and production defaults are unchanged.",
+      "evidence_paths": [
+        "evidence/2026-09-27-corporate-sentry/README.md",
+        "docs/CHECKPOINTS.md"
+      ]
+    },
     {
       "id": "upper-body-motion",
       "lane": "waiting",

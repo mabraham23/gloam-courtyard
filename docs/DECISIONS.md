@@ -24,9 +24,26 @@ Read relevant rationale when changing a rule, rather than replaying the whole lo
 | D-20260910-HAIR | Swept black hair, clean shave | Active: close-clipped faded sides/back and broad overlapping top sweeps. Supersedes both rejected bowl-like caps; clean-shaven face, frozen GLB and V1 default retained. |
 | D-20260910-UPPER | Natural spine and shoulder participation | Active: subtle candidate back curve, staggered shoulder response and hip-to-chest punch transfer; requested hunch supersedes the older flat-chest 8/11 degree presentation bounds. Mechanics, clearance and V1 default retained. |
 | D-20260910-FLUIDITY | Final-pose continuity across actions | Active: bounded candidate handoffs and temporal regression accompany pose checks; prior upper-body-only visual adequacy is superseded by user feedback. Contact timing and V1 default retained. |
+| D-20260927-SENTRY | R14 corporate sentry candidate | Active: candidate review may reuse the frozen R14 body/rig for an original crimson helmeted guard with a visual holstered sidearm; default warden and close-range mechanics remain until separate acceptance. |
 <!-- decision-index:end -->
 
 ## Preserved dated rationale
+
+## 2026-09-27 — R14 corporate sentry candidate (Active)
+
+The user preferred the R14 player presentation and requested the enemy use the
+same high-quality base with a red corporate-guard uniform, gun and helmet. Reuse
+the exact frozen R14 anatomical/74-joint foundation in candidate review mode,
+while removing player-specific cape/hair and giving the enemy original crimson
+materials, segmented industrial helmet, dark visor/comms and a compact sidearm
+in a pelvis-following thigh holster.
+
+This explicitly authorizes a bounded enemy-character candidate, superseding the
+older one-player-only exclusion for this review path. It does not automatically
+promote the R14 player, replace the production procedural warden, add a second
+general character framework, or authorize ranged combat. The firearm is visual
+equipment under the existing close-range AI and attack contract; ranged behavior
+needs its own timing, telegraph, cover and encounter decision.
 
 ## 2026-09-03 — Original dark-gothic IP (Active)
 

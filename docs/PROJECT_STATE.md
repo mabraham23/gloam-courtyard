@@ -1,6 +1,6 @@
 # Project state
 
-Last curated: 2026-09-10
+Last curated: 2026-09-27
 
 ## Product vision and constraints
 
@@ -17,32 +17,28 @@ No Batman or other franchise names, likenesses, symbols, costumes, architecture,
 
 ## Current milestone
 
-**Waiting — whole-body fluidity follow-up ready for review (September 10).**
-The user found the previous upper-body pass still stiff. A frame-by-frame audit
-found abrupt switches between captured gait and procedural action poses: up to
-111.65 degrees at an action boundary and 109.23 degrees when stopping. The small
-spine/shoulder offsets did not address these transitions.
+**Waiting — R14 corporate sentry candidate ready for live review (September 27).**
+After preferring the R14 player to the older V1 presentation, the user requested
+an enemy on the same high-quality base with a red corporate-guard identity,
+helmet and gun. Candidate review mode now gives the guard the exact frozen R14
+74-joint body/rig while preserving the production V1/procedural default pair.
 
-The candidate now carries the preceding visible pose through action changes,
-starts/stops and recovery. Crouch exit unfolds gradually, punches build and retain
-their guard through recovery, and jump limbs keep gathering through the apex.
-Grounded jump phases release stale gait foot-height compensation. The existing
-hunch and shoulder response remain; contact timing and controller values stay intact.
+The sentry removes the player cape and hairstyle, retains the authored suit
+normal/roughness response under a crimson albedo, and adds charcoal equipment,
+an original segmented helmet with visor/comms details, plus a pelvis-following
+thigh holster and compact sidearm. The sidearm is visual equipment; the existing
+close-range archetype, timing, damage, AI, collision and takedown remain unchanged.
 
-Matched 480-frame review was inspected, including dense stop/rise/punch strips.
-The new continuity regression fails on the previous build and passes now: maximum
-action-boundary step 25.38 degrees, stop interval 30.38, whole sequence 59.97.
-Full mesh 22,164, jump 5,646, four attacks 352, transitions 70, action motion 198,
-default/candidate mechanics 309/311 and existing alignment 10 pass. No existing
-clearance, contact or posture bounds were relaxed. All 50,243 vertices are included.
-
-Current managed R14 review: exact-title PID 55861, source `9134ed315678`, matching
-the final render and current source. Native Q/V/Space/C smoke and R/0/F12 reset
-were inspected; all six image/state pairs match with zero source drift. The fresh
-game remains open at 100 health / 0 Momentum. PID 54186 is historical. Whole-body
-fluidity, held movement and earlier R14 release gates remain user review; V1 stays
-default. No new performance certificate is claimed.
-Evidence: `evidence/2026-09-10-motion-fluidity/`.
+A fixed 210-frame same-light/scale comparison covers idle, patrol, strike,
+reaction and defeat. Source `36805cdb75a9`, exact R14 asset SHA and all rendered
+frames passed. The candidate also passes a 14-check guard contract, 312 mechanics
+checks and all 12 feedback-tool tests. Visual inspection confirms a clear red
+enemy silhouette and stable helmet/holster attachment. Fresh exact-title native
+handoff PID 77731 is open from managed run `20260927T225539Z-live-f57781`.
+F12 image/state `review_36805cdb75a9_77731_47235777` confirms health 100,
+Momentum 0, guard 100 and no source drift. Native combat/takedown input and user
+gameplay-scale taste remain the acceptance gate.
+Evidence: `evidence/2026-09-27-corporate-sentry/`.
 
 ## Character and acceptance boundary
 
@@ -52,6 +48,10 @@ The frozen source has 74 joints and 86,452 triangles. Current runtime removes
 1,412 old hair triangles and adds 3,520 replacement triangles (88,560 before LOD).
 The face is clean-shaven; hair remains stylized mesh geometry. The user must accept appearance, held movement and paired takedown before
 an integration owner makes a narrow default switch and tests that default.
+
+The corporate sentry is a separate candidate-only use of the same R14 anatomical
+foundation. It does not promote R14 as the production player and does not replace
+the procedural default guard until user acceptance and a separate narrow switch.
 
 ## Current controls and protected values
 
@@ -75,6 +75,8 @@ remain visual limitations. Current native held movement/takedown and user taste
 are not replaced by scripted reels or numerical checks. Riven is an accepted
 static, non-default gray-box; its playable integration shape remains undecided.
 The W/S direction convention remains a separate product question, not a new bug fix.
+The sentry sidearm currently has no ranged-fire behavior; adding gun combat would
+require an explicit mechanics/readability/encounter-design task.
 
 ## Workflow and ownership
 
